@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir observation.xsd">
+	<!--        TRILLIUM II Project
+		Example of imaging observation including the information of example 2 (some essential and contextual data ) plus:
+	- reason For Study (example 3)
+	- target region (example 3)
+	- acquisition device (example 3)
+	- list of evidence references  (example 3)
+	- reference to the report 
+
+	Only textual results including overall result and findings
+    -->
+	<id value="trilliumII-example-imaging-2"/>
+	<extension url="http://hl7.org/fhir/StructureDefinition/event-partOf">
+		<valueReference>
+			<!-- check all the URL used for references and update them as needed -->
+			<reference value="ImagingStudy/TII-ImagingStudy-1"/>
+		</valueReference>
+	</extension>
+	<extension url="http://trilliumbridge.eu/fhir/StructureDefinition/derivedfrom-observation-uv-trillium2">
+		<extension url="reference">
+			<valueReference>
+				<reference value="ImagingStudy/TII-ImagingStudyRef-1"/>
+			</valueReference>
+		</extension>
+		<extension url="referenceType">
+			<valueCodeableConcept>
+				<coding>
+					<system value="http://dicom.nema.org/resources/ontology/DCM"/>
+					<code value="121080"/>
+					<display value="Best illustration of finding"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+	</extension>
+	
+		<extension url="http://trilliumbridge.eu/fhir/StructureDefinition/derivedfrom-observation-uv-trillium2">
+		<extension url="reference">
+			<valueReference>
+				<reference value="DocumentReference/TII-DocumentReference-1"/>
+			</valueReference>
+		</extension>
+	</extension>
+	
+	<!-- UPDATE THE Narrative -->
+	<!-- to be decided how to deal wioth narratives here ? at the seciton level ? both ? -->
+	<!--
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<p>
+				<b>Generated Narrative with Details</b>
+			</p>
+			<p>
+				<b>id</b>: bmd</p>
+			<p>
+				<b>status</b>: final</p>
+			<p>
+				<b>code</b>: BMD - Left Femur <span>(Details : {LOINC code &#39;24701-5&#39; = &#39;Femur DXA Bone density&#39;, given as &#39;Femur DXA Bone density&#39;})</span>
+			</p>
+			<p>
+				<b>subject</b>: <a>Patient/pat2</a>
+			</p>
+			<p>
+				<b>performer</b>: <a>Acme Imaging Diagnostics</a>
+			</p>
+			<p>
+				<b>value</b>: 0.887 g/cm&#xB2;<span> (Details: UCUM code g/cm-2 = &#39;g/cm-2&#39;)</span>
+			</p>
+			<p>
+				<b>bodySite</b>: Left Femur <span>(Details : {SNOMED CT code &#39;71341001:272741003=7771000&#39; = &#39;Femur where Laterality = Left)</span>
+			</p>
+		</div>
+	</text>
+-->
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://hl7.org/fhir/observation-category"/>
+			<code value="imaging"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<!-- NOTE: change with LOINC 30598-7 	CT Chest WO+W contr IV ? 
+is this the right code ? should be "abdomen and chest" ? change LOINC Code ?
+-->
+			<system value="http://www.radlex.org"/>
+			<code value="RPID17"/>
+			<display value="CT Chest w and wo IV Contrast"/>
+		</coding>
+		<!-- NOTE ==> the text seems not aligned with the code -->
+		<text value="Upper abdomen with the administration of oral and intravenous contrast (example-4)"/>
+	</code>
+	<!-- in the profile effectiveTime is 0...1 -->
+	<subject>
+		<!-- revise the URL if needed -->
+		<reference value="Patient/GE0514"/>
+	</subject>
+	<effectiveDateTime value="2000-11-17T12:02:17+01:00"/>
+	<performer>
+		<!-- revise the URL if needed ; Practictione resource to be defined-->
+		<reference value="Practitioner/TII-Practitioner1"/>
+	</performer>
+	<performer>
+		<!-- revise the URL if needed ; Practictione resource to be defined-->
+		<reference value="Organization/TII-Organization1"/>
+	</performer>
+	<valueString value="3 cm nodule present in the inferior medial aspect of right liver lobe. Contrast enhancement pattern consistent with the diagnosis of hemangioma."/>
+	<component>
+		<code>
+			<coding>
+				<system value="http://dicom.nema.org/resources/ontology/DCM"/>
+				<code value="121071"/>
+				<display value="Finding"/>
+			</coding>
+		</code>
+		<valueString value="The examination demonstrates a well circumscribed 3 cm lesion present within the medial aspect of the inferior right liver lobe. Initial evaluation demonstrates lack of contrast enhancement. Subsequent imaging (not shown) demonstrated typical contrast enhancement pattern of a benign hemangioma of the liver. The remaining contrast enhancement pattern in the liver is normal. There is normal appearance of the adrenal glands, spleen, kidneys, and pancreas. There is no evidence of liver metastasis."/>
+	</component>
+</Observation>

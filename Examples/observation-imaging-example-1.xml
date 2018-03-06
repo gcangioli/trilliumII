@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xsi:schemaLocation="http://hl7.org/fhir observation.xsd" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!--        TRILLIUM II Project
+		Example of imaging observation including only the essential information
+		textual result
+    -->
+    
+	<id value="trilliumII-example-imaging-1"/>
+	<!-- UPDATE THE Narrative -->
+	<!-- to be decided how to deal wioth narratives here ? at the seciton level ? both ? -->
+	<!--
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<p>
+				<b>Generated Narrative with Details</b>
+			</p>
+			<p>
+				<b>id</b>: bmd</p>
+			<p>
+				<b>status</b>: final</p>
+			<p>
+				<b>code</b>: BMD - Left Femur <span>(Details : {LOINC code &#39;24701-5&#39; = &#39;Femur DXA Bone density&#39;, given as &#39;Femur DXA Bone density&#39;})</span>
+			</p>
+			<p>
+				<b>subject</b>: <a>Patient/pat2</a>
+			</p>
+			<p>
+				<b>performer</b>: <a>Acme Imaging Diagnostics</a>
+			</p>
+			<p>
+				<b>value</b>: 0.887 g/cm&#xB2;<span> (Details: UCUM code g/cm-2 = &#39;g/cm-2&#39;)</span>
+			</p>
+			<p>
+				<b>bodySite</b>: Left Femur <span>(Details : {SNOMED CT code &#39;71341001:272741003=7771000&#39; = &#39;Femur where Laterality = Left)</span>
+			</p>
+		</div>
+	</text>
+-->
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://hl7.org/fhir/observation-category"/>
+			<code value="imaging"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<!-- NOTE: change with LOINC 30598-7 	CT Chest WO+W contr IV ? 
+is this the right code ? should be "abdomen and chest" ? change LOINC Code ?
+-->
+			<system value="http://www.radlex.org"/>
+			<code value="RPID17"/>
+			<display value="CT Chest w and wo IV Contrast"/>
+		</coding>
+		<!-- NOTE ==> the text seems not aligned with the code -->
+		<text value="Upper abdomen with the administration of oral and intravenous contrast (example-1)"/>
+	</code>
+
+
+	<subject>
+		<!-- revise the URL if needed -->
+		<reference value="Patient/GE0514"/>
+	</subject>
+	
+		<!-- in the profile effectiveTime is 0...1 -->
+		<effectiveDateTime value="2000-11-17T12:02:17+01:00"></effectiveDateTime>
+	<valueString value="3 cm nodule present in the inferior medial aspect of right liver lobe. Contrast enhancement pattern consistent with the diagnosis of hemangioma."/>
+</Observation>
