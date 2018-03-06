@@ -1,0 +1,32 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="TrilliumII-examples-Observation-01-Sub0" />
+  <meta>
+    <versionId value="36785a99-335b-4a0c-8c32-3fd5bf0df655" />
+    <lastUpdated value="2018-02-16T10:19:25.9+00:00" />
+  </meta>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/observation-category" />
+      <code value="laboratory" />
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="882-1" />
+      <display value="ABO and Rh group [Type] in Blood" />
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/TrilliumII-examples-Patient-02" />
+  </subject>
+  <effectiveDateTime value="2015-10-10T09:15:00+01:00" />
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="278149003" />
+      <display value="Blood group A Rh(D) positive" />
+    </coding>
+  </valueCodeableConcept>
+</Observation>
