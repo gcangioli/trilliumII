@@ -1,0 +1,133 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2017-12-12T14:24:24.825+01:00" />
+  </meta>
+  <url value="http://trilliumbridge.eu/fhir/StructureDefinition/procedure-uv-trillium2" />
+  <name value="Procedure-uv-trillium2" />
+  <status value="draft" />
+  <date value="2017-10-27T13:43:30.381+02:00" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Procedure" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Procedure" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Procedure.definition">
+      <path value="Procedure.definition" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.basedOn">
+      <path value="Procedure.basedOn" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.partOf">
+      <path value="Procedure.partOf" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.status">
+      <path value="Procedure.status" />
+      <comment value="The unknown code is not to be used to convey other statuses.  The unknown code should be used when one of the statuses applies, but the authoring system doesn't know the current state of the procedure.&#xA;&#xA;This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.&#xD;&#xA;TRILLIUM II IMPLEMENTATION COMMENTS: We propose to encode it with SNOMED CT." />
+    </element>
+    <element id="Procedure.notDone">
+      <path value="Procedure.notDone" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.notDoneReason">
+      <path value="Procedure.notDoneReason" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.category">
+      <path value="Procedure.category" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.code">
+      <path value="Procedure.code" />
+      <min value="1" />
+    </element>
+    <element id="Procedure.code.coding.system">
+      <path value="Procedure.code.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Procedure.context">
+      <path value="Procedure.context" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.performed[x]">
+      <path value="Procedure.performed[x]" />
+      <min value="1" />
+    </element>
+    <element id="Procedure.location">
+      <path value="Procedure.location" />
+      <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.&#xD;&#xA;&#xD;&#xA;TRILLIUM II IMPLEMENTATION COMMENTS: We propose to encode it with SNOMED CT." />
+      <max value="0" />
+    </element>
+    <element id="Procedure.reasonCode.coding.system">
+      <path value="Procedure.reasonCode.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Procedure.bodySite.extension">
+      <path value="Procedure.bodySite.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Procedure.bodySite.extension:laterality">
+      <path value="Procedure.bodySite.extension" />
+      <sliceName value="laterality" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="StructureDefinition/bodysite-laterality" />
+      </type>
+    </element>
+    <element id="Procedure.bodySite.coding.system">
+      <path value="Procedure.bodySite.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Procedure.outcome">
+      <path value="Procedure.outcome" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.outcome.coding.system">
+      <path value="Procedure.outcome.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Procedure.report">
+      <path value="Procedure.report" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.complication">
+      <path value="Procedure.complication" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.complication.coding.system">
+      <path value="Procedure.complication.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Procedure.complicationDetail">
+      <path value="Procedure.complicationDetail" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.followUp">
+      <path value="Procedure.followUp" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.focalDevice">
+      <path value="Procedure.focalDevice" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.usedReference">
+      <path value="Procedure.usedReference" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.usedCode">
+      <path value="Procedure.usedCode" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

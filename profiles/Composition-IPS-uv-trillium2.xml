@@ -1,0 +1,683 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <versionId value="358e932e-d23a-44a8-ae0c-11d9a8f8b347" />
+    <lastUpdated value="2018-03-06T10:43:52.892+01:00" />
+  </meta>
+  <url value="http://trilliumbridge.eu/fhir/StructureDefinition/composition-ips-uv-trillium2" />
+  <name value="Composition-IPS-uv-trillium2" />
+  <title value="International Patient Summary" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2015-03-17" />
+  <publisher value="Trillium2 Project" />
+  <contact>
+    <name value="Giorgio Cangioli" />
+    <telecom>
+      <system value="email" />
+      <value value="giorgio.cangioli@gmail.com" />
+    </telecom>
+  </contact>
+  <description value="Clinical document used to represent an International Patient Summary (IPS) data set. The IPS dataset is a minimal and non-exhaustive patient summary dataset, specialty-agnostic, condition-independent, but readily usable by clinicians for the cross-border unscheduled care of a patient." />
+  <purpose value="An International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information intended for use in the unscheduled, cross-border care scenario, comprising at least the required elements of the IPS dataset. The IPS dataset is a minimal and non-exhaustive patient summary dataset, specialty-agnostic, condition-independent, but readily usable by clinicians for the cross-border unscheduled care of a patient." />
+  <copyright value="HL7 International" />
+  <fhirVersion value="3.0.0" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="cda" />
+    <uri value="http://hl7.org/v3/cda" />
+    <name value="CDA (R2)" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/w5" />
+    <name value="W5 Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Composition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Composition.type.coding.system">
+      <path value="Composition.type.coding.system" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Composition.type.coding.code">
+      <path value="Composition.type.coding.code" />
+      <fixedCode value="60591-5" />
+    </element>
+    <element id="Composition.type.coding.userSelected">
+      <path value="Composition.type.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Composition.type.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Composition.type.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.class">
+      <path value="Composition.class" />
+      <max value="0" />
+    </element>
+    <element id="Composition.subject">
+      <path value="Composition.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+    </element>
+    <element id="Composition.subject.identifier">
+      <path value="Composition.subject.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.subject.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Composition.subject.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.encounter.identifier">
+      <path value="Composition.encounter.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.encounter.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Composition.encounter.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.author.identifier">
+      <path value="Composition.author.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.author.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Composition.author.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.custodian.identifier">
+      <path value="Composition.custodian.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.custodian.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Composition.custodian.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.relatesTo.target[x]">
+      <path value="Composition.relatesTo.target[x]" />
+      <type>
+        <code value="Identifier" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Composition" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://trilliumbridge.eu/fhir/StructureDefinition/patientsummary-uv-trillium2" />
+      </type>
+    </element>
+    <element id="Composition.section">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Section" />
+      </extension>
+      <path value="Composition.section" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="code.coding.code" />
+        </discriminator>
+        <ordered value="false" />
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Composition.section:sectionMedications">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Section" />
+      </extension>
+      <path value="Composition.section" />
+      <sliceName value="sectionMedications" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:sectionMedications.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:sectionMedications.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Composition.section:sectionMedications.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <fixedCode value="10160-0" />
+    </element>
+    <element id="Composition.section:sectionMedications.code.coding.userSelected">
+      <path value="Composition.section.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sectionMedications.text">
+      <path value="Composition.section.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sectionMedications.entry">
+      <path value="Composition.section.entry" />
+      <slicing>
+        <discriminator>
+          <type value="profile" />
+          <path value="reference" />
+        </discriminator>
+        <description value="NB ==&gt; DISCRIMINATOR TO BE CHEKED !!" />
+        <rules value="openAtEnd" />
+      </slicing>
+      <comment value="If there are no entries in the list, an emptyReason SHALL be provided.&#xD;&#xA;&#xD;&#xA;NOTE ==&gt; DEFINE A CONSTRAINT FOR THIS" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:sectionMedications.entry:MedicationStatement">
+      <path value="Composition.section.entry" />
+      <sliceName value="MedicationStatement" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://trilliumbridge.eu/fhir/StructureDefinition/medicationstatement-uv-trillium2" />
+      </type>
+    </element>
+    <element id="Composition.section:sectionMedications.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sectionMedications.section">
+      <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sectionAllergies">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Section" />
+      </extension>
+      <path value="Composition.section" />
+      <sliceName value="sectionAllergies" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:sectionAllergies.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:sectionAllergies.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Composition.section:sectionAllergies.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <fixedCode value="48765-2" />
+    </element>
+    <element id="Composition.section:sectionAllergies.code.coding.userSelected">
+      <path value="Composition.section.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sectionAllergies.entry">
+      <path value="Composition.section.entry" />
+      <slicing>
+        <discriminator>
+          <type value="profile" />
+          <path value="reference" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Composition.section:sectionAllergies.entry.identifier">
+      <path value="Composition.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sectionAllergies.entry.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Composition.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sectionAllergies.entry:allergyOrIntolerance">
+      <path value="Composition.section.entry" />
+      <sliceName value="allergyOrIntolerance" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://trilliumbridge.eu/fhir/StructureDefinition/allergyintolerance-uv-trillium2" />
+      </type>
+    </element>
+    <element id="Composition.section:sectionAllergies.entry:allergyOrIntolerance.identifier">
+      <path value="Composition.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sectionAllergies.entry:allergyOrIntolerance.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Composition.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sectionAllergies.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sectionAllergies.section">
+      <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sectionProblems">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Section" />
+      </extension>
+      <path value="Composition.section" />
+      <sliceName value="sectionProblems" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:sectionProblems.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:sectionProblems.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Composition.section:sectionProblems.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <fixedCode value="11450-4" />
+    </element>
+    <element id="Composition.section:sectionProblems.code.coding.userSelected">
+      <path value="Composition.section.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sectionProblems.entry">
+      <path value="Composition.section.entry" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://trilliumbridge.eu/fhir/StructureDefinition/condition-uv-trillium2" />
+      </type>
+    </element>
+    <element id="Composition.section:sectionProblems.entry.identifier">
+      <path value="Composition.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sectionProblems.entry.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Composition.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sectionProblems.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sectionProblems.section">
+      <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sectionProceduresHx">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Section" />
+      </extension>
+      <path value="Composition.section" />
+      <sliceName value="sectionProceduresHx" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:sectionProceduresHx.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:sectionProceduresHx.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Composition.section:sectionProceduresHx.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <fixedCode value="47519-4" />
+    </element>
+    <element id="Composition.section:sectionProceduresHx.entry">
+      <path value="Composition.section.entry" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://trilliumbridge.eu/fhir/StructureDefinition/procedure-uv-trillium2" />
+      </type>
+    </element>
+    <element id="Composition.section:sectionProceduresHx.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sectionImmunizations">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Section" />
+      </extension>
+      <path value="Composition.section" />
+      <sliceName value="sectionImmunizations" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:sectionImmunizations.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:sectionImmunizations.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Composition.section:sectionImmunizations.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <fixedCode value="11369-6" />
+    </element>
+    <element id="Composition.section:sectionImmunizations.entry">
+      <path value="Composition.section.entry" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://trilliumbridge.eu/fhir/StructureDefinition/immunization-uv-trillium2" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://trilliumbridge.eu/fhir/StructureDefinition/immunization-basic-uv-trillium2" />
+      </type>
+    </element>
+    <element id="Composition.section:sectionImmunizations.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sectionImmunizations.section">
+      <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sectionMedicalDevices">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Section" />
+      </extension>
+      <path value="Composition.section" />
+      <sliceName value="sectionMedicalDevices" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:sectionMedicalDevices.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:sectionMedicalDevices.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Composition.section:sectionMedicalDevices.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <fixedCode value="46264-8" />
+    </element>
+    <element id="Composition.section:sectionMedicalDevices.entry">
+      <path value="Composition.section.entry" />
+      <slicing>
+        <discriminator>
+          <type value="profile" />
+          <path value="reference" />
+        </discriminator>
+        <description value="NB Check the Discriminator" />
+        <rules value="openAtEnd" />
+      </slicing>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://trilliumbridge.eu/fhir/StructureDefinition/deviceusestatement-uv-trillium2" />
+      </type>
+    </element>
+    <element id="Composition.section:sectionMedicalDevices.entry.identifier">
+      <path value="Composition.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sectionMedicalDevices.entry.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Composition.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sectionMedicalDevices.entry:deviceStatement">
+      <path value="Composition.section.entry" />
+      <sliceName value="deviceStatement" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://trilliumbridge.eu/fhir/StructureDefinition/deviceusestatement-uv-trillium2" />
+      </type>
+    </element>
+    <element id="Composition.section:sectionMedicalDevices.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sectionMedicalDevices.section">
+      <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:sectionResults">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Section" />
+      </extension>
+      <path value="Composition.section" />
+      <sliceName value="sectionResults" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:sectionResults.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:sectionResults.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Composition.section:sectionResults.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <fixedCode value="30954-2" />
+    </element>
+    <element id="Composition.section:sectionResults.entry">
+      <path value="Composition.section.entry" />
+      <slicing>
+        <discriminator>
+          <type value="profile" />
+          <path value="reference" />
+        </discriminator>
+        <rules value="openAtEnd" />
+      </slicing>
+    </element>
+    <element id="Composition.section:sectionResults.entry:laboratoryResult">
+      <path value="Composition.section.entry" />
+      <sliceName value="laboratoryResult" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://trilliumbridge.eu/fhir/StructureDefinition/observation-laboratory-uv-trillium2" />
+      </type>
+    </element>
+    <element id="Composition.section:sectionResults.entry:imagingResult">
+      <path value="Composition.section.entry" />
+      <sliceName value="imagingResult" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://trilliumbridge.eu/fhir/StructureDefinition/observation-imaging-uv-trillium2" />
+      </type>
+    </element>
+    <element id="Composition.section:sectionResults.entry:otherResult">
+      <path value="Composition.section.entry" />
+      <sliceName value="otherResult" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation" />
+      </type>
+    </element>
+    <element id="Composition.section:sectionPastIllnessHx">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Section" />
+      </extension>
+      <path value="Composition.section" />
+      <sliceName value="sectionPastIllnessHx" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:sectionPastIllnessHx.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:sectionPastIllnessHx.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Composition.section:sectionPastIllnessHx.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <fixedCode value="11348-0" />
+    </element>
+    <element id="Composition.section:sectionPastIllnessHx.entry">
+      <path value="Composition.section.entry" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://trilliumbridge.eu/fhir/StructureDefinition/condition-uv-trillium2" />
+      </type>
+    </element>
+    <element id="Composition.section:sectionFunctionalStatus">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Section" />
+      </extension>
+      <path value="Composition.section" />
+      <sliceName value="sectionFunctionalStatus" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:sectionFunctionalStatus.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:sectionFunctionalStatus.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Composition.section:sectionFunctionalStatus.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <fixedCode value="47420-5" />
+    </element>
+    <element id="Composition.section:sectionFunctionalStatus.entry">
+      <path value="Composition.section.entry" />
+      <slicing>
+        <discriminator>
+          <type value="profile" />
+          <path value="reference" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Composition.section:sectionFunctionalStatus.entry:disability">
+      <path value="Composition.section.entry" />
+      <sliceName value="disability" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition" />
+      </type>
+    </element>
+    <element id="Composition.section:sectionFunctionalStatus.entry:functionalAssessment">
+      <path value="Composition.section.entry" />
+      <sliceName value="functionalAssessment" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ClinicalImpression" />
+      </type>
+    </element>
+    <element id="Composition.section:sectionPlanOfCare">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Section" />
+      </extension>
+      <path value="Composition.section" />
+      <sliceName value="sectionPlanOfCare" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:sectionPlanOfCare.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:sectionPlanOfCare.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Composition.section:sectionPlanOfCare.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <fixedCode value="18776-5" />
+    </element>
+    <element id="Composition.section:sectionSocialHistory">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Section" />
+      </extension>
+      <path value="Composition.section" />
+      <sliceName value="sectionSocialHistory" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:sectionSocialHistory.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:sectionSocialHistory.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Composition.section:sectionSocialHistory.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <fixedCode value="29762-2" />
+    </element>
+    <element id="Composition.section:sectionPregnancyHx">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Section" />
+      </extension>
+      <path value="Composition.section" />
+      <sliceName value="sectionPregnancyHx" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:sectionPregnancyHx.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:sectionPregnancyHx.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Composition.section:sectionPregnancyHx.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <fixedCode value="82810-3" />
+    </element>
+    <element id="Composition.section:sectionAdvanceDirectives">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Section" />
+      </extension>
+      <path value="Composition.section" />
+      <sliceName value="sectionAdvanceDirectives" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:sectionAdvanceDirectives.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:sectionAdvanceDirectives.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Composition.section:sectionAdvanceDirectives.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <fixedCode value="42348-3" />
+    </element>
+  </differential>
+</StructureDefinition>

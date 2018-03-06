@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2018-03-06T10:36:30.119+01:00" />
+    <profile value="http://trilliumbridge.eu/fhir/StructureDefinition/immunization-uv-trillium2" />
+  </meta>
+  <language value="English" />
+  <url value="http://trilliumbridge.eu/fhir/StructureDefinition/immunization-basic-uv-trillium2" />
+  <version value="0.3" />
+  <name value="Immunization-basic-uv-trillium2" />
+  <title value="Immunization - unplanned care, basic" />
+  <status value="draft" />
+  <date value="2017-12-21" />
+  <publisher value="THL" />
+  <description value="Immunization profile for Trillium 2, unplanned care scenario, core profile." />
+  <purpose value="Immunization core profile for Trillium 2" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Immunization" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Immunization" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Immunization.extension">
+      <path value="Immunization.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Immunization.extension:tradeName">
+      <path value="Immunization.extension" />
+      <sliceName value="tradeName" />
+      <short value="Vaccine trade name" />
+      <definition value="Vaccine trade name" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://trilliumbridge.eu/fhir/StructureDefinition/Immunization-tradeNameExt" />
+      </type>
+    </element>
+    <element id="Immunization.extension:tradeName.url">
+      <path value="Immunization.extension.url" />
+      <fixedUri value="http://trilliumbridge.eu/fhir/StructureDefinition/Immunization-tradeNameExt" />
+    </element>
+    <element id="Immunization.extension:statementExtension">
+      <path value="Immunization.extension" />
+      <sliceName value="statementExtension" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://trilliumbridge.eu/fhir/StructureDefinition/statementExtension-uv-trillium2" />
+      </type>
+    </element>
+    <element id="Immunization.extension:statementExtension.url">
+      <path value="Immunization.extension.url" />
+      <fixedUri value="http://trilliumbridge.eu/fhir/StructureDefinition/statementExtension-uv-trillium2" />
+    </element>
+    <element id="Immunization.status">
+      <path value="Immunization.status" />
+      <defaultValueCode value="completed" />
+    </element>
+    <element id="Immunization.notGiven">
+      <path value="Immunization.notGiven" />
+      <defaultValueBoolean value="true" />
+    </element>
+    <element id="Immunization.encounter">
+      <path value="Immunization.encounter" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.date">
+      <path value="Immunization.date" />
+      <comment value="When immunizations are given a specific date and time should always be known.   When immunizations are patient reported, a specific date might not be known. ?Although partial dates are allowed, an adult patient might not be able to recall the year a childhood immunization was given." />
+    </element>
+    <element id="Immunization.primarySource">
+      <path value="Immunization.primarySource" />
+      <comment value="Reflects the ?reliability? of the content." />
+    </element>
+    <element id="Immunization.reportOrigin">
+      <path value="Immunization.reportOrigin" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.location">
+      <path value="Immunization.location" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.manufacturer">
+      <path value="Immunization.manufacturer" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.lotNumber">
+      <path value="Immunization.lotNumber" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.expirationDate">
+      <path value="Immunization.expirationDate" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.site">
+      <path value="Immunization.site" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.route">
+      <path value="Immunization.route" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.doseQuantity">
+      <path value="Immunization.doseQuantity" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.practitioner">
+      <path value="Immunization.practitioner" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.note">
+      <path value="Immunization.note" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.explanation">
+      <path value="Immunization.explanation" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.reaction">
+      <path value="Immunization.reaction" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.vaccinationProtocol">
+      <path value="Immunization.vaccinationProtocol" />
+      <max value="1" />
+    </element>
+    <element id="Immunization.vaccinationProtocol.doseSequence">
+      <path value="Immunization.vaccinationProtocol.doseSequence" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.vaccinationProtocol.description">
+      <path value="Immunization.vaccinationProtocol.description" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.vaccinationProtocol.authority">
+      <path value="Immunization.vaccinationProtocol.authority" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.vaccinationProtocol.series">
+      <path value="Immunization.vaccinationProtocol.series" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.vaccinationProtocol.seriesDoses">
+      <path value="Immunization.vaccinationProtocol.seriesDoses" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.vaccinationProtocol.doseStatusReason">
+      <path value="Immunization.vaccinationProtocol.doseStatusReason" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
