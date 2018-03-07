@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2018-03-07T14:00:28.676+01:00" />
+  </meta>
+  <url value="http://trilliumbridge.eu/fhir/StructureDefinition/statement-uv-trillium2" />
+  <name value="statement-uv-trillium2" />
+  <title value="Statement Extension" />
+  <status value="draft" />
+  <date value="2018-03-07T09:32:09.611+01:00" />
+  <description value="An extension defined for the Trillium II Project to record the details about a statement, if not already covered by the base resource. &#xD;&#xA;A statement can refer to different resources as Immunizations; Procedures;..." />
+  <purpose value="Record information about a statement" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="DomainResource" />
+  <context value="Immunization" />
+  <context value="Procedure" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Statement extension" />
+      <definition value="Statement extension: statement metadata about one list item such as a vaccination or a procedure. Includes assertion date, information source and possible note about the statement." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url" />
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:assertionDate">
+      <path value="Extension.extension" />
+      <sliceName value="assertionDate" />
+      <short value="Assertion date and time of the statement" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:assertionDate.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="assertionDate" />
+    </element>
+    <element id="Extension.extension:assertionDate.valueDateTime:valueDateTime">
+      <path value="Extension.extension.valueDateTime" />
+      <sliceName value="valueDateTime" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Extension.extension:informationSource">
+      <path value="Extension.extension" />
+      <sliceName value="informationSource" />
+      <short value="Information source" />
+      <definition value="Practitioner, patient, related person or organization acting as information source." />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:informationSource.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="informationSource" />
+    </element>
+    <element id="Extension.extension:informationSource.valueReference:valueReference">
+      <path value="Extension.extension.valueReference" />
+      <sliceName value="valueReference" />
+      <short value="Reference to practitioner, patient, related person or organization" />
+      <type>
+        <code value="Reference" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/practitioner" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/patient " />
+        <aggregation value="contained" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/relatedPerson" />
+        <aggregation value="contained" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/organization" />
+        <aggregation value="contained" />
+      </type>
+    </element>
+    <element id="Extension.extension:statementNote">
+      <path value="Extension.extension" />
+      <sliceName value="statementNote" />
+      <short value="Statement note" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:statementNote.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="statementNote" />
+    </element>
+    <element id="Extension.extension:statementNote.valueString:valueString">
+      <path value="Extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://trilliumbridge.eu/fhir/StructureDefinition/statement-uv-trillium2" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

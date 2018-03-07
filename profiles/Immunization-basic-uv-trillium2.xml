@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2018-03-06T10:36:30.119+01:00" />
+    <lastUpdated value="2018-03-07T14:15:34.978+01:00" />
     <profile value="http://trilliumbridge.eu/fhir/StructureDefinition/immunization-uv-trillium2" />
   </meta>
   <language value="English" />
@@ -39,24 +39,16 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://trilliumbridge.eu/fhir/StructureDefinition/Immunization-tradeNameExt" />
+        <profile value="http://trilliumbridge.eu/fhir/StructureDefinition/tradename-immunization-uv-trillium2" />
       </type>
-    </element>
-    <element id="Immunization.extension:tradeName.url">
-      <path value="Immunization.extension.url" />
-      <fixedUri value="http://trilliumbridge.eu/fhir/StructureDefinition/Immunization-tradeNameExt" />
     </element>
     <element id="Immunization.extension:statementExtension">
       <path value="Immunization.extension" />
       <sliceName value="statementExtension" />
       <type>
         <code value="Extension" />
-        <profile value="http://trilliumbridge.eu/fhir/StructureDefinition/statementExtension-uv-trillium2" />
+        <profile value="http://trilliumbridge.eu/fhir/StructureDefinition/statement-uv-trillium2" />
       </type>
-    </element>
-    <element id="Immunization.extension:statementExtension.url">
-      <path value="Immunization.extension.url" />
-      <fixedUri value="http://trilliumbridge.eu/fhir/StructureDefinition/statementExtension-uv-trillium2" />
     </element>
     <element id="Immunization.status">
       <path value="Immunization.status" />
