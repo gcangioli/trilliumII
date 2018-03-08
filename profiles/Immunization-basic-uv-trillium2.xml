@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2018-03-07T14:15:34.978+01:00" />
+    <lastUpdated value="2018-03-08T09:19:17.589+01:00" />
     <profile value="http://trilliumbridge.eu/fhir/StructureDefinition/immunization-uv-trillium2" />
   </meta>
   <language value="English" />
@@ -31,32 +31,68 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Immunization.extension:tradeName">
+    <element id="Immunization.extension:statementDetails">
       <path value="Immunization.extension" />
-      <sliceName value="tradeName" />
-      <short value="Vaccine trade name" />
-      <definition value="Vaccine trade name" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://trilliumbridge.eu/fhir/StructureDefinition/tradename-immunization-uv-trillium2" />
-      </type>
-    </element>
-    <element id="Immunization.extension:statementExtension">
-      <path value="Immunization.extension" />
-      <sliceName value="statementExtension" />
+      <sliceName value="statementDetails" />
+      <short value="Optional Extensions Element" />
+      <definition value="Optional Extension Element - found in all resources." />
       <type>
         <code value="Extension" />
         <profile value="http://trilliumbridge.eu/fhir/StructureDefinition/statement-uv-trillium2" />
       </type>
     </element>
-    <element id="Immunization.status">
-      <path value="Immunization.status" />
-      <defaultValueCode value="completed" />
+    <element id="Immunization.vaccineCode.coding">
+      <path value="Immunization.vaccineCode.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <description value="One slice per system of representation of vaccines. &#xD;&#xA;Supports vaccine classifications and medicinal products identifiers and classes.&#xD;&#xA;&#xD;&#xA;When the IDMP identifiers will be concretely available for usage this element will be used for conveying the Medicinal Product Identifier (MPID).&#xD;&#xA;For the time being, it could be optionally used for conveying jurisdictional or agreed cross jurisdictional product code." />
+        <rules value="open" />
+      </slicing>
     </element>
-    <element id="Immunization.notGiven">
-      <path value="Immunization.notGiven" />
-      <defaultValueBoolean value="true" />
+    <element id="Immunization.vaccineCode.coding:vaccineType">
+      <path value="Immunization.vaccineCode.coding" />
+      <sliceName value="vaccineType" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:vaccineType.userSelected">
+      <path value="Immunization.vaccineCode.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:medicinalProduct">
+      <path value="Immunization.vaccineCode.coding" />
+      <sliceName value="medicinalProduct" />
+      <short value="Medicinal Product Identifier" />
+      <definition value="The identifier of the administered Medicinal Product.&#xD;&#xA;It might be a National Product ID or in the next future the IDMP Medicinal Product Identifier (MPID) - Uniquely identifies a Medicinal Product, reflecting (but not replacing) any other authorisation numbers allocated by a regulator.&#xD;&#xA;MPID implies one (set of) PhPID.&#xD;&#xA;The MPID shall use a common segment pattern related to a Medicinal Product, which&#xD;&#xA;when each segment is valued shall define a specific MPID concept. The pattern is:&#xD;&#xA;• a) Country code segment (ISO 3166-1 alpha-2 code elements);&#xD;&#xA;• b) Marketing Authorization Holder (Organization Identifier) code segment;&#xD;&#xA;• c) Medicinal Product code segment (Unique Medicinal Product Identifier).&#xD;&#xA;• Any change of the values related to these three code segments shall result in the&#xD;&#xA;assignment of a new MPID.&#xD;" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:medicinalProduct.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Immunization.vaccineCode.coding.display" />
+      <short value="Trade or Brand Name (MP)" />
+      <definition value="The registered name of the Medicinal Product" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:packagedProduct">
+      <path value="Immunization.vaccineCode.coding" />
+      <sliceName value="packagedProduct" />
+      <short value="Commercial Packaged Product ID" />
+      <definition value="It identifies the commercial packaged product, it might be a jurisictioal identifier or in the next future the IDMP PCID." />
+    </element>
+    <element id="Immunization.vaccineCode.coding:packagedProduct.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Immunization.vaccineCode.coding.display" />
+      <short value="Trade or Brand Name (PC)" />
+      <definition value="The registered name of the Commercial Packaged Product" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:class">
+      <path value="Immunization.vaccineCode.coding" />
+      <sliceName value="class" />
     </element>
     <element id="Immunization.encounter">
       <path value="Immunization.encounter" />

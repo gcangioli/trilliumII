@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2018-03-03T17:11:59.286+01:00" />
+    <lastUpdated value="2018-03-07T16:22:07.011+01:00" />
   </meta>
   <url value="http://trilliumbridge.eu/fhir/StructureDefinition/accessprotocol-uv-trillium2" />
   <name value="accessProtocol-uv-trillium2" />
+  <title value="Access Protocol (extension)" />
   <status value="draft" />
   <date value="2018-02-25T18:28:59.933+01:00" />
+  <description value="Extension designed to enable the indication of the type of access protocol tha can be used for the retrieval of the referenced documents / evideces" />
   <fhirVersion value="3.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
