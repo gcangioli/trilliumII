@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir observation.xsd">
+<Observation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir fhir-all-xsd/observation.xsd">
 	<!--        TRILLIUM II Project
 		Example of imaging observation including the information of example 2 (some essential and contextual data ) plus:
 	- reason For Study (example 3)
@@ -33,15 +33,13 @@
 			</valueCodeableConcept>
 		</extension>
 	</extension>
-	
-		<extension url="http://trilliumbridge.eu/fhir/StructureDefinition/derivedfrom-observation-uv-trillium2">
+	<extension url="http://trilliumbridge.eu/fhir/StructureDefinition/derivedfrom-observation-uv-trillium2">
 		<extension url="reference">
 			<valueReference>
 				<reference value="DocumentReference/TII-DocumentReference-1"/>
 			</valueReference>
 		</extension>
 	</extension>
-	
 	<!-- UPDATE THE Narrative -->
 	<!-- to be decided how to deal wioth narratives here ? at the seciton level ? both ? -->
 	<!--
@@ -82,14 +80,10 @@
 	</category>
 	<code>
 		<coding>
-			<!-- NOTE: change with LOINC 30598-7 	CT Chest WO+W contr IV ? 
-is this the right code ? should be "abdomen and chest" ? change LOINC Code ?
--->
-			<system value="http://www.radlex.org"/>
-			<code value="RPID17"/>
-			<display value="CT Chest w and wo IV Contrast"/>
+			<system value="http://loinc.org/"/>
+			<code value="79103-8"/>
+			<display value="CT Abdomen W contrast IV"/>
 		</coding>
-		<!-- NOTE ==> the text seems not aligned with the code -->
 		<text value="Upper abdomen with the administration of oral and intravenous contrast (example-4)"/>
 	</code>
 	<!-- in the profile effectiveTime is 0...1 -->
@@ -97,17 +91,27 @@ is this the right code ? should be "abdomen and chest" ? change LOINC Code ?
 		<!-- revise the URL if needed -->
 		<reference value="Patient/GE0514"/>
 	</subject>
-	<effectiveDateTime value="2000-11-17T12:02:17+01:00"/>
+	<effectiveDateTime value="1995-06-08"/>
 	<performer>
-		<!-- revise the URL if needed ; Practictione resource to be defined-->
+		<!-- revise the URL if needed ; -->
 		<reference value="Practitioner/TII-Practitioner1"/>
 	</performer>
 	<performer>
-		<!-- revise the URL if needed ; Practictione resource to be defined-->
+		<!-- revise the URL if needed -->
 		<reference value="Organization/TII-Organization1"/>
 	</performer>
 	<valueString value="3 cm nodule present in the inferior medial aspect of right liver lobe. Contrast enhancement pattern consistent with the diagnosis of hemangioma."/>
 	<component>
+		<code>
+			<coding>
+				<system value="http://dicom.nema.org/resources/ontology/DCM"/>
+				<code value="121065"/>
+				<display value="Procedure Description"/>
+			</coding>
+		</code>
+		<valueString value="Serial imaging was obtained in the upper abdomen with the administration of oral and intravenous contrast."/>
+	</component>
+		<component>
 		<code>
 			<coding>
 				<system value="http://dicom.nema.org/resources/ontology/DCM"/>

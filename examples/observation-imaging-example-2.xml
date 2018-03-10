@@ -46,22 +46,18 @@ textual result including overall result and findings
 	</category>
 	<code>
 		<coding>
-			<!-- NOTE: change with LOINC 30598-7 	CT Chest WO+W contr IV ? 
-is this the right code ? should be "abdomen and chest" ? change LOINC Code ?
--->
-			<system value="http://www.radlex.org"/>
-			<code value="RPID17"/>
-			<display value="CT Chest w and wo IV Contrast"/>
+			<system value="http://loinc.org/"/>
+			<code value="79103-8"/>
+			<display value="CT Abdomen W contrast IV"/>
 		</coding>
-		<!-- NOTE ==> the text seems not aligned with the code -->
-		<text value="Upper abdomen with the administration of oral and intravenous contrast (example-2)"/>
+		<text value="Upper abdomen with the administration of oral and intravenous contrast (example-4)"/>
 	</code>
 	<!-- in the profile effectiveTime is 0...1 -->
 	<subject>
 		<!-- revise the URL if needed -->
 		<reference value="Patient/GE0514"/>
 	</subject>
-	<effectiveDateTime value="2000-11-17T12:02:17+01:00"/>
+	<effectiveDateTime value="1995-06-08"/>
 	<performer>
 		<!-- revise the URL if needed ; -->
 		<reference value="Practitioner/TII-Practitioner1"/>
