@@ -24,6 +24,10 @@
 			<code value="CT"/>
 			<display value="Computed Tomography"/>
 		</modality>
+				<instance>
+			<uid value="urn:oid:1.2.840.113674.950809132337081.100"/>
+			<sopClass value="urn:oid:1.2.840.10008.5.1.4.1.1.2"/>
+		</instance>
 		<!-- Removed by this set of examples 
 		<bodySite>
 			<system value="http://snomed.info/sct"/>
@@ -31,7 +35,17 @@
 			<display value="Chest and Abdomen"/>
 		</bodySite>
 -->
-
-
+	</series>
+	<series>
+		<uid value="urn:oid:1.2.276.0.7230010.3.1.4.2139363186.8948.974458937.73"/>
+		<modality>
+			<system value="http://dicom.nema.org/resources/ontology/DCM"/>
+			<code value="SR"/>
+			<display value="SR Document"/>
+		</modality>
+		<instance>
+			<uid value="urn:oid:1.2.276.0.7230010.3.1.4.2139363186.8948.974458937.72"/>
+			<sopClass value="urn:oid:1.2.840.10008.5.1.4.1.1.88.11"/>
+		</instance>
 	</series>
 </ImagingStudy>

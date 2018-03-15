@@ -17,21 +17,49 @@
 	<indexed value="1995-06-08T09:30:47Z"/>
 	<content>
 		<attachment>
-						<extension url="accessProtocol">
-						<valueCodeableConcept>
-							<coding>
-								<system value="http://trilliumbridge.eu/fhir/CodeSystem/trilm2-codesystem-1"/>
-								<code value="WADO-RS" />
-								<display value="Web Access to DICOM Objects by RESTful Services (DICOM, part 18, section 6.5)" />
-							</coding>
-						</valueCodeableConcept>
-					</extension>
-					<contentType value="application/dicom"/>
-					<language value="en"/>
-					<url value="https://www.someplacehospital.org/radiology/studies/1.2.840.113674.514.212.200/series/1.2.276.0.7230010.3.1.4.2139363186.8948.974458937.73/instances/1.2.276.0.7230010.3.1.4.2139363186.8948.974458937.72"/>
-					<size value="2906"/>
-					<creation value="1995-06-08"/>
+			<extension url="accessProtocol">
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://trilliumbridge.eu/fhir/CodeSystem/trilm2-codesystem-1"/>
+						<code value="WADO-RS"/>
+						<display value="Web Access to DICOM Objects by RESTful Services (DICOM, part 18, section 6.5)"/>
+					</coding>
+				</valueCodeableConcept>
+			</extension>
+			<contentType value="application/dicom"/>
+			<language value="en"/>
+			<url value="https://www.someplacehospital.org/radiology/studies/1.2.840.113674.514.212.200/series/1.2.276.0.7230010.3.1.4.2139363186.8948.974458937.73/instances/1.2.276.0.7230010.3.1.4.2139363186.8948.974458937.72"/>
+			<size value="2906"/>
+			<creation value="1995-06-08"/>
 		</attachment>
 	</content>
-
+	<context>
+		<!-- OPTION A Include a set of related identifiers -->
+		<related>
+			<identifier>
+				<type>
+					<!--use a coded value when defined -->
+					<text value="Study Instance UID"/>
+				</type>
+				<system value="urn:ietf:rfc:3986"/>
+				<value value="urn:oid:1.2.840.113674.514.212.200"/>
+			</identifier>
+		</related>
+		<related>
+			<identifier>
+				<type>
+					<!--use a coded value when defined -->
+					<text value="Series Instance UID"/>
+				</type>
+				<system value="urn:ietf:rfc:3986"/>
+				<value value="urn:oid:1.2.276.0.7230010.3.1.4.2139363186.8948.974458937.73"/>
+			</identifier>
+		</related>
+		<!-- OPTION B refer the DICOM study -->
+		<related>
+			<ref>
+				<reference value="ImagingStudy/TII-ImagingStudy-1"/>
+			</ref>
+		</related>
+	</context>
 </DocumentReference>
