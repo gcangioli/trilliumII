@@ -9,12 +9,9 @@
 	</patient>
 	<procedureCode>
 		<coding>
-			<!-- NOTE: change with LOINC 30598-7 	CT Chest WO+W contr IV ? 
-is this the right code ? should be "abdomen and chest" ? change LOINC Code ?
--->
-			<system value="http://www.radlex.org"/>
-			<code value="RPID17"/>
-			<display value="CT Chest w and wo IV Contrast"/>
+			<system value="http://loinc.org/"/>
+			<code value="79103-8"/>
+			<display value="CT Abdomen W contrast IV"/>
 		</coding>
 	</procedureCode>
 	<reason>
@@ -27,10 +24,14 @@ is this the right code ? should be "abdomen and chest" ? change LOINC Code ?
 			<code value="CT"/>
 			<display value="Computed Tomography"/>
 		</modality>
+		<!-- Removed by this set of examples 
 		<bodySite>
 			<system value="http://snomed.info/sct"/>
 			<code value="R-FAB55"/>
 			<display value="Chest and Abdomen"/>
 		</bodySite>
+-->
+
+
 	</series>
 </ImagingStudy>
