@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir fhir-all-xsd/observation.xsd">
+	<!--        TRILLIUM II Project
+		Example of imaging sub-observation including textual Finding 
+    -->
+	<id value="trilliumII-example-img-subobs-1"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<p>
+				<b>FINDING</b>
+			</p>
+			<p>
+				Stress ECG Result:
+			</p>
+			<p>
+ The patient was stressed by dobutamine infusion at a rate of 10 mcg/kg/minute for three minutes, 20 mcg/kg/minute for three minutes, and 30 mcg/kg/minute for three additional minutes. Atropine 0.25 mg was given intravenously eight minutes into the dobutamine infusion. The resting electrocardiogram reveals a regular sinus rhythm with heart rate of 86 beats per minute, QS pattern in leads V1 and V2, and diffuse nonspecific T wave abnormality. The heart rate increased from 86 beats per minute to 155 beats per minute, which is about 90% of the maximum predicted target heart rate. The blood pressure increased from 130/80 to 160/70. A maximum of 1 mm J-junctional depression was seen with fast up sloping ST segments during dobutamine infusion. No ischemic ST segment changes were seen during dobutamine infusion or during the recovery process.</p>
+		</div>
+	</text>
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://hl7.org/fhir/observation-category"/>
+			<code value="imaging"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://dicom.nema.org/resources/ontology/DCM"/>
+			<code value="121071"/>
+			<display value="Finding"/>
+		</coding>
+	</code>
+	<!-- in the profile effectiveTime is 0...1 -->
+	<subject>
+		<!-- revise the URL if needed -->
+		<reference value="Patient/GE0514"/>
+	</subject>
+	<!-- in the profile effectiveTime is 0...1 -->
+	<effectiveDateTime value="2012-12-12"/>
+	<valueString value="Stress ECG Result: The patient was stressed by dobutamine infusion at a rate of 10 mcg/kg/minute for three minutes, 20 mcg/kg/minute for three minutes, and 30 mcg/kg/minute for three additional minutes. Atropine 0.25 mg was given intravenously eight minutes into the dobutamine infusion. The resting electrocardiogram reveals a regular sinus rhythm with heart rate of 86 beats per minute, QS pattern in leads V1 and V2, and diffuse nonspecific T wave abnormality. The heart rate increased from 86 beats per minute to 155 beats per minute, which is about 90% of the maximum predicted target heart rate. The blood pressure increased from 130/80 to 160/70. A maximum of 1 mm J-junctional depression was seen with fast up sloping ST segments during dobutamine infusion. No ischemic ST segment changes were seen during dobutamine infusion or during the recovery process.."/>
+</Observation>

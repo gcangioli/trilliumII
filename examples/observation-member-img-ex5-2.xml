@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir fhir-all-xsd/observation.xsd">
+	<!--        TRILLIUM II Project
+		Example of imaging sub-observation including textual Finding (Myocardial perfusion imaging:)
+    -->
+	<id value="trilliumII-example-img-subobs-5-2"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<p>
+				<b>FINDING</b>
+			</p>
+			<p>
+				 Myocardial perfusion imaging:
+			</p>
+			<p>
+ Resting myocardial perfusion SPECT imaging was carried out with 10.9 mCi of Tc-99m Myoview. Dobutamine infusion myocardial perfusion imaging and gated scan were carried out with 29.2 mCi of Tc-99m Myoview. The lung heart ratio is 0.36. Myocardial perfusion images were normal both at rest and with stress. Gated myocardial scan revealed normal regional wall motion and ejection fraction of 67%.</p>
+		</div>
+	</text>
+	
+	<!-- used the documentReference beacuse of the missing study and seires information -->
+	<extension url="http://trilliumbridge.eu/fhir/StructureDefinition/derivedfrom-observation-uv-trillium2">
+		<extension url="reference">
+			<valueReference>
+				<reference value="DocumentReference/1.2.276.0.7230010.3.1.3.1787205428.3112.1522315594.397907"/>
+			</valueReference>
+		</extension>
+		<extension url="referenceType">
+			<valueCodeableConcept>
+				<coding>
+					<system value="http://dicom.nema.org/resources/ontology/DCM"/>
+					<code value="121080"/>
+					<display value="Best illustration of finding"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+	</extension>
+
+	
+<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://hl7.org/fhir/observation-category"/>
+			<code value="imaging"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://dicom.nema.org/resources/ontology/DCM"/>
+			<code value="121071"/>
+			<display value="Finding"/>
+		</coding>
+	</code>
+	<!-- in the profile effectiveTime is 0...1 -->
+	<subject>
+		<!-- revise the URL if needed -->
+		<reference value="Patient/GE0514"/>
+	</subject>
+	<!-- in the profile effectiveTime is 0...1 -->
+	<effectiveDateTime value="2012-12-12"/>
+		<performer>
+		<!-- revise the URL if needed ; -->
+		<reference value="Practitioner/TII-Practitioner1"/>
+	</performer>
+	<performer>
+		<!-- revise the URL if needed -->
+		<reference value="Organization/TII-Organization1"/>
+	</performer>
+	<valueString value="Myocardial perfusion imaging: Resting myocardial perfusion SPECT imaging was carried out with 10.9 mCi of Tc-99m Myoview. Dobutamine infusion myocardial perfusion imaging and gated scan were carried out with 29.2 mCi of Tc-99m Myoview. The lung heart ratio is 0.36. Myocardial perfusion images were normal both at rest and with stress. Gated myocardial scan revealed normal regional wall motion and ejection fraction of 67%."/>
+	<component>
+		<code>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="70822001"/>
+				<display value="Cardiac ejection fraction"/>
+			</coding>
+		</code>
+		<valueQuantity>
+			<value value="67"/>
+			<unit value="Percent"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="%"/>
+		</valueQuantity>
+	</component>
+</Observation>

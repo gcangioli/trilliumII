@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir fhir-all-xsd/observation.xsd">
+	<!--        TRILLIUM II Project
+		Example of imaging observation including numeric results and text
+    -->
+	<id value="trilliumII-example-imaging-5"/>
+	<!-- UPDATE THE Narrative -->
+	<!-- to be decided how to deal wioth narratives here ? at the seciton level ? both ? -->
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<p>
+				<b>SPECT Heart perfusion and wall motion at rest and W stress and W Tl-201 IV and W Tc-99m Sestamibi IV</b>
+			</p>
+			<p>
+				* Stress test is negative for dobutamine-induced myocardial ischemia.
+				* Normal left ventricular size, regional wall motion, and ejection fraction
+			</p>
+		</div>
+	</text>
+	<extension url="http://hl7.org/fhir/StructureDefinition/event-partOf">
+		<valueReference>
+			<!-- check all the URL used for references and update them as needed -->
+			<reference value="ImagingStudy/TII-ImagingStudy-1"/>
+		</valueReference>
+	</extension>
+	<!-- used the documentReference beacuse of the missing study and seires information -->
+	<extension url="http://trilliumbridge.eu/fhir/StructureDefinition/derivedfrom-observation-uv-trillium2">
+		<extension url="reference">
+			<valueReference>
+				<reference value="DocumentReference/1.2.276.0.7230010.3.1.3.1787205428.3112.1522315594.397907"/>
+			</valueReference>
+		</extension>
+		<extension url="referenceType">
+			<valueCodeableConcept>
+				<coding>
+					<system value="http://dicom.nema.org/resources/ontology/DCM"/>
+					<code value="121080"/>
+					<display value="Best illustration of finding"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+	</extension>
+	<extension url="http://trilliumbridge.eu/fhir/StructureDefinition/derivedfrom-observation-uv-trillium2">
+		<extension url="reference">
+			<valueReference>
+				<reference value="DocumentReference/1.2.276.0.7230010.3.1.2.1787205428.2952.1522314310.246518"/>
+			</valueReference>
+		</extension>
+	</extension>
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://hl7.org/fhir/observation-category"/>
+			<code value="imaging"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://loinc.org/"/>
+			<code value="49569-7"/>
+			<display value="SPECT Heart perfusion and wall motion at rest and W stress and W Tl-201 IV and W Tc-99m Sestamibi IV"/>
+		</coding>
+		<text value="SPECT Heart perfusion and wall motion at rest and W stress and W Tl-201 IV and W Tc-99m Sestamibi IV (example-5)"/>
+	</code>
+	<!-- in the profile effectiveTime is 0...1 -->
+	<subject>
+		<!-- revise the URL if needed -->
+		<reference value="Patient/GE0514"/>
+	</subject>
+	<effectiveDateTime value="2012-12-12"/>
+	<performer>
+		<!-- revise the URL if needed ; -->
+		<reference value="Practitioner/TII-Practitioner1"/>
+	</performer>
+	<performer>
+		<!-- revise the URL if needed -->
+		<reference value="Organization/TII-Organization1"/>
+	</performer>
+	<valueString value="1. Stress test is negative for dobutamine-induced myocardial ischemia.
+2. Normal left ventricular size, regional wall motion, and ejection fraction."/>
+	<related>
+		<type value="has-member"/>
+		<target>
+			<reference value="Observation/trilliumII-example-img-subobs-5-1"/>
+		</target>
+	</related>
+	<related>
+		<type value="has-member"/>
+		<target>
+			<reference value="Observation/trilliumII-example-img-subobs-5-2"/>
+		</target>
+	</related>
+	<component>
+		<code>
+			<coding>
+				<system value="http://dicom.nema.org/resources/ontology/DCM"/>
+				<code value="121065"/>
+				<display value="Procedure Description"/>
+			</coding>
+		</code>
+		<valueString value="Dobutamine Myoview stress test."/>
+	</component>
+</Observation>
