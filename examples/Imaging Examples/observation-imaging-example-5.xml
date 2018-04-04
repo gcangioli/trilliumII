@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Observation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir fhir-all-xsd/observation.xsd">
+<Observation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/observation.xsd">
 	<!--        TRILLIUM II Project
 		Example of imaging observation including numeric results and text
     -->
@@ -12,18 +12,12 @@
 			<p>
 				<b>SPECT Heart perfusion and wall motion at rest and W stress and W Tl-201 IV and W Tc-99m Sestamibi IV</b>
 			</p>
-			<p>
-				* Stress test is negative for dobutamine-induced myocardial ischemia.
-				* Normal left ventricular size, regional wall motion, and ejection fraction
-			</p>
+			<ul>
+				<li> Stress test is negative for dobutamine-induced myocardial ischemia.</li>
+				<li> Normal left ventricular size, regional wall motion, and ejection fraction</li>
+			</ul>
 		</div>
 	</text>
-	<extension url="http://hl7.org/fhir/StructureDefinition/event-partOf">
-		<valueReference>
-			<!-- check all the URL used for references and update them as needed -->
-			<reference value="ImagingStudy/TII-ImagingStudy-1"/>
-		</valueReference>
-	</extension>
 	<!-- used the documentReference beacuse of the missing study and seires information -->
 	<extension url="http://trilliumbridge.eu/fhir/StructureDefinition/derivedfrom-observation-uv-trillium2">
 		<extension url="reference">
@@ -47,6 +41,11 @@
 				<reference value="DocumentReference/1.2.276.0.7230010.3.1.2.1787205428.2952.1522314310.246518"/>
 			</valueReference>
 		</extension>
+	</extension>
+	<extension url="http://hl7.org/fhir/StructureDefinition/event-reasonCode">
+		<valueCodeableConcept>
+			<text value="Chest pain, hypertension, type II diabetes mellitus."/>
+		</valueCodeableConcept>
 	</extension>
 	<status value="final"/>
 	<category>
@@ -79,6 +78,13 @@
 	</performer>
 	<valueString value="1. Stress test is negative for dobutamine-induced myocardial ischemia.
 2. Normal left ventricular size, regional wall motion, and ejection fraction."/>
+	<bodySite>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="80891009"/>
+			<display value="Heart"/>
+		</coding>
+	</bodySite>
 	<related>
 		<type value="has-member"/>
 		<target>

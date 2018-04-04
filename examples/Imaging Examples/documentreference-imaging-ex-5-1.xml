@@ -24,8 +24,7 @@
 		<extension url="XDSRepositoryUID">
 <valueId value="1.2.276.0.7230010.3.1.4.1787205428.3085.1522315419.821823"/>		
 		</extension>		
-		
-		</extension>
+			</extension>
 			<extension url="accessProtocol">
 				<valueCodeableConcept>
 					<coding>

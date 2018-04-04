@@ -7,7 +7,7 @@
 
 
 
-<ImagingStudy xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir fhir-all-xsd/imagingstudy.xsd">
+<ImagingStudy xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/imagingstudy.xsd">
 	<id value="TII-ImagingStudy-5-1"/>
 
 	<!-- Study UID Missing  to be changed --> 
@@ -33,12 +33,11 @@
 			<code value="NM"/>
 			<display value="Nuclear Medicine"/>
 		</modality>
-		<!-- Removed by this set of examples 
+
 		<bodySite>
 			<system value="http://snomed.info/sct"/>
-			<code value="R-FAB55"/>
-			<display value="Chest and Abdomen"/>
+			<code value="80891009"/>
+			<display value="Heart"/>
 		</bodySite>
--->
 	</series>	
 </ImagingStudy>
