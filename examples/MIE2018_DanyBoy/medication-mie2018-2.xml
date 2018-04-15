@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Medication xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/medication.xsd">
+	<id value="demo-medication-2"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="320176004"/>
+			<display value="Salbutamol 100micrograms inhaler (product)"/>
+		</coding>
+		<coding>
+			<system value="http://www.whocc.no/atc"/>
+			<code value="R03AC02"/>
+			<display value="salbutamol"/>
+		</coding>
+		<text value="Broncovaleas spray"/>
+	</code>
+	<form>
+		<coding>
+			<system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+			<code value="10808000"/>
+			<display value="Nasal spray, solution"/>
+		</coding>
+	</form>
+	<ingredient>
+		<itemCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="372897005"/>
+				<display value="Salbutamol (substance)"/>
+			</coding>
+		</itemCodeableConcept>
+	</ingredient>
+</Medication>

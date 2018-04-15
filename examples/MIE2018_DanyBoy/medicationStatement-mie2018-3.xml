@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/medicationstatement.xsd">
+	<id value="demo-medstat-1-3"/>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="Medication/demo-medication-3"/>
+	</medicationReference>
+	<subject>
+		<reference value="Patient/demo-patient-1"/>
+	</subject>
+	<taken value="na"/>
+	<dosage>
+		<text value="For 3-5 days 1 tablet every morning and evening in case of serious attack"/>
+		<timing>
+			<repeat>
+				<boundsRange>
+					<low>
+						<value value="3"/>
+						<unit value="days"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="d"/>
+					</low>
+					<high>
+						<value value="5"/>
+						<unit value="days"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="d"/>
+					</high>
+				</boundsRange>
+				<when value="MORN"/>
+				<when value="EVE"/>
+			</repeat>
+		</timing>
+		<asNeededBoolean value="true"/>
+		<doseQuantity>
+			<value value="1"/>
+			<unit value="tablet"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="1"/>
+		</doseQuantity>
+	</dosage>
+</MedicationStatement>

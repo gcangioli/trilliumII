@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/medicationstatement.xsd">
+	<id value="demo-medstat-1-2"/>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="Medication/demo-medication-2"/>
+	</medicationReference>
+	<subject>
+		<reference value="Patient/demo-patient-1"/>
+	</subject>
+	<taken value="na"/>
+	<dosage>
+		<text value="6-8 puff 3 per day in case of Wheezing"/>
+		<timing>
+			<repeat>
+				<period value="3"/>
+				<periodUnit value="d"/>
+			</repeat>
+		</timing>
+		<asNeededCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="56018004"/>
+				<display value="Wheezing (finding)"/>
+			</coding>
+		</asNeededCodeableConcept>
+		<doseRange>
+			<low>
+				<value value="6"/>
+				<unit value="puff"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="1"/>
+			</low>
+			<high>
+				<value value="8"/>
+				<unit value="puff"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="1"/>
+			</high>
+		</doseRange>
+	</dosage>
+</MedicationStatement>

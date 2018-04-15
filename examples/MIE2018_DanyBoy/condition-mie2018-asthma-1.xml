@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/condition.xsd">
+	<id value="demo-cond-asthma-1"/>
+	<extension url="http://hl7.org/fhir/StructureDefinition/condition-dueTo">
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="256259004"/>
+				<display value="pollen"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<extension url="http://hl7.org/fhir/StructureDefinition/condition-dueTo">
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="260147004"/>
+				<display value="House dust mite"/>
+			</coding>
+		</valueCodeableConcept>
+	</extension>
+	<extension url="http://hl7.org/fhir/StructureDefinition/condition-dueTo">
+		<valueCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="312133006"/>
+				<display value="Viral respiratory infection"/>
+			</coding>
+			<text value="viral respiratory tract infections"/>
+		</valueCodeableConcept>
+	</extension>
+	<clinicalStatus value="active"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="195967001"/>
+			<display value="Asthma (disorder)"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/demo-patient-1"/>
+	</subject>
+	<onsetDateTime value="2009"/>
+	<asserter>
+		<reference value="Practitioner/demo-practitioner-1"/>
+	</asserter>
+	<evidence>
+		<detail>
+			<reference value="Observation/demo-observation-1-1"/>
+		</detail>
+	</evidence>
+</Condition>

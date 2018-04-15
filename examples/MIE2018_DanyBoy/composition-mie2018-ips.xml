@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/composition.xsd">
+	<id value="demo-ips-dany-boy-1"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/composition-uv-ips"/>
+	</meta>
+	<status value="final"/>
+	<type>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="60591-5"/>
+			<display value="Patient Summary"/>
+		</coding>
+	</type>
+	<subject>
+		<reference value="Patient/demo-patient-1"/>
+	</subject>
+	<date value="2018-04-12T15:19:00+02:00"/>
+	<author>
+		<reference value="Practitioner/demo-practitioner-1"/>
+	</author>
+	<title value="Patient Summary - Boy with Asthma "/>
+	<confidentiality value="N"/>
+	<attester>
+		<mode value="legal"/>
+		<time value="2017-07-20T14:30:00+01:00"/>
+		<party>
+			<reference value="Practitioner/demo-practitioner-1"/>
+		</party>
+	</attester>
+	<event>
+		<code>
+			<coding>
+				<system value="http://hl7.org/fhir/v3/ActClass"/>
+				<code value="PCPR"/>
+			</coding>
+		</code>
+		<period>
+			<end value="2018-04-12T15:19:00+02:00"/>
+		</period>
+	</event>
+	<section>
+		<title value="Active Problems"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="11450-4"/>
+				<display value="Problem list"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>Diagnosis of <xhtml:b>asthma</xhtml:b> made when he was 5 years old.
+			
+<xhtml:p>He has many acute attacks which are triggered by cold weather, pollen and house dust mite, as well as viral respiratory tract infections.</xhtml:p>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="Condition/demo-cond-asthma-1"/>
+		</entry>
+	</section>
+	<section>
+		<title value="Medication"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="10160-0"/>
+				<display value="Medication use"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:table>
+					<xhtml:thead>
+						<xhtml:tr>
+							<xhtml:th>Medication</xhtml:th>
+							<xhtml:th>Strength</xhtml:th>
+							<xhtml:th>Form</xhtml:th>
+							<xhtml:th>Dosage</xhtml:th>
+							<xhtml:th>Comment</xhtml:th>
+						</xhtml:tr>
+					</xhtml:thead>
+					<xhtml:tbody>
+						<xhtml:tr>
+							<xhtml:td>Fluspiral</xhtml:td>
+							<xhtml:td>50 mg</xhtml:td>
+							<xhtml:td>nasal spray</xhtml:td>
+							<xhtml:td>2 puffs each morning and evening</xhtml:td>
+							<xhtml:td>with spacer up to end of May</xhtml:td>
+						</xhtml:tr>
+						<xhtml:tr>
+							<xhtml:td>Broncovaleas spray</xhtml:td>
+							<xhtml:td>100 mg</xhtml:td>
+							<xhtml:td>nasal spray</xhtml:td>
+							<xhtml:td>6-8 puff 3 per day</xhtml:td>
+							<xhtml:td>In case of Wheezing</xhtml:td>
+						</xhtml:tr>
+						<xhtml:tr>
+							<xhtml:td>Deltacortene</xhtml:td>
+							<xhtml:td>25 mg</xhtml:td>
+							<xhtml:td>tablet</xhtml:td>
+							<xhtml:td>1 tbl every morning and evening</xhtml:td>
+							<xhtml:td>In case of serious attacks for 3-5 days</xhtml:td>
+						</xhtml:tr>
+					</xhtml:tbody>
+				</xhtml:table>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="MedicationStatement/demo-medstat-1-1"/>
+		</entry>
+		<entry>
+			<reference value="MedicationStatement/demo-medstat-1-2"/>
+		</entry>
+		<entry>
+			<reference value="MedicationStatement/demo-medstat-1-3"/>
+		</entry>
+	</section>
+	<section>
+		<title value="Allergies and Intolerances"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="48765-2"/>
+				<display value="Allergies and/or adverse reactions"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>Severe asthma attacks triggered by <xhtml:b>pollen</xhtml:b> and <xhtml:b>house dust mite</xhtml:b>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="AllergyIntolerance/demo-aoi-1"/>
+		</entry>
+		<entry>
+			<reference value="AllergyIntolerance/demo-aoi-2"/>
+		</entry>
+	</section>
+	<section>
+		<title value="Plan of Treatment"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="18776-5"/>
+				<display value="Plan of care note"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div> <xhtml:p>Allergic control with spirometry after the summer or sooner if needed</xhtml:p> 
+<xhtml:p>Free Diet</xhtml:p>			
+			</xhtml:div>
+		</text>
+	</section>
+	<section>
+		<title value="Results"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="30954-2"/>
+				<display value="Results"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>		
+<xhtml:div>
+				<xhtml:h1>Peak flow measurements</xhtml:h1>
+				<xhtml:p>Personal best peak flow 432 L/min</xhtml:p>
+				<xhtml:table>
+					<xhtml:thead>
+						<xhtml:tr>
+							<xhtml:th>Date</xhtml:th>
+							<xhtml:th>L/min</xhtml:th>
+							<xhtml:th>% on the personal best peak flow</xhtml:th>
+						</xhtml:tr>
+					</xhtml:thead>
+					<xhtml:tbody>
+						<xhtml:tr>
+							<xhtml:td>2018-04-11</xhtml:td>
+							<xhtml:td>281</xhtml:td>
+							<xhtml:td>65%</xhtml:td>
+						</xhtml:tr>
+						<xhtml:tr>
+							<xhtml:td>2018-04-04</xhtml:td>
+							<xhtml:td>410</xhtml:td>
+							<xhtml:td>95%</xhtml:td>
+						</xhtml:tr>
+						<xhtml:tr>
+							<xhtml:td>2018-03-28</xhtml:td>
+							<xhtml:td>346</xhtml:td>
+							<xhtml:td>80%</xhtml:td>
+						</xhtml:tr>
+						<xhtml:tr>
+							<xhtml:td>2018-03-21</xhtml:td>
+							<xhtml:td>302</xhtml:td>
+							<xhtml:td>70%</xhtml:td>
+						</xhtml:tr>
+						<xhtml:tr>
+							<xhtml:td>2018-04-01</xhtml:td>
+							<xhtml:td>432</xhtml:td>
+							<xhtml:td>100%</xhtml:td>
+						</xhtml:tr>
+					</xhtml:tbody>
+				</xhtml:table>
+	</xhtml:div>
+		</text>
+		<entry>
+			<reference value="Observation/demo-obs-pef-1"/>
+		</entry>
+		<entry>
+			<reference value="Observation/demo-obs-pef-2"/>
+		</entry>
+				<entry>
+			<reference value="Observation/demo-obs-pef-3"/>
+		</entry>
+				<entry>
+			<reference value="Observation/demo-obs-pef-4"/>
+		</entry>
+				<entry>
+			<reference value="Observation/demo-obs-pef-5"/>
+		</entry>
+	</section>
+</Composition>

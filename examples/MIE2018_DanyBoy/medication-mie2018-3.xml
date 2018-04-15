@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Medication xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/medication.xsd">
+	<id value="demo-medication-3"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="116602009"/>
+			<display value="Prednisone (substance)"/>
+		</coding>
+		<coding>
+			<system value="http://www.whocc.no/atc"/>
+			<code value="H02AB07"/>
+			<display value="prednisone"/>
+		</coding>
+		<text value="Deltacortene tablet 25 mg"/>
+	</code>
+	<form>
+		<coding>
+			<system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+			<code value="10219000"/>
+			<display value="Tablet"/>
+		</coding>
+	</form>
+	<ingredient>
+		<itemCodeableConcept>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="116602009"/>
+				<display value="Prednisone (substance)"/>
+			</coding>
+		</itemCodeableConcept>
+		<amount>
+			<numerator>
+				<value value="25"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="mg"/>
+			</numerator>
+			<denominator>
+				<value value="1"/>
+				<unit value="tablet"/>
+				<system value="http://unitsofmeasure.org"/>
+				<code value="1"/>
+			</denominator>
+		</amount>
+	</ingredient>
+</Medication>
