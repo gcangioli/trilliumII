@@ -222,4 +222,91 @@
 			<reference value="Observation/demo-obs-pef-5"/>
 		</entry>
 	</section>
+	
+
+
+<section>
+		<title value="Vital Signs"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="8716-3"/>
+				<display value="Vital Signs"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>		
+<xhtml:div>
+				<xhtml:h1>Body height and weight</xhtml:h1>
+				<xhtml:table>
+					<xhtml:thead>
+						<xhtml:tr>
+							<xhtml:th>Date</xhtml:th>
+							<xhtml:th>height [cm]</xhtml:th>
+							<xhtml:th>weight [kg]</xhtml:th>
+						</xhtml:tr>
+					</xhtml:thead>
+					<xhtml:tbody>
+					<xhtml:tr>
+							<xhtml:td>2013-01-10</xhtml:td>
+							<xhtml:td>142</xhtml:td>
+							<xhtml:td>37.3</xhtml:td>
+						</xhtml:tr>
+						<xhtml:tr>
+							<xhtml:td>2015-02-10</xhtml:td>
+							<xhtml:td>152</xhtml:td>
+							<xhtml:td>46.3</xhtml:td>
+						</xhtml:tr>
+						<xhtml:tr>
+							<xhtml:td>2016-04-25</xhtml:td>
+							<xhtml:td>162</xhtml:td>
+							<xhtml:td>51.3</xhtml:td>
+						</xhtml:tr>
+						<xhtml:tr>
+							<xhtml:td>2017-05-10</xhtml:td>
+							<xhtml:td>170</xhtml:td>
+							<xhtml:td>55.2</xhtml:td>
+						</xhtml:tr>
+						<xhtml:tr>
+							<xhtml:td>2018-03-12</xhtml:td>
+							<xhtml:td>175</xhtml:td>
+							<xhtml:td>62.5</xhtml:td>
+						</xhtml:tr>
+					</xhtml:tbody>
+				</xhtml:table>
+	</xhtml:div>
+		</text>
+		<entry>
+			<reference value="Observation/demo-vitalsign-bw-1"/>
+		</entry>
+		<entry>
+			<reference value="Observation/demo-vitalsign-bw-2"/>
+		</entry>
+				<entry>
+			<reference value="Observation/demo-vitalsign-bw-3"/>
+		</entry>
+				<entry>
+			<reference value="Observation/demo-vitalsign-bw-4"/>
+		</entry>
+				<entry>
+			<reference value="Observation/demo-vitalsign-bw-5"/>
+		</entry>
+				<entry>
+			<reference value="Observation/demo-vitalsign-bh-1"/>
+		</entry>
+		<entry>
+			<reference value="Observation/demo-vitalsign-bh-2"/>
+		</entry>
+				<entry>
+			<reference value="Observation/demo-vitalsign-bh-3"/>
+		</entry>
+				<entry>
+			<reference value="Observation/demo-vitalsign-bh-4"/>
+		</entry>
+				<entry>
+			<reference value="Observation/demo-vitalsign-bh-5"/>
+		</entry>
+	</section>	
+	
+	
 </Composition>

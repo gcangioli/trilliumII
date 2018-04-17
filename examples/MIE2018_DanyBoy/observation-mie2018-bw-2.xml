@@ -1,0 +1,26 @@
+<Observation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/observation.xsd">
+	<id value="demo-vitalsign-bw-2"/>
+	<status value="final"/>
+	<category>
+	<coding>
+			<system value="http://hl7.org/fhir/observation-category"/>
+			<code value="vital-signs"/>
+			</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="29463-7"/>
+			<display value="Body weight"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/demo-patient-1"/>
+	</subject>
+	<effectiveDateTime value="2015-02-10"/>
+	<valueQuantity>
+		<value value="46.3"/>
+		<system value="http://unitsofmeasure.org"/>
+		<code value="kg"/>
+	</valueQuantity>
+</Observation>
