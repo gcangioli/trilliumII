@@ -1,0 +1,31 @@
+<Observation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/observation.xsd">
+	<id value="demo-spiro-1"/>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="81459-0"/>
+			<display value="Spirometry panel"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/demo-patient-1"/>
+	</subject>
+	<effectiveDateTime value="2018-03-12"/>
+<related>
+<type value="has-member"/>
+	<target ><reference value="Observation/demo-spiro-mbr-1-1"/></target>
+</related>
+<related>
+<type value="has-member"/>
+	<target ><reference value="Observation/demo-spiro-mbr-1-2"/></target>
+</related>
+<related>
+<type value="has-member"/>
+	<target ><reference value="Observation/demo-spiro-mbr-1-3"/></target>
+</related>
+<related>
+<type value="has-member"/>
+	<target ><reference value="Observation/demo-spiro-mbr-1-4"/></target>
+</related>	
+</Observation>

@@ -13,16 +13,17 @@
 	</subject>
 	<effectiveDateTime value="2018-04-11"/>
 	<valueQuantity>
-		<value value="281"/>
+		<value value="391"/>
 		<system value="http://unitsofmeasure.org"/>
 		<code value="L/min"/>
 	</valueQuantity>
-	<referenceRange>
+			<referenceRange>
+		<!-- calculated as the80% of the personali max PEF -->
 		<low>
-			<value value="346"/>
+			<value value="368"/>
 			<system value="http://unitsofmeasure.org"/>
 			<code value="L/min"/>
 		</low>
-		<text value="Personal best peak flow 432 L/min"/>
+		<text value="Personal best peak flow 460 L/min"/>
 	</referenceRange>
 </Observation>

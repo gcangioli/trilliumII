@@ -1,17 +1,15 @@
 <Observation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/observation.xsd">
-	<id value="demo-vitalsign-bw-5"/>
+	<id value="demo-spiro-mbr-1-3"/>
 	<status value="final"/>
-	<category>
-	<coding>
-			<system value="http://hl7.org/fhir/observation-category"/>
-			<code value="vital-signs"/>
-			</coding>
-	</category>
+<!--
+20150-9   FEV1	19868-9    Forced vital capacity [Volume] Respiratory system by Spirometry      L	19926-5 - FEV1/​FVC	33452-4  - Maximum expiratory gas flow Respiratory system airway
+
+-->
 	<code>
 		<coding>
-		<system value="http://loinc.org"/>
-			<code value="29463-7"/>
-			<display value="Body weight"/>
+			<system value="http://loinc.org"/>
+			<code value="19926-5"/>
+			<display value="FEV1/​FVC"/>
 		</coding>
 	</code>
 	<subject>
@@ -19,8 +17,8 @@
 	</subject>
 	<effectiveDateTime value="2018-03-12"/>
 	<valueQuantity>
-		<value value="69.3"/>
+		<value value="0.82"/>
 		<system value="http://unitsofmeasure.org"/>
-		<code value="kg"/>
+		<code value="1"/>
 	</valueQuantity>
 </Observation>
