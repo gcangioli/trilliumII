@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Encounter xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/encounter.xsd">
+	<id value="TII-ED-encounter-1"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">Emergency visit  @example</div>
+	</text>
+	<status value="finished"/>
+	<class>
+		<system value="http://hl7.org/fhir/v3/ActCode"/>
+			<code value="EMER"/>
+			<display value="emergency"/>
+	</class>
+	<subject>
+		<reference value="Patient/pat-enc-1"/>
+	</subject>
+	<period>
+		<start value="2018-06-19T07:15:00+02:00"/>
+		<end value="2018-06-19T15:20:00+02:00"/>
+	</period>
+<reason><text value="Acute asthma attack"/></reason>
+	<location>
+		<location>
+			<display value="Emergency Department @some hospital"/>
+		</location>
+		<status value="active"/>
+	<period>
+		<start value="2018-06-19T07:15:00+02:00"/>
+		<end value="2018-06-19T15:20:00+02:00"/>
+	</period>
+	</location>
+		<serviceProvider>
+	<reference value="Organization/TII-ED-Organization"></reference>
+	</serviceProvider>
+</Encounter>
