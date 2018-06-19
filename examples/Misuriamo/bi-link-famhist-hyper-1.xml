@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FamilyMemberHistory xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/familymemberhistory.xsd">
+<id value="bi-link-famhist-hyper-1"/>
+	<status value="completed"/>
+	<patient><reference value="Patient/patient-bi-link-test-1"/></patient>
+	<relationship><coding><system value="http://hl7.org/fhir/ValueSet/v3-FamilyMember"/><code  value="FAMMEMB"/></coding></relationship>
+	<condition>
+	<!-- to be checked if SNOMED CT CAN be used -->
+	<!-- no hyperthension 160273004 ; No family history: Hypertension (situation) -->
+		<code><coding><system value="http://snomed.info/sct "/><code value="38341003"/><display value="Hypertension"/></coding></code>
+	</condition>
+</FamilyMemberHistory>

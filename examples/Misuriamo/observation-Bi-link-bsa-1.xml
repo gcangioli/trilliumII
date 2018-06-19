@@ -1,0 +1,28 @@
+<Observation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../fhir-all-xsd/observation.xsd">
+	<id value="bi-link-vitalsign-bsa-1"/>
+	<status value="final"/>
+	<category>
+	<coding>
+			<system value="http://hl7.org/fhir/observation-category"/>
+			<code value="vital-signs"/>
+			</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="3140-1"/>
+			<display value="BSA Derived"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/patient-bi-link-test-1"/>
+	</subject>
+	<!-- date when the measure has been taken -->
+	<effectiveDateTime value="2018-05-31"/>
+	<valueQuantity>
+		<value value="1.996"/>
+		<unit value="square meters" />
+		<system value="http://unitsofmeasure.org"/>
+		<code value="m2"/>
+	</valueQuantity>
+</Observation>
