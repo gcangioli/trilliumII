@@ -3,6 +3,7 @@
     <meta>
         <profile value="http://trilliumbridge.eu/fhir/StructureDefinition/allergyintolerance-uv-trillium2" />
     </meta>
+    <clinicalStatus value="active"/>
     <verificationStatus value="confirmed"/>
 	<category value="food"/>
 	<criticality value="high"/>
