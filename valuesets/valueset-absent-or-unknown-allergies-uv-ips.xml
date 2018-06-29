@@ -1,0 +1,60 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="absent-or-unknown-allergies-uv-ips"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    </meta>
+    <url value="http://hl7.org/fhir/ips/ValueSet/absent-or-unknown-allergies-uv-ips"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.11.22.9"/>
+    </identifier>
+    <version value="2017-03-29T00:00:00"/>
+    <name value="IPSNoAllergiesInfo"/>
+    <title value="Absent or Unknown Allergies"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="HL7 International"/>
+    <contact>
+        <name value="HL7 International"/>
+        <telecom>
+            <system value="phone"/>
+            <value value="+1 734 677 7777 "/>
+        </telecom>
+        <telecom>
+            <system value="fax"/>
+            <value value="+1 734 677 6622"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="info@hl7.org"/>
+        </telecom>
+    </contact>
+    <description value="Absent or Unknown Allergies"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown"/>
+            <concept>
+                <code value="no-allergy-info"/>
+                <display value="No information about allergies"/>
+            </concept>
+            <concept>
+                <code value="no-known-allergies"/>
+                <display value="No known allergies"/>
+            </concept>
+            <concept>
+                <code value="no-known-medication-allergies"/>
+                <display value="No known medication allergies"/>
+            </concept>
+            <concept>
+                <code value="no-known-environmental-allergies"/>
+                <display value="No known environmental allergies"/>
+            </concept>
+            <concept>
+                <code value="no-known-food-allergies"/>
+                <display value="No known food allergies"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
