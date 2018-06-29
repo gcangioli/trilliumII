@@ -1,0 +1,35 @@
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+    <id value="allergy-cat-example-1" />
+    <meta>
+        <profile value="http://trilliumbridge.eu/fhir/StructureDefinition/allergyintolerance-uv-trillium2" />
+    </meta>
+    <verificationStatus value="confirmed"/>
+	<category value="food"/>
+	<criticality value="high"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="412071004"/>
+            <display value="Wheat"/>
+        </coding>
+    </code>
+    <patient>
+        <reference value="Patient/patient-example"/>
+    </patient>
+	<onsetDateTime value="2010"/>
+	<assertedDate value="2017-10-09T14:58:00+11:00"/> 
+	<asserter>
+		<reference value="Practitioner/practitioner-example"/>
+	</asserter>
+	<reaction>  
+		<manifestation> 
+			<coding> 
+				<system value="http://snomed.info/sct"/> 
+				<code value="762279002"/> 
+				<display value="Functional nausea"/> 
+			</coding> 
+		</manifestation> 
+		<onset value="2017-09-09"/> 
+		<severity value="moderate"/> 
+	</reaction> 	
+</AllergyIntolerance>

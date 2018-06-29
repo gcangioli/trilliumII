@@ -1,0 +1,36 @@
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+    <id value="allergy-cat-example-2" />
+    <meta>
+        <profile value="http://trilliumbridge.eu/fhir/StructureDefinition/allergyintolerance-uv-trillium2" />
+    </meta>
+    <verificationStatus value="confirmed"/>
+	<category value="medication"/>
+	<criticality value="high"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="387207008"/>
+            <display value="Ibuprofen"/>
+        </coding>
+    </code>
+    <patient>
+        <reference value="Patient/patient-example"/>
+    </patient>
+	<onsetDateTime value="2012"/> 
+	<assertedDate value="2018-05-09T16:02:00+01:00"/> 
+	<asserter>
+		<reference value="Practitioner/practitioner-example"/>
+	</asserter>
+	<reaction>  
+		<manifestation> 
+			<coding> 
+				<system value="http://snomed.info/sct"/> 
+				<code value="39579001"/> 
+				<display value="Anaphylactic reaction"/> 
+			</coding> 
+		</manifestation> 
+		<description value="Challenge Protocol. Severe reaction to Ibuprofen. Epinephrine administered"/> 
+		<onset value="2012-06-12"/> 
+		<severity value="severe"/> 
+	</reaction> 	
+</AllergyIntolerance>

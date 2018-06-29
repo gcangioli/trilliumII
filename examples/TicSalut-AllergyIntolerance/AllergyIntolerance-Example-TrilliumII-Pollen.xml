@@ -1,0 +1,35 @@
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+    <id value="allergy-cat-example-3" />
+    <meta>
+        <profile value="http://trilliumbridge.eu/fhir/StructureDefinition/allergyintolerance-uv-trillium2" />
+    </meta>
+    <verificationStatus value="confirmed"/>
+	<category value="environment"/>
+	<criticality value="low"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="256259004"/>
+            <display value="Pollen"/>
+        </coding>
+    </code>
+    <patient>
+        <reference value="Patient/patient-example"/>
+    </patient>
+	<onsetDateTime value="2008"/> 
+	<assertedDate value="2015-10-09T14:58:00+11:00"/> 
+	<asserter>
+		<reference value="Practitioner/practitioner-example"/>
+	</asserter>
+	<reaction>  
+		<manifestation> 
+			<coding> 
+				<system value="http://snomed.info/sct"/> 
+				<code value="82297005"/> 
+				<display value="Congestion of nasal sinus"/> 
+			</coding> 
+		</manifestation> 
+		<onset value="2015-06-12"/> 
+		<severity value="mild"/> 
+	</reaction> 	
+</AllergyIntolerance>
