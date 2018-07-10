@@ -5,7 +5,7 @@
 
 <Organization xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir organization.xsd">
 	<!-- all the IDs used needs to be revised and harmonized -->
-	<id value="TII-Organization1"/>
+	<id value="TII-ED-Organization"/>
 	<name value="Some Emergency Department"/>
 	<address>
 		<line value="123 Street Address"/>
