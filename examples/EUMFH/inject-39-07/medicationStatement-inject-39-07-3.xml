@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/medicationstatement.xsd">
+	<id value="eufmh-39-07-3"/>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="Medication/eufmh-39-07-3"/>
+		<display value="Captopril" />
+	</medicationReference>
+	<effectivePeriod>
+		<start value="2014"/>
+	</effectivePeriod>
+	<subject>
+		<reference value="Patient/eufmh-39-07"/>
+		<display value="ZMAJE	7 (Inject 39-07)"/>
+	</subject>
+	<taken value="na"/>
+	<dosage>
+		<text value="150 mg/day"/>
+	</dosage>
+</MedicationStatement>
