@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Device xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/device.xsd">
+	<id value="eufmh-70-275-1"/>
+	<type>
+		<coding>
+			<system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
+			<code value="no-known-devices"/>
+			<display value="No known devices in use"/>
+		</coding>
+	</type>
+	<patient>
+		<reference value="Patient/eufmh-70-275"/>
+		<display value="ZMAJE	275 (Inject 70-275)"/>
+	</patient>
+</Device>

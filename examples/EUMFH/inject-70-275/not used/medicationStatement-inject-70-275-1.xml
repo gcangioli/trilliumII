@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/medicationstatement.xsd">
+	<id value="eufmh-70-275-1"/>
+	<status value="active"/>
+	<medicationReference>
+		<!-- <reference value="Medication/eufmh-70-275-1"/> -->
+		<display value="Psychotherapy" />
+	</medicationReference>
+	<effectivePeriod>
+		<start value="2008"/>
+	</effectivePeriod>
+	<subject>
+		<reference value="Patient/eufmh-70-275"/>
+		<display value="ZMAJE	275 (Inject 70-275)"/>
+	</subject>
+	<taken value="na"/>
+</MedicationStatement>
