@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/condition.xsd">
+    <id value="eufmh-39-02-2"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="433144002"/>
+            <display value="Chronic kidney disease, stage 3"/>
+        </coding>
+        <text value="Chronic kidney disease, stage 3"/>
+    </code>
+    <subject>
+        <reference value="Patient/eufmh-39-02"/>
+        <display value="Doe John (Inject 39-02)"/>
+    </subject>
+    <onsetDateTime value="2015-01-01"/>
+    <asserter>
+        <reference value="Practitioner/eufmh-39-02"/>
+        <display value="Dr. Anna Karlsson"/>
+    </asserter>
+</Condition>

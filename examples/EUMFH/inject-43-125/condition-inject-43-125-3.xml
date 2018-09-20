@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/condition.xsd">
+    <id value="eufmh-43-125-3"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="433144002"/>
+            <display value="Chronic kidney disease, stage 3"/>
+        </coding>
+        <text value="Chronic kidney disease, stage 3"/>
+    </code>
+    <subject>
+        <reference value="Patient/eufmh-43-125"/>
+        <display value="Isabella García (Inject 43-125)"/>
+    </subject>
+    <onsetDateTime value="2015-09-10"/>
+    <asserter>
+        <reference value="Practitioner/eufmh-43-125"/>
+        <display value="Dr. Anna Karlsson"/>
+    </asserter>
+</Condition>

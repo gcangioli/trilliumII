@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/medicationstatement.xsd">
+    <id value="eufmh-39-02-7"/>
+    <status value="active"/>
+    <medicationReference>
+        <reference value="Medication/eufmh-39-02-7"/>
+        <display value="Timolol" />
+    </medicationReference>
+    <effectivePeriod>
+        <start value="1998-08-15"/>
+    </effectivePeriod>
+    <subject>
+        <reference value="Patient/eufmh-39-02"/>
+        <display value="Doe John (Inject 39-02)"/>
+    </subject>
+    <taken value="y"/>
+    <dosage>
+        <text value="0.25 %, 1 times per 2 day"/>
+        <timing>
+            <repeat>
+                <frequency value="1"/>
+                <period value="2"/>
+                <periodUnit value="d"/>
+            </repeat>
+        </timing>
+        <doseQuantity>
+            <value value="0.25"/>
+            <unit value="%"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="%"/>
+        </doseQuantity>
+    </dosage>
+</MedicationStatement>

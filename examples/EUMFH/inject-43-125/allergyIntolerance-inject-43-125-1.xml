@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AllergyIntolerance xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/allergyintolerance.xsd">
+    <id value="eufmh-43-125-1"/>
+    <clinicalStatus value="active"/>
+    <verificationStatus value="confirmed"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="9458007"/>
+            <display value="Elastic bandage, device (physical object)"/>
+        </coding>
+    </code>
+    <patient>
+        <reference value="Patient/eufmh-43-125"/>
+        <display value="Isabella García (Inject 43-125)" />
+    </patient>
+</AllergyIntolerance>
