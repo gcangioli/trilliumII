@@ -6,8 +6,8 @@
     <code>
         <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="9458007"/>
-            <display value="Elastic bandage, device (physical object)"/>
+            <code value="350792003"/>
+            <display value="Plasters (physical object)"/>
         </coding>
     </code>
     <patient>

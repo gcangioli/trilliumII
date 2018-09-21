@@ -1,6 +1,13 @@
 <Observation xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir  ../../../../../fhir-all-xsd/observation.xsd">
     <id value="eufmh-43-125-1"/>
     <status value="final"/>
+	<category>
+        <coding>
+            <system value="http://hl7.org/fhir/observation-category"/>
+            <code value="social-history"/>
+            <display value="Social History"/>
+        </coding>
+    </category>
     <code>
         <coding>
             <system value="http://loinc.org"/>
