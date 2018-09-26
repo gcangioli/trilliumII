@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Condition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/condition.xsd">
-	<id value="eufmh-70-275-2"/>
+	<id value="eumfh-70-275-2"/>
 	<clinicalStatus value="active"/>
 	<code>
 		<coding>
@@ -11,7 +11,7 @@
 		<text value="Previous diagnosis (at age of 12 years) of Personality disorders NOS"/>
 	</code>
 	<subject>
-		<reference value="Patient/eufmh-70-275"/>
+		<reference value="Patient/eumfh-70-275"/>
 		<display value="ZMAJE	275 (Inject 70-275)"/>
 	</subject>
  <onsetDateTime value="2000" />

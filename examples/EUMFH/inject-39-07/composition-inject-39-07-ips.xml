@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Composition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/composition.xsd">
-	<id value="eufmh-39-07-ips-1"/>
+	<id value="eumfh-39-07"/>
 	<status value="final"/>
 	<type>
 		<coding>
@@ -10,12 +10,12 @@
 		</coding>
 	</type>
 	<subject>
-		<reference value="Patient/eufmh-39-07"/>
+		<reference value="Patient/eumfh-39-07"/>
 		<display value="ZMAJE	7 (Inject 39-07)" />
 	</subject>
 	<date value="2018-07-10T15:22:00+02:00"/>
 	<author>
-		<reference value="Practitioner/eufmh-39-07"/>
+		<reference value="Practitioner/eumfh-39-07"/>
 		<display value="Dr. Mark Antonio"/>
 	</author>
 	<title value="Patient Summary - Inject 39-07"/>
@@ -34,7 +34,7 @@
 			<xhtml:div>No Known Allergies</xhtml:div>
 		</text>
 		<entry>
-			<reference value="AllergyIntolerance/eufmh-39-07-1"/>
+			<reference value="AllergyIntolerance/eumfh-39-07-1"/>
 		</entry>
 	</section>
 	<section>
@@ -57,15 +57,15 @@
 			</xhtml:div>
 		</text>
 		<entry>
-			<reference value="Condition/eufmh-39-07-1"/>
+			<reference value="Condition/eumfh-39-07-1"/>
 			<display value="Anterior Acute Myocardial Infarction"/>
 		</entry>
 		<entry>
-			<reference value="Condition/eufmh-39-07-2"/>
+			<reference value="Condition/eumfh-39-07-2"/>
 			<display value="Artery severe occlusion"/>
 		</entry>
 		<entry>
-			<reference value="Condition/eufmh-39-07-3"/>
+			<reference value="Condition/eumfh-39-07-3"/>
 			<display value="Hypercholesterolemia"/>
 		</entry>
 	</section>
@@ -106,15 +106,15 @@
 			</xhtml:div>
 		</text>
 		<entry>
-			<reference value="MedicationStatement/eufmh-39-07-1"/>
+			<reference value="MedicationStatement/eumfh-39-07-1"/>
 			<display value="Simvastatin 40 mg/day"/>
 		</entry>
 		<entry>
-			<reference value="MedicationStatement/eufmh-39-07-2"/>
+			<reference value="MedicationStatement/eumfh-39-07-2"/>
 			<display value="Acetylsalicylic acid 100 mg/day"/>
 		</entry>
 		<entry>
-			<reference value="MedicationStatement/eufmh-39-07-3"/>
+			<reference value="MedicationStatement/eumfh-39-07-3"/>
 			<display value="Captopril 150 mg/day"/>
 		</entry>
 	</section>
@@ -134,7 +134,7 @@
 			</xhtml:div>
 		</text>
 		<entry>
-			<reference value="Procedure/eufmh-39-07-1"/>
+			<reference value="Procedure/eumfh-39-07-1"/>
 			<display value="Balloon angioplasty on mid-LAD stenosis with STENT Implantation"/>
 		</entry>
 	</section>

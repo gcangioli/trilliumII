@@ -1,11 +1,11 @@
 <DeviceUseStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/deviceusestatement.xsd">
-	<id value="eufmh-70-275-1"/>
+	<id value="eumfh-70-275-1"/>
 	<status value="active"/>
 	<subject>
-		<reference value="Patient/eufmh-70-275"/>
+		<reference value="Patient/eumfh-70-275"/>
 		<display value="ZMAJE	275 (Inject 70-275)"/>
 	</subject>
 	<device>
-		<reference value="Device/eufmh-70-275-1"/>
+		<reference value="Device/eumfh-70-275-1"/>
 	</device>
 </DeviceUseStatement>

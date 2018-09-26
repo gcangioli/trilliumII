@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/medicationstatement.xsd">
-	<id value="eufmh-39-07-2"/>
+	<id value="eumfh-39-07-2"/>
 	<status value="active"/>
 	<medicationReference>
-		<reference value="Medication/eufmh-39-07-2"/>
+		<reference value="Medication/eumfh-39-07-2"/>
 		<display value="simvastatin" />
 	</medicationReference>
 	<effectivePeriod>
 		<start value="2014"/>
 	</effectivePeriod>
 	<subject>
-		<reference value="Patient/eufmh-39-07"/>
+		<reference value="Patient/eumfh-39-07"/>
 		<display value="ZMAJE	7 (Inject 39-07)"/>
 	</subject>
 	<taken value="na"/>

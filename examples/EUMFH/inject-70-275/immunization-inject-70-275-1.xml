@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Immunization xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/immunization.xsd">
-	<id value="eufmh-70-275-1"/>
+	<id value="eumfh-70-275-1"/>
 	<status value="completed"/>
 	<notGiven value="false"/>
 	<vaccineCode>
 		<text value="Diphtheria, tetanus, acellular pertussis, inactivated poliomyelitis, hepatitis B (recombinant) and Haemophilus influenzae type b conjugate vaccine"/>
 	</vaccineCode>
 	<patient>
-		<reference value="Patient/eufmh-70-275"/>
+		<reference value="Patient/eumfh-70-275"/>
 		<display value="ZMAJE	275 (Inject 70-275)"/>
 	</patient>
 	<date value="2014-03-12"/>

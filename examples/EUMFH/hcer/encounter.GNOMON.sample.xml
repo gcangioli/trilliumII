@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../fhir-all-xsd/bundle.xsd">
+	<id value="eumfh-43-125-enc-bdl-1"/>
+	<identifier>
+		<system value="http://trilliumbridge.eu/fhir/demos/eumfh/inject"/>
+		<value value="eumfh-43-125"/>
+	</identifier>
+	<type value="document"/>
+	<entry>
+		<fullUrl value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Composition/eumfh-43-125-enc-1"/>
+		<resource>
+			<Composition>
+				<id value="eumfh-43-125-enc-1"/>
+				<status value="final"/>
+				<type>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="34133-9"/>
+						<display value="Summary of episode note"/>
+					</coding>
+				</type>
+				<subject>
+					<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-43-125"/>
+					<display value="Isabella García (Inject 43-125)"/>
+				</subject>
+				<encounter>
+					<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Encounter/eumfh-43-125"/>
+					<display value="Field Hospital Encounter (Inject 43-125)"/>
+				</encounter>
+				<date value="2018-07-10T15:22:00+02:00"/>
+				<author>
+					<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-43-125"/>
+					<display value="Dr. Anna Karlsson"/>
+				</author>
+				<title value="Encounter Report - Inject 43-125"/>
+				<confidentiality value="N"/>
+				<section>
+					<title value="Discharge Medications"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="10183-2"/>
+							<display value="Hospital discharge medications"/>
+						</coding>
+					</code>
+					<text>
+						<status value="generated"/>
+						<xhtml:div>
+							<xhtml:table>
+								<xhtml:thead>
+									<xhtml:tr>
+										<xhtml:th>Medication</xhtml:th>
+										<xhtml:th>Dosage</xhtml:th>
+									</xhtml:tr>
+								</xhtml:thead>
+								<xhtml:tbody>
+									<xhtml:tr>
+										<xhtml:td>acetylsalicylic acid</xhtml:td>
+										<xhtml:td>1 international unit, 1 times per 1 day</xhtml:td>
+									</xhtml:tr>
+								</xhtml:tbody>
+							</xhtml:table>
+						</xhtml:div>
+					</text>
+					<entry>
+						<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-43-125-a1"/>
+						<display value="acetylsalicylic acid 1 international unit, 1 times per 1 day"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Procedures performed"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="29554-3"/>
+							<display value="Procedure"/>
+						</coding>
+					</code>
+					<text>
+						<status value="generated"/>
+						<xhtml:div>
+							<xhtml:table>
+								<xhtml:thead>
+									<xhtml:tr>
+										<xhtml:th>Date</xhtml:th>
+										<xhtml:th>Description</xhtml:th>
+									</xhtml:tr>
+								</xhtml:thead>
+								<xhtml:tbody>
+									<xhtml:tr>
+										<xhtml:td>2018-07-10 12:37</xhtml:td>
+										<xhtml:td>Surgical reduction of femure's fracture, no complications</xhtml:td>
+									</xhtml:tr>
+								</xhtml:tbody>
+							</xhtml:table>
+						</xhtml:div>
+					</text>
+					<entry>
+						<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Procedure/eumfh-43-125-1"/>
+						<display value="Surgical reduction of femure's fracture, no complications"/>
+					</entry>
+				</section>
+				
+			</Composition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-43-125"/>
+		<resource>
+			<Practitioner>
+				<id value="eumfh-43-125"/>
+				<name>
+					<family value="Karlsson"/>
+					<given value="Anne"/>
+					<prefix value="Dr."/>
+				</name>
+			</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Procedure/eumfh-43-125-1"/>
+		<resource>
+			<Procedure>
+				<status value="completed"/>
+				<category>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="387713003"/>
+						<display value="Surgical procedure"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="274051007"/>
+						<display value="Surgical reduction of fracture"/>
+					</coding>
+					<text value="Surgical reduction of femure's fracture, no complications" />
+				</code>
+				<subject>
+					<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-43-125"/>
+					<display value="Isabella García (Inject 43-125)"/>
+				</subject>
+				<performedDateTime value="2018-07-10T12:37:00+02:00"/>
+			</Procedure>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Encounter/eumfh-43-125"/>
+		<resource>
+			<Encounter>
+				<status value="finished"/>
+				<subject>
+					<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-43-125"/>
+					<display value="Isabella García (Inject 43-125)"/>
+				</subject>
+				<participant>
+					<type>
+						<coding>
+							<system value="http://hl7.org/fhir/v3/ParticipationType"/>
+							<code value="PPRF"/>
+							<display value="primary performer"/>
+						</coding>
+					</type>
+					<individual>
+						<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-43-125"/>
+						<display value="Dr. Anna Karlsson"/>
+					</individual>
+				</participant>
+				<period>
+					<start value="2018-07-10T05:15:00+02:00"/>
+					<end value="2018-07-10T15:20:00+02:00"/>
+				</period>
+			</Encounter>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-43-125-1"/>
+		<resource>
+			<MedicationStatement>
+				<id value="eumfh-43-125-1"/>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Medication/eumfh-43-125-a1"/>
+					<display value="acetylsalicylic acid"/>
+				</medicationReference>
+				<effectivePeriod>
+					<start value="2015-02-10"/>
+				</effectivePeriod>
+				<subject>
+					<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-43-125"/>
+					<display value="Isabella García (Inject 43-125)"/>
+				</subject>
+				<taken value="y"/>
+				<dosage>
+					<text value="1 international unit, 1 times per 1 day"/>
+					<timing>
+						<repeat>
+							<frequency value="1"/>
+							<period value="1"/>
+							<periodUnit value="d"/>
+						</repeat>
+					</timing>
+					<doseQuantity>
+						<value value="1"/>
+						<unit value="international unit"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="IU"/>
+					</doseQuantity>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Medication/eumfh-43-125-a1"/>
+		<resource>
+			<Medication>
+				<id value="eumfh-43-125-a1"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="B01AC06"/>
+						<display value="acetylsalicylic acid"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+</Bundle>

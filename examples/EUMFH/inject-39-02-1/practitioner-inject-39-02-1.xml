@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Practitioner xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id value="eumfh-39-02-1"/>
+    <name>
+        <family value="Karlsson"/>
+        <given value="Anna"/>
+        <prefix value="Dr."/>
+    </name>
+</Practitioner>

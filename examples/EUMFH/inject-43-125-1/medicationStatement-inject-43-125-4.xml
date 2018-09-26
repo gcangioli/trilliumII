@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/medicationstatement.xsd">
+    <id value="eumfh-43-125-1-4"/>
+    <status value="active"/>
+    <medicationReference>
+        <reference value="Medication/eumfh-43-125-1-4"/>
+        <display value="amitriptyline" />
+    </medicationReference>
+    <effectivePeriod>
+        <start value="2015-02-10"/>
+    </effectivePeriod>
+    <subject>
+        <reference value="Patient/eumfh-43-125-1"/>
+        <display value="Isabella García (inject 43-125-1)"/>
+    </subject>
+    <taken value="y"/>
+    <dosage>
+        <text value="10 mg/day"/>
+        <timing>
+            <repeat>
+                <frequency value="2"/>
+                <period value="1"/>
+                <periodUnit value="d"/>
+            </repeat>
+        </timing>
+        <doseQuantity>
+            <value value="10"/>
+            <unit value="mg"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mg"/>
+        </doseQuantity>
+    </dosage>
+</MedicationStatement>

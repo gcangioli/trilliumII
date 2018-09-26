@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/condition.xsd">
+    <id value="eumfh-43-125-1-6"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="49455004"/>
+            <display value="Diabetic polyneuropathy"/>
+        </coding>
+        <text value="Diabetic polyneuropathy"/>
+    </code>
+    <subject>
+        <reference value="Patient/eumfh-43-125-1"/>
+        <display value="Isabella García (inject 43-125-1)"/>
+    </subject>
+    <onsetDateTime value="2015"/>
+    <asserter>
+        <reference value="Practitioner/eumfh-43-125-1"/>
+        <display value="Dr. Anna Karlsson"/>
+    </asserter>
+</Condition>
