@@ -1,8 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <Bundle xmlns='http://hl7.org/fhir' xmlns:xhtml='http://www.w3.org/1999/xhtml' >
-<id value='eumfh-39-07'/>
-<identifier><system value='http://trilliumbridge.eu/fhir/demos/eumfh/ips_id'/><value value='EUR01P0001'></value></identifier>
-<type value='document'/>
+<type value='transaction'/>
 <entry>
 <fullUrl value='http://app.srdc.com.tr/fhir/stu3/Composition/eumfh-39-07'/>
 <resource>
@@ -160,6 +158,10 @@
 	</section>
 </Composition>
 </resource>
+<request>
+<method value='PUT'/>
+<url value='Composition/eumfh-39-07'/>
+</request>
 </entry>
 <entry>
 <fullUrl value='http://app.srdc.com.tr/fhir/stu3/AllergyIntolerance/eumfh-39-07-1'/>
@@ -181,6 +183,10 @@
 	</patient>
 </AllergyIntolerance>
 </resource>
+<request>
+<method value='PUT'/>
+<url value='AllergyIntolerance/eumfh-39-07-1'/>
+</request>
 </entry>
 <entry>
 <fullUrl value='http://app.srdc.com.tr/fhir/stu3/Condition/eumfh-39-07-1'/>
@@ -206,6 +212,10 @@
 	</asserter>
 </Condition>
 </resource>
+<request>
+<method value='PUT'/>
+<url value='Condition/eumfh-39-07-1'/>
+</request>
 </entry>
 <entry>
 <fullUrl value='http://app.srdc.com.tr/fhir/stu3/Condition/eumfh-39-07-2'/>
@@ -232,6 +242,10 @@
 	</asserter>
 </Condition>
 </resource>
+<request>
+<method value='PUT'/>
+<url value='Condition/eumfh-39-07-2'/>
+</request>
 </entry>
 <entry>
 <fullUrl value='http://app.srdc.com.tr/fhir/stu3/Condition/eumfh-39-07-3'/>
@@ -258,6 +272,10 @@
 	</asserter>
 </Condition>
 </resource>
+<request>
+<method value='PUT'/>
+<url value='Condition/eumfh-39-07-3'/>
+</request>
 </entry>
 <entry>
 <fullUrl value='http://app.srdc.com.tr/fhir/stu3/Condition/eumfh-39-07-4'/>
@@ -284,6 +302,10 @@
 	</asserter>
 </Condition>
 </resource>
+<request>
+<method value='PUT'/>
+<url value='Condition/eumfh-39-07-4'/>
+</request>
 </entry>
 <entry>
 <fullUrl value='http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-07-1'/>
@@ -326,6 +348,10 @@
 	</ingredient>
 </Medication>
 </resource>
+<request>
+<method value='PUT'/>
+<url value='Medication/eumfh-39-07-1'/>
+</request>
 </entry>
 <entry>
 <fullUrl value='http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-07-2'/>
@@ -367,6 +393,10 @@
 	</ingredient>
 </Medication>
 </resource>
+<request>
+<method value='PUT'/>
+<url value='Medication/eumfh-39-07-2'/>
+</request>
 </entry>
 <entry>
 <fullUrl value='http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-07-3'/>
@@ -408,6 +438,10 @@
 	</ingredient>
 </Medication>
 </resource>
+<request>
+<method value='PUT'/>
+<url value='Medication/eumfh-39-07-3'/>
+</request>
 </entry>
 <entry>
 <fullUrl value='http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-07-4'/>
@@ -454,6 +488,10 @@
 	</ingredient>
 </Medication>
 </resource>
+<request>
+<method value='PUT'/>
+<url value='Medication/eumfh-39-07-4'/>
+</request>
 </entry>
 <entry>
 <fullUrl value='http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-39-07-1'/>
@@ -491,6 +529,10 @@
 	</dosage>
 </MedicationStatement>
 </resource>
+<request>
+<method value='PUT'/>
+<url value='MedicationStatement/eumfh-39-07-1'/>
+</request>
 </entry>
 <entry>
 <fullUrl value='http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-39-07-2'/>
@@ -528,6 +570,10 @@
 	</dosage>
 </MedicationStatement>
 </resource>
+<request>
+<method value='PUT'/>
+<url value='MedicationStatement/eumfh-39-07-2'/>
+</request>
 </entry>
 <entry>
 <fullUrl value='http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-39-07-3'/>
@@ -552,6 +598,10 @@
 	</dosage>
 </MedicationStatement>
 </resource>
+<request>
+<method value='PUT'/>
+<url value='MedicationStatement/eumfh-39-07-3'/>
+</request>
 </entry>
 <entry>
 <fullUrl value='http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-39-07-4'/>
@@ -580,6 +630,10 @@
 	</dosage>
 </MedicationStatement>
 </resource>
+<request>
+<method value='PUT'/>
+<url value='MedicationStatement/eumfh-39-07-4'/>
+</request>
 </entry>
 <entry>
 <fullUrl value='http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-07'/>
@@ -614,6 +668,10 @@
 	<birthDate value="1957"/>
 </Patient>
 </resource>
+<request>
+<method value='PUT'/>
+<url value='Patient/eumfh-39-07'/>
+</request>
 </entry>
 <entry>
 <fullUrl value='http://app.srdc.com.tr/fhir/stu3/Practitioner/eumfh-39-07'/>
@@ -628,6 +686,10 @@
 	</name>
 </Practitioner>
 </resource>
+<request>
+<method value='PUT'/>
+<url value='Practitioner/eumfh-39-07'/>
+</request>
 </entry>
 <entry>
 <fullUrl value='http://app.srdc.com.tr/fhir/stu3/Procedure/eumfh-39-07-1'/>
@@ -661,5 +723,9 @@
 	</subject>
 </Procedure>
 </resource>
+<request>
+<method value='PUT'/>
+<url value='Procedure/eumfh-39-07-1'/>
+</request>
 </entry>
 </Bundle>

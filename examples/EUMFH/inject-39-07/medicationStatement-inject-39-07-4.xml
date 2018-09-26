@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir"  xmlns:xhtml="http://www.w3.org/1999/xhtml"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/medicationstatement.xsd">
+	<id value="eumfh-39-07-4"/>
+	<text>
+		<status xmlns:xhtml="http://www.w3.org/1999/xhtml" value="generated"/>
+		<xhtml:div>Nebivolol 5 mg</xhtml:div>
+	</text>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="Medication/eumfh-39-07-4"/>
+		<display value="Nebivolol" />
+	</medicationReference>
+	<effectivePeriod>
+		<start value="2012"/>
+	</effectivePeriod>
+	<subject>
+		<reference value="Patient/eumfh-39-07"/>
+		<display value="ZMAJE	7 (Inject 39-07)"/>
+	</subject>
+	<taken value="na"/>
+	<dosage>
+		<text value="5 mg/day"/>
+	</dosage>
+</MedicationStatement>
