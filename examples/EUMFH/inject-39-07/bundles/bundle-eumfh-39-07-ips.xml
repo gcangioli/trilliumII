@@ -500,7 +500,7 @@
 	<status value="active"/>
 	<medicationReference>
 		<reference value="Medication/eumfh-39-07-2"/>
-		<display value="simvastatin" />
+		<display value="acetylsalicylic acid" />
 	</medicationReference>
 	<effectivePeriod>
 		<start value="2014"/>
