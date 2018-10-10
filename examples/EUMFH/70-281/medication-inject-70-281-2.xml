@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Medication xmlns="http://hl7.org/fhir" >
+	<id value="eumfh-70-281-2"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="320031002"/>
+			<display value="atorvastatin 40 mg oral tablet"/>
+		</coding>
+	</code>
+</Medication>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/condition.xsd">
+    <id value="eumfh-70-5-285-1"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="E10.9"/>
+            <display value="Type 1 diabetes mellitus without complications"/>
+        </coding>
+        <text value="Diabetes Type I"/>
+    </code>
+    <subject>
+        <reference value="Patient/eumfh-70-5-285"/>
+        <display value="Renaud Renier (inject 70-5-285)"/>
+    </subject>
+	<onsetDateTime value="2003-10-10"/>
+	<asserter>
+		<reference value="Practitioner/eumfh-70-5-285"/>
+		<display value="Dr. Lauren Wilson"/>
+	</asserter>
+</Condition>

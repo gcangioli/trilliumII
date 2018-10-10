@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Bundle xmlns='http://hl7.org/fhir' xmlns:xhtml='http://www.w3.org/1999/xhtml' >
+<type value='transaction'/>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Composition/eumfh-70-5-285'/>
+<resource>
+<Composition>
+    <id value="eumfh-70-5-285"/>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="60591-5"/>
+            <display value="Patient Summary"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-5-285"/>
+        <display value="Jesus Lexus (inject 70-5-285)" />
+    </subject>
+    <date value="2018-10-10T16:41:04+02:00"/>
+    <author>
+        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-5-285-1"/>
+        <display value="Renaud Renier (inject 70-5-285)"/>
+    </author>
+    <title value="Patient Summary of Jesus Lexus (inject 70-5-285)"/>
+    <confidentiality value="N"/>
+    <section>
+        <title value="Allergies and Intolerances"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="48765-2"/>
+                <display value="Allergies and/or adverse reactions"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <xhtml:div>
+                <xhtml:ul>
+                    <xhtml:li>No known allergies</xhtml:li>
+                </xhtml:ul>
+            </xhtml:div>
+        </text>
+        <entry>
+            <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/AllergyIntolerance/eumfh-70-5-285-1"/>
+            <display value="No known allergies"/>
+        </entry>
+    </section>
+	<section>
+		<title value="Active Problems"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="11450-4"/>
+				<display value="Problem list"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+<xhtml:li>[2003-10-10] - Diabetes Type I</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+<entry>
+<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-5-285-1"/>
+<display value="[2003-10-10] - Diabetes Type I"/>
+</entry>
+	</section>
+
+	<section>
+		<title value="Medication"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="10160-0"/>
+				<display value="Medication use"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+<xhtml:li>[2018] - Insulin product</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+<entry>
+<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-5-285-1"/>
+<display value="[2018] - Insulin product"/>
+</entry>
+	</section>
+</Composition>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Composition/eumfh-70-5-285'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/AllergyIntolerance/eumfh-70-5-285-1'/>
+<resource>
+<AllergyIntolerance>
+	<id value="eumfh-70-5-285-1"/>
+	<clinicalStatus value="active"/>
+	<verificationStatus value="confirmed"/>
+	<code>
+		<coding>
+			<system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown"/>
+			<code value="no-known-allergies"/>
+			<display value="No known allergies"/>
+		</coding>
+	</code>
+	<patient>
+				<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-5-285"/>
+		<display value="Jesus Lexus (inject 70-5-285)" />
+	</patient>
+</AllergyIntolerance>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='AllergyIntolerance/eumfh-70-5-285-1'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-5-285-1'/>
+<resource>
+<Condition>
+    <id value="eumfh-70-5-285-1"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="E10.9"/>
+            <display value="Type 1 diabetes mellitus without complications"/>
+        </coding>
+        <text value="Diabetes Type I"/>
+    </code>
+    <subject>
+        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-5-285"/>
+        <display value="Renaud Renier (inject 70-5-285)"/>
+    </subject>
+	<onsetDateTime value="2003-10-10"/>
+	<asserter>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-5-285"/>
+		<display value="Dr. Lauren Wilson"/>
+	</asserter>
+</Condition>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Condition/eumfh-70-5-285-1'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Medication/eumfh-70-5-285-1'/>
+<resource>
+<Medication>
+	<id value="eumfh-70-5-285-1"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="39487003"/>
+			<display value="Insulin product"/>
+		</coding>
+	</code>
+</Medication>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Medication/eumfh-70-5-285-1'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-5-285-1'/>
+<resource>
+<MedicationStatement>
+	<id value="eumfh-70-5-285-1"/>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Medication/eumfh-70-5-285-1"/>
+		<display value="Insulin product"/>
+	</medicationReference>
+	<effectivePeriod>
+		<start value="2018"/>
+	</effectivePeriod>
+	<dateAsserted value="2018-10-01"/>
+	<informationSource>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-5-285"/>
+		<display value="Renaud Renier (inject 70-5-285)"/>
+	</informationSource>	
+	<subject>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-5-285"/>
+		<display value="Renaud Renier (inject 70-5-285)"/>
+	</subject>
+	<taken value="na"/>
+</MedicationStatement>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='MedicationStatement/eumfh-70-5-285-1'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-5-285'/>
+<resource>
+<Patient>
+<!--Sample XML file generated by XMLSpy v2013 sp1 (http://www.altova.com)-->
+	<id value="eumfh-70-5-285"/>
+  <meta><lastUpdated value="2018-10-10T13:51:24+02:00"/></meta>
+	<extension url="http://hl7.org/fhir/StructureDefinition/patient-citizenship">
+		<extension url="code">
+		<valueCodeableConcept>
+			<coding>
+				<system value="urn:iso:std:iso:3166"/>
+				<code value="LU"/>
+				<display value="Luxemburg"/>
+			</coding></valueCodeableConcept>
+		</extension>
+	</extension>
+      	<identifier>
+  		<system value="http://trilliumbridge.eu/fhir/demos/eumfh/inject"/>
+		<value value="70-5-285"/>
+	</identifier>
+	<identifier>
+		<system value="http://trilliumbridge.eu/fhir/demos/eumfh/patient_id"/>
+		<value value="EUR01P0016"/>
+	</identifier>
+	<active value="true"/>
+	<name>
+		<family value="Lexus"/>
+		<given value="Jesus"/>
+	</name>
+	<gender value="male"/>
+	<birthDate value="1973-06-13"/>
+</Patient>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Patient/eumfh-70-5-285'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-5-285-1'/>
+<resource>
+<Practitioner>
+    <id value="eumfh-70-5-285-1"/>
+    <meta><lastUpdated value="2018-10-10T13:52:19+02:00"/></meta>
+    <name>
+        <family value="Renier"/>
+        <given value="Renaud"/>
+        <prefix value="Dr."/>
+    </name>
+</Practitioner>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Practitioner/eumfh-70-5-285-1'/>
+</request>
+</entry>
+</Bundle>

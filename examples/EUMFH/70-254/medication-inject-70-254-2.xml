@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Medication xmlns="http://hl7.org/fhir" >
+    <id value="eumfh-70-254-2"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="7947003"/>
+            <display value="aspirin product"/>
+        </coding>
+    </code>
+</Medication>

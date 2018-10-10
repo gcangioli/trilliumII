@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+	<id value="eumfh-70-288-E-1"/>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="Medication/eumfh-70-288-E-1"/>
+		<display value="Methylphenidate 5mg chewable tablet"/>
+	</medicationReference>
+	<effectivePeriod>
+		<start value="2018"/>
+	</effectivePeriod>
+	<dateAsserted value="2018-10-01"/>
+	<informationSource>
+		<reference value="Patient/eumfh-70-288-E"/>
+		<display value="Marco Peroni (inject 70-288)"/>
+	</informationSource>	
+	<subject>
+		<reference value="Patient/eumfh-70-288-E"/>
+		<display value="Marco Peroni (inject 70-288)"/>
+	</subject>
+	<taken value="y"/>
+	<dosage>
+		<timing>
+			<repeat>
+				<frequency value="2"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+			</repeat>
+		</timing>
+		<doseQuantity>
+			<value value="1"/>
+			<unit value="tablet"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="1{tablet}"/>
+		</doseQuantity>
+	</dosage>
+</MedicationStatement>

@@ -1,0 +1,441 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Bundle xmlns='http://hl7.org/fhir' xmlns:xhtml='http://www.w3.org/1999/xhtml' >
+<type value='transaction'/>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Composition/eumfh-70-288'/>
+<resource>
+<Composition>
+    <id value="eumfh-70-288"/>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="60591-5"/>
+            <display value="Patient Summary"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-288"/>
+        <display value="Marco Peroni (inject 70-288)" />
+    </subject>
+    <date value="2018-10-10T16:41:04+02:00"/>
+    <author>
+        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-288-1"/>
+        <display value="Rita Meloni (inject 70-288)"/>
+    </author>
+    <title value="Patient Summary of Marco Peroni (inject 70-288)"/>
+    <confidentiality value="N"/>
+    <section>
+        <title value="Allergies and Intolerances"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="48765-2"/>
+                <display value="Allergies and/or adverse reactions"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <xhtml:div>
+                <xhtml:ul>
+                    <xhtml:li>No known allergies</xhtml:li>
+                </xhtml:ul>
+            </xhtml:div>
+        </text>
+        <entry>
+            <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/AllergyIntolerance/eumfh-70-288-1"/>
+            <display value="No known allergies"/>
+        </entry>
+    </section>
+	<section>
+		<title value="Active Problems"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="11450-4"/>
+				<display value="Problem list"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+<xhtml:li>[2007-04-27] - Attention deficit hyperactivity disorder</xhtml:li>
+<xhtml:li>[2012-07-16] - Substance abuse</xhtml:li>
+<xhtml:li>[2017-04-26] - Tonsillitis</xhtml:li>
+<xhtml:li>[2007-01-26] - Decreased hearing</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+<entry>
+<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-288-E-1"/>
+<display value="[2007-04-27] - Attention deficit hyperactivity disorder"/>
+</entry>
+<entry>
+<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-288-E-2"/>
+<display value="[2012-07-16] - Substance abuse"/>
+</entry>
+<entry>
+<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-288-E-3"/>
+<display value="[2017-04-26] - Tonsillitis"/>
+</entry>
+<entry>
+<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-288-E-4"/>
+<display value="[2007-01-26] - Decreased hearing"/>
+</entry>
+	</section>
+
+	<section>
+		<title value="Medication"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="10160-0"/>
+				<display value="Medication use"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+<xhtml:li>[2018] - Methylphenidate 5mg chewable tablet - 2 tablets per day</xhtml:li>
+<xhtml:li>[2018] - Diazepam product</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+<entry>
+<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-288-E-1"/>
+<display value="[2018] - Methylphenidate 5mg chewable tablet - 2 tablets per day"/>
+</entry>
+<entry>
+<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-288-E-2"/>
+<display value="[2018] - Diazepam product"/>
+</entry>
+	</section>
+</Composition>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Composition/eumfh-70-288'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/AllergyIntolerance/eumfh-70-288-1'/>
+<resource>
+<AllergyIntolerance>
+	<id value="eumfh-70-288-1"/>
+	<clinicalStatus value="active"/>
+	<verificationStatus value="confirmed"/>
+	<code>
+		<coding>
+			<system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown"/>
+			<code value="no-known-allergies"/>
+			<display value="No known allergies"/>
+		</coding>
+	</code>
+	<patient>
+				<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-288"/>
+		<display value="Marco Peroni (inject 70-288)" />
+	</patient>
+</AllergyIntolerance>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='AllergyIntolerance/eumfh-70-288-1'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-288-E-1'/>
+<resource>
+<Condition>
+    <id value="eumfh-70-288-E-1"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="406506008"/>
+            <display value="Attention deficit hyperactivity disorder"/>
+        </coding>
+        <text value="Attention deficit hyperactivity disorder"/>
+    </code>
+    <subject>
+        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-288-E"/>
+        <display value="Marco Peroni (inject 70-288)"/>
+    </subject>
+	<onsetDateTime value="2007-04-27"/>
+	<asserter>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-288-E"/>
+		<display value="Dr. Samantha Wang"/>
+	</asserter>  
+</Condition>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Condition/eumfh-70-288-E-1'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-288-E-2'/>
+<resource>
+<Condition>
+    <id value="eumfh-70-288-E-2"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="66214007"/>
+            <display value="Substance abuse"/>
+        </coding>
+        <text value="Substance abuse"/>
+    </code>
+    <subject>
+        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-288-E"/>
+        <display value="Marco Peroni (inject 70-288)"/>
+    </subject>
+	<onsetDateTime value="2012-07-16"/>
+	<asserter>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-288-E"/>
+		<display value="Dr. Samantha Wang"/>
+	</asserter>  
+</Condition>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Condition/eumfh-70-288-E-2'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-288-E-3'/>
+<resource>
+<Condition>
+    <id value="eumfh-70-288-E-3"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="J35.0"/>
+            <display value="Chronic tonsillitis and adenoiditis"/>
+        </coding>
+        <text value="Tonsillitis"/>
+    </code>
+    <subject>
+        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-288-E"/>
+        <display value="Marco Peroni (inject 70-288)"/>
+    </subject>
+	<onsetDateTime value="2017-04-26"/>
+	<asserter>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-288-E"/>
+		<display value="Dr. Samantha Wang"/>
+	</asserter>  
+</Condition>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Condition/eumfh-70-288-E-3'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-288-E-4'/>
+<resource>
+<Condition>
+    <id value="eumfh-70-288-E-4"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="103276001"/>
+            <display value="Decreased hearing"/>
+        </coding>
+        <text value="Decreased hearing"/>
+    </code>
+    <subject>
+        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-288-E"/>
+        <display value="Marco Peroni (inject 70-288)"/>
+    </subject>
+	<onsetDateTime value="2007-01-26"/>
+	<asserter>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-288-E"/>
+		<display value="Dr. Samantha Wang"/>
+	</asserter>  
+</Condition>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Condition/eumfh-70-288-E-4'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Medication/eumfh-70-288-E-1'/>
+<resource>
+<Medication>
+	<id value="eumfh-70-288-E-1"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="429693005"/>
+			<display value="Methylphenidate 5mg chewable tablet"/>
+		</coding>
+	</code>
+</Medication>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Medication/eumfh-70-288-E-1'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Medication/eumfh-70-288-E-2'/>
+<resource>
+<Medication>
+	<id value="eumfh-70-288-E-2"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="48546005"/>
+			<display value="Diazepam product"/>
+		</coding>
+	</code>
+</Medication>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Medication/eumfh-70-288-E-2'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-288-E-1'/>
+<resource>
+<MedicationStatement>
+	<id value="eumfh-70-288-E-1"/>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Medication/eumfh-70-288-E-1"/>
+		<display value="Methylphenidate 5mg chewable tablet"/>
+	</medicationReference>
+	<effectivePeriod>
+		<start value="2018"/>
+	</effectivePeriod>
+	<dateAsserted value="2018-10-01"/>
+	<informationSource>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-288-E"/>
+		<display value="Marco Peroni (inject 70-288)"/>
+	</informationSource>	
+	<subject>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-288-E"/>
+		<display value="Marco Peroni (inject 70-288)"/>
+	</subject>
+	<taken value="y"/>
+	<dosage>
+		<timing>
+			<repeat>
+				<frequency value="2"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+			</repeat>
+		</timing>
+		<doseQuantity>
+			<value value="1"/>
+			<unit value="tablet"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="1{tablet}"/>
+		</doseQuantity>
+	</dosage>
+</MedicationStatement>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='MedicationStatement/eumfh-70-288-E-1'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-288-E-2'/>
+<resource>
+<MedicationStatement>
+	<id value="eumfh-70-288-E-2"/>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Medication/eumfh-70-288-E-2"/>
+		<display value="Diazepam product"/>
+	</medicationReference>
+	<effectivePeriod>
+		<start value="2018"/>
+	</effectivePeriod>
+	<dateAsserted value="2018-10-01"/>
+	<informationSource>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-288-E"/>
+		<display value="Marco Peroni (inject 70-288)"/>
+	</informationSource>	
+	<subject>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-288-E"/>
+		<display value="Marco Peroni (inject 70-288)"/>
+	</subject>
+	<taken value="y"/>
+	<dosage>
+		<text value="as required"/>
+		<asNeededBoolean value="true"/>
+	</dosage>
+</MedicationStatement>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='MedicationStatement/eumfh-70-288-E-2'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-288'/>
+<resource>
+<Patient>
+<!--Sample XML file generated by XMLSpy v2013 sp1 (http://www.altova.com)-->
+	<id value="eumfh-70-288"/>
+  <meta><lastUpdated value="2018-10-10T13:51:24+02:00"/></meta>
+	<extension url="http://hl7.org/fhir/StructureDefinition/patient-citizenship">
+		<extension url="code">
+		<valueCodeableConcept>
+			<coding>
+				<system value="urn:iso:std:iso:3166"/>
+				<code value="IT"/>
+				<display value="Italy"/>
+			</coding></valueCodeableConcept>
+		</extension>
+	</extension>
+      	<identifier>
+  		<system value="http://trilliumbridge.eu/fhir/demos/eumfh/inject"/>
+		<value value="70-288"/>
+	</identifier>
+	<identifier>
+		<system value="http://trilliumbridge.eu/fhir/demos/eumfh/patient_id"/>
+		<value value="EUR01P0011"/>
+	</identifier>
+	<active value="true"/>
+	<name>
+		<family value="Peroni"/>
+		<given value="Marco"/>
+	</name>
+	<gender value="male"/>
+	<birthDate value="1995-07-28"/>
+</Patient>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Patient/eumfh-70-288'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-288-1'/>
+<resource>
+<Practitioner>
+    <id value="eumfh-70-288-1"/>
+    <meta><lastUpdated value="2018-10-10T13:52:19+02:00"/></meta>
+    <name>
+        <family value="Meloni"/>
+        <given value="Rita"/>
+        <prefix value="Dr."/>
+    </name>
+</Practitioner>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Practitioner/eumfh-70-288-1'/>
+</request>
+</entry>
+</Bundle>

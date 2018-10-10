@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Bundle xmlns='http://hl7.org/fhir' xmlns:xhtml='http://www.w3.org/1999/xhtml' >
+<id value='eumfh-70-281'/>
+<identifier><system value='http://trilliumbridge.eu/fhir/demos/eumfh/ips_id'/><value value='EUR01P0010'></value></identifier>
+<type value='document'/>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Composition/eumfh-70-281'/>
+<resource>
+<Composition>
+    <id value="eumfh-70-281"/>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="60591-5"/>
+            <display value="Patient Summary"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-281"/>
+        <display value="Marie-Louise Joulent (inject 70-281)" />
+    </subject>
+    <date value="2018-10-10T16:41:04+02:00"/>
+    <author>
+        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-281-1"/>
+        <display value="Alain Perrier (inject 70-281)"/>
+    </author>
+    <title value="Patient Summary of Marie-Louise Joulent (inject 70-281)"/>
+    <confidentiality value="N"/>
+    <section>
+        <title value="Allergies and Intolerances"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="48765-2"/>
+                <display value="Allergies and/or adverse reactions"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <xhtml:div>
+                <xhtml:ul>
+                    <xhtml:li>allergy to penicillin</xhtml:li>
+                </xhtml:ul>
+            </xhtml:div>
+        </text>
+        <entry>
+            <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/AllergyIntolerance/eumfh-70-281"/>
+            <display value="allergy to penicillin"/>
+        </entry>
+    </section>
+	<section>
+		<title value="Active Problems"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="11450-4"/>
+				<display value="Problem list"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+<xhtml:li>[2012-11-22] - Family history of neoplasm of breast</xhtml:li>
+<xhtml:li>[2002-11-23] - Familial hypercholesterolemia</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+<entry>
+<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-281-1"/>
+<display value="[2012-11-22] - Family history of neoplasm of breast"/>
+</entry>
+<entry>
+<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-281-2"/>
+<display value="[2002-11-23] - Familial hypercholesterolemia"/>
+</entry>
+	</section>
+
+	<section>
+		<title value="Medication"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="10160-0"/>
+				<display value="Medication use"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+<xhtml:li>[2018] - Cyproterone and ethinylestradiol in oral dosage form</xhtml:li>
+<xhtml:li>[2018] - atorvastatin 40 mg oral tablet</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+<entry>
+<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-281-1"/>
+<display value="[2018] - Cyproterone and ethinylestradiol in oral dosage form"/>
+</entry>
+<entry>
+<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-281-2"/>
+<display value="[2018] - atorvastatin 40 mg oral tablet"/>
+</entry>
+	</section>
+</Composition>
+</resource>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/AllergyIntolerance/70-281-1'/>
+<resource>
+<AllergyIntolerance>
+    <id value="70-281-1"/>
+    <clinicalStatus value="active"/>
+    <verificationStatus value="confirmed"/>
+    <type value="allergy"/>
+    <code>
+       <coding><system value="http://snomed.info/sct"/>  <code value="764146007"/>  <display value="penicillin"/></coding> 
+    </code>
+    <patient>
+        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-281"/>
+        <display value="Marie-Louise Joulent (inject 70-281)" />
+    </patient>
+</AllergyIntolerance>
+</resource>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition /eumfh-70-281-1'/>
+<resource>
+<Condition >
+  <id value="eumfh-70-281-1"/> 
+  <clinicalStatus value="active"/> 
+  <code> 
+    <coding> 
+      <system value="http://snomed.info/sct"/>
+      <code value="313102001"/>
+      <display value="Family history of neoplasm of breast"/>
+    </coding>
+	<text value="Family history of neoplasm of breast" />
+  </code> 
+  <subject> 
+    <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-281"/>
+	<display value="Marie-Louise Joulent (inject 70-281)"/>
+  </subject>
+	<onsetDateTime value="2012-11-22"/>
+	<asserter>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-281"/>
+		<display value="Dr. Joanne Brown"/>
+	</asserter>  
+</Condition> 
+</resource>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-281-2'/>
+<resource>
+<Condition>
+  <id value="eumfh-70-281-2"/> 
+  <clinicalStatus value="active"/> 
+  <code> 
+    <coding> 
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <code value="E78.01"/>
+      <display value="Familial hypercholesterolemia"/>
+    </coding>
+	<text value="Familial hypercholesterolemia"/>
+  </code> 
+  <subject> 
+    <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-281"/>
+	<display value="Marie-Louise Joulent (inject 70-281)"/>
+  </subject>
+	<onsetDateTime value="2002-11-23"/>
+	<asserter>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-281"/>
+		<display value="Dr. Joanne Brown"/>
+	</asserter>    
+</Condition>
+</resource>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Medication/eumfh-70-281-1'/>
+<resource>
+<Medication>
+	<id value="eumfh-70-281-1"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="768274000"/>
+			<display value="Cyproterone and ethinylestradiol in oral dosage form"/>
+		</coding>
+	</code>
+</Medication>
+</resource>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Medication/eumfh-70-281-2'/>
+<resource>
+<Medication>
+	<id value="eumfh-70-281-2"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="320031002"/>
+			<display value="atorvastatin 40 mg oral tablet"/>
+		</coding>
+	</code>
+</Medication>
+</resource>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-281-1'/>
+<resource>
+<MedicationStatement>
+	<id value="eumfh-70-281-1"/>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Medication/eumfh-70-281-1"/>
+		<display value="Cyproterone and ethinylestradiol in oral dosage form"/>
+	</medicationReference>
+	<effectivePeriod>
+		<start value="2018"/>
+	</effectivePeriod>
+	<dateAsserted value="2018-10-01"/>
+	<informationSource>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-281"/>
+		<display value="Marie-Louise Joulent (inject 70-281)"/>
+	</informationSource>	
+	<subject>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-281"/>
+		<display value="Marie-Louise Joulent (inject 70-281)"/>
+	</subject>
+	<taken value="y"/>
+</MedicationStatement>
+</resource>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-281-2'/>
+<resource>
+<MedicationStatement>
+	<id value="eumfh-70-281-2"/>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Medication/eumfh-70-281-2"/>
+		<display value="atorvastatin 40 mg oral tablet"/>
+	</medicationReference>
+	<effectivePeriod>
+		<start value="2018"/>
+	</effectivePeriod>
+	<dateAsserted value="2018-10-01"/>
+	<informationSource>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-281"/>
+		<display value="Marie-Louise Joulent (inject 70-281)"/>
+	</informationSource>	
+	<subject>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-281"/>
+		<display value="Marie-Louise Joulent (inject 70-281)"/>
+	</subject>
+	<taken value="y"/>
+</MedicationStatement>
+</resource>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-281'/>
+<resource>
+<Patient>
+<!--Sample XML file generated by XMLSpy v2013 sp1 (http://www.altova.com)-->
+	<id value="eumfh-70-281"/>
+  <meta><lastUpdated value="2018-10-10T13:51:24+02:00"/></meta>
+	<extension url="http://hl7.org/fhir/StructureDefinition/patient-citizenship">
+		<extension url="code">
+		<valueCodeableConcept>
+			<coding>
+				<system value="urn:iso:std:iso:3166"/>
+				<code value="FR"/>
+				<display value="France"/>
+			</coding></valueCodeableConcept>
+		</extension>
+	</extension>
+      	<identifier>
+  		<system value="http://trilliumbridge.eu/fhir/demos/eumfh/inject"/>
+		<value value="70-281"/>
+	</identifier>
+	<identifier>
+		<system value="http://trilliumbridge.eu/fhir/demos/eumfh/patient_id"/>
+		<value value="EUR01P0010"/>
+	</identifier>
+	<active value="true"/>
+	<name>
+		<family value="Joulent"/>
+		<given value="Marie-Louise"/>
+	</name>
+	<gender value="female"/>
+	<birthDate value="1986-08-27"/>
+</Patient>
+</resource>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-281-1'/>
+<resource>
+<Practitioner>
+    <id value="eumfh-70-281-1"/>
+    <meta><lastUpdated value="2018-10-10T13:52:19+02:00"/></meta>
+    <name>
+        <family value="Perrier"/>
+        <given value="Alain"/>
+        <prefix value="Dr."/>
+    </name>
+</Practitioner>
+</resource>
+</entry>
+</Bundle>

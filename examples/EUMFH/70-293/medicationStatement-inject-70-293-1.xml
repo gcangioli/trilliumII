@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+	<id value="eumfh-70-293-1"/>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="Medication/eumfh-70-293-1"/>
+		<display value="Folic acid 5mg/5mL conventional release oral syrup"/>
+	</medicationReference>
+	<effectivePeriod>
+		<start value="2018"/>
+	</effectivePeriod>
+	<dateAsserted value="2018-10-01"/>
+	<informationSource>
+		<reference value="Patient/eumfh-70-293"/>
+		<display value="Donna Martin (inject 70-293)"/>
+	</informationSource>	
+	<subject>
+		<reference value="Patient/eumfh-70-293"/>
+		<display value="Donna Martin (inject 70-293)"/>
+	</subject>
+	<taken value="y"/>
+</MedicationStatement>

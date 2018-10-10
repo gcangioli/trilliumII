@@ -1,0 +1,392 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Bundle xmlns='http://hl7.org/fhir' xmlns:xhtml='http://www.w3.org/1999/xhtml' >
+<type value='transaction'/>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Composition/eumfh-70-293'/>
+<resource>
+<Composition>
+    <id value="eumfh-70-293"/>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="60591-5"/>
+            <display value="Patient Summary"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-293"/>
+        <display value="Donna Martin (inject 70-293)" />
+    </subject>
+    <date value="2018-10-10T16:41:04+02:00"/>
+    <author>
+        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-293-1"/>
+        <display value="Dick Harden (inject 70-293)"/>
+    </author>
+    <title value="Patient Summary of Donna Martin (inject 70-293)"/>
+    <confidentiality value="N"/>
+    <section>
+        <title value="Allergies and Intolerances"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="48765-2"/>
+                <display value="Allergies and/or adverse reactions"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <xhtml:div>
+                <xhtml:ul>
+                    <xhtml:li>allergy or intolerance to Gluten</xhtml:li>
+                </xhtml:ul>
+            </xhtml:div>
+        </text>
+        <entry>
+            <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/AllergyIntolerance/eumfh-70-293"/>
+            <display value="allergy or intolerance to Gluten"/>
+        </entry>
+    </section>
+	<section>
+		<title value="Active Problems"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="11450-4"/>
+				<display value="Problem list"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+<xhtml:li>[2003-10-04] - Previous Spontaneous Abortion</xhtml:li>
+<xhtml:li>[1998-11-21] - Sideropenic anemia</xhtml:li>
+<xhtml:li>[2007-11-21] - Celiac disease</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+<entry>
+<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-293-1"/>
+<display value="[2003-10-04] - Previous Spontaneous Abortion"/>
+</entry>
+<entry>
+<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-293-2"/>
+<display value="[1998-11-21] - Sideropenic anemia"/>
+</entry>
+<entry>
+<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-293-3"/>
+<display value="[2007-11-21] - Celiac disease"/>
+</entry>
+	</section>
+
+	<section>
+		<title value="Medication"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="10160-0"/>
+				<display value="Medication use"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+<xhtml:li>[2018] - Folic acid 5mg/5mL conventional release oral syrup</xhtml:li>
+<xhtml:li>[2018] - Ferrous sulfate product - 100 mg</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+<entry>
+<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-293-1"/>
+<display value="[2018] - Folic acid 5mg/5mL conventional release oral syrup"/>
+</entry>
+<entry>
+<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-293-2"/>
+<display value="[2018] - Ferrous sulfate product - 100 mg"/>
+</entry>
+	</section>
+</Composition>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Composition/eumfh-70-293'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/AllergyIntolerance/70-293-1'/>
+<resource>
+<AllergyIntolerance>
+    <id value="70-293-1"/>
+    <clinicalStatus value="active"/>
+    <verificationStatus value="confirmed"/>
+    
+    <code>
+       <coding><system value="http://snomed.info/sct"/>  <code value="89811004"/>  <display value="Gluten"/></coding> 
+    </code>
+    <patient>
+        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-293"/>
+        <display value="Donna Martin (inject 70-293)" />
+    </patient>
+</AllergyIntolerance>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='AllergyIntolerance/70-293-1'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-293-1'/>
+<resource>
+<Condition>
+    <id value="eumfh-70-293-1"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="161744009"/>
+            <display value="History of miscarriage"/>
+        </coding>
+        <text value="Previous Spontaneous Abortion"/>
+    </code>
+    <subject>
+        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-293"/>
+        <display value="Donna Martin (inject 70-293)"/>
+    </subject>
+	<onsetDateTime value="2003-10-04"/>
+	<asserter>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-293"/>
+		<display value="Dr. Susan Miller"/>
+	</asserter>  
+</Condition>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Condition/eumfh-70-293-1'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-293-2'/>
+<resource>
+<Condition>
+    <id value="eumfh-70-293-2"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="87522002"/>
+            <display value="Sideropenic anemi"/>
+        </coding>
+        <text value="Sideropenic anemia"/>
+    </code>
+    <subject>
+        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-293"/>
+        <display value="Donna Martin (inject 70-293)"/>
+    </subject>
+	<onsetDateTime value="1998-11-21"/>
+	<asserter>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-293"/>
+		<display value="Dr. Susan Miller"/>
+	</asserter>  
+</Condition>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Condition/eumfh-70-293-2'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-293-3'/>
+<resource>
+<Condition>
+    <id value="eumfh-70-293-3"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="K90.0"/>
+            <display value="Celiac disease"/>
+        </coding>
+        <text value="Celiac disease"/>
+    </code>
+    <subject>
+        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-293"/>
+        <display value="Donna Martin (inject 70-293)"/>
+    </subject>
+	<onsetDateTime value="2007-11-21"/>
+	<asserter>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-293"/>
+		<display value="Dr. Susan Miller"/>
+	</asserter>  
+</Condition>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Condition/eumfh-70-293-3'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Medication/eumfh-70-293-1'/>
+<resource>
+<Medication>
+	<id value="eumfh-70-293-1"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="766583004"/>
+			<display value="Folic acid 5mg/5mL conventional release oral syrup"/>
+		</coding>
+	</code>
+</Medication>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Medication/eumfh-70-293-1'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Medication/eumfh-70-293-2'/>
+<resource>
+<Medication>
+	<id value="eumfh-70-293-2"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="71724000"/>
+			<display value="Ferrous sulfate product"/>
+		</coding>
+	</code>
+</Medication>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Medication/eumfh-70-293-2'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-293-1'/>
+<resource>
+<MedicationStatement>
+	<id value="eumfh-70-293-1"/>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Medication/eumfh-70-293-1"/>
+		<display value="Folic acid 5mg/5mL conventional release oral syrup"/>
+	</medicationReference>
+	<effectivePeriod>
+		<start value="2018"/>
+	</effectivePeriod>
+	<dateAsserted value="2018-10-01"/>
+	<informationSource>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-293"/>
+		<display value="Donna Martin (inject 70-293)"/>
+	</informationSource>	
+	<subject>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-293"/>
+		<display value="Donna Martin (inject 70-293)"/>
+	</subject>
+	<taken value="y"/>
+</MedicationStatement>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='MedicationStatement/eumfh-70-293-1'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-293-2'/>
+<resource>
+<MedicationStatement>
+	<id value="eumfh-70-293-2"/>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Medication/eumfh-70-293-2"/>
+		<display value="Ferrous sulfate product"/>
+	</medicationReference>
+	<effectivePeriod>
+		<start value="2018"/>
+	</effectivePeriod>
+	<dateAsserted value="2018-10-01"/>
+	<informationSource>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-293"/>
+		<display value="Donna Martin (inject 70-293)"/>
+	</informationSource>	
+	<subject>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-293"/>
+		<display value="Donna Martin (inject 70-293)"/>
+	</subject>
+	<taken value="y"/>
+	<dosage>
+		<doseQuantity>
+			<value value="100"/>
+			<unit value="mg"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mg"/>
+		</doseQuantity>
+	</dosage>
+</MedicationStatement>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='MedicationStatement/eumfh-70-293-2'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-293'/>
+<resource>
+<Patient>
+<!--Sample XML file generated by XMLSpy v2013 sp1 (http://www.altova.com)-->
+	<id value="eumfh-70-293"/>
+  <meta><lastUpdated value="2018-10-10T13:51:24+02:00"/></meta>
+	<extension url="http://hl7.org/fhir/StructureDefinition/patient-citizenship">
+		<extension url="code">
+		<valueCodeableConcept>
+			<coding>
+				<system value="urn:iso:std:iso:3166"/>
+				<code value="US"/>
+				<display value="United States of America"/>
+			</coding></valueCodeableConcept>
+		</extension>
+	</extension>
+      	<identifier>
+  		<system value="http://trilliumbridge.eu/fhir/demos/eumfh/inject"/>
+		<value value="70-293"/>
+	</identifier>
+	<identifier>
+		<system value="http://trilliumbridge.eu/fhir/demos/eumfh/patient_id"/>
+		<value value="EUR01P0012"/>
+	</identifier>
+	<active value="true"/>
+	<name>
+		<family value="Martin"/>
+		<given value="Donna"/>
+	</name>
+	<gender value="female"/>
+	<birthDate value="1983-10-01"/>
+</Patient>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Patient/eumfh-70-293'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-293-1'/>
+<resource>
+<Practitioner>
+    <id value="eumfh-70-293-1"/>
+    <meta><lastUpdated value="2018-10-10T13:52:19+02:00"/></meta>
+    <name>
+        <family value="Harden"/>
+        <given value="Dick"/>
+        <prefix value="Dr."/>
+    </name>
+</Practitioner>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Practitioner/eumfh-70-293-1'/>
+</request>
+</entry>
+</Bundle>

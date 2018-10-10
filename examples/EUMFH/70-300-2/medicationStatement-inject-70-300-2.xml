@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+
+
+	<id value="eumfh-70-300-2"/>
+	<status value="active"/>
+	<medicationCodeableConcept>
+		<coding>
+			<system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
+			<code value="no-medication-info"/>
+			<display value="No information about medications"/>
+		</coding>
+	</medicationCodeableConcept>
+	<dateAsserted value="2018-10-01"/>
+	<informationSource>
+		<reference value="Patient/eumfh-70-300-2"/>
+		<display value="Anna Markou (inject 70-300-2)"/>
+	</informationSource>
+	<subject>
+		<reference value="Patient/eumfh-70-300-2"/>
+		<display value="Anna Markou (inject 70-300-2)"/>
+	</subject>
+	<taken value="na"/>
+</MedicationStatement>

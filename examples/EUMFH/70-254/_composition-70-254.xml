@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" >
+    <id value="eumfh-70-254"/>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="60591-5"/>
+            <display value="Patient Summary"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/eumfh-70-254"/>
+        <display value="Laurent Ballen (inject 70-254)" />
+    </subject>
+    <date value="2018-10-10T16:41:04+02:00"/>
+    <author>
+        <reference value="Practitioner/eumfh-70-254-1"/>
+        <display value="George Hugo (inject 70-254)"/>
+    </author>
+    <title value="Patient Summary of Laurent Ballen (inject 70-254)"/>
+    <confidentiality value="N"/>
+    <section>
+        <title value="Allergies and Intolerances"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="48765-2"/>
+                <display value="Allergies and/or adverse reactions"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <xhtml:div>
+                <xhtml:ul>
+                    <xhtml:li>No known allergies</xhtml:li>
+                </xhtml:ul>
+            </xhtml:div>
+        </text>
+        <entry>
+            <reference value="AllergyIntolerance/eumfh-70-254-1"/>
+            <display value="No known allergies"/>
+        </entry>
+    </section>
+	<section>
+		<title value="Active Problems"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="11450-4"/>
+				<display value="Problem list"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+<xhtml:li>[2008-03-01] - Hypertension</xhtml:li><xhtml:li>[2017-12-04] - Chronic kidney disease stage 2</xhtml:li><xhtml:li>[2011-02-04] - Carotid Stenosis 60%</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+<entry><reference value="Condition/eumfh-70-254-1"/><display value="[2008-03-01] - Hypertension"/></entry><entry><reference value="Condition/eumfh-70-254-2"/><display value="[2017-12-04] - Chronic kidney disease stage 2"/></entry><entry><reference value="Condition/eumfh-70-254-3"/><display value="[2011-02-04] - Carotid Stenosis 60%"/></entry>
+	</section>
+
+	<section>
+		<title value="Medication"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="10160-0"/>
+				<display value="Medication use"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+<xhtml:li>[2018] - amlodipine 20 mg</xhtml:li><xhtml:li>[2018] - Acetylsalicylic acid - 100 mg/day</xhtml:li><xhtml:li>[2018] - allopurinol 150 mg</xhtml:li><xhtml:li>[2018] - Omeprazole 20 mg oral tablet</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+<entry><reference value="MedicationStatement/eumfh-70-254-1"/><display value="[2018] - amlodipine 20 mg"/></entry><entry><reference value="MedicationStatement/eumfh-70-254-2"/><display value="[2018] - Acetylsalicylic acid - 100 mg/day"/></entry><entry><reference value="MedicationStatement/eumfh-70-254-3"/><display value="[2018] - allopurinol 150 mg"/></entry><entry><reference value="MedicationStatement/eumfh-70-254-4"/><display value="[2018] - Omeprazole 20 mg oral tablet"/></entry>
+	</section>
+</Composition>

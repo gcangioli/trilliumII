@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+
+
+	<id value="eumfh-72-261"/>
+	<status value="active"/>
+	<medicationCodeableConcept>
+		<coding>
+			<system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
+			<code value="no-medication-info"/>
+			<display value="No information about medications"/>
+		</coding>
+	</medicationCodeableConcept>
+	<dateAsserted value="2018-10-01"/>
+	<informationSource>
+		<reference value="Patient/eumfh-72-261"/>
+		<display value="Jive Lopez (inject 72-261)"/>
+	</informationSource>
+	<subject>
+		<reference value="Patient/eumfh-72-261"/>
+		<display value="Jive Lopez (inject 72-261)"/>
+	</subject>
+	<taken value="na"/>
+</MedicationStatement>

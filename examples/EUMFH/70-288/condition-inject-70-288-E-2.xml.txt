@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/condition.xsd">
+    <id value="eumfh-70-288-E-2"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="66214007"/>
+            <display value="Substance abuse"/>
+        </coding>
+        <text value="Substance abuse"/>
+    </code>
+    <subject>
+        <reference value="Patient/eumfh-70-288-E"/>
+        <display value="Marco Peroni (inject 70-288)"/>
+    </subject>
+	<onsetDateTime value="2012-07-16"/>
+	<asserter>
+		<reference value="Practitioner/eumfh-70-288-E"/>
+		<display value="Dr. Samantha Wang"/>
+	</asserter>  
+</Condition>

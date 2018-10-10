@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AllergyIntolerance xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/allergyintolerance.xsd">
+	<id value="eumfh-43-125-1"/>
+	<clinicalStatus value="active"/>
+	<verificationStatus value="confirmed"/>
+	<code>
+		<coding>
+			<system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown"/>
+			<code value="no-allergy-info"/>
+			<display value="No information about allergies"/>
+		</coding>
+	</code>
+	<patient>
+				<reference value="Patient/eumfh-43-125"/>
+		<display value="Janette Eiren (inject 43-125)" />
+	</patient>
+</AllergyIntolerance>
