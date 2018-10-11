@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Immunization xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../Users/Giorgio/Dropbox/_Consulenze/__Trillium/___Trillium_II/___FHIR/fhir-all-xsd/immunization.xsd">
+	<id value="eumfh-70-295-1"/>
+	<status value="completed"/>
+	<notGiven value="false"/>
+	<vaccineCode>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="350327004"/>
+			<display value="Diphtheria + tetanus vaccine"/>
+		</coding>
+		<text value="Diphtheria + tetanus vaccine"/>
+	</vaccineCode>
+	<patient>
+		<reference value="Patient/eumfh-70-295"/>
+		<display value="Allen Perot (inject 70-295)"/>
+	</patient>
+	<date value="1997-07-07"/>
+	<primarySource value="true"/>
+</Immunization>

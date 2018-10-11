@@ -2,131 +2,159 @@
 <Bundle xmlns='http://hl7.org/fhir' xmlns:xhtml='http://www.w3.org/1999/xhtml' >
 <type value='transaction'/>
 <entry>
-<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Composition/eumfh-70-295'/>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Composition/eumfh-70-295"/>'/>
 <resource>
 <Composition>
-    <id value="eumfh-70-295"/>
-    <status value="final"/>
-    <type>
-        <coding>
-            <system value="http://loinc.org"/>
-            <code value="60591-5"/>
-            <display value="Patient Summary"/>
-        </coding>
-    </type>
-    <subject>
-        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-295"/>
-        <display value="Allen Perot (inject 70-295)" />
-    </subject>
-    <date value="2018-10-10T16:41:04+02:00"/>
-    <author>
-        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-295-1"/>
-        <display value="Mustafa Sabbagh (inject 70-295)"/>
-    </author>
-    <title value="Patient Summary of Allen Perot (inject 70-295)"/>
-    <confidentiality value="N"/>
-    <section>
-        <title value="Allergies and Intolerances"/>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="48765-2"/>
-                <display value="Allergies and/or adverse reactions"/>
-            </coding>
-        </code>
-        <text>
-            <status value="generated"/>
-            <xhtml:div>
-                <xhtml:ul>
-                    <xhtml:li>Allergic Rhinitis</xhtml:li>
-                </xhtml:ul>
-            </xhtml:div>
-        </text>
-        <entry>
-            <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/AllergyIntolerance/eumfh-70-295"/>
-            <display value="Allergic Rhinitis"/>
-        </entry>
-    </section>
-	<section>
-		<title value="Active Problems"/>
-		<code>
-			<coding>
-				<system value="http://loinc.org"/>
-				<code value="11450-4"/>
-				<display value="Problem list"/>
-			</coding>
-		</code>
-		<text>
-			<status value="generated"/>
-			<xhtml:div>
-				<xhtml:ul>
-<xhtml:li>[2011-09-27] - Depression</xhtml:li>
-<xhtml:li>[2014-09-21] - Cardiovascular disease</xhtml:li>
-<xhtml:li>[2000-08-21] - Eye damage (retinopathy)</xhtml:li>
-<xhtml:li>[2011-01-02] - Hearing impairment</xhtml:li>
-<xhtml:li>[2010-08-28] - Diabetes Type 2</xhtml:li>
-				</xhtml:ul>
-			</xhtml:div>
-		</text>
-<entry>
-<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-295-1"/>
-<display value="[2011-09-27] - Depression"/>
-</entry>
-<entry>
-<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-295-2"/>
-<display value="[2014-09-21] - Cardiovascular disease"/>
-</entry>
-<entry>
-<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-295-3"/>
-<display value="[2000-08-21] - Eye damage (retinopathy)"/>
-</entry>
-<entry>
-<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-295-4"/>
-<display value="[2011-01-02] - Hearing impairment"/>
-</entry>
-<entry>
-<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-295-5"/>
-<display value="[2010-08-28] - Diabetes Type 2"/>
-</entry>
-	</section>
-
-	<section>
-		<title value="Medication"/>
-		<code>
-			<coding>
-				<system value="http://loinc.org"/>
-				<code value="10160-0"/>
-				<display value="Medication use"/>
-			</coding>
-		</code>
-		<text>
-			<status value="generated"/>
-			<xhtml:div>
-				<xhtml:ul>
-<xhtml:li>[2018] - Metformin hydrochloride 500 mg oral tablet - 2 tablets per day</xhtml:li>
-<xhtml:li>[2018] - Canagliflozin 100 mg oral tablet - 1 per day</xhtml:li>
-<xhtml:li>[2018] - Insulin degludec in parenteral dosage form - 1 injection per day</xhtml:li>
-				</xhtml:ul>
-			</xhtml:div>
-		</text>
-<entry>
-<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-295-1"/>
-<display value="[2018] - Metformin hydrochloride 500 mg oral tablet - 2 tablets per day"/>
-</entry>
-<entry>
-<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-295-2"/>
-<display value="[2018] - Canagliflozin 100 mg oral tablet - 1 per day"/>
-</entry>
-<entry>
-<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-295-3"/>
-<display value="[2018] - Insulin degludec in parenteral dosage form - 1 injection per day"/>
-</entry>
-	</section>
+  <id value="eumfh-70-295" />
+  <status value="final" />
+  <type>
+    <coding>
+      <system value="http://loinc.org" />
+      <code value="60591-5" />
+      <display value="Patient Summary" />
+    </coding>
+  </type>
+  <subject>
+    <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-295" />
+    <display value="Allen Perot (inject 70-295)" />
+  </subject>
+  <date value="2018-10-10T16:41:04+02:00" />
+  <author>
+    <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-295-1" />
+    <display value="Mustafa Sabbagh (inject 70-295)" />
+  </author>
+  <title value="Patient Summary of Allen Perot (inject 70-295)" />
+  <confidentiality value="N" />
+  <section>
+    <title value="Allergies and Intolerances" />
+    <code>
+      <coding>
+        <system value="http://loinc.org" />
+        <code value="48765-2" />
+        <display value="Allergies and/or adverse reactions" />
+      </coding>
+    </code>
+    <text>
+      <status value="generated" />
+      <xhtml:div>
+        <xhtml:ul>
+          <xhtml:li>Allergic Rhinitis</xhtml:li>
+        </xhtml:ul>
+      </xhtml:div>
+    </text>
+    <entry>
+      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/AllergyIntolerance/eumfh-70-295" />
+      <display value="Allergic Rhinitis" />
+    </entry>
+  </section>
+  <section>
+    <title value="Active Problems" />
+    <code>
+      <coding>
+        <system value="http://loinc.org" />
+        <code value="11450-4" />
+        <display value="Problem list" />
+      </coding>
+    </code>
+    <text>
+      <status value="generated" />
+      <xhtml:div>
+        <xhtml:ul>
+          <xhtml:li>[2011-09-27] - Depression</xhtml:li>
+          <xhtml:li>[2014-09-21] - Cardiovascular disease</xhtml:li>
+          <xhtml:li>[2000-08-21] - Eye damage (retinopathy)</xhtml:li>
+          <xhtml:li>[2011-01-02] - Hearing impairment</xhtml:li>
+          <xhtml:li>[2010-08-28] - Diabetes Type 2</xhtml:li>
+        </xhtml:ul>
+      </xhtml:div>
+    </text>
+    <entry>
+      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-295-1" />
+      <display value="[2011-09-27] - Depression" />
+    </entry>
+    <entry>
+      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-295-2" />
+      <display value="[2014-09-21] - Cardiovascular disease" />
+    </entry>
+    <entry>
+      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-295-3" />
+      <display value="[2000-08-21] - Eye damage (retinopathy)" />
+    </entry>
+    <entry>
+      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-295-4" />
+      <display value="[2011-01-02] - Hearing impairment" />
+    </entry>
+    <entry>
+      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-295-5" />
+      <display value="[2010-08-28] - Diabetes Type 2" />
+    </entry>
+  </section>
+  <section>
+    <title value="Medication" />
+    <code>
+      <coding>
+        <system value="http://loinc.org" />
+        <code value="10160-0" />
+        <display value="Medication use" />
+      </coding>
+    </code>
+    <text>
+      <status value="generated" />
+      <xhtml:div>
+        <xhtml:ul>
+          <xhtml:li>[2018] - Metformin hydrochloride 500 mg oral tablet - 2 tablets per
+          day</xhtml:li>
+          <xhtml:li>[2018] - Canagliflozin 100 mg oral tablet - 1 per day</xhtml:li>
+          <xhtml:li>[2018] - Insulin degludec in parenteral dosage form - 1 injection per
+          day</xhtml:li>
+        </xhtml:ul>
+      </xhtml:div>
+    </text>
+    <entry>
+      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-295-1" />
+      <display value="[2018] - Metformin hydrochloride 500 mg oral tablet - 2 tablets per day" />
+    </entry>
+    <entry>
+      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-295-2" />
+      <display value="[2018] - Canagliflozin 100 mg oral tablet - 1 per day" />
+    </entry>
+    <entry>
+      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-295-3" />
+      <display value="[2018] - Insulin degludec in parenteral dosage form - 1 injection per day" />
+    </entry>
+  </section>
+  <section>
+    <title value="Immunizations" />
+    <code>
+      <coding>
+        <system value="http://loinc.org" />
+        <code value="11369-6" />
+        <display value="History of Immunization Narrative" />
+      </coding>
+    </code>
+    <text>
+      <status value="generated" />
+      <xhtml:div>
+        <xhtml:ul>
+          <xhtml:li>[1997-07-07] - Diphtheria + tetanus</xhtml:li>
+          <xhtml:li>[2015-11-08] - Hepatitis B virus vaccine</xhtml:li>
+        </xhtml:ul>
+      </xhtml:div>
+    </text>
+    <entry>
+      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Immunization/eumfh-70-295-1" />
+      <display value="Diphtheria + tetanus" />
+    </entry>
+    <entry>
+      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Immunization/eumfh-70-295-2" />
+      <display value="Hepatitis B virus vaccine" />
+    </entry>
+  </section>
 </Composition>
 </resource>
 <request>
 <method value='PUT'/>
-<url value='Composition/eumfh-70-295'/>
+<url value='Composition/eumfh-70-295"/>'/>
 </request>
 </entry>
 <entry>
@@ -299,6 +327,62 @@
 <request>
 <method value='PUT'/>
 <url value='Condition/eumfh-70-295-4'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Immunization/eumfh-70-295-1'/>
+<resource>
+<Immunization>
+	<id value="eumfh-70-295-1"/>
+	<status value="completed"/>
+	<notGiven value="false"/>
+	<vaccineCode>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="350327004"/>
+			<display value="Diphtheria + tetanus vaccine"/>
+		</coding>
+		<text value="Diphtheria + tetanus vaccine"/>
+	</vaccineCode>
+	<patient>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-295"/>
+		<display value="Allen Perot (inject 70-295)"/>
+	</patient>
+	<date value="1997-07-07"/>
+	<primarySource value="true"/>
+</Immunization>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Immunization/eumfh-70-295-1'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Immunization/eumfh-70-295-2'/>
+<resource>
+<Immunization>
+	<id value="eumfh-70-295-2"/>
+	<status value="completed"/>
+	<notGiven value="false"/>
+	<vaccineCode>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="34689006"/>
+			<display value="Hepatitis B virus vaccine"/>
+		</coding>
+		<text value="Hepatitis B virus vaccine"/>
+	</vaccineCode>
+  <patient>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-295"/>
+		<display value="Allen Perot (inject 70-295)"/>
+	</patient>
+	<date value="2015-11-08"/>
+	<primarySource value="true"/>
+</Immunization>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Immunization/eumfh-70-295-2'/>
 </request>
 </entry>
 <entry>
