@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<id value="eumfh-70-281"/>
+	<status value="final"/>
+	<type>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="60591-5"/>
+			<display value="Patient Summary"/>
+		</coding>
+	</type>
+	<subject>
+		<reference value="Patient/eumfh-70-281"/>
+		<display value="Marie-Louise Joulent (inject 70-281)"/>
+	</subject>
+	<date value="2018-10-10T16:41:04+02:00"/>
+	<author>
+		<reference value="Practitioner/eumfh-70-281-1"/>
+		<display value="Alain Perrier (inject 70-281)"/>
+	</author>
+	<title value="Patient Summary of Marie-Louise Joulent (inject 70-281)"/>
+	<confidentiality value="N"/>
+	<section>
+		<title value="Allergies and Intolerances"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="48765-2"/>
+				<display value="Allergies and/or adverse reactions"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+					<xhtml:li>allergy to penicillin</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="AllergyIntolerance/eumfh-70-281"/>
+			<display value="allergy to penicillin"/>
+		</entry>
+	</section>
+	<section>
+		<title value="Active Problems"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="11450-4"/>
+				<display value="Problem list"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+					<xhtml:li>[2012-11-22] - Family history of neoplasm of breast</xhtml:li>
+					<xhtml:li>[2002-11-23] - Familial hypercholesterolemia</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="Condition/eumfh-70-281-1"/>
+			<display value="[2012-11-22] - Family history of neoplasm of breast"/>
+		</entry>
+		<entry>
+			<reference value="Condition/eumfh-70-281-2"/>
+			<display value="[2002-11-23] - Familial hypercholesterolemia"/>
+		</entry>
+	</section>
+	<section>
+		<title value="Medication"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="10160-0"/>
+				<display value="Medication use"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+					<xhtml:li>[2018] - Cyproterone and ethinylestradiol in oral dosage form</xhtml:li>
+					<xhtml:li>[2018] - atorvastatin 40 mg oral tablet</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="MedicationStatement/eumfh-70-281-1"/>
+			<display value="[2018] - Cyproterone and ethinylestradiol in oral dosage form"/>
+		</entry>
+		<entry>
+			<reference value="MedicationStatement/eumfh-70-281-2"/>
+			<display value="[2018] - atorvastatin 40 mg oral tablet"/>
+		</entry>
+	</section>
+	<section>
+		<title value="Immunizations"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="11369-6"/>
+				<display value="History of Immunization Narrative"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+					<xhtml:li>[2001-04-15] - Diphtheria, tetanus, acellular pertussis, inactivated poliomyelitis, hepatitis B (recombinant) and Haemophilus infuenzae type b conjugate vaccine</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="Immunization/eumfh-70-281-1"/>
+			<display value="Diphtheria, tetanus, acellular pertussis, inactivated poliomyelitis, hepatitis B (recombinant) and Haemophilus influenzae type b conjugate vaccine"/>
+		</entry>
+	</section>
+</Composition>

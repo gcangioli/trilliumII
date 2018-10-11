@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Immunization xmlns="http://hl7.org/fhir" >
+	<id value="eumfh-70-281-1"/>
+	<status value="completed"/>
+	<notGiven value="false"/>
+	<vaccineCode>
+		<text value="Diphtheria, tetanus, acellular pertussis, inactivated poliomyelitis, hepatitis B (recombinant) and Haemophilus influenzae type b conjugate vaccine"/>
+	</vaccineCode>
+	<patient>
+		<reference value="Patient/eumfh-72-262"/>
+		<display value="Marina Tresoro (inject 72-262)"/>
+	</patient>
+	<date value="2013-06-05"/>
+	<primarySource value="true"/>
+</Immunization>

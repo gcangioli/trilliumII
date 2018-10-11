@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<id value="eumfh-70-300-1"/>
+	<status value="final"/>
+	<type>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="60591-5"/>
+			<display value="Patient Summary"/>
+		</coding>
+	</type>
+	<subject>
+		<reference value="Patient/eumfh-70-300-1"/>
+		<display value="Mary Gines (inject 70-300-1)"/>
+	</subject>
+	<date value="2018-10-10T16:41:04+02:00"/>
+	<author>
+		<reference value="Practitioner/eumfh-70-300-1-1"/>
+		<display value="Simone Kraft (inject 70-300-1)"/>
+	</author>
+	<title value="Patient Summary of Mary Gines (inject 70-300-1)"/>
+	<confidentiality value="N"/>
+	<section>
+		<title value="Allergies and Intolerances"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="48765-2"/>
+				<display value="Allergies and/or adverse reactions"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+					<xhtml:li>allergy to NSAIDs painkillers</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="AllergyIntolerance/eumfh-70-300-1"/>
+			<display value="allergy to NSAIDs painkillers"/>
+		</entry>
+	</section>
+	<section>
+		<title value="Active Problems"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="11450-4"/>
+				<display value="Problem list"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+					<xhtml:li>[2018-10-08] - No known problems</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="Condition/eumfh-70-300-1-1"/>
+			<display value="[2018-10-08] - No known problems"/>
+		</entry>
+	</section>
+	<section>
+		<title value="Medication"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="10160-0"/>
+				<display value="Medication use"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+					<xhtml:li>[2018] - No information about medications</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="MedicationStatement/eumfh-70-300-1"/>
+			<display value="[2018] - No information about medications"/>
+		</entry>
+	</section>
+	<section>
+		<title value="Immunizations"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="11369-6"/>
+				<display value="History of Immunization Narrative"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+					<xhtml:li>[2016-11-25] - Tetanus</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="Immunization/eumfh-70-300-1-1"/>
+			<display value="Tetanus vaccine"/>
+		</entry>
+	</section>
+</Composition>

@@ -5,48 +5,48 @@
 <fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Composition/eumfh-70-300-1'/>
 <resource>
 <Composition>
-    <id value="eumfh-70-300-1"/>
-    <status value="final"/>
-    <type>
-        <coding>
-            <system value="http://loinc.org"/>
-            <code value="60591-5"/>
-            <display value="Patient Summary"/>
-        </coding>
-    </type>
-    <subject>
-        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-300-1"/>
-        <display value="Mary Gines (inject 70-300-1)" />
-    </subject>
-    <date value="2018-10-10T16:41:04+02:00"/>
-    <author>
-        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-300-1-1"/>
-        <display value="Simone Kraft (inject 70-300-1)"/>
-    </author>
-    <title value="Patient Summary of Mary Gines (inject 70-300-1)"/>
-    <confidentiality value="N"/>
-    <section>
-        <title value="Allergies and Intolerances"/>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="48765-2"/>
-                <display value="Allergies and/or adverse reactions"/>
-            </coding>
-        </code>
-        <text>
-            <status value="generated"/>
-            <xhtml:div>
-                <xhtml:ul>
-                    <xhtml:li>allergy to NSAIDs painkillers</xhtml:li>
-                </xhtml:ul>
-            </xhtml:div>
-        </text>
-        <entry>
-            <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/AllergyIntolerance/eumfh-70-300-1"/>
-            <display value="allergy to NSAIDs painkillers"/>
-        </entry>
-    </section>
+	<id value="eumfh-70-300-1"/>
+	<status value="final"/>
+	<type>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="60591-5"/>
+			<display value="Patient Summary"/>
+		</coding>
+	</type>
+	<subject>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-300-1"/>
+		<display value="Mary Gines (inject 70-300-1)"/>
+	</subject>
+	<date value="2018-10-10T16:41:04+02:00"/>
+	<author>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-300-1-1"/>
+		<display value="Simone Kraft (inject 70-300-1)"/>
+	</author>
+	<title value="Patient Summary of Mary Gines (inject 70-300-1)"/>
+	<confidentiality value="N"/>
+	<section>
+		<title value="Allergies and Intolerances"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="48765-2"/>
+				<display value="Allergies and/or adverse reactions"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+					<xhtml:li>allergy to NSAIDs painkillers</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/AllergyIntolerance/eumfh-70-300-1"/>
+			<display value="allergy to NSAIDs painkillers"/>
+		</entry>
+	</section>
 	<section>
 		<title value="Active Problems"/>
 		<code>
@@ -60,16 +60,15 @@
 			<status value="generated"/>
 			<xhtml:div>
 				<xhtml:ul>
-<xhtml:li>[2018-10-08] - No known problems</xhtml:li>
+					<xhtml:li>[2018-10-08] - No known problems</xhtml:li>
 				</xhtml:ul>
 			</xhtml:div>
 		</text>
-<entry>
-<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-300-1-1"/>
-<display value="[2018-10-08] - No known problems"/>
-</entry>
+		<entry>
+			<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-300-1-1"/>
+			<display value="[2018-10-08] - No known problems"/>
+		</entry>
 	</section>
-
 	<section>
 		<title value="Medication"/>
 		<code>
@@ -83,14 +82,36 @@
 			<status value="generated"/>
 			<xhtml:div>
 				<xhtml:ul>
-<xhtml:li>[2018] - No information about medications</xhtml:li>
+					<xhtml:li>[2018] - No information about medications</xhtml:li>
 				</xhtml:ul>
 			</xhtml:div>
 		</text>
-<entry>
-<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-300-1"/>
-<display value="[2018] - No information about medications"/>
-</entry>
+		<entry>
+			<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-300-1"/>
+			<display value="[2018] - No information about medications"/>
+		</entry>
+	</section>
+	<section>
+		<title value="Immunizations"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="11369-6"/>
+				<display value="History of Immunization Narrative"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+					<xhtml:li>[2016-11-25] - Tetanus</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Immunization/eumfh-70-300-1-1"/>
+			<display value="Tetanus vaccine"/>
+		</entry>
 	</section>
 </Composition>
 </resource>
@@ -119,6 +140,34 @@
 <request>
 <method value='PUT'/>
 <url value='AllergyIntolerance/70-300-1-1'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Immunization/eumfh-70-300-1-1'/>
+<resource>
+<Immunization>
+	<id value="eumfh-70-300-1-1"/>
+	<status value="completed"/>
+	<notGiven value="false"/>
+	<vaccineCode>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="333621002"/>
+			<display value="Tetanus vaccine"/>
+		</coding>
+		<text value="Tetanus vaccine"/>
+	</vaccineCode>
+	<patient>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-300-1"/>
+		<display value="Mary Gines (inject 70-300-1)"/>
+	</patient>
+	<date value="2016-11-25"/>
+	<primarySource value="false"/>
+</Immunization>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Immunization/eumfh-70-300-1-1'/>
 </request>
 </entry>
 <entry>

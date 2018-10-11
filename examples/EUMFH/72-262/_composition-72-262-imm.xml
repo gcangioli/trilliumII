@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<id value="eumfh-72-262"/>
+	<status value="final"/>
+	<type>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="60591-5"/>
+			<display value="Patient Summary"/>
+		</coding>
+	</type>
+	<subject>
+		<reference value="Patient/eumfh-72-262"/>
+		<display value="Marina Tresoro (inject 72-262)"/>
+	</subject>
+	<date value="2018-10-10T16:41:04+02:00"/>
+	<author>
+		<reference value="Practitioner/eumfh-72-262-1"/>
+		<display value="Ilie Croitoru (inject 72-262)"/>
+	</author>
+	<title value="Patient Summary of Marina Tresoro (inject 72-262)"/>
+	<confidentiality value="N"/>
+	<section>
+		<title value="Allergies and Intolerances"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="48765-2"/>
+				<display value="Allergies and/or adverse reactions"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+					<xhtml:li>No known allergies</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="AllergyIntolerance/eumfh-72-262-1"/>
+			<display value="No known allergies"/>
+		</entry>
+	</section>
+	<section>
+		<title value="Active Problems"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="11450-4"/>
+				<display value="Problem list"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+					<xhtml:li>[2011-07-25] - Hypertension</xhtml:li>
+					<xhtml:li>[2015-03-05] - Appendicitis</xhtml:li>
+					<xhtml:li>[2014-08-02] - Tonsillitis</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="Condition/eumfh-72-262-1"/>
+			<display value="[2011-07-25] - Hypertension"/>
+		</entry>
+		<entry>
+			<reference value="Condition/eumfh-72-262-2"/>
+			<display value="[2015-03-05] - Appendicitis"/>
+		</entry>
+		<entry>
+			<reference value="Condition/eumfh-72-262-3"/>
+			<display value="[2014-08-02] - Tonsillitis"/>
+		</entry>
+	</section>
+	<section>
+		<title value="Medication"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="10160-0"/>
+				<display value="Medication use"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+					<xhtml:li>[2018] - Paracetamol</xhtml:li>
+					<xhtml:li>[2018] - Codeine product</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="MedicationStatement/eumfh-72-262-1"/>
+			<display value="[2018] - Paracetamol"/>
+		</entry>
+		<entry>
+			<reference value="MedicationStatement/eumfh-72-262-2"/>
+			<display value="[2018] - Codeine product"/>
+		</entry>
+	</section>
+	<section>
+		<title value="Immunizations"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="11369-6"/>
+				<display value="History of Immunization Narrative"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+					<xhtml:li>[2013-06-05] - Diphtheria, tetanus, acellular pertussis, inactivated poliomyelitis, hepatitis B (recombinant) and Haemophilus infuenzae type b conjugate vaccine</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="Immunization/eumfh-72-262-1"/>
+			<display value="Diphtheria, tetanus, acellular pertussis, inactivated poliomyelitis, hepatitis B (recombinant) and Haemophilus influenzae type b conjugate vaccine"/>
+		</entry>
+	</section>
+</Composition>

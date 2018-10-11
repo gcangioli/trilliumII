@@ -5,48 +5,48 @@
 <fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Composition/eumfh-72-261'/>
 <resource>
 <Composition>
-    <id value="eumfh-72-261"/>
-    <status value="final"/>
-    <type>
-        <coding>
-            <system value="http://loinc.org"/>
-            <code value="60591-5"/>
-            <display value="Patient Summary"/>
-        </coding>
-    </type>
-    <subject>
-        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-72-261"/>
-        <display value="Jive Lopez (inject 72-261)" />
-    </subject>
-    <date value="2018-10-10T16:41:04+02:00"/>
-    <author>
-        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-72-261-1"/>
-        <display value="Laudinei Jobim (inject 72-261)"/>
-    </author>
-    <title value="Patient Summary of Jive Lopez (inject 72-261)"/>
-    <confidentiality value="N"/>
-    <section>
-        <title value="Allergies and Intolerances"/>
-        <code>
-            <coding>
-                <system value="http://loinc.org"/>
-                <code value="48765-2"/>
-                <display value="Allergies and/or adverse reactions"/>
-            </coding>
-        </code>
-        <text>
-            <status value="generated"/>
-            <xhtml:div>
-                <xhtml:ul>
-                    <xhtml:li>allergy to Penicillin</xhtml:li>
-                </xhtml:ul>
-            </xhtml:div>
-        </text>
-        <entry>
-            <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/AllergyIntolerance/eumfh-72-261"/>
-            <display value="allergy to Penicillin"/>
-        </entry>
-    </section>
+	<id value="eumfh-72-261"/>
+	<status value="final"/>
+	<type>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="60591-5"/>
+			<display value="Patient Summary"/>
+		</coding>
+	</type>
+	<subject>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-72-261"/>
+		<display value="Jive Lopez (inject 72-261)"/>
+	</subject>
+	<date value="2018-10-10T16:41:04+02:00"/>
+	<author>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-72-261-1"/>
+		<display value="Laudinei Jobim (inject 72-261)"/>
+	</author>
+	<title value="Patient Summary of Jive Lopez (inject 72-261)"/>
+	<confidentiality value="N"/>
+	<section>
+		<title value="Allergies and Intolerances"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="48765-2"/>
+				<display value="Allergies and/or adverse reactions"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+					<xhtml:li>allergy to Penicillin</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/AllergyIntolerance/eumfh-72-261"/>
+			<display value="allergy to Penicillin"/>
+		</entry>
+	</section>
 	<section>
 		<title value="Active Problems"/>
 		<code>
@@ -60,16 +60,15 @@
 			<status value="generated"/>
 			<xhtml:div>
 				<xhtml:ul>
-<xhtml:li>[2018-10-08] - No information about current problems</xhtml:li>
+					<xhtml:li>[2018-10-08] - No information about current problems</xhtml:li>
 				</xhtml:ul>
 			</xhtml:div>
 		</text>
-<entry>
-<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-72-261-1"/>
-<display value="[2018-10-08] - No information about current problems"/>
-</entry>
+		<entry>
+			<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-72-261-1"/>
+			<display value="[2018-10-08] - No information about current problems"/>
+		</entry>
 	</section>
-
 	<section>
 		<title value="Medication"/>
 		<code>
@@ -83,14 +82,36 @@
 			<status value="generated"/>
 			<xhtml:div>
 				<xhtml:ul>
-<xhtml:li>[2018] - No information about medications</xhtml:li>
+					<xhtml:li>[2018] - No information about medications</xhtml:li>
 				</xhtml:ul>
 			</xhtml:div>
 		</text>
-<entry>
-<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-72-261"/>
-<display value="[2018] - No information about medications"/>
-</entry>
+		<entry>
+			<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-72-261"/>
+			<display value="[2018] - No information about medications"/>
+		</entry>
+	</section>
+	<section>
+		<title value="Immunizations"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="11369-6"/>
+				<display value="History of Immunization Narrative"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+					<xhtml:li>[2004-10-12] - Tetanus</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Immunization/eumfh-72-261-1"/>
+			<display value="Tetanus vaccine"/>
+		</entry>
 	</section>
 </Composition>
 </resource>
@@ -119,6 +140,34 @@
 <request>
 <method value='PUT'/>
 <url value='AllergyIntolerance/72-261-1'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Immunization/eumfh-72-261-1'/>
+<resource>
+<Immunization>
+	<id value="eumfh-72-261-1"/>
+	<status value="completed"/>
+	<notGiven value="false"/>
+	<vaccineCode>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="333621002"/>
+			<display value="Tetanus vaccine"/>
+		</coding>
+		<text value="Tetanus vaccine"/>
+	</vaccineCode>
+	<patient>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-72-261"/>
+		<display value="Jive Lopez (inject 72-261)"/>
+	</patient>
+	<date value="2004-10-12"/>
+	<primarySource value="true"/>
+</Immunization>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Immunization/eumfh-72-261-1'/>
 </request>
 </entry>
 <entry>
