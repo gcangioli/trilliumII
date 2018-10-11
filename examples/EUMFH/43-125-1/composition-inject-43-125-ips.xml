@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/composition.xsd">
+    <id value="eumfh-43-125-1"/>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="60591-5"/>
+            <display value="Patient Summary"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/eumfh-43-125-1"/>
+        <display value="Amalia Torres (inject 43-125-1)" />
+    </subject>
+    <date value="2018-07-10T15:22:00+02:00"/>
+    <author>
+        <reference value="Practitioner/eumfh-43-125-1"/>
+        <display value="Dr. Anna Karlsson"/>
+    </author>
+    <title value="Patient Summary - inject 43-125-1"/>
+    <confidentiality value="N"/>
+    <section>
+        <title value="Allergies and Intolerances"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="48765-2"/>
+                <display value="Allergies and/or adverse reactions"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <xhtml:div>
+                <xhtml:ul>
+                    <xhtml:li>Elastoplast</xhtml:li>
+                    <xhtml:li>Acetylsalicylic acid</xhtml:li>
+                </xhtml:ul>
+            </xhtml:div>
+        </text>
+        <entry>
+            <reference value="AllergyIntolerance/eumfh-43-125-1-1"/>
+            <display value="Elastoplast"/>
+        </entry>
+        <entry>
+            <reference value="AllergyIntolerance/eumfh-43-125-1-2"/>
+            <display value="Acetylsalicylic acid"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Active Problems"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="11450-4"/>
+                <display value="Problem list"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <xhtml:div>
+                <xhtml:ul>
+                    <xhtml:li>Renal disorder due to type 2 diabetes mellitus</xhtml:li>
+                    <xhtml:li>Ischaemic cardiomyopathy</xhtml:li>
+                    <xhtml:li>Chronic kidney disease, stage 3</xhtml:li>
+                    <xhtml:li>Cerebral infarction, unspecified</xhtml:li>
+                    <xhtml:li>Atrial fibrillation and atrial flutter, unspecified</xhtml:li>
+                    <xhtml:li>Diabetic polyneuropathy</xhtml:li>
+                    <xhtml:li>Heart failure</xhtml:li>
+                    <xhtml:li>Muscle pain</xhtml:li>
+                    <xhtml:li>Personality disorder, unspecified</xhtml:li>
+                    <xhtml:li>Chronic pain</xhtml:li>
+                </xhtml:ul>
+            </xhtml:div>
+        </text>
+        <entry>
+            <reference value="Condition/eumfh-43-125-1-1"/>
+            <display value="Renal disorder due to type 2 diabetes mellitus"/>
+        </entry>
+        <entry>
+            <reference value="Condition/eumfh-43-125-1-2"/>
+            <display value="Ischaemic cardiomyopathy"/>
+        </entry>
+        <entry>
+            <reference value="Condition/eumfh-43-125-1-3"/>
+            <display value="Chronic kidney disease, stage 3"/>
+        </entry>
+        <entry>
+            <reference value="Condition/eumfh-43-125-1-4"/>
+            <display value="Cerebral infarction, unspecified"/>
+        </entry>
+        <entry>
+            <reference value="Condition/eumfh-43-125-1-5"/>
+            <display value="Atrial fibrillation and atrial flutter, unspecified"/>
+        </entry>
+        <entry>
+            <reference value="Condition/eumfh-43-125-1-6"/>
+            <display value="Diabetic polyneuropathy"/>
+        </entry>
+        <entry>
+            <reference value="Condition/eumfh-43-125-1-7"/>
+            <display value="Heart failure"/>
+        </entry>
+        <entry>
+            <reference value="Condition/eumfh-43-125-1-8"/>
+            <display value="Muscle pain"/>
+        </entry>
+        <entry>
+            <reference value="Condition/eumfh-43-125-1-9"/>
+            <display value="Personality disorder, unspecified"/>
+        </entry>
+        <entry>
+            <reference value="Condition/eumfh-43-125-1-10"/>
+            <display value="Chronic pain"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Medication"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="10160-0"/>
+                <display value="Medication use"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <xhtml:div>
+                <xhtml:p>Psychotherapy</xhtml:p>
+                <xhtml:table>
+                    <xhtml:thead>
+                        <xhtml:tr>
+                            <xhtml:th>Medication</xhtml:th>
+                            <xhtml:th>Dosage</xhtml:th>
+                        </xhtml:tr>
+                    </xhtml:thead>
+                    <xhtml:tbody>
+                        <xhtml:tr>
+                            <xhtml:td>insulin glargine</xhtml:td>
+                            <xhtml:td>22 international unit, 1 times per 1 day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>Atorvastatin</xhtml:td>
+                            <xhtml:td>20 mg/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>rivaroxaban</xhtml:td>
+                            <xhtml:td>15 mg/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>amitriptyline</xhtml:td>
+                            <xhtml:td>10 mg/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>furosemide</xhtml:td>
+                            <xhtml:td>40 mg/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>bisoprolol</xhtml:td>
+                            <xhtml:td>2.5 mg/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>eplerenone</xhtml:td>
+                            <xhtml:td>25 mg/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>thiamazole</xhtml:td>
+                            <xhtml:td>500 miligram, 2 times per 1 day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>pantoprazole</xhtml:td>
+                            <xhtml:td>40 mg/day</xhtml:td>
+                        </xhtml:tr>
+                    </xhtml:tbody>
+                </xhtml:table>
+            </xhtml:div>
+        </text>
+        <entry>
+            <reference value="MedicationStatement/eumfh-43-125-1-1"/>
+            <display value="insulin glargine 22 international unit, 1 times per 1 day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-43-125-1-2"/>
+            <display value="Atorvastatin 20 mg/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-43-125-1-3"/>
+            <display value="rivaroxaban 15 mg/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-43-125-1-4"/>
+            <display value="amitriptyline 10 mg/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-43-125-1-5"/>
+            <display value="furosemide 40 mg/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-43-125-1-6"/>
+            <display value="bisoprolol 2.5 mg/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-43-125-1-7"/>
+            <display value="eplerenone 25 mg/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-43-125-1-8"/>
+            <display value="thiamazole 500 miligram, 2 times per 1 day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-43-125-1-9"/>
+            <display value="pantoprazole 40 mg/day"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Pregnancies"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="10162-6"/>
+                <display value="History of pregnancies Narrative"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <xhtml:div>
+                Pregnancy Status: Not Pregnant
+            </xhtml:div>
+        </text>
+        <entry>
+            <reference value="Observation/eumfh-43-125-1-1"/>
+            <display value="Pregnancy Status: Not Pregnant"/>
+        </entry>
+    </section>
+</Composition>

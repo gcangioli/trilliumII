@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/patient.xsd">
+    <id value="eumfh-43-125-1"/>
+    <extension url="http://hl7.org/fhir/StructureDefinition/patient-citizenship">
+        <extension url="code">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="urn:iso:std:iso:3166"/>
+                    <code value="ES"/>
+                    <display value="Spain"/>
+                </coding></valueCodeableConcept>
+        </extension>
+    </extension>
+    <identifier>
+        <system value="http://trilliumbridge.eu/fhir/demos/eumfh/inject"/>
+        <value value="43-125-1"/>
+    </identifier>
+    		<identifier>
+		<system value="http://trilliumbridge.eu/fhir/demos/eumfh/patient_id"/>
+		<value value="EUR01P0003"/>
+	</identifier>
+    <active value="true"/>
+    <name>
+        <family value="Torres"/>
+        <given value="Amalia"/>
+    </name>
+    <gender value="female"/>
+    <birthDate value="1936-03-11"/>
+</Patient>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/condition.xsd">
+    <id value="eumfh-43-125-1-1"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="420279001"/>
+            <display value="Renal disorder due to type 2 diabetes mellitus"/>
+        </coding>
+        <text value="Renal disorder due to type 2 diabetes mellitus"/>
+    </code>
+    <subject>
+        <reference value="Patient/eumfh-43-125-1"/>
+        <display value="Amalia Torres (inject 43-125-1)"/>
+    </subject>
+    <onsetDateTime value="2001-01-01"/>
+    <asserter>
+        <reference value="Practitioner/eumfh-43-125-1"/>
+        <display value="Dr. Anna Karlsson"/>
+    </asserter>
+</Condition>

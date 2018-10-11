@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/composition.xsd">
+	<id value="eumfh-70-275"/>
+	<status value="final"/>
+	<type>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="60591-5"/>
+			<display value="Patient Summary"/>
+		</coding>
+	</type>
+	<subject>
+		<reference value="Patient/eumfh-70-275"/>
+		<display value="Annelise Black (inject 70-275)" />
+	</subject>
+	<date value="2018-07-10T15:22:00+02:00"/>
+	<author>
+		<reference value="Practitioner/eumfh-70-275"/>
+		<display value="Dr. Ted Pepper"/>
+	</author>
+	<title value="Patient Summary - Inject 70-275"/>
+	<confidentiality value="N"/>
+	<section>
+		<title value="Allergies and Intolerances"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="48765-2"/>
+				<display value="Allergies and/or adverse reactions"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>No Known Allergies</xhtml:div>
+		</text>
+		<entry>
+			<reference value="AllergyIntolerance/eumfh-70-275-1"/>
+		</entry>
+	</section>
+	<section>
+		<title value="Active Problems"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="11450-4"/>
+				<display value="Problem list"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+					<xhtml:li>Previous diagnosis (at age of 12 years) of Personality disorders NOS</xhtml:li>
+					<xhtml:li>Suicide attempt (twice)</xhtml:li>
+					<xhtml:li>Repeated Violent Behaviour</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="Condition/eumfh-70-275-1"/>
+			<display value="History of attempted suicide"/>
+		</entry>
+		<entry>
+			<reference value="Condition/eumfh-70-275-2"/>
+			<display value="Personality disorder"/>
+		</entry>
+		<entry>
+			<reference value="Condition/eumfh-70-275-3"/>
+			<display value="History of violent behavior toward others"/>
+		</entry>
+	</section>
+	<section>
+		<title value="Medication"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="10160-0"/>
+				<display value="Medication use"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+			<xhtml:p>Psychotherapy</xhtml:p>
+				<xhtml:table>
+					<xhtml:thead>
+						<xhtml:tr>
+							<xhtml:th>Medication</xhtml:th>
+							<xhtml:th>Dosage</xhtml:th>
+						</xhtml:tr>
+					</xhtml:thead>
+					<xhtml:tbody>
+						<xhtml:tr>
+							<xhtml:td>Chlorpromazine</xhtml:td>
+							<xhtml:td>500 mg/day</xhtml:td>
+						</xhtml:tr>
+						<xhtml:tr>
+							<xhtml:td>Diazepam</xhtml:td>
+							<xhtml:td>10 mg/day</xhtml:td>
+						</xhtml:tr>
+					</xhtml:tbody>
+				</xhtml:table>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="MedicationStatement/eumfh-70-275-2"/>
+			<display value="Chlorpromazine 500 mg/day"/>
+		</entry>
+		<entry>
+			<reference value="MedicationStatement/eumfh-70-275-3"/>
+			<display value="Diazepam 10 mg/day"/>
+		</entry>
+	</section>
+	<section>
+	<title value="Immunizations"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="11369-6"/>
+				<display value="History of Immunization Narrative"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				[2014 March 12] Diphtheria, tetanus, acellular pertussis, inactivated poliomyelitis, hepatitis B (recombinant) and Haemophilus influenzae type b conjugate vaccine 
+				
+				</xhtml:div>
+		</text>
+		<entry>
+			<reference value="Immunization/eumfh-70-275-1"/>
+			<display value="Diphtheria, tetanus, acellular pertussis, inactivated poliomyelitis, hepatitis B (recombinant) and Haemophilus influenzae type b conjugate vaccine"/>
+		</entry>
+	</section>
+
+	<section>
+	<title value="Medical Devices"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="46264-8"/>
+				<display value="History of medical device use"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>No known devices in use	
+				</xhtml:div>
+		</text>
+		<entry>
+			<reference value="DeviceUseStatement/eumfh-70-275-1"/>
+			<display value="No known devices in use"/>
+		</entry>
+	</section>
+	
+	
+		<section>
+	<title value="Pregnancies"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="10162-6"/>
+				<display value="History of pregnancies Narrative"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				Pregnancy Status: Not Pregnant			
+				</xhtml:div>
+		</text>
+		<entry>
+			<reference value="Observation/eumfh-70-275-1"/>
+			<display value="Pregnancy Status: Not Pregnant"/>
+		</entry>
+	</section>
+</Composition>

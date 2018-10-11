@@ -1,0 +1,1105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../fhir-all-xsd/bundle.xsd">
+	<id value="eumfh-39-02-1"/>
+	<identifier>
+		<system value="http://trilliumbridge.eu/fhir/demos/eumfh/inject"/>
+		<value value="EUR01P0004"/>
+	</identifier>
+	<type value="document"/>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Composition/eumfh-39-02-1-ips-1"/>
+		<resource>
+	<Composition >
+    <id value="eumfh-39-02-1"/>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="60591-5"/>
+            <display value="Patient Summary"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/eumfh-39-02-1"/>
+        <display value="John Mark (inject 39-02-1)" />
+    </subject>
+    <date value="2018-07-10T15:22:00+02:00"/>
+    <author>
+        <reference value="Practitioner/eumfh-39-02-1"/>
+        <display value="Dr. Anna Karlsson"/>
+    </author>
+    <title value="Patient Summary - Inject 39-02-1"/>
+    <confidentiality value="N"/>
+    <section>
+        <title value="Allergies and Intolerances"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="48765-2"/>
+                <display value="Allergies and/or adverse reactions"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <xhtml:div>
+                <xhtml:ul>
+                    <xhtml:li>Penicillins with extended spectrum</xhtml:li>
+                </xhtml:ul>
+            </xhtml:div>
+        </text>
+        <entry>
+            <reference value="AllergyIntolerance/eumfh-39-02-1-1"/>
+            <display value="Penicillins with extended spectrum"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Active Problems"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="11450-4"/>
+                <display value="Problem list"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <xhtml:div>
+                <xhtml:ul>
+                    <xhtml:li>Mild cognitive impairment</xhtml:li>
+                    <xhtml:li>Chronic kidney disease, stage 3</xhtml:li>
+                    <xhtml:li>Prostate Cancer</xhtml:li>
+                    <xhtml:li>Type 2 diabetes mellitus</xhtml:li>
+                    <xhtml:li>Glaucoma</xhtml:li>
+                    <xhtml:li>Essential (primary) hypertension</xhtml:li>
+                    <xhtml:li>Hypothyroidism, unspecified</xhtml:li>
+                </xhtml:ul>
+            </xhtml:div>
+        </text>
+        <entry>
+            <reference value="Condition/eumfh-39-02-1-1"/>
+            <display value="Mild cognitive impairment"/>
+        </entry>
+        <entry>
+            <reference value="Condition/eumfh-39-02-1-2"/>
+            <display value="Chronic kidney disease, stage 3"/>
+        </entry>
+        <entry>
+            <reference value="Condition/eumfh-39-02-1-3"/>
+            <display value="Prostate Cancer"/>
+        </entry>
+        <entry>
+            <reference value="Condition/eumfh-39-02-1-4"/>
+            <display value="Type 2 diabetes mellitus"/>
+        </entry>
+        <entry>
+            <reference value="Condition/eumfh-39-02-1-5"/>
+            <display value="Glaucoma"/>
+        </entry>
+        <entry>
+            <reference value="Condition/eumfh-39-02-1-6"/>
+            <display value="Essential (primary) hypertension"/>
+        </entry>
+        <entry>
+            <reference value="Condition/eumfh-39-02-1-7"/>
+            <display value="Hypothyroidism, unspecified"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Medication"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="10160-0"/>
+                <display value="Medication use"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <xhtml:div>
+                <xhtml:table>
+                    <xhtml:thead>
+                        <xhtml:tr>
+                            <xhtml:th>Medication</xhtml:th>
+                            <xhtml:th>Dosage</xhtml:th>
+                        </xhtml:tr>
+                    </xhtml:thead>
+                    <xhtml:tbody>
+                        <xhtml:tr>
+                            <xhtml:td>Gliclazide</xhtml:td>
+                            <xhtml:td>80 mg/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>Acetylsalicylic acid</xhtml:td>
+                            <xhtml:td>75 mg/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>Metformin</xhtml:td>
+                            <xhtml:td>500 mg twice a day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>Finasteride</xhtml:td>
+                            <xhtml:td>5 mg/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>tamsulosin</xhtml:td>
+                            <xhtml:td>0.4 mg/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>latanoprost</xhtml:td>
+                            <xhtml:td>55 ug/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>Timolol</xhtml:td>
+                            <xhtml:td>0.25 %, 1 times per 2 day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>Atorvastatin</xhtml:td>
+                            <xhtml:td>40 mg/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>Atenolol</xhtml:td>
+                            <xhtml:td>50 mg/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>Bendroflumethiazide</xhtml:td>
+                            <xhtml:td>2.5 mg/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>Lisinopril</xhtml:td>
+                            <xhtml:td>10 mg/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>levothyroxine sodium</xhtml:td>
+                            <xhtml:td>100 ug/day</xhtml:td>
+                        </xhtml:tr>
+                    </xhtml:tbody>
+                </xhtml:table>
+            </xhtml:div>
+        </text>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-1"/>
+            <display value="Gliclazide 80 mg/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-2"/>
+            <display value="Acetylsalicylic acid 75 mg/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-3"/>
+            <display value="Metformin 500 mg twice a day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-4"/>
+            <display value="Finasteride 5 mg/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-5"/>
+            <display value="tamsulosin 0.4 mg/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-6"/>
+            <display value="latanoprost 55 ug/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-7"/>
+            <display value="Timolol 0.25 %, 1 times per 2 day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-8"/>
+            <display value="Atorvastatin 40 mg/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-9"/>
+            <display value="Atenolol 50 mg/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-10"/>
+            <display value="Bendroflumethiazide 2.5 mg/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-11"/>
+            <display value="Lisinopril 10 mg/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-12"/>
+            <display value="levothyroxine sodium 100 ug/day"/>
+        </entry>
+    </section>
+</Composition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-02-1"/>
+		<resource>
+			<Patient xmlns="http://hl7.org/fhir">
+				<id value="eumfh-39-02-1"/>
+				<extension url="http://hl7.org/fhir/StructureDefinition/patient-citizenship">
+					<extension url="code">
+						<valueCodeableConcept>
+							<coding>
+								<system value="urn:iso:std:iso:3166"/>
+								<code value="UK"/>
+								<display value="United Kingdom"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+				</extension>
+				<identifier>
+					<system value="http://trilliumbridge.eu/fhir/demos/eumfh/inject"/>
+					<value value="39-02-1"/>
+				</identifier>
+				<identifier>
+					<system value="http://trilliumbridge.eu/fhir/demos/eumfh/patient_id"/>
+					<value value="EUR01P0004"/>
+				</identifier>
+				<active value="true"/>
+				<name>
+					<family value="Mark"/>
+					<given value="John"/>
+				</name>
+				<gender value="male"/>
+				<birthDate value="1934-06-22"/>
+			</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Practitioner/eumfh-39-02-1"/>
+		<resource>
+			<Practitioner>
+				<id value="eumfh-39-02-1"/>
+				<name>
+					<family value="Karlsson"/>
+					<given value="Anne"/>
+					<prefix value="Dr."/>
+				</name>
+			</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/AllergyIntolerance/eumfh-39-02-1-1"/>
+		<resource>
+			<AllergyIntolerance>
+				<id value="eumfh-39-02-1-1"/>
+				<clinicalStatus value="active"/>
+				<verificationStatus value="confirmed"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="J01CA"/>
+						<display value="Penicillins with extended spectrum"/>
+					</coding>
+				</code>
+				<patient>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-02-1"/>
+					<display value="John Mark (inject 39-02-1)"/>
+				</patient>
+			</AllergyIntolerance>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Condition/eumfh-39-02-1-1"/>
+		<resource>
+			<Condition>
+				<id value="eumfh-39-02-1-1"/>
+				<clinicalStatus value="active"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="386805003"/>
+						<display value="Mild cognitive impairment"/>
+					</coding>
+					<text value="Mild cognitive impairment"/>
+				</code>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-02-1"/>
+					<display value="John Mark (inject 39-02-1)"/>
+				</subject>
+				<onsetDateTime value="2015-08-01"/>
+				<asserter>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Practitioner/eumfh-39-02-1"/>
+					<display value="Dr. Anna Karlsson"/>
+				</asserter>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Condition/eumfh-39-02-1-2"/>
+		<resource>
+			<Condition>
+				<id value="eumfh-39-02-1-2"/>
+				<clinicalStatus value="active"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="433144002"/>
+						<display value="Chronic kidney disease, stage 3"/>
+					</coding>
+					<text value="Chronic kidney disease, stage 3"/>
+				</code>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-02-1"/>
+					<display value="John Mark (inject 39-02-1)"/>
+				</subject>
+				<onsetDateTime value="2015-01-01"/>
+				<asserter>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Practitioner/eumfh-39-02-1"/>
+					<display value="Dr. Anna Karlsson"/>
+				</asserter>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Condition/eumfh-39-02-1-3"/>
+		<resource>
+			<Condition>
+				<id value="eumfh-39-02-1-3"/>
+				<clinicalStatus value="active"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="254900004"/>
+						<display value="Prostate Cancer"/>
+					</coding>
+					<text value="Prostate Cancer"/>
+				</code>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-02-1"/>
+					<display value="John Mark (inject 39-02-1)"/>
+				</subject>
+				<onsetDateTime value="2010-10-02"/>
+				<asserter>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Practitioner/eumfh-39-02-1"/>
+					<display value="Dr. Anna Karlsson"/>
+				</asserter>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Condition/eumfh-39-02-1-4"/>
+		<resource>
+			<Condition>
+				<id value="eumfh-39-02-1-4"/>
+				<clinicalStatus value="active"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="44054006"/>
+						<display value="Type 2 diabetes mellitus"/>
+					</coding>
+					<text value="Type 2 diabetes mellitus"/>
+				</code>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-02-1"/>
+					<display value="John Mark (inject 39-02-1)"/>
+				</subject>
+				<onsetDateTime value="2010-04-02"/>
+				<asserter>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Practitioner/eumfh-39-02-1"/>
+					<display value="Dr. Anna Karlsson"/>
+				</asserter>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Condition/eumfh-39-02-1-5"/>
+		<resource>
+			<Condition>
+				<id value="eumfh-39-02-1-5"/>
+				<clinicalStatus value="active"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="23986001"/>
+						<display value="Glaucoma"/>
+					</coding>
+					<text value="Glaucoma"/>
+				</code>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-02-1"/>
+					<display value="John Mark (inject 39-02-1)"/>
+				</subject>
+				<onsetDateTime value="1998-05-04"/>
+				<asserter>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Practitioner/eumfh-39-02-1"/>
+					<display value="Dr. Anna Karlsson"/>
+				</asserter>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Condition/eumfh-39-02-1-6"/>
+		<resource>
+			<Condition>
+				<id value="eumfh-39-02-1-6"/>
+				<clinicalStatus value="active"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="38341003"/>
+						<display value="Essential (primary) hypertension"/>
+					</coding>
+					<text value="Essential (primary) hypertension"/>
+				</code>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-02-1"/>
+					<display value="John Mark (inject 39-02-1)"/>
+				</subject>
+				<onsetDateTime value="1993-03-02"/>
+				<asserter>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Practitioner/eumfh-39-02-1"/>
+					<display value="Dr. Anna Karlsson"/>
+				</asserter>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Condition/eumfh-39-02-1-7"/>
+		<resource>
+			<Condition>
+				<id value="eumfh-39-02-1-7"/>
+				<clinicalStatus value="active"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="40930008"/>
+						<display value="Hypothyroidism, unspecified"/>
+					</coding>
+					<text value="Hypothyroidism, unspecified"/>
+				</code>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-02-1"/>
+					<display value="John Mark (inject 39-02-1)"/>
+				</subject>
+				<onsetDateTime value="1987-03-10"/>
+				<asserter>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Practitioner/eumfh-39-02-1"/>
+					<display value="Dr. Anna Karlsson"/>
+				</asserter>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-39-02-1-1"/>
+		<resource>
+			<MedicationStatement>
+				<id value="eumfh-39-02-1-1"/>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-1"/>
+					<display value="Gliclazide"/>
+				</medicationReference>
+				<effectivePeriod>
+					<start value="2015-05-01"/>
+				</effectivePeriod>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-02-1"/>
+					<display value="John Mark (inject 39-02-1)"/>
+				</subject>
+				<taken value="y"/>
+				<dosage>
+					<text value="80 mg/day"/>
+					<timing>
+						<repeat>
+							<frequency value="1"/>
+							<period value="1"/>
+							<periodUnit value="d"/>
+						</repeat>
+					</timing>
+					<doseQuantity>
+						<value value="80"/>
+						<unit value="mg"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="mg"/>
+					</doseQuantity>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-39-02-1-2"/>
+		<resource>
+			<MedicationStatement>
+				<id value="eumfh-39-02-1-2"/>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-2"/>
+					<display value="Acetylsalicylic acid"/>
+				</medicationReference>
+				<effectivePeriod>
+					<start value="2012-11-10"/>
+				</effectivePeriod>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-02-1"/>
+					<display value="John Mark (inject 39-02-1)"/>
+				</subject>
+				<taken value="y"/>
+				<dosage>
+					<text value="75 mg/day"/>
+					<timing>
+						<repeat>
+							<frequency value="1"/>
+							<period value="1"/>
+							<periodUnit value="d"/>
+						</repeat>
+					</timing>
+					<doseQuantity>
+						<value value="75"/>
+						<unit value="mg"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="mg"/>
+					</doseQuantity>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-39-02-1-3"/>
+		<resource>
+			<MedicationStatement>
+				<id value="eumfh-39-02-1-3"/>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-3"/>
+					<display value="Metformin"/>
+				</medicationReference>
+				<effectivePeriod>
+					<start value="2010-10-01"/>
+				</effectivePeriod>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-02-1"/>
+					<display value="John Mark (inject 39-02-1)"/>
+				</subject>
+				<taken value="y"/>
+				<dosage>
+					<text value="500 mg twice a day"/>
+					<timing>
+						<repeat>
+							<frequency value="2"/>
+							<period value="1"/>
+							<periodUnit value="d"/>
+						</repeat>
+					</timing>
+					<doseQuantity>
+						<value value="500"/>
+						<unit value="mg"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="mg"/>
+					</doseQuantity>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-39-02-1-4"/>
+		<resource>
+			<MedicationStatement>
+				<id value="eumfh-39-02-1-4"/>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-4"/>
+					<display value="Finasteride"/>
+				</medicationReference>
+				<effectivePeriod>
+					<start value="2010-08-04"/>
+				</effectivePeriod>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-02-1"/>
+					<display value="John Mark (inject 39-02-1)"/>
+				</subject>
+				<taken value="y"/>
+				<dosage>
+					<text value="5 mg/day"/>
+					<timing>
+						<repeat>
+							<frequency value="1"/>
+							<period value="1"/>
+							<periodUnit value="d"/>
+						</repeat>
+					</timing>
+					<doseQuantity>
+						<value value="5"/>
+						<unit value="mg"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="mg"/>
+					</doseQuantity>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-39-02-1-5"/>
+		<resource>
+			<MedicationStatement>
+				<id value="eumfh-39-02-1-5"/>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-5"/>
+					<display value="tamsulosin"/>
+				</medicationReference>
+				<effectivePeriod>
+					<start value="2008-02-03"/>
+				</effectivePeriod>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-02-1"/>
+					<display value="John Mark (inject 39-02-1)"/>
+				</subject>
+				<taken value="y"/>
+				<dosage>
+					<text value="0.4 mg/day"/>
+					<timing>
+						<repeat>
+							<frequency value="1"/>
+							<period value="1"/>
+							<periodUnit value="d"/>
+						</repeat>
+					</timing>
+					<doseQuantity>
+						<value value="0.4"/>
+						<unit value="mg"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="mg"/>
+					</doseQuantity>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-39-02-1-6"/>
+		<resource>
+			<MedicationStatement>
+				<id value="eumfh-39-02-1-6"/>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-6"/>
+					<display value="latanoprost"/>
+				</medicationReference>
+				<effectivePeriod>
+					<start value="2004-02-16"/>
+				</effectivePeriod>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-02-1"/>
+					<display value="John Mark (inject 39-02-1)"/>
+				</subject>
+				<taken value="y"/>
+				<dosage>
+					<text value="55 ug/day"/>
+					<timing>
+						<repeat>
+							<frequency value="1"/>
+							<period value="1"/>
+							<periodUnit value="d"/>
+						</repeat>
+					</timing>
+					<doseQuantity>
+						<value value="55"/>
+						<unit value="ug"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="ug"/>
+					</doseQuantity>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-39-02-1-7"/>
+		<resource>
+			<MedicationStatement>
+				<id value="eumfh-39-02-1-7"/>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-7"/>
+					<display value="Timolol"/>
+				</medicationReference>
+				<effectivePeriod>
+					<start value="1998-08-15"/>
+				</effectivePeriod>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-02-1"/>
+					<display value="John Mark (inject 39-02-1)"/>
+				</subject>
+				<taken value="y"/>
+				<dosage>
+					<text value="0.25 %, 1 times per 2 day"/>
+					<timing>
+						<repeat>
+							<frequency value="1"/>
+							<period value="2"/>
+							<periodUnit value="d"/>
+						</repeat>
+					</timing>
+					<doseQuantity>
+						<value value="0.25"/>
+						<unit value="%"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="%"/>
+					</doseQuantity>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-39-02-1-8"/>
+		<resource>
+			<MedicationStatement>
+				<id value="eumfh-39-02-1-8"/>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-8"/>
+					<display value="Atorvastatin"/>
+				</medicationReference>
+				<effectivePeriod>
+					<start value="1998-04-02"/>
+				</effectivePeriod>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-02-1"/>
+					<display value="John Mark (inject 39-02-1)"/>
+				</subject>
+				<taken value="y"/>
+				<dosage>
+					<text value="40 mg/day"/>
+					<timing>
+						<repeat>
+							<frequency value="1"/>
+							<period value="1"/>
+							<periodUnit value="d"/>
+						</repeat>
+					</timing>
+					<doseQuantity>
+						<value value="40"/>
+						<unit value="mg"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="mg"/>
+					</doseQuantity>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-39-02-1-9"/>
+		<resource>
+			<MedicationStatement>
+				<id value="eumfh-39-02-1-9"/>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-9"/>
+					<display value="Atenolol"/>
+				</medicationReference>
+				<effectivePeriod>
+					<start value="1994-08-03"/>
+				</effectivePeriod>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-02-1"/>
+					<display value="John Mark (inject 39-02-1)"/>
+				</subject>
+				<taken value="y"/>
+				<dosage>
+					<text value="50 mg/day"/>
+					<timing>
+						<repeat>
+							<frequency value="1"/>
+							<period value="1"/>
+							<periodUnit value="d"/>
+						</repeat>
+					</timing>
+					<doseQuantity>
+						<value value="50"/>
+						<unit value="mg"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="mg"/>
+					</doseQuantity>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-39-02-1-10"/>
+		<resource>
+			<MedicationStatement>
+				<id value="eumfh-39-02-1-10"/>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-10"/>
+					<display value="Bendroflumethiazide"/>
+				</medicationReference>
+				<effectivePeriod>
+					<start value="1993-09-01"/>
+				</effectivePeriod>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-02-1"/>
+					<display value="John Mark (inject 39-02-1)"/>
+				</subject>
+				<taken value="y"/>
+				<dosage>
+					<text value="2.5 mg/day"/>
+					<timing>
+						<repeat>
+							<frequency value="1"/>
+							<period value="1"/>
+							<periodUnit value="d"/>
+						</repeat>
+					</timing>
+					<doseQuantity>
+						<value value="2.5"/>
+						<unit value="mg"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="mg"/>
+					</doseQuantity>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-39-02-1-11"/>
+		<resource>
+			<MedicationStatement>
+				<id value="eumfh-39-02-1-11"/>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-11"/>
+					<display value="Lisinopril"/>
+				</medicationReference>
+				<effectivePeriod>
+					<start value="1993-05-02"/>
+				</effectivePeriod>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-02-1"/>
+					<display value="John Mark (inject 39-02-1)"/>
+				</subject>
+				<taken value="y"/>
+				<dosage>
+					<text value="10 mg/day"/>
+					<timing>
+						<repeat>
+							<frequency value="1"/>
+							<period value="1"/>
+							<periodUnit value="d"/>
+						</repeat>
+					</timing>
+					<doseQuantity>
+						<value value="10"/>
+						<unit value="mg"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="mg"/>
+					</doseQuantity>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-39-02-1-12"/>
+		<resource>
+			<MedicationStatement>
+				<id value="eumfh-39-02-1-12"/>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-12"/>
+					<display value="levothyroxine sodium"/>
+				</medicationReference>
+				<effectivePeriod>
+					<start value="1987-04-01"/>
+				</effectivePeriod>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-02-1"/>
+					<display value="John Mark (inject 39-02-1)"/>
+				</subject>
+				<taken value="y"/>
+				<dosage>
+					<text value="100 ug/day"/>
+					<timing>
+						<repeat>
+							<frequency value="1"/>
+							<period value="1"/>
+							<periodUnit value="d"/>
+						</repeat>
+					</timing>
+					<doseQuantity>
+						<value value="100"/>
+						<unit value="ug"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="ug"/>
+					</doseQuantity>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-1"/>
+		<resource>
+			<Medication>
+				<id value="eumfh-39-02-1-1"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="A10BB09"/>
+						<display value="Gliclazide"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-2"/>
+		<resource>
+			<Medication>
+				<id value="eumfh-39-02-1-2"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="B01AC06"/>
+						<display value="Acetylsalicylic acid"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-3"/>
+		<resource>
+			<Medication>
+				<id value="eumfh-39-02-1-3"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="A10BA02"/>
+						<display value="Metformin"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-4"/>
+		<resource>
+			<Medication>
+				<id value="eumfh-39-02-1-4"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="D11AX10"/>
+						<display value="Finasteride"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-5"/>
+		<resource>
+			<Medication>
+				<id value="eumfh-39-02-1-5"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="G04CA02"/>
+						<display value="tamsulosin"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-6"/>
+		<resource>
+			<Medication>
+				<id value="eumfh-39-02-1-6"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="S01EE01"/>
+						<display value="latanoprost"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-7"/>
+		<resource>
+			<Medication>
+				<id value="eumfh-39-02-1-7"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="S01ED01"/>
+						<display value="Timolol"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-8"/>
+		<resource>
+			<Medication>
+				<id value="eumfh-39-02-1-8"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="C10AA05"/>
+						<display value="Atorvastatin"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-9"/>
+		<resource>
+			<Medication>
+				<id value="eumfh-39-02-1-9"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="C07AB03"/>
+						<display value="Atenolol"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-10"/>
+		<resource>
+			<Medication>
+				<id value="eumfh-39-02-1-10"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="C03AA01"/>
+						<display value="Bendroflumethiazide"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-11"/>
+		<resource>
+			<Medication>
+				<id value="eumfh-39-02-1-11"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="C09AA03"/>
+						<display value="Lisinopril"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-02-1-12"/>
+		<resource>
+			<Medication>
+				<id value="eumfh-39-02-1-12"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="H03AA01"/>
+						<display value="levothyroxine sodium"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+</Bundle>

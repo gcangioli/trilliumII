@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/condition.xsd">
+	<id value="eumfh-39-07-1"/>
+	<clinicalStatus value="active"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="54329005"/>
+			<display value="Acute myocardial infarction of anterior wall"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/eumfh-39-07"/>
+		<display value="Alexander Heig (inject 39-07)"/>
+	</subject>
+	<onsetDateTime value="2014"/>
+	<asserter>
+		<reference value="Practitioner/eumfh-39-07"/>
+		<display value="Dr. Mark Antonio"/>
+	</asserter>
+</Condition>
