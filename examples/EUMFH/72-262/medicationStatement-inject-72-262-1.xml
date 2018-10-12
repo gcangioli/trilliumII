@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir">
-	<id value="eumfh-72-262-2"/>
+	<id value="eumfh-72-262-1"/>
 	<status value="active"/>
 	<medicationReference>
 		<reference value="Medication/eumfh-72-262-1"/>

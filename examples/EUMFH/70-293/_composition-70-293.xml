@@ -38,7 +38,7 @@
             </xhtml:div>
         </text>
         <entry>
-            <reference value="AllergyIntolerance/eumfh-70-293"/>
+            <reference value="AllergyIntolerance/eumfh-70-293-1"/>
             <display value="allergy or intolerance to Gluten"/>
         </entry>
     </section>
@@ -55,11 +55,24 @@
 			<status value="generated"/>
 			<xhtml:div>
 				<xhtml:ul>
-<xhtml:li>[2003-10-04] - Previous Spontaneous Abortion</xhtml:li><xhtml:li>[1998-11-21] - Sideropenic anemia</xhtml:li><xhtml:li>[2007-11-21] - Celiac disease</xhtml:li>
+<xhtml:li>[2003-10-04] - Previous Spontaneous Abortion</xhtml:li>
+<xhtml:li>[1998-11-21] - Sideropenic anemia</xhtml:li>
+<xhtml:li>[2007-11-21] - Celiac disease</xhtml:li>
 				</xhtml:ul>
 			</xhtml:div>
 		</text>
-<entry><reference value="Condition/eumfh-70-293-1"/><display value="[2003-10-04] - Previous Spontaneous Abortion"/></entry><entry><reference value="Condition/eumfh-70-293-2"/><display value="[1998-11-21] - Sideropenic anemia"/></entry><entry><reference value="Condition/eumfh-70-293-3"/><display value="[2007-11-21] - Celiac disease"/></entry>
+<entry>
+<reference value="Condition/eumfh-70-293-1"/>
+<display value="[2003-10-04] - Previous Spontaneous Abortion"/>
+</entry>
+<entry>
+<reference value="Condition/eumfh-70-293-2"/>
+<display value="[1998-11-21] - Sideropenic anemia"/>
+</entry>
+<entry>
+<reference value="Condition/eumfh-70-293-3"/>
+<display value="[2007-11-21] - Celiac disease"/>
+</entry>
 	</section>
 
 	<section>
@@ -75,10 +88,18 @@
 			<status value="generated"/>
 			<xhtml:div>
 				<xhtml:ul>
-<xhtml:li>[2018] - Folic acid 5mg/5mL conventional release oral syrup</xhtml:li><xhtml:li>[2018] - Ferrous sulfate product - 100 mg</xhtml:li>
+<xhtml:li>[2018] - Folic acid 5mg/5mL conventional release oral syrup</xhtml:li>
+<xhtml:li>[2018] - Ferrous sulfate product - 100 mg</xhtml:li>
 				</xhtml:ul>
 			</xhtml:div>
 		</text>
-<entry><reference value="MedicationStatement/eumfh-70-293-1"/><display value="[2018] - Folic acid 5mg/5mL conventional release oral syrup"/></entry><entry><reference value="MedicationStatement/eumfh-70-293-2"/><display value="[2018] - Ferrous sulfate product - 100 mg"/></entry>
+<entry>
+<reference value="MedicationStatement/eumfh-70-293-1"/>
+<display value="[2018] - Folic acid 5mg/5mL conventional release oral syrup"/>
+</entry>
+<entry>
+<reference value="MedicationStatement/eumfh-70-293-2"/>
+<display value="[2018] - Ferrous sulfate product - 100 mg"/>
+</entry>
 	</section>
 </Composition>

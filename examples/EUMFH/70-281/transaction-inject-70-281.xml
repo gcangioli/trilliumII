@@ -153,9 +153,9 @@
 </request>
 </entry>
 <entry>
-<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition /eumfh-70-281-1'/>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-281-1'/>
 <resource>
-<Condition >
+<Condition>
   <id value="eumfh-70-281-1"/> 
   <clinicalStatus value="active"/> 
   <code> 
@@ -179,7 +179,7 @@
 </resource>
 <request>
 <method value='PUT'/>
-<url value='Condition /eumfh-70-281-1'/>
+<url value='Condition/eumfh-70-281-1'/>
 </request>
 </entry>
 <entry>

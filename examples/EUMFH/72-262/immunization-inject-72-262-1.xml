@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Immunization xmlns="http://hl7.org/fhir" >
-	<id value="eumfh-70-281-1"/>
+	<id value="eumfh-72-262-1"/>
 	<status value="completed"/>
 	<notGiven value="false"/>
 	<vaccineCode>

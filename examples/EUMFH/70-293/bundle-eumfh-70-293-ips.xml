@@ -45,7 +45,7 @@
             </xhtml:div>
         </text>
         <entry>
-            <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/AllergyIntolerance/eumfh-70-293"/>
+            <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/AllergyIntolerance/eumfh-70-293-1"/>
             <display value="allergy or intolerance to Gluten"/>
         </entry>
     </section>
@@ -113,10 +113,10 @@
 </resource>
 </entry>
 <entry>
-<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/AllergyIntolerance/70-293-1'/>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/AllergyIntolerance/eumfh-70-293-1'/>
 <resource>
 <AllergyIntolerance>
-    <id value="70-293-1"/>
+    <id value="eumfh-70-293-1"/>
     <clinicalStatus value="active"/>
     <verificationStatus value="confirmed"/>
     

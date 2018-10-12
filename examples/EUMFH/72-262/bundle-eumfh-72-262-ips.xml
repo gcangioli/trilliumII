@@ -233,10 +233,10 @@
 </resource>
 </entry>
 <entry>
-<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Immunization/eumfh-70-281-1'/>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Immunization/eumfh-72-262-1'/>
 <resource>
 <Immunization>
-	<id value="eumfh-70-281-1"/>
+	<id value="eumfh-72-262-1"/>
 	<status value="completed"/>
 	<notGiven value="false"/>
 	<vaccineCode>
@@ -285,7 +285,7 @@
 <fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-72-262-2'/>
 <resource>
 <MedicationStatement>
-	<id value="eumfh-72-262-2"/>
+	<id value="eumfh-72-262-1"/>
 	<status value="active"/>
 	<medicationReference>
 		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Medication/eumfh-72-262-1"/>
