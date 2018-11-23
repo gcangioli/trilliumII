@@ -1,0 +1,1 @@
+ java -Xmx4g -jar C:\msys64\home\Giorgio\__FHIRr4Tools\org.hl7.fhir.igpublisher.jar -ig .\ig.json > log.txt  2>&1

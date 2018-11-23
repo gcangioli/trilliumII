@@ -1,0 +1,95 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../__FHIRr4Tools/STU3_fhir-xsd/implementationguide.xsd">
+	<id value="ig-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/ImplementationGuide/ig-uv-ips"/>
+	<version value="0.1.0"/>
+	<name value="Trillium II Implementation Guide"/>
+	<status value="active"/>
+	<publisher value="Trillium II project"/>
+	<package>
+		<name value="base"/>
+		<!-- IMMUNIZATION BEGIN-->
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Immunization-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/absent-or-unknown-immunization-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/pcid-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/mpid-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/phpid-lvl1-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/phpid-lvl2-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/phpid-lvl3-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/phpid-lvl4-uv-ips"/>
+		</resource>
+		<!-- IMMUNIZATION END -->
+		<!-- MEDICATIONS -->
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/MedicationStatement-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Medication-uv-ips"/>
+		</resource>
+		<!--MEDICATIONS END -->
+		<!-- COMMON -->
+		<resource>
+			<example value="false"/>
+			<sourceUri value="CodeSystem/absent-unknown-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/CodeableConcept-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/statement-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Coding-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Patient-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/vaccinationValidity-immunization-uv-trillium2"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Range-uv-ips"/>
+		</resource>
+    <!--
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Ratio-uv-ips"/>
+		</resource>
+    -->
+	</package>
+	<page>
+		<source value="index.md"/>
+		<title value="Trillium II IPS Home"/>
+		<kind value="page"/>
+	</page>
+</ImplementationGuide>
