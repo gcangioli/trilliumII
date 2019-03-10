@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../__FHIRr4Tools/STU3_fhir-xsd/structuredefinition.xsd">
+	<id value="Condition-uv-ips"/>
+	<meta>
+		<lastUpdated value="2018-02-27T15:32:05.203+01:00"/>
+	</meta>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints applied to the Condition resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an allergy or intolerance is represented in the patient summary as an instance of an AllergyIntolerance resource constrained by this profile.&#xD;&#xA;&#xD;&#xA;It documents the relevant allergies or intolerances (conditions) for a patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy.</div>
+	</text>
+	<url value="http://hl7.eu/fhir/trillium2/StructureDefinition/Condition-uv-ips"/>
+	<version value="0.2.0"/>
+	<name value="Condition_uv_ips"/>
+	<title value="Condition (IPS)"/>
+	<status value="draft"/>
+	<date value="2018-03-20"/>
+	<publisher value="HL7 International"/>
+	<description value="This profile represents the constraints applied to the Condition resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of problem is represented in the patient summary as an instance of the Condition resource constrained by this profile."/>
+	<purpose value="Representation of a problem in the international patient summary"/>
+	<fhirVersion value="3.0.1"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Condition"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Condition">
+			<path value="Condition"/>
+			<short value="Documentation of a health problem of the patient"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Condition.id">
+			<path value="Condition.id"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Condition.meta">
+			<path value="Condition.meta"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Condition.meta.profile">
+			<path value="Condition.meta.profile"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Condition.clinicalStatus">
+			<path value="Condition.clinicalStatus"/>
+			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Condition.verificationStatus">
+			<path value="Condition.verificationStatus"/>
+			<comment value="This element is labeled as a modifier because the status contains the code refuted and entered-in-error that mark the Condition as not currently valid."/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Condition.category">
+			<path value="Condition.category"/>
+			<definition value="A category assigned to the condition. In this profile, a health problem of the patient, therefore a 'problem-list-item'.&#xD;&#xA;"/>
+			<comment value="In this profile, Condition represents a health problem of the patient. Therefore the code is fixed to the value problem-list-item."/>
+			<max value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="ConditionCategory"/>
+				</extension>
+				<strength value="required"/>
+				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/problem-type-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Condition.severity">
+			<path value="Condition.severity"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="ConditionSeverity"/>
+				</extension>
+				<strength value="preferred"/>
+				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/condition-severity-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Condition.code">
+			<path value="Condition.code"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="coding.system"/>
+				</discriminator>
+				<description value="Discriminated by code system"/>
+				<rules value="open"/>
+			</slicing>
+			<definition value="Identification of the condition, problem or diagnosis or recording of &quot;problem absent&quot; or of &quot;problems unknown&quot;."/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="ProblemCode"/>
+				</extension>
+				<strength value="preferred"/>
+				<description value="Identification of the problem"/>
+				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/core-problem-list-disorders-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Condition.code:absentOrUnknownProblem">
+			<path value="Condition.code"/>
+			<sliceName value="absentOrUnknownProblem"/>
+			<short value="Code for absent problem or for unknown problem"/>
+			<definition value="Code representing the statement &quot;absent problem&quot; or the statement &quot;problems unknown&quot;"/>
+			<max value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="absentOrUnknownProblem"/>
+				</extension>
+				<strength value="required"/>
+				<description value="Absent problem or unknown problem"/>
+				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/absent-or-unknown-problems-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Condition.code:absentOrUnknownProblem.coding">
+			<path value="Condition.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Condition.code:absentOrUnknownProblem.coding.system">
+			<path value="Condition.code.coding.system"/>
+			<min value="1"/>
+			<max value="1"/>
+			<fixedUri value="http://hl7.eu/fhir/trillium2/CodeSystem/absent-unknown-uv-ips"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Condition.subject">
+			<path value="Condition.subject"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Patient-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Condition.subject.reference">
+			<path value="Condition.subject.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Condition.onsetDateTime:onsetDateTime">
+			<path value="Condition.onsetDateTime"/>
+			<sliceName value="onsetDateTime"/>
+			<min value="1"/>
+			<type>
+				<code value="dateTime"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Condition.onsetDateTime.extension:data-absent-reason">
+			<path value="Condition.onsetDateTime.extension"/>
+			<sliceName value="data-absent-reason"/>
+			<short value="onsetDateTime Absent Reason"/>
+			<definition value="Provides a reason why the onsetDateTime is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Condition.abatement[x]">
+			<path value="Condition.abatement[x]"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Condition.asserter">
+			<path value="Condition.asserter"/>
+			<definition value="Individual who is making the condition statement.&#xD;&#xA;Information source."/>
+			<mustSupport value="true"/>
+		</element>
+	</differential>
+</StructureDefinition>

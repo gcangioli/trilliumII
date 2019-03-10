@@ -57,8 +57,17 @@ id: {{[id]}}
   {% capture my-include %}{% include {{[id]}}.md %}{% endcapture %}{{ my-include | markdownify }}  <!--add inline examples here -->
 <!-- ============OperationDefinition CONTENT CONTENT=============== -->
 
+{% when 'CodeSystem' %}
+<!-- ============CodeSystem CONTENT CONTENT=============== -->
+
+  {% include {{[type]}}-{{[id]}}-summary.xhtml %}
+  {% include {{[type]}}-{{[id]}}-xref.xhtml %}
+  {% include {{[type]}}-{{[id]}}-content.xhtml %}
+  
+ <!-- ============CodeSystem CONTENT CONTENT=============== --> 
+  
 {% else %}
-<!-- ============CodeSystem ConceptMap CapabilityStatement CONTENT CONTENT=============== -->
+<!-- ============ ConceptMap CapabilityStatement CONTENT CONTENT=============== -->
 
   <h2>{{[type]}}: {{[id]}}</h2>
 

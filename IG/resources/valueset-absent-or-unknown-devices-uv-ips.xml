@@ -1,0 +1,34 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="absent-or-unknown-devices-uv-ips"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    </meta>
+    <url value="http://hl7.eu/fhir/trillium2/ValueSet/absent-or-unknown-devices-uv-ips"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.11.22.61"/>
+    </identifier>
+    <version value="2018-01-27T22:19:47"/>
+    <name value="IPSNoDevicesInfos"/>
+    <title value="Absent or Unknown Devices"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="HL7 International"/>
+
+    <description value="Absent or Unknown Devices"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://hl7.eu/fhir/trillium2/CodeSystem/absent-unknown-uv-ips"/>
+            <concept>
+                <code value="no-device-info"/>
+                <display value="No information about device"/>
+            </concept>
+            <concept>
+                <code value="no-known-devices"/>
+                <display value="No known devices in use"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2018-03-08T12:39:56.523+01:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
+	<url value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
 	<name value="Coding-uv-ips"/>
 	<title value="Coding with translations"/>
 	<status value="draft"/>

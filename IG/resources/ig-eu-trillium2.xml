@@ -1,0 +1,180 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../__FHIRr4Tools/STU3_fhir-xsd/implementationguide.xsd">
+	<id value="ig-uv-ips"/>
+	<url value="http://hl7.eu/fhir/trillium2/ImplementationGuide/ig-uv-ips"/>
+	<version value="0.1.0"/>
+	<name value="Trillium II Implementation Guide"/>
+	<status value="active"/>
+	<publisher value="Trillium II project"/>
+	<package>
+		<name value="base"/>
+		<!-- PROCEDURE -->
+		<!-- SAME PROBLEMS AS THE ALLERGY PART -->
+		<!-- BEGIN COMMENT  -->
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/absent-or-unknown-procedures-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/procedures-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Procedure-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Device-observer-uv-ips"/>
+		</resource>
+		<!-- END COMMENT -->
+		<!-- PROCEDURE END-->
+		<!-- PROBLEM -->
+		<!-- SAME PROBLEMS AS THE ALLERGY PART -->
+		<!-- BEGIN COMMENT -->
+
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Condition-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/absent-or-unknown-problems-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/core-problem-list-disorders-uv-ips"/>
+		</resource>
+		
+		
+		<!-- END COMMENT -->
+		<!-- PROBLEM END -->
+		<!-- IMMUNIZATION BEGIN -->
+		<!-- OK -->
+		<!-- BEGIN COMMENT -->
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Immunization-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/vaccinationValidity-immunization-uv-trillium2"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/absent-or-unknown-immunization-uv-ips"/>
+		</resource>
+		<!-- END COMMENT -->
+		<!-- IMMUNIZATION END -->
+		<!-- MEDICATIONS -->
+		<!-- BEGIN COMMENT -->
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/MedicationStatement-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Medication-uv-ips"/>
+		</resource>
+		<!-- END COMMENT -->
+		<!--MEDICATIONS END -->
+		<!-- ALLERGY -->
+		<!-- SEVERAL BUILD ERRORS -->
+		<!-- BUILD FAILS ....to be fixed 
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/allergy-intolerance-substance-condition-uv-ips"/>
+		</resource>
+-->
+		<!-- BEGIN COMMENT -->
+
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/allergy-reaction-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/condition-severity-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/AllergyIntolerance-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/absent-or-unknown-allergies-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/abatement-dateTime-uv-ips"/>
+		</resource>
+	
+ <!-- END COMMENT -->
+		<!-- ALLERGY END-->
+		<!--- DEVICES -->
+		<!-- OK -->
+		<!-- BEGIN COMMENT -->
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/absent-or-unknown-devices-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/medical-devices-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/DeviceUseStatement-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Device-uv-ips"/>
+		</resource>
+
+
+
+ <!-- END COMMENT -->
+		<!-- DEVICES END -->
+		<!-- COMMON -->
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Practitioner-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Organization-observation-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="CodeSystem/absent-unknown-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/CodeableConcept-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/statement-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Coding-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Patient-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Range-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Ratio-uv-ips"/>
+		</resource>
+	</package>
+	<page>
+		<source value="index.md"/>
+		<title value="Trillium II IPS Home"/>
+		<kind value="page"/>
+	</page>
+</ImplementationGuide>

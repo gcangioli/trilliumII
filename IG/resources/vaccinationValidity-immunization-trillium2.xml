@@ -3,7 +3,7 @@
 	<meta>
 		<lastUpdated value="2017-12-22T23:16:23.054+02:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/vaccinationValidity-immunization-uv-trillium2"/>
+	<url value="http://hl7.eu/fhir/trillium2/StructureDefinition/vaccinationValidity-immunization-uv-trillium2"/>
 	<version value="0.1"/>
 	<name value="vaccinationValidity-immunization-uv-trillium2"/>
 	<title value="Vaccination validity (extension)"/>
@@ -65,7 +65,7 @@
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
-			<fixedUri value="http://hl7.org/fhir/uv/ips/StructureDefinition/vaccinationValidity-immunization-uv-trillium2"/>
+			<fixedUri value="http://hl7.eu/fhir/trillium2/StructureDefinition/vaccinationValidity-immunization-uv-trillium2"/>
 			<mustSupport value="true"/>
 		</element>
 		<!--

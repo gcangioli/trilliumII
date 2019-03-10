@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../__FHIRr4Tools/STU3_fhir-xsd/codesystem.xsd">
 	<id value="absent-unknown-uv-ips"/>
-	<url value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">International Patient Summary (IPS) codes for &quot;known absent&quot; and &quot;not known&quot; data.</div>
+	</text>
+	<url value="http://hl7.eu/fhir/trillium2/CodeSystem/absent-unknown-uv-ips"/>
 	<name value="IPSCodeSystemAbsentUnknown"/>
 	<title value="IPS CodeSystem - Absent and Unknown Data"/>
 	<status value="draft"/>
 	<experimental value="false"/>
 	<description value="International Patient Summary (IPS) codes for &quot;known absent&quot; and &quot;not known&quot; data."/>
 	<caseSensitive value="true"/>
-	<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-unknown"/>
+	<valueSet value="http://hl7.eu/fhir/trillium2/ValueSet/absent-unknown"/>
 	<content value="complete"/>
 	<concept>
 		<code value="no-allergy-info"/>

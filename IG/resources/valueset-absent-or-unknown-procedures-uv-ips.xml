@@ -1,21 +1,17 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="absent-or-unknown-immunization-uv-ips"/>
+    <id value="absent-or-unknown-procedures-uv-ips"/>
     <meta>
         <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
     </meta>
-        <text>
-    <status value="generated"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">Absent or Unknown Immunization</div>
-  </text>
-    <url value="http://hl7.eu/fhir/trillium2/ValueSet/absent-or-unknown-immunization-uv-ips"/>
+    <url value="http://hl7.eu/fhir/trillium2/ValueSet/absent-or-unknown-procedures-uv-ips"/>
     <identifier>
         <use value="official"/>
         <system value="http://art-decor.org/ns/oids/vs"/>
-        <value value="2.16.840.1.113883.11.22.43"/>
+        <value value="2.16.840.1.113883.11.22.36"/>
     </identifier>
-    <version value="2017-05-24T00:00:00"/>
-    <name value="IPSNoImmunizationInfo"/>
-    <title value="Absent or Unknown Immunization"/>
+    <version value="2017-05-23T00:00:00"/>
+    <name value="IPSNoProceduresInfos"/>
+    <title value="Absent or Unknown Procedures"/>
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="HL7 International"/>
@@ -34,18 +30,18 @@
             <value value="info@hl7.org"/>
         </telecom>
     </contact>
-    <description value="Absent or Unknown Immunization"/>
+    <description value="Absent or Unknown Procedures"/>
     <immutable value="false"/>
     <compose>
         <include>
             <system value="http://hl7.eu/fhir/trillium2/CodeSystem/absent-unknown-uv-ips"/>
             <concept>
-                <code value="no-immunization-info"/>
-                <display value="No information about immunizations"/>
+                <code value="no-procedure-info"/>
+                <display value="No information about past history of procedures"/>
             </concept>
             <concept>
-                <code value="no-known-immunizations"/>
-                <display value="No known immunizations"/>
+                <code value="no-known-procedures"/>
+                <display value="No known procedures"/>
             </concept>
         </include>
     </compose>

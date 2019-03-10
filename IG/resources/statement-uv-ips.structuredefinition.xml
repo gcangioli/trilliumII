@@ -4,7 +4,7 @@
 	<meta>
 		<lastUpdated value="2018-03-07T12:24:00.364+01:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/statement-uv-ips"/>
+	<url value="http://hl7.eu/fhir/trillium2/StructureDefinition/statement-uv-ips"/>
 	<name value="statement-uv-ips"/>
 	<title value="Statement Details"/>
 	<status value="draft"/>
@@ -120,7 +120,7 @@
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
-			<fixedUri value="http://hl7.org/fhir/uv/ips/StructureDefinition/statement-uv-ips"/>
+			<fixedUri value="http://hl7.eu/fhir/trillium2/StructureDefinition/statement-uv-ips"/>
 		</element>		
 	</differential>
 </StructureDefinition>

@@ -4,8 +4,12 @@
 	<meta>
 		<lastUpdated value="2018-02-21T00:47:03.873+01:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"/>
-	<name value="MedicationStatement-uv-ips"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints applied to the MedicationStatement resource by the International Patient Summary (IPS) FHIR Implementation Guide.</div>
+	</text>
+	<url value="http://hl7.eu/fhir/trillium2/StructureDefinition/MedicationStatement-uv-ips"/>
+	<name value="MedicationStatement_uv_ips"/>
 	<title value="Medication Statement (Trillium II)"/>
 	<status value="draft"/>
 	<date value="2018-02-14T22:57:06.512+01:00"/>
@@ -21,6 +25,19 @@
 	<differential>
 		<element id="MedicationStatement">
 			<path value="MedicationStatement"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="MedicationStatement.id">
+			<path value="MedicationStatement.id"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="MedicationStatement.meta">
+			<path value="MedicationStatement.meta"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="MedicationStatement.meta.profile">
+			<path value="MedicationStatement.meta.profile"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="MedicationStatement.status">
 			<path value="MedicationStatement.status"/>
@@ -32,11 +49,11 @@
 			<definition value="Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that gives a reason for absent or unknown Medication.."/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Medication-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -45,51 +62,17 @@
 				</extension>
 				<strength value="required"/>
 				<description value="Representation of unknown or absent medications"/>
-				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medication-uv-ips"/>
+				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/absent-or-unknown-medication-uv-ips"/>
 			</binding>
 		</element>
 		<element id="MedicationStatement.effective[x]">
 			<path value="MedicationStatement.effective[x]"/>
-			<slicing>
-				<discriminator>
-					<type value="type"/>
-					<path value="$this"/>
-				</discriminator>
-				<rules value="open"/>
-			</slicing>
 			<min value="1"/>
 			<max value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="MedicationStatement.effectiveDateTime">
-			<path value="MedicationStatement.effectiveDateTime"/>
-			<sliceName value="effectiveDateTime"/>
-			<type>
-				<code value="dateTime"/>
-			</type>
-		</element>
-		<element id="MedicationStatement.effectiveDateTime:data-absent-reason">
-			<path value="MedicationStatement.effectiveDateTime.extension"/>
-			<sliceName value="data-absent-reason"/>
-			<short value="effective[x] absence reason"/>
-			<definition value="Provides a reason why the effective is missing."/>
-			<max value="1"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.effectivePeriod">
-			<path value="MedicationStatement.effectivePeriod"/>
-			<sliceName value="effectivePeriod"/>
-			<type>
-				<code value="Period"/>
-			</type>
-		</element>
-		<element id="MedicationStatement.effectivePeriod:data-absent-reason">
-			<path value="MedicationStatement.effectivePeriod.extension"/>
-			<sliceName value="data-absent-reason"/>
+		<element id="MedicationStatement.effective[x]:data-absent-reason">
+			<path value="MedicationStatement.effective[x].extension"/>
 			<short value="effective[x] absence reason"/>
 			<definition value="Provides a reason why the effective is missing."/>
 			<max value="1"/>
@@ -145,7 +128,7 @@
 			<path value="MedicationStatement.subject"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Patient-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -162,11 +145,13 @@
 			<path value="MedicationStatement.reasonCode"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="MedicationStatement.reasonReference">
 			<path value="MedicationStatement.reasonReference"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="MedicationStatement.dosage">
 			<path value="MedicationStatement.dosage"/>
@@ -176,52 +161,33 @@
 			<path value="MedicationStatement.dosage.text"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="MedicationStatement.dosage.patientInstruction">
-			<path value="MedicationStatement.dosage.patientInstruction"/>
-			<mustSupport value="true"/>
-		</element>
 		<element id="MedicationStatement.dosage.timing">
 			<path value="MedicationStatement.dosage.timing"/>
 			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.dosage.timing.repeat">
-			<path value="MedicationStatement.dosage.timing.repeat"/>
-		</element>
-		<element id="MedicationStatement.dosage.timing.repeat.bounds[x]">
-			<path value="MedicationStatement.dosage.timing.repeat.bounds[x]"/>
-			<type>
-				<code value="Duration"/>
-			</type>
-			<type>
-				<code value="Period"/>
-			</type>
-			<type>
-				<code value="Range"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Range-uv-ips"/>
-			</type>
 		</element>
 		<element id="MedicationStatement.dosage.site">
 			<path value="MedicationStatement.dosage.site"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
 			<binding>
 				<strength value="preferred"/>
-				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
+				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/target-site-uv-ips"/>
 			</binding>
 		</element>
 		<element id="MedicationStatement.dosage.route">
 			<path value="MedicationStatement.dosage.route"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<strength value="required"/>
 				<description value="EDQM Standards Terms"/>
-				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration"/>
+				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/medicine-route-of-administration"/>
 			</binding>
 		</element>
 	</differential>

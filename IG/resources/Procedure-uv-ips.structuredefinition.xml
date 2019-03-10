@@ -1,0 +1,213 @@
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/msys64/home/Giorgio/__FHIRr4Tools/STU3_fhir-xsd/procedure.xsd">
+	<id value="Procedure-uv-ips"/>
+	<meta>
+		<lastUpdated value="2017-12-12T14:24:24.825+01:00"/>
+	</meta>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints applied to the Procedure resource by the IPS project, which specifies an entry of the History of Procedure for the international patient summary based on the FHIR standard R4.</div>
+	</text>
+	<url value="http://hl7.eu/fhir/trillium2/StructureDefinition/Procedure-uv-ips"/>
+	<name value="Procedure_uv_ips"/>
+	<title value="Procedure (Trillium II)"/>
+	<status value="draft"/>
+	<date value="2017-10-27T13:43:30.381+02:00"/>
+	<description value="This profile represents the constraints applied to the Procedure resource by the IPS project, which specifies an entry of the History of Procedure for the international patient summary based on the FHIR standard R4."/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Procedure"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Procedure">
+			<path value="Procedure"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Procedure.id">
+			<path value="Procedure.id"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Procedure.meta">
+			<path value="Procedure.meta"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Procedure.meta.profile">
+			<path value="Procedure.meta.profile"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Procedure.extension:statementDetail">
+			<path value="Procedure.extension"/>
+			<sliceName value="statementDetail"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/statement-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Procedure.status">
+			<path value="Procedure.status"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Procedure.code">
+			<path value="Procedure.code"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="coding.system"/>
+				</discriminator>
+				<description value="Discriminated by code system"/>
+				<rules value="open"/>
+			</slicing>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="ProcedureCode"/>
+				</extension>
+				<strength value="preferred"/>
+				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/procedures-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Procedure.code:absentOrUnknownProcedure">
+			<path value="Procedure.code"/>
+			<sliceName value="absentOrUnknownProcedure"/>
+			<short value="Code for absent problem or for unknown procedure"/>
+			<definition value="Code representing the statement &quot;absent problem&quot; or the statement &quot;procedures unknown&quot;"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="absentOrUnknownProcedure"/>
+				</extension>
+				<strength value="required"/>
+				<description value="A code to identify absent or unknown procedures"/>
+				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/absent-or-unknown-procedures-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Procedure.code:absentOrUnknownProcedure.coding">
+			<path value="Procedure.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Procedure.code:absentOrUnknownProcedure.coding.system">
+			<path value="Procedure.code.coding.system"/>
+			<min value="1"/>
+			<max value="1"/>
+			<fixedUri value="http://hl7.eu/fhir/trillium2/CodeSystem/absent-unknown-uv-ips"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Procedure.subject">
+			<path value="Procedure.subject"/>
+			<definition value="The person on which the procedure was performed."/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Patient-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Procedure.subject.reference">
+			<path value="Procedure.subject.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Procedure.performed[x]">
+			<path value="Procedure.performed[x]"/>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Procedure.performed[x]:data-absent-reason">
+			<path value="Procedure.performed[x].extension"/>
+			<sliceName value="data-absent-reason"/>
+			<short value="performed[x] absence reason"/>
+			<definition value="Provides a reason why the performed is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Procedure.performer">
+			<path value="Procedure.performer"/>
+			<mustSupport value="false"/>
+		</element>
+		<element id="Procedure.performer.actor">
+			<path value="Procedure.performer.actor"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+			</type>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+			</type>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Device-observer-uv-ips"/>
+			</type>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Practitioner-uv-ips"/>
+			</type>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Organization-observation-uv-ips"/>
+			</type>
+			<mustSupport value="false"/>
+		</element>
+		<element id="Procedure.performer.onBehalfOf">
+			<path value="Procedure.performer.onBehalfOf"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Organization-observation-uv-ips"/>
+			</type>
+			<mustSupport value="false"/>
+		</element>
+		<element id="Procedure.bodySite">
+			<path value="Procedure.bodySite"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="BodySite"/>
+				</extension>
+				<strength value="example"/>
+				<valueSetUri value="http://hl7.org/fhir/ValueSet/body-site"/>
+			</binding>
+		</element>
+		<!--
+		<element id="Procedure.bodySite.extension">
+			<path value="Procedure.bodySite.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Procedure.bodySite.extension:laterality">
+			<path value="Procedure.bodySite.extension"/>
+			<sliceName value="laterality"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="StructureDefinition/bodysite-laterality"/>
+			</type>
+		</element>
+-->
+	</differential>
+</StructureDefinition>

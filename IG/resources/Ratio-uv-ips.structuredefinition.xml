@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Ratio-uv-ips"/>
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Ratio-uv-ips"/>
+  <url value="http://hl7.eu/fhir/trillium2/StructureDefinition/Ratio-uv-ips"/>
   <name value="Ratio-uv-ips"/>
   <title value="Ratio (UCUM)"/>
   <status value="draft"/>
   <date value="2018-03-21T14:49:16.166+01:00"/>
   <description value="Ratio data type, constrained to use UCUM as a codesystem."/>
   <purpose value="allow only UCUM as a codesystem."/>
-  <fhirVersion value="3.6.0"/>
+  <fhirVersion value="3.0.1"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
   <type value="Ratio"/>
