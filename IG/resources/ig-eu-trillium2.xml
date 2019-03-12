@@ -8,7 +8,6 @@
 	<package>
 		<name value="base"/>
 		<!-- PROCEDURE -->
-		<!-- SAME PROBLEMS AS THE ALLERGY PART -->
 		<!-- BEGIN COMMENT  -->
 		<resource>
 			<example value="false"/>
@@ -29,9 +28,7 @@
 		<!-- END COMMENT -->
 		<!-- PROCEDURE END-->
 		<!-- PROBLEM -->
-		<!-- SAME PROBLEMS AS THE ALLERGY PART -->
 		<!-- BEGIN COMMENT -->
-
 		<resource>
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/Condition-uv-ips"/>
@@ -44,12 +41,9 @@
 			<example value="false"/>
 			<sourceUri value="ValueSet/core-problem-list-disorders-uv-ips"/>
 		</resource>
-		
-		
 		<!-- END COMMENT -->
 		<!-- PROBLEM END -->
 		<!-- IMMUNIZATION BEGIN -->
-		<!-- OK -->
 		<!-- BEGIN COMMENT -->
 		<resource>
 			<example value="false"/>
@@ -75,18 +69,14 @@
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/Medication-uv-ips"/>
 		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/med-uv-ips"/>
+		</resource>
 		<!-- END COMMENT -->
 		<!--MEDICATIONS END -->
 		<!-- ALLERGY -->
-		<!-- SEVERAL BUILD ERRORS -->
-		<!-- BUILD FAILS ....to be fixed 
-		<resource>
-			<example value="false"/>
-			<sourceUri value="ValueSet/allergy-intolerance-substance-condition-uv-ips"/>
-		</resource>
--->
 		<!-- BEGIN COMMENT -->
-
 		<resource>
 			<example value="false"/>
 			<sourceUri value="ValueSet/allergy-reaction-uv-ips"/>
@@ -107,8 +97,11 @@
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/abatement-dateTime-uv-ips"/>
 		</resource>
-	
- <!-- END COMMENT -->
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/allergy-intolerance-substance-condition-uv-ips"/>
+		</resource>
+		<!-- END COMMENT -->
 		<!-- ALLERGY END-->
 		<!--- DEVICES -->
 		<!-- OK -->
@@ -129,12 +122,126 @@
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/Device-uv-ips"/>
 		</resource>
-
-
-
- <!-- END COMMENT -->
+		<!-- END COMMENT -->
 		<!-- DEVICES END -->
+		<!-- Pregnancy BEGIN -->
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/pregnancy-status-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Observation-pregnancy-edd-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Observation-pregnancy-outcome-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Observation-pregnancy-status-uv-ips"/>
+		</resource>
+		<!-- PRegnancy END -->
+		<!-- Social Hostory Begin -->
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Observation-tobaccouse-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Observation-alcoholuse-uv-ips"/>
+		</resource>
+		<!-- Social Hostiry End -->
+		<!-- Results Begin -->
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Observation-media-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Observation-imaging-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Observation-laboratory-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Observation-member-imaging-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Observation-member-laboratory-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Observation-member-pathology-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Observation-pathology-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Observation-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Organization-laboratory-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/ImagingStudy-uv-ips"/>
+		</resource>
+				<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Specimen-uv-ips"/>
+		</resource>
+			
+		<!-- Results End -->
+		<!-- Trillium II only profiles and extensions BEGIN -->
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/accessProtocol-uv-trillium2"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/iheXDSidentifiers-uv-trillium2"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/derivedFrom-observation-uv-trillium2"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/DocumentReference-uv-trillium2"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Encounter-uv-trillium2"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/documentedBy-uv-trillium2"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/attachment-imagingstudy-uv-trillium2"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/imagingstudy-RefToEvidences-uv-trillium2"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/referencedDicomItems-uv-trillium2"/>
+		</resource>
+		<!-- Trillium II only END -->
 		<!-- COMMON -->
+				<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/participant-uv-ips"/>
+		</resource>
 		<resource>
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/Practitioner-uv-ips"/>
@@ -170,6 +277,15 @@
 		<resource>
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/Ratio-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Quantity-uv-ips"/>
+		</resource>
+		<!-- DOCUMENT -->
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Composition-uv-ips"/>
 		</resource>
 	</package>
 	<page>

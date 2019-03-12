@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../__FHIRr4Tools/STU3_fhir-xsd/structuredefinition.xsd">
+	<id value="Observation-pregnancy-status-uv-ips"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">This profile constrains the Observation resource to represent the pregnancy status.</div>
+	</text>
+	<url value="http://hl7.eu/fhir/trillium2/StructureDefinition/Observation-pregnancy-status-uv-ips"/>
+	<name value="Observation_pregnancy_status_uv_ips"/>
+	<title value="Observation (Pregnancy: status)"/>
+	<status value="draft"/>
+	<date value="2018-03-20T11:00:52.49+01:00"/>
+	<description value="This profile constrains the Observation resource to represent the pregnancy status."/>
+	<fhirVersion value="3.0.1"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Observation"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Observation">
+			<path value="Observation"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.id">
+			<path value="Observation.id"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.meta">
+			<path value="Observation.meta"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.meta.profile">
+			<path value="Observation.meta.profile"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.code">
+			<path value="Observation.code"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.code.coding">
+			<path value="Observation.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<min value="1"/>
+			<fixedUri value="http://loinc.org"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<min value="1"/>
+			<fixedCode value="82810-3"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.subject">
+			<path value="Observation.subject"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Patient-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.subject.reference">
+			<path value="Observation.subject.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]">
+			<path value="Observation.effective[x]"/>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]:data-absent-reason">
+			<path value="Observation.effective[x].extension"/>
+			<short value="effective[x] absence reason"/>
+			<definition value="Provides a reason why the effective is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.valueCodeableConcept:pregnancyStatus">
+			<path value="Observation.valueCodeableConcept"/>
+			<sliceName value="pregnancyStatus"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+			<binding>
+				<strength value="required"/>
+				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/pregnancy-status-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Observation.bodySite">
+			<path value="Observation.bodySite"/>
+			<max value="0"/>
+			<mustSupport value="false"/>
+		</element>
+		<element id="Observation.specimen">
+			<path value="Observation.specimen"/>
+			<max value="0"/>
+			<mustSupport value="false"/>
+		</element>
+		<element id="Observation.device">
+			<path value="Observation.device"/>
+			<max value="0"/>
+			<mustSupport value="false"/>
+		</element>
+		<element id="Observation.referenceRange">
+			<path value="Observation.referenceRange"/>
+			<max value="0"/>
+			<mustSupport value="false"/>
+		</element>
+		<element id="Observation.related">
+			<path value="Observation.related"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="type"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+			<definition value="A  reference to another Observation profiled by observation-member-laboratory-uv-trillium2. The target observation is considered as a sub-observation of the current one, which plays the role of a grouper"/>
+			<comment value="This element is used in the context of Trillium II international patient summary when there is a need to group a collection of observations, because they belong to the same panel, or because they share a common interpretation comment, or a common media attachment (illustrative image or graph). In these cases, the current observation is the grouper, and its set of sub-observations are related observations  using the type &quot;has-member&quot; and the profile observation-member-laboratory-uv-trillium2. "/>
+		</element>
+		<element id="Observation.related.type">
+			<path value="Observation.related.type"/>
+			<short value="Expected Delivery Date"/>
+			<definition value="A reference to the Expected Delivery Date Observation."/>
+			<min value="1"/>
+			<fixedCode value="has-member"/>
+		</element>
+		<element id="Observation.related:sub-observation">
+			<path value="Observation.related"/>
+			<sliceName value="sub-observation"/>
+			<short value="sub-observation member of this observation"/>
+			<definition value="A reference to an Observation resource playing the role of sub-observation of the current one. For instance an individial test member of a panel."/>
+		</element>
+		<element id="Observation.related:sub-observation.type">
+			<path value="Observation.related.type"/>
+			<fixedCode value="has-member"/>
+		</element>
+		<element id="Observation.related:sub-observation.target">
+			<path value="Observation.related.target"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Observation-pregnancy-edd-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.related:sub-observation.target.reference">
+			<path value="Observation.related.target.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+			<element id="Observation.component">
+			<path value="Observation.component"/>
+			<max value="0"/>
+			<mustSupport value="false"/>
+		</element>
+	</differential>
+</StructureDefinition>

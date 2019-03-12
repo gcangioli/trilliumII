@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+<id value="attachment-imagingstudy-uv-trillium2" />
+  <meta>
+    <lastUpdated value="2018-03-03T15:51:44.893+01:00" />
+  </meta>
+  <url value="http://hl7.eu/fhir/trillium2/StructureDefinition/attachment-imagingstudy-uv-trillium2" />
+  <name value="attachment-imagingstudy-uv-trillium2" />
+  <status value="draft" />
+  <date value="2018-03-03T15:21:01.986+01:00" />
+  <description value="Extension to be applied to the ImagingStudy resource.&#xD;&#xA;It is based on the content.attachment element content of the DocumentReference resource.&#xD;&#xA;It has defined by the Trillium II projcet to allow the documentation of the data neede for the retrieval of evidences." />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <contextType value="resource" />
+  <context value="ImagingStudy" />
+  <context value="ImagingStudy.series" />
+  <context value="ImagingStudy.series.instance" />
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://hl7.eu/fhir/trillium2/StructureDefinition/attachment-imagingstudy-uv-trillium2" />
+    </element>
+    <element id="Extension.valueAttachment:valueAttachment">
+      <path value="Extension.valueAttachment" />
+      <sliceName value="valueAttachment" />
+      <type>
+        <code value="Attachment" />
+      </type>
+    </element>
+    <element id="Extension.value[x]:valueAttachment.extension">
+      <path value="Extension.valueAttachment.extension" />
+    </element>
+    <element id="Extension.value[x]:valueAttachment.extension:accessProtocol">
+      <path value="Extension.valueAttachment.extension" />
+      <sliceName value="accessProtocol" />
+      <short value="Optional Extensions Element" />
+      <definition value="Optional Extension Element - found in all resources." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/accessProtocol-uv-trillium2" />
+      </type>
+    </element>
+    <element id="Extension.value[x]:valueAttachment.extension:IHEXDSIdentifiers">
+      <path value="Extension.valueAttachment.extension" />
+      <sliceName value="IHEXDSIdentifiers" />
+      <short value="Optional Extensions Element" />
+      <definition value="Optional Extension Element - found in all resources." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/iheXDSidentifiers-uv-trillium2" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

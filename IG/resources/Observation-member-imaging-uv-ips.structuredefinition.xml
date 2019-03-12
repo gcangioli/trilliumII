@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../__FHIRr4Tools/STU3_fhir-xsd/structuredefinition.xsd">
+	<id value="Observation-member-imaging-uv-ips"/>
+	<meta>
+		<lastUpdated value="2018-02-25T17:04:25.636+01:00"/>
+	</meta>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints applied to the Observation resource by the IPS project, which specifies a sub-observation, member of an &quot;organizer&quot; observation, in the &quot;Imaging results&quot; entry of a patient summary.</div>
+	</text>
+	<url value="http://hl7.eu/fhir/trillium2/StructureDefinition/Observation-member-imaging-uv-ips"/>
+	<name value="Observation_member_imaging_uv_ips"/>
+	<title value="Observation (Results: imaging, member)"/>
+	<status value="draft"/>
+	<date value="2018-02-14T13:42:57.001+01:00"/>
+	<description value="This profile represents the constraints applied to the Observation resource by the IPS project, which specifies a sub-observation, member of an &quot;organizer&quot; observation, in the &quot;Imaging results&quot; entry of a patient summary."/>
+	<fhirVersion value="3.0.1"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Observation"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Observation">
+			<path value="Observation"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.id">
+			<path value="Observation.id"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.meta">
+			<path value="Observation.meta"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.extension:partOf">
+			<path value="Observation.extension"/>
+			<sliceName value="partOf"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/event-partOf"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.extension:derivedFrom">
+			<path value="Observation.extension"/>
+			<sliceName value="derivedFrom"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/derivedFrom-observation-uv-trillium2"/>
+			</type>
+		</element>
+		<element id="Observation.extension:derivedFrom.valueReference:valueReference">
+			<path value="Observation.extension.valueReference"/>
+			<sliceName value="valueReference"/>
+			<type>
+				<code value="Reference"/>
+				<versioning value="independent"/>
+			</type>
+			<type>
+				<code value="Reference"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/documentreference-uv-trillium2"/>
+				<versioning value="independent"/>
+			</type>
+			<type>
+				<code value="Reference"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/imagingstudy-reftoevidences-uv-ips"/>
+			</type>
+		</element>
+		<element id="Observation.code">
+			<path value="Observation.code"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="ObservationCode"/>
+				</extension>
+				<strength value="example"/>
+				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/imaging-observations-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Observation.subject">
+			<path value="Observation.subject"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Patient-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.subject.reference">
+			<path value="Observation.subject.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]">
+			<path value="Observation.effective[x]"/>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]:data-absent-reason">
+			<path value="Observation.effective[x].extension"/>
+			<short value="effective[x] absence reason"/>
+			<definition value="Provides a reason why the effective is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.performer">
+			<path value="Observation.performer"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Practitioner-uv-ips"/>
+			</type>
+						<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Organization-observation-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.performer.reference">
+			<path value="Observation.performer.reference"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.value[x]">
+			<path value="Observation.value[x]"/>
+			<type>
+				<code value="Quantity"/>
+			</type>
+			<type>
+				<code value="CodeableConcept"/>
+			</type>
+			<type>
+				<code value="string"/>
+			</type>
+			<type>
+				<code value="Range"/>
+			</type>
+			<type>
+				<code value="Ratio"/>
+			</type>
+			<type>
+				<code value="SampledData"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.bodySite">
+			<path value="Observation.bodySite"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="BodySite"/>
+				</extension>
+				<strength value="example"/>
+				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/target-site-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Observation.device">
+			<path value="Observation.device"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Device-observer-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.related.type">
+			<path value="Observation.related.type"/>
+			<fixedCode value="derived-from"/>
+		</element>
+		<element id="Observation.related.target">
+			<path value="Observation.related.target"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/ImagingStudy"/>
+			</type>
+		</element>
+		<element id="Observation.component.value[x]">
+			<path value="Observation.component.value[x]"/>
+			<type>
+				<code value="Quantity"/>
+			</type>
+			<type>
+				<code value="Range"/>
+			</type>
+			<type>
+				<code value="Ratio"/>
+			</type>
+		</element>
+		<element id="Observation.device.reference">
+			<path value="Observation.device.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+	</differential>
+</StructureDefinition>

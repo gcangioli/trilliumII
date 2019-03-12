@@ -1,12 +1,11 @@
 {:.nav .navbar-nav}
 <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
 - [Home](index.html)
-<!-- - [General Principles and Design](general.html) -->
+- [General Principles and Design](general.html)
 <!-- - [Profiles and Logical Models](profiles.html) -->
 - [Profiles](profiles.html)
 <!-- - [Mappings](structuremaps.html) -->
-- [Extensions](extensions.html)
-- [Datatypes](datatypes.html)
+- [Extensions and Datatypes](extensions.html)
 <!-- - [Operations](operations.html) -->
 - [Terminology](terminology.html)
 <!-- - [Search Parameters](searchparams.html) -->

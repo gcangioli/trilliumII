@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../__FHIRr4Tools/STU3_fhir-xsd/structuredefinition.xsd">
+	<url value="http://hl7.eu/fhir/trillium2/StructureDefinition/Encounter-uv-trillium2"/>
+	<name value="Encounter-uv-trillium2"/>
+	<status value="draft"/>
+	<fhirVersion value="3.0.1"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Encounter"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Encounter"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Encounter">
+			<path value="Encounter"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Encounter.extension:documentedBy">
+			<path value="Encounter.extension"/>
+			<sliceName value="documentedBy"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/documentedBy-uv-trillium2"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Encounter.extension:documentedBy.extension:reference">
+			<path value="Encounter.extension.extension"/>
+			<sliceName value="reference"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Encounter.extension:documentedBy.extension:reference.Reference:valueReference">
+			<path value="Encounter.extension.extension.valueReference"/>
+			<sliceName value="valueReference"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/DocumentReference-uv-trillium2"/>
+			</type>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/imagingstudy-RefToEvidences-uv-trillium2"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Encounter.extension:documentedBy.extension:reference.Reference:valueReference.reference">
+			<path value="Encounter.extension.extension.value[x].reference"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Encounter.extension:statement">
+			<path value="Encounter.extension"/>
+			<sliceName value="statement"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/statement-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Encounter.type">
+			<path value="Encounter.type"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Encounter.type.coding.code">
+			<path value="Encounter.type.coding.code"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Encounter.subject">
+			<path value="Encounter.subject"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Patient-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Encounter.participant">
+			<path value="Encounter.participant"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="type.coding.code"/>
+				</discriminator>
+				<rules value="openAtEnd"/>
+			</slicing>
+		</element>
+		<element id="Encounter.participant:performer">
+			<path value="Encounter.participant"/>
+			<sliceName value="performer"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Encounter.participant:performer.type">
+			<path value="Encounter.participant.type"/>
+			<mustSupport value="false"/>
+		</element>
+		<element id="Encounter.participant:performer.individual">
+			<path value="Encounter.participant.individual"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Practitioner-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Encounter.participant:performer.individual.reference">
+			<path value="Encounter.participant.individual.reference"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Encounter.period">
+			<path value="Encounter.period"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Encounter.period.start">
+			<path value="Encounter.period.start"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Encounter.period.end">
+			<path value="Encounter.period.end"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Encounter.reason">
+			<path value="Encounter.reason"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Encounter.reason.coding">
+			<path value="Encounter.reason.coding"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Encounter.reason.text">
+			<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+				<valueBoolean value="true"/>
+			</extension>
+			<path value="Encounter.reason.text"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Encounter.diagnosis">
+			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+				<valueString value="Diagnosis"/>
+			</extension>
+			<path value="Encounter.diagnosis"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="role.coding.code"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Encounter.diagnosis:admissionDiagnosis">
+			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+				<valueString value="Diagnosis"/>
+			</extension>
+			<path value="Encounter.diagnosis"/>
+			<sliceName value="admissionDiagnosis"/>
+		</element>
+		<element id="Encounter.diagnosis:admissionDiagnosis.role">
+			<path value="Encounter.diagnosis.role"/>
+			<min value="1"/>
+			<fixedCodeableConcept>
+				<coding>
+					<system value="http://hl7.org/fhir/diagnosis-role"/>
+					<code value="AD"/>
+				</coding>
+			</fixedCodeableConcept>
+		</element>
+		<element id="Encounter.diagnosis:dischargeDiagnosis">
+			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+				<valueString value="Diagnosis"/>
+			</extension>
+			<path value="Encounter.diagnosis"/>
+			<sliceName value="dischargeDiagnosis"/>
+		</element>
+		<element id="Encounter.diagnosis:dischargeDiagnosis.role">
+			<path value="Encounter.diagnosis.role"/>
+			<min value="1"/>
+			<fixedCodeableConcept>
+				<coding>
+					<system value="http://hl7.org/fhir/diagnosis-role"/>
+					<code value="DD"/>
+				</coding>
+			</fixedCodeableConcept>
+		</element>
+		<element id="Encounter.diagnosis:otherDiagnosis">
+			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+				<valueString value="Diagnosis"/>
+			</extension>
+			<path value="Encounter.diagnosis"/>
+			<sliceName value="otherDiagnosis"/>
+		</element>
+		<element id="Encounter.location">
+			<path value="Encounter.location"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Encounter.location.location.reference">
+			<path value="Encounter.location.location.reference"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Encounter.serviceProvider">
+			<path value="Encounter.serviceProvider"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Organization-observation-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+	</differential>
+</StructureDefinition>

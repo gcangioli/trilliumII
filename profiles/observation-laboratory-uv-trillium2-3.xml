@@ -1,0 +1,252 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2018-03-06T10:17:53.911+01:00" />
+  </meta>
+  <url value="http://trilliumbridge.eu/fhir/StructureDefinition/observation-laboratory-uv-trillium2" />
+  <version value="0.1" />
+  <name value="Observation-laboratory-uv-trillium2" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-02-09T22:39:56.838+01:00" />
+  <publisher value="Trillium II" />
+  <contact>
+    <name value="François Macary - Phast" />
+  </contact>
+  <description value="This profile constrains the Observation resource to represent laboratory results in a patient summary" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.extension">
+      <path value="Observation.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Observation.extension:specialty">
+      <path value="Observation.extension" />
+      <sliceName value="specialty" />
+      <short value="Optional Extensions Element" />
+      <definition value="Optional Extension Element - found in all resources." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://trilliumbridge.eu/fhir/StructureDefinition/observation-specialty-uv-trillium2" />
+      </type>
+      <binding>
+        <strength value="extensible" />
+        <valueSetUri value="http://trilliumbridge.eu/fhir/ValueSet/laboratory-specialty" />
+      </binding>
+    </element>
+    <element id="Observation.basedOn">
+      <path value="Observation.basedOn" />
+      <max value="0" />
+    </element>
+    <element id="Observation.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
+        <valueString value="default: final" />
+      </extension>
+      <path value="Observation.status" />
+      <fixedCode value="final" />
+    </element>
+    <element id="Observation.category">
+      <path value="Observation.category" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Observation.category.coding.code">
+      <path value="Observation.category.coding.code" />
+      <fixedCode value="laboratory" />
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <definition value="Describes what was observed. Sometimes this is called the observation &quot;name&quot;. " />
+      <comment value="In the context of this observation-laboratory-uv-trillium2 profile, when the observation plays the role of a grouper of member sub-observations, the code represent the group (for instance a panel code). In case no code is available, at least a text shall be provided." />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ObservationCode" />
+        </extension>
+        <strength value="extensible" />
+        <valueSetUri value="http://trilliumbridge.eu/fhir/ValueSet/laboratory-tests-and-panels" />
+      </binding>
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <binding>
+        <strength value="extensible" />
+        <valueSetUri value="http://trilliumbridge.eu/fhir/ValueSet/laboratory-tests-and-panels" />
+      </binding>
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]" />
+      <min value="1" />
+    </element>
+    <element id="Observation.performer">
+      <path value="Observation.performer" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <aggregation value="referenced" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://trilliumbridge.eu/fhir/StructureDefinition/organization-laboratory-uv-trillium2" />
+        <aggregation value="referenced" />
+      </type>
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <type>
+        <code value="Quantity" />
+      </type>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+      <type>
+        <code value="Range" />
+      </type>
+      <type>
+        <code value="Ratio" />
+      </type>
+      <type>
+        <code value="time" />
+      </type>
+      <type>
+        <code value="dateTime" />
+      </type>
+      <type>
+        <code value="Period" />
+      </type>
+      <condition value="value" />
+      <constraint>
+        <key value="val-1" />
+        <severity value="error" />
+        <human value="if no &quot;related&quot; element is present then Observation must have a&quot; value&quot;" />
+        <expression value="hasValue() or related.exists" />
+      </constraint>
+    </element>
+    <element id="Observation.dataAbsentReason">
+      <path value="Observation.dataAbsentReason" />
+      <max value="0" />
+    </element>
+    <element id="Observation.bodySite">
+      <path value="Observation.bodySite" />
+      <max value="0" />
+    </element>
+    <element id="Observation.specimen">
+      <path value="Observation.specimen" />
+      <comment value="The specimen is often implied by the observation code. &#xD;&#xA;In the context of this observation-laboratory-uv-trillium2 profile, specimen should be provided only when it is not implied by the Observation.code" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://trilliumbridge.eu/fhir/StructureDefinition/specimen-uv-trillium2" />
+      </type>
+    </element>
+    <element id="Observation.device">
+      <path value="Observation.device" />
+      <max value="0" />
+    </element>
+    <element id="Observation.referenceRange.type">
+      <path value="Observation.referenceRange.type" />
+      <min value="1" />
+    </element>
+    <element id="Observation.referenceRange.appliesTo">
+      <path value="Observation.referenceRange.appliesTo" />
+      <max value="0" />
+    </element>
+    <element id="Observation.referenceRange.age">
+      <path value="Observation.referenceRange.age" />
+      <max value="0" />
+    </element>
+    <element id="Observation.related">
+      <path value="Observation.related" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="type" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <definition value="A  reference to another Observation profiled by observation-member-laboratory-uv-trillium2. The target observation is considered as a sub-observation of the current one, which plays the role of a grouper" />
+      <comment value="This element is used in the context of Trillium II international patient summary when there is a need to group a collection of observations, because they belong to the same panel, or because they share a common interpretation comment, or a common media attachment (illustrative image or graph). In these cases, the current observation profiled as observation-laboratory-uv-trillium2 is the grouper, and its set of sub-observations are related observations  using the type &quot;has-member&quot; and the profile observation-member-laboratory-uv-trillium2. " />
+    </element>
+    <element id="Observation.related.type">
+      <path value="Observation.related.type" />
+      <short value="has-member: the related observation is a sub-observation of the current one, which acts as a grouper " />
+      <definition value="A code specifying the kind of relationship that exists with the target resource.&#xD;&#xA;The only authorized value in this profile is &quot;has-member&quot;" />
+      <comment value="   &#xD;&#xA;" />
+      <requirements value="&#xD;&#xA;" />
+      <min value="1" />
+      <fixedCode value="has-member" />
+    </element>
+    <element id="Observation.related:sub-observation">
+      <path value="Observation.related" />
+      <sliceName value="sub-observation" />
+      <short value="sub-observation member of this observation" />
+      <definition value="A  reference to an Observation resource playing the role of sub-observation of the current one. For instance an individial test member of a panel." />
+    </element>
+    <element id="Observation.related:sub-observation.type">
+      <path value="Observation.related.type" />
+      <fixedCode value="has-member" />
+    </element>
+    <element id="Observation.related:sub-observation.target">
+      <path value="Observation.related.target" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://trilliumbridge.eu/fhir/StructureDefinition/observation-member-laboratory-uv-trillium2" />
+      </type>
+    </element>
+    <element id="Observation.related:attachment">
+      <path value="Observation.related" />
+      <sliceName value="attachment" />
+      <short value="attachment associated to this observation" />
+      <definition value="A  reference to another Observation, which is constrained to valueAttachment, in order to convey an illustrative media content." />
+    </element>
+    <element id="Observation.related:attachment.type">
+      <path value="Observation.related.type" />
+      <fixedCode value="derived-from" />
+    </element>
+    <element id="Observation.related:attachment.target">
+      <path value="Observation.related.target" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://trilliumbridge.eu/fhir/StructureDefinition/observation-attachment-uv-trillium2" />
+      </type>
+    </element>
+    <element id="Observation.related:otherRelated">
+      <path value="Observation.related" />
+      <sliceName value="otherRelated" />
+    </element>
+    <element id="Observation.component">
+      <path value="Observation.component" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

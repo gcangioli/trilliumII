@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../__FHIRr4Tools/STU3_fhir-xsd/structuredefinition.xsd">
+	<id value="ImagingStudy-uv-ips"/>
+	<meta>
+		<lastUpdated value="2018-02-25T13:25:33.511+01:00"/>
+	</meta>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints applied to the ImagingStudy resource by the IPS project, which specifies the information on a DICOM imaging study this imaging result is part of.&#xD;&#xA;</div>
+	</text>
+	<url value="http://hl7.eu/fhir/trillium2/StructureDefinition/ImagingStudy-uv-ips"/>
+	<name value="ImagingStudy_uv_ips"/>
+	<title value="Imaging Study (IPS)"/>
+	<status value="draft"/>
+	<date value="2018-02-20T13:22:59.883+01:00"/>
+	<description value="This profile represents the constraints applied to the ImagingStudy resource by the IPS project, which specifies the information on a DICOM imaging study this imaging result is part of.&#xD;&#xA;"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="ImagingStudy"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/ImagingStudy"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="ImagingStudy">
+			<path value="ImagingStudy"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="ImagingStudy.identifier">
+			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
+				<valueString value="dicom="/>
+			</extension>
+			<path value="ImagingStudy.identifier"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="ImagingStudy.patient">
+			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
+				<valueString value="dicom=http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.2.2.html"/>
+			</extension>
+			<path value="ImagingStudy.patient"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Patient-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="ImagingStudy.patient.reference">
+			<path value="ImagingStudy.patient.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="ImagingStudy.started">
+			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
+				<valueString value="dicom=http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.2.html#sect_C.7.2.1"/>
+			</extension>
+			<path value="ImagingStudy.started"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="ImagingStudy.interpreter">
+			<path value="ImagingStudy.interpreter"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/practitioner-uv-ips"/>
+			</type>
+		</element>
+		<element id="ImagingStudy.procedureCode">
+			<path value="ImagingStudy.procedureCode"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="ImagingStudy.reason">
+			<path value="ImagingStudy.reason"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="ImagingStudy.reason.text">
+			<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+				<valueBoolean value="true"/>
+			</extension>
+			<path value="ImagingStudy.reason.text"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="ImagingStudy.series">
+			<path value="ImagingStudy.series"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="ImagingStudy.series.uid">
+			<path value="ImagingStudy.series.uid"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="ImagingStudy.series.modality">
+			<path value="ImagingStudy.series.modality"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="ImagingStudy.series.instance">
+			<path value="ImagingStudy.series.instance"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="ImagingStudy.series.instance.uid">
+			<path value="ImagingStudy.series.instance.uid"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="ImagingStudy.series.instance.sopClass">
+			<path value="ImagingStudy.series.instance.sopClass"/>
+			<mustSupport value="true"/>
+		</element>
+	</differential>
+</StructureDefinition>

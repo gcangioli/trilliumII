@@ -101,7 +101,7 @@
 			<path value="DeviceUseStatement.indication"/>
 			<binding>
 				<strength value="example"/>
-				<valueSetUri value="http://trilliumbridge.eu/fhir/ValueSet/reason-for-use"/>
+				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/reason-for-use"/>
 			</binding>
 		</element>
 	</differential>

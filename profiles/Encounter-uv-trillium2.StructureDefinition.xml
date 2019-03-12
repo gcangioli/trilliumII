@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://trilliumbridge.eu/fhir/StructureDefinition/encounter-uv-trillium2" />
+  <url value="http://trilliumbridge.eu/fhir/StructureDefinition/Encounter-uv-trillium2" />
   <name value="Encounter-uv-trillium2" />
   <status value="draft" />
   <fhirVersion value="3.0.1" />

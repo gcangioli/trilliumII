@@ -1,0 +1,143 @@
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../__FHIRr4Tools/STU3_fhir-xsd/structuredefinition.xsd">
+	<id value="Observation-uv-ips"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">This profile constrains the Observation resource to represent various results in a patient summary, if no other more specific profile applies.</div>
+	</text>
+	<url value="http://hl7.eu/fhir/trillium2/StructureDefinition/Observation-uv-ips"/>
+	<name value="Observation_uv_ips"/>
+	<title value="Observation (Results: generic)"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2018-03-21T09:24:38.624+01:00"/>
+	<publisher value="HL7 International"/>
+	<description value="This profile constrains the Observation resource to represent various results in a patient summary, if no other more specific profile applies."/>
+	<purpose value="This profile constrains the Observation resource to represent clinical observations where more specific profiles are not applicable. In case of a panel of observations, the results of the panel appear as sub-observations."/>
+<fhirVersion value="3.0.1"/>	
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Observation"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Observation">
+			<path value="Observation"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.id">
+			<path value="Observation.id"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.meta">
+			<path value="Observation.meta"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.meta.profile">
+			<path value="Observation.meta.profile"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.identifier">
+			<path value="Observation.identifier"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.status">
+			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
+				<valueString value="default: final"/>
+			</extension>
+			<path value="Observation.status"/>
+			<fixedCode value="final"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.category">
+			<path value="Observation.category"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.code">
+			<path value="Observation.code"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+			<binding>
+				<strength value="extensible"/>
+				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/observation-codes-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Observation.subject">
+			<path value="Observation.subject"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.subject.reference">
+			<path value="Observation.subject.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]">
+			<path value="Observation.effective[x]"/>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]:data-absent-reason">
+			<path value="Observation.effective[x].extension"/>
+			<short value="effective[x] absence reason"/>
+			<definition value="Provides a reason why the effective is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.performer">
+			<path value="Observation.performer"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.performer.reference">
+			<path value="Observation.performer.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.value[x]">
+			<path value="Observation.value[x]"/>
+			<type>
+				<code value="string"/>
+			</type>
+			<type>
+				<code value="boolean"/>
+			</type>
+			<type>
+				<code value="Range"/>
+			</type>
+			<type>
+				<code value="Ratio"/>
+			</type>
+			<type>
+				<code value="time"/>
+			</type>
+			<type>
+				<code value="dateTime"/>
+			</type>
+			<type>
+				<code value="Period"/>
+			</type>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<type>
+				<code value="Quantity"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Quantity-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+	</differential>
+</StructureDefinition>

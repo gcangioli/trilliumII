@@ -1,5 +1,5 @@
 ---
-title: Trillium II IPS Implementation Guide
+title: International Patient Summary Implementation Guide
 layout: default
 active: home
 ---
@@ -40,16 +40,26 @@ These are the site variables defined [here](http://wiki.hl7.org/index.php?title=
 -->
 <blockquote class="stu-note">
 <p>
-This is the on-going Trillium II Version <!-- Current officially released version --> of the {{site.data.fhir.igName}}, based on <a href="{{ site.data.fhir.path }}">FHIR Version {{ site.data.fhir.version }}</a>. See the <a href="#">Directory of published versions<img src="external.png"/></a>. It is subject to change, which may be significant, as part of that process.
-</p>
+This is the latest build <!-- Current officially released version --> of the {{site.data.fhir.igName}}, based on <a href="{{ site.data.fhir.path }}">FHIR Version {{ site.data.fhir.version }}</a>. See the <a href="history.html">Directory of published versions<img src="external.png"/></a>.  This specification is the version currently used by the Trillium II community of practice. It is subject to change, which may be significant, as part of the Trillium II maintenance process. A stable version will b epublished at the end of the project.</p>
 <p>
-Feedback is welcome and may be submitted through the <a href="https://github.com/gcangioli/trilliumII/issues">Trillium II GitHib tracker</a>.
+Feedback is welcome and may be submitted through the <a href="https://github.com/gcangioli/trilliumII/issues">Trillium II GitHub issue tracker</a>.
 </p>
 </blockquote>
 
 # Introduction
 
-An International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information intended for use in the unscheduled, cross-border care scenario, comprising at least the required elements of the IPS dataset. The IPS dataset is **_a minimal and non-exhaustive patient summary dataset, specialty-agnostic, condition-independent, but readily usable by clinicians for the cross-border unscheduled care of a patient_**.
+An International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information intended for use in the unscheduled, cross-border care scenario, comprising at least the required elements of the IPS dataset. The IPS dataset is **_a minimal and non-exhaustive patient summary dataset, specialty-agnostic, condition-independent, but readily usable by clinicians for the (cross-border) unscheduled care of a patient_**.
+
+The <a href="https://trillium2.eu/">Trillium II project</a> basically aims to:
+<ul>
+<li>Improve international interoperability of Health systems in Europe, the United States, and globally</li>
+<li>Accelerate adoption of interoperability standards in eHealth with validated open source interoperability assets and tools sharing experiences and lessons learned among standards organizations and patient initiatives</li>
+<li>Identify key use cases for secure, seamless sharing of patient summaries at personal and population levels.</li>
+</ul>
+
+In this context Trillium II has investigated the adoption of the IPS beyond the pure documental approach and the cross border unscheduled care scenario as summarized by the following figures.
+
+<p><b> ADD FIGURES </b></p>
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
@@ -61,7 +71,7 @@ An International Patient Summary (IPS) document is an electronic health record e
 
 ## Purpose
 
-The goal of this Implementation Guide is to extend the IPS Implemetation Guide that identifies the required clinical data, vocabulary and value sets for an international patient summary. The international patient summary is specified either as a templated document using HL7 CDA R2 (see the IPS Wiki [here](http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1) or as an HL7 FHIR Composition (as described in this implementation guide). The primary use case is to provide support for cross-border or cross-jurisdictional emergency and unplanned care.
+The goal of this Implementation Guide is to identify the required clinical data, vocabulary and value sets for an international patient summary. The international patient summary is specified either as a templated document using HL7 CDA R2 (see the IPS Wiki [here](http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1) or as an HL7 FHIR Composition (as described in this implementation guide). The primary use case is to provide support for cross-border or cross-jurisdictional emergency and unplanned care.
 
 This specification aims to support:
 
@@ -72,28 +82,37 @@ This specification aims to support:
 
 ## Project Background
 
-See further details on the project background in the Trillium II web page  <a href="http://trillium2.eu/">here</a>.
+See further details on the Trillium II project background in the <a href="https://trillium2.eu/">Trillium II web Site</a>.
+
 
 ## Project Scope
-Trillium-II continues the efforts of Trillium Bridge to achieve progress on its recommended actions and advance adoption of the International patient summary supported by broadly and consistently implemented standards. 
 
-
-The International Patient Summary is:
+As expressed in the introduction, the International Patient Summary is:
 * a minimal and non-exhaustive patient summary,
 * specialty-agnostic,
 * condition-independent,
 * but readily usable by clinicians for cross-border unscheduled care of a patient.
 In this context, minimal and non-exhaustive means that an IPS is not intended to reproduce (the entire) content of an Electronic Health Record (EHR).
-
 Specialty-agnostic means that an IPS is not filtered for a specialty. As an example, allergies are not filtered to the specialty of internal medicine, thus may also include food allergies, if considered to be relevant for, e.g. unplanned care.
-
 Condition-independent means that an IPS is not specific to particular conditions, and focuses on the patient current condition(s).
 
 Furthermore the scope of the IPS is global. Although this is a major challenge, this implementation guide takes various experiences and newer developments into account to address global feasibility as far as possible.
 
+The following picture provides an overview of the current IPS content.
+
+<div class="image">
+<img src="assets/images/IPS_composition.png" width="400" />
+<div>The IPS Composition</div>
+<p></p>
+</div>
+
 ## Relationships with Other Projects and Guidelines
 
 See further details on the IPS project relationships with other projects and guidelines in the IPS Wiki <a href="http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1#Relationships_with_other_projects_and_guidelines">here</a>.
+
+## Ballot Status
+
+This Implementation Guide is being balloted as STU with the intention to go normative in a subsequent ballot cycle.
 
 
 ## Authors and Contributors
@@ -101,9 +120,10 @@ See further details on the IPS project relationships with other projects and gui
 | Role  | Name | Organization | contact |
 | --- | --- | --- | --- |
 | **Primary Editor** | Giorgio Cangioli, PhD | Consultant, HL7 Italy | giorgio.cangioli@gmail.com |
+| **Primary Editor** | Rob Hausam | Hausam Consulting LLC | rob@hausamconsulting.com |
+| **Primary Editor** |  Dr Kai U. Heitmann | Heitmann Consulting and Services, Gefyra GmbH, HL7 Germany | info@kheitmann.de  
 | **Primary Editor** | François Macary | Phast | francois.macary@phast.fr |
-| **Contributor** |  Dr Kai U. Heitmann | Heitmann Consulting and Services, Gefyra GmbH, HL7 Germany | info@kheitmann.de
 | **Contributor** | Dr Christof Geßner | Gematik | christof.gessner@gematik.de |
+| **Contributor** | Gary Dickinson | CentriHealth | gary.dickinson@ehr-standards.com |
 | **Contributor** | Catherine Chronaki | HL7 International Foundation | chronaki@gmail.com |
-< TO BE COMPLETED >
 

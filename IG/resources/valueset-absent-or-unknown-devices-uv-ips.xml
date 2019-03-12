@@ -3,6 +3,10 @@
     <meta>
         <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
     </meta>
+        <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">Absent or Unknown Devices</div>
+  </text>
     <url value="http://hl7.eu/fhir/trillium2/ValueSet/absent-or-unknown-devices-uv-ips"/>
     <identifier>
         <use value="official"/>
@@ -15,7 +19,6 @@
     <status value="draft"/>
     <experimental value="false"/>
     <publisher value="HL7 International"/>
-
     <description value="Absent or Unknown Devices"/>
     <immutable value="false"/>
     <compose>
