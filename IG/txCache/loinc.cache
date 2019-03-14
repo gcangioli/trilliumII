@@ -325,3 +325,43 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "42346-7"
+}, "valueSet" :null}####
+v: {
+  "display" : "Medications on admission (narrative)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "8648-8"
+}, "valueSet" :null}####
+v: {
+  "display" : "Hospital course Narrative",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "29554-3"
+}, "valueSet" :null}####
+v: {
+  "display" : "Procedure Narrative",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "29549-3"
+}, "valueSet" :null}####
+v: {
+  "display" : "Medication administered Narrative",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

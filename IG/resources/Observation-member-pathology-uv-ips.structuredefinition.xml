@@ -13,7 +13,7 @@
 	<name value="Observation_member_pathology_uv_ips"/>
 	<title value="Observation (Results: pathology, member)"/>
 	<status value="draft"/>
-	<experimental value="true"/>
+	
 	<date value="2018-03-21"/>
 	<publisher value="HL7 International"/>
 	<description value="This profile constrains the Observation resource to represent a sub-observation, member of an &quot;organizer&quot; observation, in the &quot;pathology results entry of a patient summary"/>

@@ -9,7 +9,7 @@
 	<name value="IPSCodeSystemAbsentUnknown"/>
 	<title value="IPS CodeSystem - Absent and Unknown Data"/>
 	<status value="draft"/>
-	<experimental value="false"/>
+	
 	<description value="International Patient Summary (IPS) codes for &quot;known absent&quot; and &quot;not known&quot; data."/>
 	<caseSensitive value="true"/>
 	<valueSet value="http://hl7.eu/fhir/trillium2/ValueSet/absent-unknown"/>

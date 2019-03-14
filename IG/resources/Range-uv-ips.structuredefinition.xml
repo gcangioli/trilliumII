@@ -5,7 +5,7 @@
   <name value="Range-uv-ips"/>
   <title value="Range"/>
   <status value="draft"/>
-  <experimental value="true"/>
+  
   <date value="2018-03-21T14:43:39.739+01:00"/>
   <description value="Range constrained to UCUM as codesystem."/>
   <purpose value="requires UCUM as codesystem for units"/>

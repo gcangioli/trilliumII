@@ -193,11 +193,10 @@
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/ImagingStudy-uv-ips"/>
 		</resource>
-				<resource>
+		<resource>
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/Specimen-uv-ips"/>
 		</resource>
-			
 		<!-- Results End -->
 		<!-- Trillium II only profiles and extensions BEGIN -->
 		<resource>
@@ -238,7 +237,7 @@
 		</resource>
 		<!-- Trillium II only END -->
 		<!-- COMMON -->
-				<resource>
+		<resource>
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/participant-uv-ips"/>
 		</resource>
@@ -282,10 +281,18 @@
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/Quantity-uv-ips"/>
 		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/MedicationAdministration-uv-trillium2"/>
+		</resource>
 		<!-- DOCUMENT -->
 		<resource>
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/Composition-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/Composition-hcer-uv-trillium2"/>
 		</resource>
 	</package>
 	<page>

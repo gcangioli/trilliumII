@@ -12,7 +12,7 @@
 	<name value="Observation_media_uv_ips"/>
 	<title value="Observation (Results: laboratory, media)"/>
 	<status value="draft"/>
-	<experimental value="true"/>
+	
 	<date value="2018-03-09"/>
 	<publisher value="HL7 International"/>
 	<description value="This profile constrains the Media resource (which is a specialized observation)."/>

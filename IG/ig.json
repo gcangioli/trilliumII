@@ -536,6 +536,18 @@
     },
 
 
+    "StructureDefinition/Composition-hcer-uv-trillium2": {
+      "defns": "StructureDefinition-Composition-hcer-uv-trillium2-definitions.html",
+      "source": "Composition-hcer-uv-trillium2.structuredefinition.xml",
+      "base": "StructureDefinition-Composition-hcer-uv-trillium2.html"
+    },    "StructureDefinition/MedicationAdministration-uv-trillium2": {
+      "defns": "StructureDefinition-MedicationAdministration-uv-trillium2-definitions.html",
+      "source": "MedicationAdministration-uv-trillium2.structuredefinition.xml",
+      "base": "StructureDefinition-MedicationAdministration-uv-trillium2.html"
+    },
+
+
+
            "StructureDefinition/documentedBy-uv-trillium2": {
       "defns": "StructureDefinition-documentedBy-uv-trillium2-definitions.html",
       "source": "documentedBy-uv-trillium2.structuredefinition.xml",

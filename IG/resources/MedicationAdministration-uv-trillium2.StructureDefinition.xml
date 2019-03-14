@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../__FHIRr4Tools/STU3_fhir-xsd/structuredefinition.xsd">
+	<id value="MedicationAdministration-uv-trillium2"/>
+	<url value="http://hl7.eu/fhir/trillium2/StructureDefinition/MedicationAdministration-uv-trillium2"/>
+	<name value="MedicationAdministration-uv-trillium2"/>
+	<status value="draft"/>
+	<fhirVersion value="3.0.1"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="MedicationAdministration"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="MedicationAdministration">
+			<path value="MedicationAdministration"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="MedicationAdministration.medication[x]">
+			<path value="MedicationAdministration.medication[x]"/>
+			<type>
+				<code value="CodeableConcept"/>
+			</type>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Medication-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+	</differential>
+</StructureDefinition>

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../__FHIRr4Tools/STU3_fhir-xsd/structuredefinition.xsd">
-	<id value="Composition-uv-ips"/>
+	<id value="Composition-hcer-uv-trillium2"/>
 	<meta>
 		<lastUpdated value="2018-03-06T10:43:52.892+01:00"/>
 	</meta>
-	<url value="http://hl7.eu/fhir/trillium2/StructureDefinition/Composition-uv-ips"/>
-	<name value="Composition_uv_ips"/>
-	<title value="Trillium II IPS"/>
+	<url value="http://hl7.eu/fhir/trillium2/StructureDefinition/Composition-hcer-uv-trillium2"/>
+	<name value="Composition_HCER_uv_trillium2"/>
+	<title value="Trillium II Encounter Report"/>
 	<status value="draft"/>
 	<date value="2019-03-11"/>
 	<publisher value="Trillium2 Project"/>
-	<description value="Clinical document used to represent an International Patient Summary (IPS) data set. The IPS dataset is a minimal and non-exhaustive patient summary dataset, specialty-agnostic, condition-independent, but readily usable by clinicians for the cross-border unscheduled care of a patient."/>
-	<purpose value="An International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information intended for use in the unscheduled, cross-border care scenario, comprising at least the required elements of the IPS dataset. The IPS dataset is a minimal and non-exhaustive patient summary dataset, specialty-agnostic, condition-independent, but readily usable by clinicians for the cross-border unscheduled care of a patient."/>
+	<description value="Clinical document used to represent a generic Encounter Report (HCER) data set. The HCER dataset is a minimal and non-exhaustive dataset, specialty-agnostic, condition-independent, but readily usable by clinicians for the cross-border care of a patient."/>
 	<copyright value="HL7 International"/>
 	<fhirVersion value="3.0.1"/>
 	<mapping>
@@ -37,8 +36,8 @@
 	<differential>
 		<element id="Composition">
 			<path value="Composition"/>
-			<short value="International Patient Summary composition"/>
-			<definition value="International Patient Summary composition. &#xD;&#xA;A composition is a set of healthcare-related information that is assembled together into a single logical document that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement. &#xD;&#xA;While a Composition defines the structure, it does not actually contain the content: rather the full content of a document is contained in a Bundle, of which the Composition is the first resource contained."/>
+			<short value="Encounter Report composition"/>
+			<definition value="Encounter Report composition. &#xD;&#xA;A composition is a set of healthcare-related information that is assembled together into a single logical document that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement. &#xD;&#xA;While a Composition defines the structure, it does not actually contain the content: rather the full content of a document is contained in a Bundle, of which the Composition is the first resource contained."/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.id">
@@ -52,17 +51,6 @@
 		<element id="Composition.text">
 			<path value="Composition.text"/>
 			<mustSupport value="true"/>
-		</element>
-		<element id="Composition.extension:healthcareProviderParticipant">
-			<path value="Composition.extension"/>
-			<sliceName value="healthcareProviderParticipant"/>
-			<short value="Provider to be contacted"/>
-			<definition value="Extension defined to allow to capture the preferred practitioner ( with its role ) or the organization to be contacted, represented in the IPS CDA with an indirect participant in the header."/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/participant-uv-ips"/>
-			</type>
-			<mustSupport value="false"/>
 		</element>
 		<element id="Composition.identifier">
 			<path value="Composition.identifier"/>
@@ -80,7 +68,7 @@
 		</element>
 		<element id="Composition.type.coding">
 			<path value="Composition.type.coding"/>
-			<short value="Code identifying the Patient Summary"/>
+			<short value="Code identifying the Encounter Report"/>
 			<min value="1"/>
 			<type>
 				<code value="Coding"/>
@@ -97,12 +85,12 @@
 		<element id="Composition.type.coding.code">
 			<path value="Composition.type.coding.code"/>
 			<min value="1"/>
-			<fixedCode value="60591-5"/>
+			<fixedCode value="34133-9"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.subject">
 			<path value="Composition.subject"/>
-			<definition value="Who or what the composition is about. &#xD;&#xA;In general a composition can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of livestock, or a set of patients that share a common exposure).&#xD;&#xA;For the IPS the subject is always the patient."/>
+			<definition value="Who or what the composition is about. &#xD;&#xA;In general a composition can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of livestock, or a set of patients that share a common exposure).&#xD;&#xA;For the HCER the subject is always the patient."/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Patient-uv-ips"/>
@@ -133,8 +121,8 @@
 		</element>
 		<element id="Composition.author">
 			<path value="Composition.author"/>
-			<short value="Who and/or what authored the IPS"/>
-			<definition value="Identifies who is responsible for the information in the IPS, not necessarily who typed it in.&#xD;&#xA;&#xD;&#xA;The type of author(s) contribute to determine the &quot;nature&quot;of the Patient Summary: e.g. a &quot;human-curated&quot; IPS Vs. an &quot;automatically generated&quot; IPS."/>
+			<short value="Who and/or what authored the Encounter Report"/>
+			<definition value="Identifies who is responsible for the information in the Encounter Report, not necessarily who typed it in.&#xD;&#xA;&#xD;&#xA;The type of author(s) contribute to determine the &quot;nature&quot;of the Patient Summary: e.g. a &quot;human-curated&quot; Encounter Report Vs. an &quot;automatically generated&quot; Encounter Report."/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.author.reference">
@@ -144,7 +132,7 @@
 		<element id="Composition.title">
 			<path value="Composition.title"/>
 			<short value="International Patient Summary"/>
-			<definition value="Official human-readable label for the composition.&#xD;&#xA;&#xD;&#xA;For this document should be &quot;International Patient Summary&quot; or any equivalent translation"/>
+			<definition value="Official human-readable label for the composition.&#xD;&#xA;&#xD;&#xA;For this document should be &quot;Encounter Report&quot; or any equivalent translation"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.confidentiality">
@@ -202,42 +190,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.event">
-			<path value="Composition.event"/>
-			<slicing>
-				<discriminator>
-					<type value="value"/>
-					<path value="code"/>
-				</discriminator>
-				<rules value="open"/>
-			</slicing>
-			<definition value="The main activity being described by a IPS is the provision of healthcare over a period of time. &#xD;&#xA;In the CDA representation of the IPS this is shown by setting the value of serviceEvent/@classCode to “PCPR” (care provision) and indicating the duration over which care was provided in serviceEvent/effectiveTime. &#xD;&#xA;In the FHIR representation at lest one event should be used to record this information.&#xD;&#xA;Additional data from outside this duration may also be included if it is relevant to care provided during that time range (e.g., reviewed during the stated time range). For example if the IPS is generated by a GP based on information recorded in his/her EHR-S, then the start value should represent the date when the treatment relationship between the patient and the GP started; and the end value the date of the latest care event."/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Composition.event:careProvisioningEvent">
-			<path value="Composition.event"/>
-			<sliceName value="careProvisioningEvent"/>
-			<short value="The care provisioning being documented"/>
-			<definition value="The provision of healthcare over a period of time this IPS is documenting."/>
-			<max value="1"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Composition.event:careProvisioningEvent.code">
-			<path value="Composition.event.code"/>
-			<min value="1"/>
-			<fixedCodeableConcept>
-				<coding>
-					<system value="http://terminology.hl7.org/CodeSystem/v3-ActClass"/>
-					<code value="PCPR"/>
-				</coding>
-			</fixedCodeableConcept>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Composition.event:careProvisioningEvent.period">
-			<path value="Composition.event.period"/>
-			<mustSupport value="true"/>
-		</element>
-
 		<element id="Composition.section">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Section"/>
@@ -251,8 +203,8 @@
 				<ordered value="false"/>
 				<rules value="open"/>
 			</slicing>
-			<short value="Sections composing the IPS"/>
-			<definition value="The root of the sections that make up the IPS composition."/>
+			<short value="Sections composing the HCER"/>
+			<definition value="The root of the sections that make up the HCER composition."/>
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
@@ -262,8 +214,8 @@
 			</extension>
 			<path value="Composition.section"/>
 			<sliceName value="sectionMedications"/>
-			<short value="IPS Medication Summary Section"/>
-			<definition value="The medication summary section contains a description of the patient's medications relevant for the scope of the patient summary.&#xD;&#xA;The actual content could depend on the jurisdiction, it could report:&#xD;&#xA;- the currently active medications; &#xD;&#xA;- the current and past medications considered relevant by the authoring GP; &#xD;&#xA;- the patient prescriptions or dispensations automatically extracted by a regional or a national EHR.&#xD;&#xA;&#xD;&#xA;In all those cases however medications are documented in the Patient Summary as medication statements.&#xD;&#xA;This section requires either an entry indicating the subject is known not to be on any relevant medication; either an entry indicating that no information is available about medications; or entries summarizing the subject's relevant medications."/>
+			<short value="HCER Medication Summary Section"/>
+			<definition value="The medication summary section contains a description of the patient's medications relevant for the scope of the patient summary.&#xD;&#xA;The actual content could depend on the jurisdiction, it could report:&#xD;&#xA;- the currently active medications; &#xD;&#xA;- the current and past medications considered relevant by the authoring GP; &#xD;&#xA;- the patient prescriptions or dispensations automatically extracted by a regional or a national EHR.&#xD;&#xA;&#xD;&#xA;In all those cases however medications are documented in the Patient Summary as medication statements.&#xD;&#xA;This section requires either an entry indicating the subject is known not to be on any medications; either an entry indicating that no information is available about medications; or entries summarizing the subject's medications."/>
 			<min value="1"/>
 			<max value="1"/>
 			<mustSupport value="true"/>
@@ -372,7 +324,7 @@
 			</extension>
 			<path value="Composition.section"/>
 			<sliceName value="sectionAllergies"/>
-			<short value="IPS Allergies and Intolerances Section"/>
+			<short value="HCER Allergies and Intolerances Section"/>
 			<definition value="This section documents the relevant allergies or intolerances (conditions) for that patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy.&#xD;&#xA;At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.&#xD;&#xA;If no information about allergies is available, or if no allergies are known this should be clearly documented in the section."/>
 			<min value="1"/>
 			<max value="1"/>
@@ -480,9 +432,8 @@
 			</extension>
 			<path value="Composition.section"/>
 			<sliceName value="sectionProblems"/>
-			<short value="IPS Problems Section"/>
-			<definition value="The IPS problem section lists and describes clinical problems or conditions currently being monitored for the patient."/>
-			<min value="1"/>
+			<short value="HCER Problems Section"/>
+			<definition value="The HCER problem section lists and describes clinical problems or conditions currently being monitored for the patient."/>
 			<max value="1"/>
 			<mustSupport value="true"/>
 		</element>
@@ -588,7 +539,7 @@
 			</extension>
 			<path value="Composition.section"/>
 			<sliceName value="sectionProceduresHx"/>
-			<short value="IPS History of Procedures Section"/>
+			<short value="HCER History of Procedures Section"/>
 			<definition value="The History of Procedures Section contains a description of the patient past procedures that are pertinent to the scope of this document.&#xD;&#xA;Procedures may refer for example to:&#xD;&#xA;1. Invasive Diagnostic procedure:e.g. Cardiac catheterization; (the results of these procedure are documented in the results section)&#xD;&#xA;2. Therapeutic procedure: e.g. dialysis;&#xD;&#xA;3. Surgical procedure: e.g. appendectomy"/>
 			<max value="1"/>
 			<mustSupport value="true"/>
@@ -697,7 +648,7 @@
 			</extension>
 			<path value="Composition.section"/>
 			<sliceName value="sectionImmunizations"/>
-			<short value="IPS Immunizations Section"/>
+			<short value="HCER Immunizations Section"/>
 			<definition value="The Immunizations Section defines a patient's current immunization status and pertinent immunization history.&#xD;&#xA;The primary use case for the Immunization Section is to enable communication of a patient's immunization status.&#xD;&#xA;The section includes current immunization status, and may contain the entire immunization history that is relevant to the period of time being summarized."/>
 			<max value="1"/>
 			<mustSupport value="true"/>
@@ -803,7 +754,7 @@
 			</extension>
 			<path value="Composition.section"/>
 			<sliceName value="sectionMedicalDevices"/>
-			<short value="IPS Medical Devices Section"/>
+			<short value="HCER Medical Devices Section"/>
 			<definition value="The medical devices section contains narrative text and coded entries describing the patient history of medical device use."/>
 			<max value="1"/>
 			<mustSupport value="true"/>
@@ -1171,8 +1122,8 @@
 			</extension>
 			<path value="Composition.section"/>
 			<sliceName value="sectionPastIllnessHx"/>
-			<short value="IPS History of Past Illness Section"/>
-			<definition value="The History of Past Illness section contains a description of the conditions the patient suffered in the past."/>
+			<short value="HCER History of Past Illness Section"/>
+			<definition value="The History of Past Illness section contains a narrative description and coded entries of the conditions the patient suffered in the past"/>
 			<max value="1"/>
 			<mustSupport value="true"/>
 		</element>
@@ -1476,8 +1427,8 @@
 			</extension>
 			<path value="Composition.section"/>
 			<sliceName value="sectionSocialHistory"/>
-			<short value="IPS Social History Section"/>
-			<definition value="The social history section contains a description of the person’s Health related &quot;lifestyle factors&quot; or &quot;lifestyle observations&quot; (e.g. smoke habits; alcohol consumption; diets, risky habits.)"/>
+			<short value="HCER Social History Section"/>
+			<definition value="The social history section contains a description of the person’s Health related “lifestyle factors&quot; or &quot;lifestyle observations&quot; (e.g. smoke habits; alcohol consumption; diets, risky habits.)"/>
 			<max value="1"/>
 			<mustSupport value="true"/>
 		</element>
@@ -1858,6 +1809,363 @@
 		<element id="Composition.section:sectionEncounters.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
-		</element>		
-			</differential>
+		</element>
+		<element id="Composition.section:sectionAdmissionMedications">
+			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+				<valueString value="Section"/>
+			</extension>
+			<path value="Composition.section"/>
+			<sliceName value="sectionAdmissionMedications"/>
+			<short value="Admission Medications"/>
+			<max value="1"/>
+		</element>
+		<element id="Composition.section:sectionAdmissionMedications.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:sectionAdmissionMedications.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<fixedCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="42346-7"/>
+				</coding>
+			</fixedCodeableConcept>
+			<mustSupport value="true"/>
+		</element>
+		<!--
+		<element id="Composition.section:sectionAdmissionMedications.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<type>
+				<code value="Coding"/>
+				<profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips"/>
+			</type>
+		</element>
+-->
+		<element id="Composition.section:sectionAdmissionMedications.text">
+			<path value="Composition.section.text"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:sectionAdmissionMedications.entry">
+			<path value="Composition.section.entry"/>
+			<!--
+			<slicing>
+				<discriminator>
+					<type value="profile"/>
+						<path value="resolve()"/>
+				</discriminator>
+				<rules value="openAtEnd"/>
+			</slicing>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/MedicationStatement-uv-ips"/>
+			</type>
+		</element>
+		<element id="Composition.section:sectionAdmissionMedications.entry:admissionMedication">
+			<path value="Composition.section.entry"/>
+			<sliceName value="admissionMedication"/>
+-->
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/MedicationStatement-uv-ips"/>
+			</type>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
+			</type>
+		</element>
+		<element id="Composition.section:sectionAdmissionMedications.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+			<mustSupport value="false"/>
+		</element>
+		<element id="Composition.section:sectionAdmissionMedications.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:sectionHospitalCourse">
+			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+				<valueString value="Section"/>
+			</extension>
+			<path value="Composition.section"/>
+			<sliceName value="sectionHospitalCourse"/>
+			<short value="Hospital course"/>
+			<definition value="Hospital course describes the sequence of events from admission to discharge in a hospital facility."/>
+			<max value="1"/>
+		</element>
+		<element id="Composition.section:sectionHospitalCourse.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<fixedCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="8648-8"/>
+				</coding>
+			</fixedCodeableConcept>
+			<mustSupport value="true"/>
+		</element>
+		<!--
+		<element id="Composition.section:sectionHospitalCourse.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<type>
+				<code value="Coding"/>
+				<profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips"/>
+			</type>
+		</element>
+-->
+		<element id="Composition.section:sectionHospitalCourse.text">
+			<path value="Composition.section.text"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:sectionHospitalCourse.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<element id="Composition.section:sectionProcedure">
+			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+				<valueString value="Section"/>
+			</extension>
+			<path value="Composition.section"/>
+			<sliceName value="sectionProcedure"/>
+			<max value="1"/>
+		</element>
+		<element id="Composition.section:sectionProcedure.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<fixedCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="29554-3"/>
+				</coding>
+			</fixedCodeableConcept>
+			<mustSupport value="true"/>
+		</element>
+		<!--
+		<element id="Composition.section:sectionProcedure.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<type>
+				<code value="Coding"/>
+				<profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips"/>
+			</type>
+		</element>
+-->
+		<element id="Composition.section:sectionProcedure.text">
+			<path value="Composition.section.text"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:sectionProcedure.entry">
+			<path value="Composition.section.entry"/>
+			<!--
+			<slicing>
+				<discriminator>
+					<type value="profile"/>
+					<path value="resolve()"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/procedure-uv-trillium2"/>
+			</type>
+		</element>
+		<element id="Composition.section:sectionProcedure.entry:procedure">
+			<path value="Composition.section.entry"/>
+			<sliceName value="procedure"/>
+-->
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Procedure-uv-ips"/>
+			</type>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
+			</type>
+		</element>
+		<element id="Composition.section:sectionProcedure.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+			<mustSupport value="false"/>
+		</element>
+		<element id="Composition.section:sectionProcedure.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<!-- MedicationAdministered -->
+		<element id="Composition.section:sectionMedicationsAdministered">
+			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+				<valueString value="Section"/>
+			</extension>
+			<path value="Composition.section"/>
+			<sliceName value="sectionMedicationsAdministered"/>
+			<short value="Admission Medications"/>
+			<max value="1"/>
+		</element>
+		<element id="Composition.section:sectionMedicationsAdministered.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:sectionMedicationsAdministered.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+					<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<fixedCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="29549-3"/>
+				</coding>
+			</fixedCodeableConcept>
+			<mustSupport value="true"/>
+		</element>
+		<!--
+		<element id="Composition.section:sectionMedicationsAdministered.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<type>
+				<code value="Coding"/>
+				<profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips"/>
+			</type>
+		</element>
+-->
+		<element id="Composition.section:sectionMedicationsAdministered.text">
+			<path value="Composition.section.text"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:sectionMedicationsAdministered.entry">
+			<path value="Composition.section.entry"/>
+			<!--
+			<slicing>
+				<discriminator>
+					<type value="profile"/>
+					<path value="reference"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/medicationadministered-uv-trillium2"/>
+			</type>
+		</element>
+		<element id="Composition.section:sectionMedicationsAdministered.entry:administeredMedication">
+			<path value="Composition.section.entry"/>
+			<sliceName value="administeredMedication"/>
+-->
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/MedicationAdministration-uv-trillium2"/>
+			</type>
+						<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
+			</type>
+		</element>
+				<element id="Composition.section:sectionMedicationsAdministered.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+			<mustSupport value="false"/>
+		</element>
+		<element id="Composition.section:sectionMedicationsAdministered.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+		<!-- Discharge Medications -->
+		<element id="Composition.section:sectionDischargeMedications">
+			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+				<valueString value="Section"/>
+			</extension>
+			<path value="Composition.section"/>
+			<sliceName value="sectionDischargeMedications"/>
+			<short value="Admission Medications"/>
+			<max value="1"/>
+		</element>
+		<element id="Composition.section:sectionDischargeMedications.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:sectionDischargeMedications.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+				<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<fixedCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="42346-7"/>
+				</coding>
+			</fixedCodeableConcept>
+			<mustSupport value="true"/>
+		</element>
+		<!--
+		<element id="Composition.section:sectionDischargeMedications.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<type>
+				<code value="Coding"/>
+				<profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		-->
+		<element id="Composition.section:sectionDischargeMedications.text">
+			<path value="Composition.section.text"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:sectionDischargeMedications.entry">
+			<path value="Composition.section.entry"/>
+			<!--
+			<slicing>
+				<discriminator>
+					<type value="profile"/>
+					<path value="resolce()"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/MedicationStatement-uv-ips"/>
+			</type>
+		</element>
+		<element id="Composition.section:sectionDischargeMedications.entry:dischargeMedication">
+			<path value="Composition.section.entry"/>
+			<sliceName value="dischargeMedication"/>
+			-->
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/MedicationStatement-uv-ips"/>
+			</type>
+						<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
+			</type>
+		</element>
+			<element id="Composition.section:sectionDischargeMedications.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+			<mustSupport value="false"/>
+		</element>
+		<element id="Composition.section:sectionDischargeMedications.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>
+	</differential>
 </StructureDefinition>
