@@ -46,21 +46,6 @@ Feedback is welcome and may be submitted through the <a href="https://github.com
 </p>
 </blockquote>
 
-# Introduction
-
-An International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information intended for use in the unscheduled, cross-border care scenario, comprising at least the required elements of the IPS dataset. The IPS dataset is **_a minimal and non-exhaustive patient summary dataset, specialty-agnostic, condition-independent, but readily usable by clinicians for the (cross-border) unscheduled care of a patient_**.
-
-The <a href="https://trillium2.eu/">Trillium II project</a> basically aims to:
-<ul>
-<li>Improve international interoperability of Health systems in Europe, the United States, and globally</li>
-<li>Accelerate adoption of interoperability standards in eHealth with validated open source interoperability assets and tools sharing experiences and lessons learned among standards organizations and patient initiatives</li>
-<li>Identify key use cases for secure, seamless sharing of patient summaries at personal and population levels.</li>
-</ul>
-
-In this context Trillium II has investigated the adoption of the IPS beyond the pure documental approach and the cross border unscheduled care scenario as summarized by the following figures.
-
-<p><b> ADD FIGURES </b></p>
-
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
 * Do not remove this line (it will not be displayed)
@@ -68,37 +53,30 @@ In this context Trillium II has investigated the adoption of the IPS beyond the 
 
 
 <!-- end TOC -->
+# Scope
+Formalize, through a FHIR Implementation Guide based on the HL7 FHIR IPS IG, the results of the Work Package 2 and 3 of the Trillium II project.
 
-## Purpose
+ 
+# Introduction
+## The Trillium II project
+<a href="https://trillium2.eu/">Trillium Bridge II - Reinforcing the Bridges and Scaling up EU/US Cooperation on Patient Summary</a> is a project funded from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 727745, aiming to:
+<ul>
+<li>Improve international interoperability of Health systems in Europe, the United States, and globally</li>
+<li>Accelerate adoption of interoperability standards in eHealth with validated open source interoperability assets and tools sharing experiences and lessons learned among standards organizations and patient initiatives</li>
+<li>Identify key use cases for secure, seamless sharing of patient summaries at personal and population levels.</li>
+</ul>
 
-The goal of this Implementation Guide is to identify the required clinical data, vocabulary and value sets for an international patient summary. The international patient summary is specified either as a templated document using HL7 CDA R2 (see the IPS Wiki [here](http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1) or as an HL7 FHIR Composition (as described in this implementation guide). The primary use case is to provide support for cross-border or cross-jurisdictional emergency and unplanned care.
+In this context Trillium II has investigated the adoption of the International Patient Summary (IPS) beyond the cross border unscheduled care scenario, extending its concept from a pure docuemntal approach to a reusable system of data blocks.
 
-This specification aims to support:
+For more details about the project please refer to the <a href="https://trillium2.eu/">Trillium Bridge II project Web Site</a>
 
-* Cross-jurisdictional patient summaries (through adaptation/extension for multi-language and realm scenarios, including translation).
-* Emergency and unplanned care in any country, regardless of language.
-* Value sets based on international vocabularies that are usable and understandable in any country.
-* Data and metadata for document-level provenance.
+## The International Patient Summary
+An International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information intended for use in the unscheduled, cross-border care scenario, comprising at least the required elements of the IPS dataset. The IPS dataset is **_a minimal and non-exhaustive patient summary dataset, specialty-agnostic, condition-independent, but readily usable by clinicians for the (cross-border) unscheduled care of a patient_**.
 
-## Project Background
-
-See further details on the Trillium II project background in the <a href="https://trillium2.eu/">Trillium II web Site</a>.
+A formal definition of the International Patient Summary is provided by the CEN/TC 251 standard EN 17269.
 
 
-## Project Scope
-
-As expressed in the introduction, the International Patient Summary is:
-* a minimal and non-exhaustive patient summary,
-* specialty-agnostic,
-* condition-independent,
-* but readily usable by clinicians for cross-border unscheduled care of a patient.
-In this context, minimal and non-exhaustive means that an IPS is not intended to reproduce (the entire) content of an Electronic Health Record (EHR).
-Specialty-agnostic means that an IPS is not filtered for a specialty. As an example, allergies are not filtered to the specialty of internal medicine, thus may also include food allergies, if considered to be relevant for, e.g. unplanned care.
-Condition-independent means that an IPS is not specific to particular conditions, and focuses on the patient current condition(s).
-
-Furthermore the scope of the IPS is global. Although this is a major challenge, this implementation guide takes various experiences and newer developments into account to address global feasibility as far as possible.
-
-The following picture provides an overview of the current IPS content.
+## Trillium II Content overview
 
 <div class="image">
 <img src="assets/images/IPS_composition.png" width="400" />
@@ -106,23 +84,32 @@ The following picture provides an overview of the current IPS content.
 <p></p>
 </div>
 
-## Relationships with Other Projects and Guidelines
-
-See further details on the IPS project relationships with other projects and guidelines in the IPS Wiki <a href="http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1#Relationships_with_other_projects_and_guidelines">here</a>.
-
-## Ballot Status
-
-This Implementation Guide is being balloted as STU with the intention to go normative in a subsequent ballot cycle.
-
 
 ## Authors and Contributors
 
 | Role  | Name | Organization | contact |
 | --- | --- | --- | --- |
+| **Primary Editor** | Giorgio Cangioli | WP3 Leader, HL7 Europe | giorgio.cangioli@gmail.com |
+| **Primary Editor** | François Macary | Task 2.2 and 3.3 leader, Phast | francois.macary@phast.fr |
+| **Contributor** | Catherine Chronaki | Scientific Coordinator, HL7 Europe | chronaki@gmail.com |
+| **Contributor** | Alexander Berler | WP2 leader, GNOMON | a.berler@gnomon.com.gr |
+| **Contributor** | Kai U. Heitmann | Task 2.1 leader, HL7 Europe | info@kheitmann.de |
+| **Contributor** | Juha Mykkänen | Task 2.3 leader, THL | juha.mykkanen@thl.fi|
+| **Contributor** | Anabela Santos | Task 2.4 leader, SPMS | Anabela.Santos.ext@spms.min-saude.pt |
+| **Contributor** | Ariadna Rius | Task 2.5 leader, TicSalut | arsoler@ticsalut.cat |
+| **Contributor** | Fotis Gonidis | Task 3.4 leader,GNOMON | f.gonidis@gnomon.com.gr |
+| **Contributor** | Marco Eichelberg | Task 3.5 leader, OFFIS | eichelberg@offis.de |
+
+For space reason the table has been limited to the task leaders, the list of contributors is however wider as documented by the Trillium II deliverables, see the <a href="https://trillium2.eu/">Trillium Bridge II project Web Site</a> for more details.
+
+### HL7 FHIR IPS
+
+| Role  | Name | Organization | contact |
+| --- | --- | --- | --- |
 | **Primary Editor** | Giorgio Cangioli, PhD | Consultant, HL7 Italy | giorgio.cangioli@gmail.com |
 | **Primary Editor** | Rob Hausam | Hausam Consulting LLC | rob@hausamconsulting.com |
-| **Primary Editor** |  Dr Kai U. Heitmann | Heitmann Consulting and Services, Gefyra GmbH, HL7 Germany | info@kheitmann.de  
 | **Primary Editor** | François Macary | Phast | francois.macary@phast.fr |
+| **Primary Editor** |  Dr Kai U. Heitmann | Heitmann Consulting and Services, Gefyra GmbH, HL7 Germany | info@kheitmann.de  
 | **Contributor** | Dr Christof Geßner | Gematik | christof.gessner@gematik.de |
 | **Contributor** | Gary Dickinson | CentriHealth | gary.dickinson@ehr-standards.com |
 | **Contributor** | Catherine Chronaki | HL7 International Foundation | chronaki@gmail.com |

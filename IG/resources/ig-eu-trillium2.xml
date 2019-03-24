@@ -1,6 +1,6 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../__FHIRr4Tools/STU3_fhir-xsd/implementationguide.xsd">
-	<id value="ig-uv-ips"/>
-	<url value="http://hl7.eu/fhir/trillium2/ImplementationGuide/ig-uv-ips"/>
+	<id value="ig-uv-trillium2"/>
+	<url value="http://hl7.eu/fhir/trillium2/ImplementationGuide/ig-uv-trillium2"/>
 	<version value="0.1.0"/>
 	<name value="Trillium II Implementation Guide"/>
 	<status value="active"/>
@@ -56,6 +56,22 @@
 		<resource>
 			<example value="false"/>
 			<sourceUri value="ValueSet/absent-or-unknown-immunization-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/vaccines-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/whoatc-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/target-site-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/medicine-route-of-administration"/>
 		</resource>
 		<!-- END COMMENT -->
 		<!-- IMMUNIZATION END -->

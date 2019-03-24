@@ -8,15 +8,12 @@ active: toc
 
 <div>
   <ul>
-    <li><a href="index.html">International Patient Summary Implementation Guide</a>
+    <li><a href="index.html">The Trillium II International Patient Summary Implementation Guide</a>
       <ul>
         <li><a href="index.html#introduction" id="markdown-toc-introduction">Introduction</a></li>
-        <li><a href="index.html#purpose" id="markdown-toc-purpose">Purpose</a></li>
-        <li><a href="index.html#project-background" id="markdown-toc-project-background">Project Background</a></li>
-        <li><a href="index.html#project-scope" id="markdown-toc-project-scope">Project Scope</a></li>
-        <li><a href="index.html#relationships-with-other-projects-and-guidelines" id="markdown-toc-relationships-with-other-projects-and-guidelines">Relationships with Other Projects and Guidelines</a></li>
-        <li><a href="index.html#ballot-status" id="markdown-toc-ballot-status">Ballot Status</a></li>
         <li><a href="index.html#authors-and-contributors" id="markdown-toc-authors-and-contributors">Authors and Contributors</a></li>
+        <li><a href="StructureDefinition-Composition-uv-ips.html" id="markdown-toc-ips-document">The Trillium II IPS document</a></li>
+        <li><a href="/StructureDefinition-Composition-hcer-uv-trillium2.html" id="markdown-toc-hcer-document">The Trillium II Encounter report document</a></li>
       </ul>
     </li>
   </ul>

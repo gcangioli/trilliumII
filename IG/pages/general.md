@@ -4,6 +4,12 @@ layout: default
 active: guidance
 ---
 
+<blockquote>
+<p>
+This guide follow the same principles and design of the HL7 FHIR IPS IG, its content is reported below </p>
+</blockquote>
+
+
 <!-- {:.no_toc} -->
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->

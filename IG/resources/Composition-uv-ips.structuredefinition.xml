@@ -237,7 +237,6 @@
 			<path value="Composition.event.period"/>
 			<mustSupport value="true"/>
 		</element>
-
 		<element id="Composition.section">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Section"/>
@@ -1803,10 +1802,12 @@
 			<short value="Encounters sections"/>
 			<definition value="This section lists and describes any healthcare encounters pertinent to the patient’s current health status or historical health history. An encounter is an interaction, regardless of the setting, between a patient and a practitioner who is vested with primary responsibility for diagnosing, evaluating, or treating the patient’s condition. It may include visits, appointments, or non-face-to-face interactions. It is also a contact between a patient and a practitioner who has primary responsibility (exercising independent judgment) for assessing and treating the patient at a given contact.“ (from C-CDA specifications)."/>
 			<max value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionEncounters.title">
 			<path value="Composition.section.title"/>
 			<min value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionEncounters.code">
 			<path value="Composition.section.code"/>
@@ -1817,10 +1818,12 @@
 					<code value="46240-8"/>
 				</coding>
 			</fixedCodeableConcept>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionEncounters.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionEncounters.entry">
 			<path value="Composition.section.entry"/>
@@ -1858,6 +1861,7 @@
 		<element id="Composition.section:sectionEncounters.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
-		</element>		
-			</differential>
+			<mustSupport value="false"/>
+		</element>
+	</differential>
 </StructureDefinition>

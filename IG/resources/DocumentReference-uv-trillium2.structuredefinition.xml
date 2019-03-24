@@ -1,61 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
-  <meta>
-    <lastUpdated value="2018-02-25T18:40:56.265+01:00" />
-  </meta>
-  <url value="http://hl7.eu/fhir/trillium2/StructureDefinition/DocumentReference-uv-trillium2" />
-  <name value="DocumentReference-uv-trillium2" />
-  <status value="draft" />
-  <date value="2018-02-15T13:37:44.7+01:00" />
-  <fhirVersion value="3.0.1" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="DocumentReference" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
-  <derivation value="constraint"/>
-  <differential>
-    <element id="DocumentReference.status">
-      <path value="DocumentReference.status"/>
-      <fixedCode value="current"/>
-    </element>
-    <element id="DocumentReference.type">
-      <path value="DocumentReference.type"/>
-      <label value="Imaging Result Heading"/>
-      <short value="Kind of document"/>
-    </element>
-    <element id="DocumentReference.content.attachment.extension">
-      <path value="DocumentReference.content.attachment.extension"/>
-      <slicing>
-        <discriminator>
-          <type value="value"/>
-          <path value="url"/>
-        </discriminator>
-        <rules value="open"/>
-      </slicing>
-    </element>
-    <element id="DocumentReference.content.attachment.extension:accessProtocol">
-      <path value="DocumentReference.content.attachment.extension"/>
-      <sliceName value="accessProtocol"/>
-      <max value="1"/>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/accessProtocol-uv-trillium2"/>
-      </type>
-    </element>
-    <element id="DocumentReference.content.attachment.extension:iheXDSidentifiers">
-      <path value="DocumentReference.content.attachment.extension"/>
-      <sliceName value="iheXDSidentifiers"/>
-      <short value="IHE XDS Identifiers"/>
-      <definition value="Optional Extension Element - used to indicate the XCA Home Community ID and the XDS Repository Unique ID&#xD;&#xA;"/>
-      <max value="1"/>
-      <type>
-        <code value="Extension"/>
-        <profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/iheXDSidentifiers-uv-trillium2"/>
-      </type>
-    </element>
-    <element id="DocumentReference.context">
-      <path value="DocumentReference.context"/>
-      <max value="0"/>
-    </element>
-  </differential>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../__FHIRr4Tools/STU3_fhir-xsd/structuredefinition.xsd">
+	<meta>
+		<lastUpdated value="2018-02-25T18:40:56.265+01:00"/>
+	</meta>
+	<url value="http://hl7.eu/fhir/trillium2/StructureDefinition/DocumentReference-uv-trillium2"/>
+	<name value="DocumentReference-uv-trillium2"/>
+	<status value="draft"/>
+	<date value="2018-02-15T13:37:44.7+01:00"/>
+	<fhirVersion value="3.0.1"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="DocumentReference"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="DocumentReference">
+			<path value="DocumentReference"/>
+			<mustSupport value="true" />
+		</element>
+		<element id="DocumentReference.status">
+			<path value="DocumentReference.status"/>
+			<fixedCode value="current"/>
+			<mustSupport value="true" />
+		</element>
+		<element id="DocumentReference.type">
+			<path value="DocumentReference.type"/>
+			<label value="Imaging Result Heading"/>
+			<short value="Kind of document"/>
+			<mustSupport value="true" />
+		</element>
+		<!--
+		<element id="DocumentReference.content.attachment.extension">
+			<path value="DocumentReference.content.attachment.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+		</element>
+-->
+		<element id="DocumentReference.content.attachment.extension:accessProtocol">
+			<path value="DocumentReference.content.attachment.extension"/>
+			<sliceName value="accessProtocol"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/accessProtocol-uv-trillium2"/>
+			</type>
+			<mustSupport value="true" />
+		</element>
+		<element id="DocumentReference.content.attachment.extension:iheXDSidentifiers">
+			<path value="DocumentReference.content.attachment.extension"/>
+			<sliceName value="iheXDSidentifiers"/>
+			<short value="IHE XDS Identifiers"/>
+			<definition value="Optional Extension Element - used to indicate the XCA Home Community ID and the XDS Repository Unique ID"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/iheXDSidentifiers-uv-trillium2"/>
+			</type>
+			<mustSupport value="true" />
+		</element>
+		<element id="DocumentReference.context">
+			<path value="DocumentReference.context"/>
+			<max value="0"/>
+			<mustSupport value="false" />		
+		</element>
+		
+	</differential>
 </StructureDefinition>

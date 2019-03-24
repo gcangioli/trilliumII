@@ -1754,10 +1754,12 @@
 			<short value="Encounters sections"/>
 			<definition value="This section lists and describes any healthcare encounters pertinent to the patient’s current health status or historical health history. An encounter is an interaction, regardless of the setting, between a patient and a practitioner who is vested with primary responsibility for diagnosing, evaluating, or treating the patient’s condition. It may include visits, appointments, or non-face-to-face interactions. It is also a contact between a patient and a practitioner who has primary responsibility (exercising independent judgment) for assessing and treating the patient at a given contact.“ (from C-CDA specifications)."/>
 			<max value="1"/>
+						<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionEncounters.title">
 			<path value="Composition.section.title"/>
 			<min value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionEncounters.code">
 			<path value="Composition.section.code"/>
@@ -1768,13 +1770,16 @@
 					<code value="46240-8"/>
 				</coding>
 			</fixedCodeableConcept>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionEncounters.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionEncounters.entry">
 			<path value="Composition.section.entry"/>
+			
 			<!--
 	<slicing>
 			
@@ -1791,6 +1796,7 @@
 			<path value="Composition.section.entry"/>
 			<sliceName value="encounterEntry"/>
 -->
+
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Encounter-uv-trillium2"/>
@@ -1799,7 +1805,7 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
 			</type>
-			<mustSupport value="true"/>
+		<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionEncounters.emptyReason">
 			<path value="Composition.section.emptyReason"/>
@@ -1809,6 +1815,7 @@
 		<element id="Composition.section:sectionEncounters.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Composition.section:sectionAdmissionMedications">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
@@ -1817,11 +1824,14 @@
 			<path value="Composition.section"/>
 			<sliceName value="sectionAdmissionMedications"/>
 			<short value="Admission Medications"/>
+			
 			<max value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionAdmissionMedications.title">
 			<path value="Composition.section.title"/>
 			<min value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionAdmissionMedications.code">
 			<path value="Composition.section.code"/>
@@ -1879,6 +1889,7 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionAdmissionMedications.emptyReason">
 			<path value="Composition.section.emptyReason"/>
@@ -1888,6 +1899,7 @@
 		<element id="Composition.section:sectionAdmissionMedications.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Composition.section:sectionHospitalCourse">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
@@ -1898,6 +1910,7 @@
 			<short value="Hospital course"/>
 			<definition value="Hospital course describes the sequence of events from admission to discharge in a hospital facility."/>
 			<max value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionHospitalCourse.code">
 			<path value="Composition.section.code"/>
@@ -1931,6 +1944,7 @@
 		<element id="Composition.section:sectionHospitalCourse.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Composition.section:sectionProcedure">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
@@ -1939,6 +1953,7 @@
 			<path value="Composition.section"/>
 			<sliceName value="sectionProcedure"/>
 			<max value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionProcedure.code">
 			<path value="Composition.section.code"/>
@@ -1967,6 +1982,7 @@
 		<element id="Composition.section:sectionProcedure.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionProcedure.entry">
 			<path value="Composition.section.entry"/>
@@ -1995,6 +2011,7 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionProcedure.emptyReason">
 			<path value="Composition.section.emptyReason"/>
@@ -2004,6 +2021,7 @@
 		<element id="Composition.section:sectionProcedure.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<!-- MedicationAdministered -->
 		<element id="Composition.section:sectionMedicationsAdministered">
@@ -2014,10 +2032,12 @@
 			<sliceName value="sectionMedicationsAdministered"/>
 			<short value="Admission Medications"/>
 			<max value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionMedicationsAdministered.title">
 			<path value="Composition.section.title"/>
 			<min value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionMedicationsAdministered.code">
 			<path value="Composition.section.code"/>
@@ -2075,6 +2095,7 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 				<element id="Composition.section:sectionMedicationsAdministered.emptyReason">
 			<path value="Composition.section.emptyReason"/>
@@ -2084,6 +2105,7 @@
 		<element id="Composition.section:sectionMedicationsAdministered.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<!-- Discharge Medications -->
 		<element id="Composition.section:sectionDischargeMedications">
@@ -2094,6 +2116,7 @@
 			<sliceName value="sectionDischargeMedications"/>
 			<short value="Admission Medications"/>
 			<max value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionDischargeMedications.title">
 			<path value="Composition.section.title"/>
@@ -2157,6 +2180,7 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 			<element id="Composition.section:sectionDischargeMedications.emptyReason">
 			<path value="Composition.section.emptyReason"/>
@@ -2166,6 +2190,7 @@
 		<element id="Composition.section:sectionDischargeMedications.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 	</differential>
 </StructureDefinition>

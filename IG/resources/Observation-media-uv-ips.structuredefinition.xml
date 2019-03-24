@@ -41,8 +41,7 @@
 		<element id="Media.type">
 			<path value="Media.type"/>
 			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<code value="code"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>

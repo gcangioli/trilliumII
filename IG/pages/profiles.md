@@ -12,12 +12,17 @@ active: profiles
 
 <!-- end TOC -->
 
-# IPS and its structure
+# The Trillium II IPS and its structure
 
-The <b>International Patient Summary</b> is a document.
-All the profiles specified by this guide are used by the <b>International Patient Summary Composition</b>.
+The <b>Trillium II International Patient Summary</b> may be either a document, or a set of reusable data blocks that might be also used in a distributed environment.
 
-The <b>Bundle</b> used for the transport or the persistence SHALL include all the resources that are referenced directly or indirectly by an International Patient Summary Composition.
+Trillium II specifies two types of documents:
+* the Trillium II International Patient Summary document; and  
+* the Trillium II Healthcare Encounter Report
+
+Both share the same IPS profiles and are represented by a composition resource.
+
+The <b>Bundle</b> used for the transport or the persistence SHALL include all the resources that are referenced directly or indirectly by the used Compositions.
 
 A complete list of the sections and of the used profiles is available in the <a href="ipsStructure.html">International Patient Summary Structure </a> page.
  
