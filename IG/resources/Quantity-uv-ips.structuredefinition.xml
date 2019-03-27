@@ -6,11 +6,11 @@
 		<div xmlns="http://www.w3.org/1999/xhtml">This profile of the Quantity datatype imposes the usage of the UCUM code system for units</div>
 	</text>
   <url value="http://hl7.eu/fhir/trillium2/StructureDefinition/Quantity-uv-ips"/>
-  <name value="Quantity_uv_ips"/>
+  <name value="Quantity-uv-ips"/>
   <title value="Quantity"/>
   <status value="draft"/>
   <date value="2018-03-20T17:17:13.817+01:00"/>
-  <publisher value="HL7 International"/>
+  <publisher value="Trillium II Project"/>
   <description value="Datatype Quantity constrianed to use the UCUM units"/>
   <purpose value="This profile of the Quantity datatype imposes the usage of the UCUM code system for units"/>
   	<fhirVersion value="3.0.1"/>

@@ -27,7 +27,7 @@
 	<title value="Medications (example)"/>
 	<status value="draft"/>
 	<experimental value="true"/>
-	<publisher value="HL7 International"/>
+	<publisher value="Trillium II Project"/>
 	<contact>
 		<name value="HL7 International"/>
 		<telecom>

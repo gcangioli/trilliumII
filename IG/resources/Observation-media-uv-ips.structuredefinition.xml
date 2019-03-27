@@ -14,7 +14,7 @@
 	<status value="draft"/>
 	
 	<date value="2018-03-09"/>
-	<publisher value="HL7 International"/>
+	<publisher value="Trillium II Project"/>
 	<description value="This profile constrains the Media resource (which is a specialized observation)."/>
 	<purpose value="This specialized observation is used to convey illustrative media content."/>
 	<kind value="resource"/>

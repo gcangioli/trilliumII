@@ -1,64 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-<id value="iheXDSidentifiers-uv-trillium2"/>
-  <meta>
-    <lastUpdated value="2018-03-03T15:44:03.323+01:00" />
-  </meta>
-  <url value="http://hl7.eu/fhir/trillium2/StructureDefinition/iheXDSidentifiers-uv-trillium2" />
-  <name value="IHEXDSidentifiers-uv-trillium2" />
-  <status value="draft" />
-  <date value="2018-02-25T17:28:43.525+01:00" />
-  <fhirVersion value="3.0.1" />
-  <kind value="complex-type" />
-  <abstract value="false" />
-  <contextType value="datatype" />
-  <context value="Attachment" />
-  <type value="Extension" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Extension">
-      <path value="Extension" />
-    </element>
-    <element id="Extension.extension:homeCommunityID">
-      <path value="Extension.extension" />
-      <sliceName value="homeCommunityID" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:homeCommunityID.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="homeCommunityID" />
-    </element>
-    <element id="Extension.extension:homeCommunityID.valueId:valueId">
-      <path value="Extension.extension.valueId" />
-      <sliceName value="valueId" />
-      <type>
-        <code value="id" />
-      </type>
-    </element>
-    <element id="Extension.extension:XDSRepositoryUID">
-      <path value="Extension.extension" />
-      <sliceName value="XDSRepositoryUID" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:XDSRepositoryUID.url">
-      <path value="Extension.extension.url" />
-      <fixedUri value="XDSRepositoryUID" />
-    </element>
-    <element id="Extension.extension:XDSRepositoryUID.valueId:valueId">
-      <path value="Extension.extension.valueId" />
-      <sliceName value="valueId" />
-      <type>
-        <code value="id" />
-      </type>
-    </element>
-    <element id="Extension.url">
-      <path value="Extension.url" />
-      <fixedUri value="http://hl7.eu/fhir/trillium2/StructureDefinition/iheXDSidentifiers-uv-trillium2" />
-    </element>
-    <element id="Extension.value[x]">
-      <path value="Extension.value[x]" />
-      <max value="0" />
-    </element>
-  </differential>
+	<id value="iheXDSidentifiers-uv-trillium2"/>
+	<meta>
+		<lastUpdated value="2018-03-03T15:44:03.323+01:00"/>
+	</meta>
+	<url value="http://hl7.eu/fhir/trillium2/StructureDefinition/iheXDSidentifiers-uv-trillium2"/>
+	<name value="IHEXDSidentifiers-uv-trillium2"/>
+	<title value="IHE XDS Identifiers"/>
+	<status value="draft"/>
+	<date value="2018-02-25T17:28:43.525+01:00"/>
+	<publisher value="Trillium II Project"/>
+	<description value="This extension is used to refer the homeCommunityID and XDSRepositoryUID IHE XDS/XCA Identifiers"/>
+	<fhirVersion value="3.0.1"/>
+	<kind value="complex-type"/>
+	<abstract value="false"/>
+	<contextType value="datatype"/>
+	<context value="Attachment"/>
+	<type value="Extension"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Extension">
+			<path value="Extension"/>
+		</element>
+		<element id="Extension.extension:homeCommunityID">
+			<path value="Extension.extension"/>
+			<sliceName value="homeCommunityID"/>
+			<max value="1"/>
+		</element>
+		<element id="Extension.extension:homeCommunityID.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="homeCommunityID"/>
+		</element>
+		<element id="Extension.extension:homeCommunityID.valueId:valueId">
+			<path value="Extension.extension.valueId"/>
+			<sliceName value="valueId"/>
+			<type>
+				<code value="id"/>
+			</type>
+		</element>
+		<element id="Extension.extension:XDSRepositoryUID">
+			<path value="Extension.extension"/>
+			<sliceName value="XDSRepositoryUID"/>
+			<max value="1"/>
+		</element>
+		<element id="Extension.extension:XDSRepositoryUID.url">
+			<path value="Extension.extension.url"/>
+			<fixedUri value="XDSRepositoryUID"/>
+		</element>
+		<element id="Extension.extension:XDSRepositoryUID.valueId:valueId">
+			<path value="Extension.extension.valueId"/>
+			<sliceName value="valueId"/>
+			<type>
+				<code value="id"/>
+			</type>
+		</element>
+		<element id="Extension.url">
+			<path value="Extension.url"/>
+			<fixedUri value="http://hl7.eu/fhir/trillium2/StructureDefinition/iheXDSidentifiers-uv-trillium2"/>
+		</element>
+		<element id="Extension.value[x]">
+			<path value="Extension.value[x]"/>
+			<max value="0"/>
+		</element>
+	</differential>
 </StructureDefinition>

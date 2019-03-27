@@ -10,7 +10,7 @@
 	<title value="Participant"/>
 	<status value="draft"/>
 	<date value="2017-12-14T17:54:03+00:00"/>
-	<publisher value="HL7 International"/>
+	<publisher value="Trillium II Project"/>
 	<description value="This extension is based on the C-CDA on FHIR Participant Extension. &#xD;&#xA;It has been defined to capture the preferred practitioner ( with its role ) or the organization to be contacted, represented &#xD;&#xA;in the IPS CDA with an indirect participant in the header."/>
 	<fhirVersion value="3.0.1"/>
 	<mapping>

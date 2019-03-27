@@ -417,10 +417,6 @@
 			"source": "AllergyIntolerance-uv-ips.structuredefinition.xml",
 			"base": "StructureDefinition-AllergyIntolerance-uv-ips.html"
 		},
-		"Bundle/IPS-examples-Bundle-01": {
-			"source": "IPS-bundle-01.xml",
-			"base": "IPS-examples-Bundle-01.html"
-		},
 		"StructureDefinition/Condition-uv-ips": {
 			"defns": "StructureDefinition-Condition-uv-ips-definitions.html",
 			"source": "Condition-uv-ips.structuredefinition.xml",
@@ -577,7 +573,25 @@
       "defns": "StructureDefinition-DocumentReference-uv-trillium2-definitions.html",
       "source": "DocumentReference-uv-trillium2.structuredefinition.xml",
       "base": "StructureDefinition-DocumentReference-uv-trillium2.html"
-    }		
+    },
+    
+    		"Composition/eumfh-39-07": {
+			"source": "composition-39-07.xml",
+			"base": "Composition-eumfh-39-07.html"
+		},   
+    		"Practitioner/eumfh-39-07": {
+			"source": "practictioner-39-07-1.xml",
+			"base": "Practitioner-eumfh-39-07.html"
+		},    
+    		"Patient/eumfh-39-07": {
+			"source": "patient-39-07-1.xml",
+			"base": "Patient-eumfh-39-07.html"
+		},    
+    		"Procedure/eumfh-39-07-1": {
+			"source": "procedure-39-07-1.xml",
+			"base": "Procedure-eumfh-39-07-1.html"
+		}		
+				
 		
 	}
 }

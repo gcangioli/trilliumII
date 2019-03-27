@@ -6,7 +6,7 @@
 	<title value="Codeable Concept (IPS)"/>
 	<status value="draft"/>
 	<date value="2018-03-19T11:26:15.349+01:00"/>
-	<publisher value="HL7 International"/>
+	<publisher value="Trillium II Project"/>
 	<description value="This profile leverages the profile of Coding-uv-ips for the coding element."/>
 	<fhirVersion value="3.0.1"/>
 	<kind value="complex-type"/>

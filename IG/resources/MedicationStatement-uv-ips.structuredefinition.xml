@@ -6,14 +6,14 @@
 	</meta>
 	<text>
 		<status value="generated"/>
-		<div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints applied to the MedicationStatement resource by the International Patient Summary (IPS) FHIR Implementation Guide.</div>
+		<div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints applied to the MedicationStatement resource by the Trillium II project based on FHIR STU3. This profile is derived from the International Patient Summary (IPS) FHIR Implementation Guide.</div>
 	</text>
 	<url value="http://hl7.eu/fhir/trillium2/StructureDefinition/MedicationStatement-uv-ips"/>
 	<name value="MedicationStatement_uv_ips"/>
 	<title value="Medication Statement (Trillium II)"/>
 	<status value="draft"/>
 	<date value="2018-02-14T22:57:06.512+01:00"/>
-	<publisher value="HL7 International"/>
+	<publisher value="Trillium II Project"/>
 	<description value="This profile represents the constraints applied to the MedicationStatement resource by the Trillium II project based on FHIR STU3. This profile is derived from the International Patient Summary (IPS) FHIR Implementation Guide. A record of a medication statement is represented in the patient summary as an instance of a MedicationStatement resource constrained by this profile."/>
 	<purpose value="This profile constrains the representation of a medication statement related to the patient, in the context of the international patient summary as specified by the Trillium II project."/>
 	<fhirVersion value="3.0.1"/>

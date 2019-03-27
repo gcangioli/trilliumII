@@ -6,14 +6,14 @@
 	</meta>
 	<text>
 		<status value="generated"/>
-		<div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints applied to the AllergyIntolerance resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an allergy or intolerance is represented in the patient summary as an instance of an AllergyIntolerance resource constrained by this profile.&#xD;&#xA;&#xD;&#xA;It documents the relevant allergies or intolerances (conditions) for a patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy.</div>
+		<div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints applied to the AllergyIntolerance resource by the Trillium II project based on FHIR STU3. This profile is derived from the International Patient Summary (IPS) FHIR Implementation Guide. A record of an allergy or intolerance is represented in the patient summary as an instance of an AllergyIntolerance resource constrained by this profile.&#xD;&#xA;&#xD;&#xA;It documents the relevant allergies or intolerances (conditions) for a patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy.</div>
 	</text>
 	<url value="http://hl7.eu/fhir/trillium2/StructureDefinition/AllergyIntolerance-uv-ips"/>
 	<name value="AllergyIntolerance_uv_ips"/>
 	<title value="Allergy Intolerance (Trillium II)"/>
 	<status value="draft"/>
 	<date value="2018-02-14T07:57:18.78-06:00"/>
-	<description value="This profile represents the constraints applied to the AllergyIntolerance resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an allergy or intolerance is represented in the patient summary as an instance of an AllergyIntolerance resource constrained by this profile.&#xD;&#xA;&#xD;&#xA;It documents the relevant allergies or intolerances (conditions) for a patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy."/>
+	<description value="This profile represents the constraints applied to the AllergyIntolerance resource by the Trillium II project based on FHIR STU3. This profile is derived from the International Patient Summary (IPS) FHIR Implementation Guide. A record of an allergy or intolerance is represented in the patient summary as an instance of an AllergyIntolerance resource constrained by this profile.&#xD;&#xA;&#xD;&#xA;It documents the relevant allergies or intolerances (conditions) for a patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy."/>
 	<purpose value="This profile constrains the representation of a record of an allergy or intolerance of the patient, in the context of the international patient summary as specified by the IPS project of HL7 International."/>
 	<fhirVersion value="3.0.1"/>
 	<kind value="resource"/>

@@ -7,6 +7,24 @@
 	<publisher value="Trillium II project"/>
 	<package>
 		<name value="base"/>
+		<!--- EXAMPLES -->
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Composition/eumfh-39-07"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Practitioner/eumfh-39-07"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Patient/eumfh-39-07"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Procedure/eumfh-39-07-1"/>
+		</resource>
+		<!-- EXAMPLES END -->
 		<!-- PROCEDURE -->
 		<!-- BEGIN COMMENT  -->
 		<resource>

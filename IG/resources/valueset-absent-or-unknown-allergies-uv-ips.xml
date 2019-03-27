@@ -18,7 +18,7 @@
     <title value="Absent or Unknown Allergies"/>
     <status value="draft"/>
     <experimental value="false" />
-    <publisher value="HL7 International"/>
+    <publisher value="Trillium II Project"/>
     <description value="Absent or Unknown Allergies"/>
     <immutable value="false"/>
     <compose>

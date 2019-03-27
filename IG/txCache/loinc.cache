@@ -307,3 +307,93 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "60591-5"
+}, "valueSet" :null}####
+v: {
+  "display" : "Patient summary Document",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "60591-5",
+    "display" : "Patient Summary"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "SCALE_TYP",
+        "op" : "=",
+        "value" : "Doc"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "Patient summary Document",
+  "severity" : "warning",
+  "error" : "The display \"Patient Summary\" is not a valid display for the code {http://loinc.org}60591-5 - should be one of [\"Patient summary Document\",\"Patient summary Doc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "60591-5",
+  "display" : "Patient Summary"
+}, "valueSet" :null}####
+v: {
+  "display" : "Patient summary Document",
+  "severity" : "warning",
+  "error" : "The display \"Patient Summary\" is not a valid display for the code {http://loinc.org}60591-5 - should be one of [\"Patient summary Document\",\"Patient summary Doc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "48765-2",
+  "display" : "Allergies and/or adverse reactions"
+}, "valueSet" :null}####
+v: {
+  "display" : "Allergies and adverse reactions Document",
+  "severity" : "warning",
+  "error" : "The display \"Allergies and/or adverse reactions\" is not a valid display for the code {http://loinc.org}48765-2 - should be one of [\"Allergies and adverse reactions Document\",\"Allergies &or adverse reactions Doc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "11450-4",
+  "display" : "Problem list"
+}, "valueSet" :null}####
+v: {
+  "display" : "Problem list - Reported",
+  "severity" : "warning",
+  "error" : "The display \"Problem list\" is not a valid display for the code {http://loinc.org}11450-4 - should be one of [\"Problem list - Reported\",\"Problem list Reported\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "10160-0",
+  "display" : "Medication use"
+}, "valueSet" :null}####
+v: {
+  "display" : "History of Medication use Narrative",
+  "severity" : "warning",
+  "error" : "The display \"Medication use\" is not a valid display for the code {http://loinc.org}10160-0 - should be one of [\"History of Medication use Narrative\",\"Hx of Medication use\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "47519-4",
+  "display" : "History of Procedures"
+}, "valueSet" :null}####
+v: {
+  "display" : "History of Procedures Document",
+  "severity" : "warning",
+  "error" : "The display \"History of Procedures\" is not a valid display for the code {http://loinc.org}47519-4 - should be one of [\"History of Procedures Document\",\"Procedures Hx Doc\"]"
+}
+-------------------------------------------------------------------------------------

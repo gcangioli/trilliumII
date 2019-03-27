@@ -3,7 +3,7 @@
 	<id value="Device-observer-uv-ips"/>
 	<text>
 		<status value="generated"/>
-		<div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints applied to the Device resource by the IPS project, which specifies an international patient summary based on the FHIR standard R4.;&#xD;&#xA;&#xD;&#xA;This profile describes a device that plays the role of observer.</div>
+		<div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints applied to the Device by the Trillium II project based on FHIR STU3. This profile is derived from the International Patient Summary (IPS) FHIR Implementation Guide.;&#xD;&#xA;&#xD;&#xA;This profile describes a device that plays the role of observer.</div>
 	</text>
 	<url value="http://hl7.eu/fhir/trillium2/StructureDefinition/Device-observer-uv-ips"/>
 	<name value="Device_observer_uv_ips"/>

@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../__FHIRr4Tools/STU3_fhir-xsd/structuredefinition.xsd">
 	<id value="MedicationAdministration-uv-trillium2"/>
+  	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints applied to the MedicationStatement resource by the Trillium II project based on FHIR STU3. This profile is derived from the International Patient Summary (IPS) FHIR Implementation Guide.</div>
+	</text>
+  
+  
 	<url value="http://hl7.eu/fhir/trillium2/StructureDefinition/MedicationAdministration-uv-trillium2"/>
 	<name value="MedicationAdministration-uv-trillium2"/>
-	<status value="draft"/>
+		<title value="Medication Administration (Trillium II)"/>
+
+  <status value="draft"/>
+  	<publisher value="Trillium II Project"/>
+	<description value="This profile represents the constraints applied to the MedicationAdministration resource by the Trillium II project based on FHIR STU3. A record of a medication administration is represented in the Trillium II HCER as an instance of a MedicationAdministration resource constrained by this profile."/>
+
 	<fhirVersion value="3.0.1"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
@@ -15,6 +26,27 @@
 			<path value="MedicationAdministration"/>
 			<mustSupport value="true"/>
 		</element>
+    
+
+		<element id="MedicationAdministration.id">
+			<path value="MedicationAdministration.id"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="MedicationAdministration.meta">
+			<path value="MedicationAdministration.meta"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="MedicationAdministration.meta.profile">
+			<path value="MedicationAdministration.meta.profile"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="MedicationAdministration.status">
+			<path value="MedicationAdministration.status"/>
+			<comment value="In the scope of the IPS the entered-in-error concept is not allowed."/>
+			<mustSupport value="true"/>
+		</element>
+    
+    
 		<element id="MedicationAdministration.medication[x]">
 			<path value="MedicationAdministration.medication[x]"/>
 			<type>

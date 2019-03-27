@@ -20,7 +20,7 @@
 	<title value="IPS Results Observation Pathology"/>
 	<status value="draft"/>
 	 <experimental value="false" />
-	<publisher value="HL7 International"/>
+	<publisher value="Trillium II Project"/>
 	<contact>
 		<name value="HL7 International"/>
 		<telecom>

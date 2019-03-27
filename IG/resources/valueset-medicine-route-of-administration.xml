@@ -14,7 +14,7 @@
 			</ul>
          The list of values reported hereafter is provided only as exemplification</div>
 	</text>
-	<url value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration"/>
+	<url value="http://hl7.eu/fhir/trillium2/ValueSet/medicine-route-of-administration"/>
 	<identifier>
 		<use value="official"/>
 		<system value="http://art-decor.org/ns/oids/vs"/>
@@ -25,7 +25,7 @@
 	<title value="Medicine Route of Administration"/>
 	<status value="draft"/>
 	<experimental value="false"/>
-	<publisher value="HL7 International"/>
+	<publisher value="Trillium II Project"/>
 	<contact>
 		<name value="HL7 International"/>
 		<telecom>

@@ -15,7 +15,7 @@
 	<status value="draft"/>
 	
 	<date value="2018-02-20T22:03:08.307+01:00"/>
-	<publisher value="HL7 International"/>
+	<publisher value="Trillium II Project"/>
 	<description value="This profile represents the constraints applied to the Medication resource by the Trillium II project based on FHIR STU3. This profile is derived from the International Patient Summary (IPS) FHIR Implementation Guide. A medication is described in the patient summary as an instance of a Medication resource constrained by this profile."/>
 	<purpose value="This profile constrains the representation of a medication, in the context of the international patient summary as specified by the Trillium II project."/>
 	<fhirVersion value="3.0.1"/>

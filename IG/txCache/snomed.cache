@@ -72855,3 +72855,66 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "387713003"
+}, "valueSet" :null}####
+v: {
+  "display" : "Surgical procedure (procedure)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "233404000"
+}, "valueSet" :null}####
+v: {
+  "display" : "Insertion of arterial stent",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "233258006"
+}, "valueSet" :null}####
+v: {
+  "display" : "Angioplasty of artery",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "387713003",
+  "display" : "Surgical procedure"
+}, "valueSet" :null}####
+v: {
+  "display" : "Surgical procedure (procedure)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "233404000",
+  "display" : "Insertion of arterial stent"
+}, "valueSet" :null}####
+v: {
+  "display" : "Insertion of arterial stent",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "233258006",
+  "display" : "Balloon angioplasty of artery"
+}, "valueSet" :null}####
+v: {
+  "display" : "Angioplasty of artery",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
