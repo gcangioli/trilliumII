@@ -4,7 +4,7 @@
     <status value="active"/>
     <medicationReference>
         <reference value="Medication/eumfh-39-02-1-8"/>
-        <display value="Atorvastatin" />
+        <display value="Atorvastatin"/>
     </medicationReference>
     <effectivePeriod>
         <start value="1998-04-02"/>

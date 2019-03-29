@@ -1,5 +1,5 @@
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../__FHIRr4Tools/STU3_fhir-xsd/structuredefinition.xsd">
-<id value="vaccinationValidity-immunization-uv-trillium2" />
+<id value="vaccinationValidity-immunization-uv-trillium2"/>
 	<meta>
 		<lastUpdated value="2017-12-22T23:16:23.054+02:00"/>
 	</meta>

@@ -8,9 +8,9 @@
 	"npm-name": "hl7.fhir.eu.trillium2",
 	"dependencyList": [],
 	"version": "3.0.1",
-	"fixed-business-version": "0.2.0",
+	"fixed-business-version": "0.1.0",
 	"valuesets": [
-		"condition-severity-uv-ips", "absent-or-unknown-problems-uv-ips", "absent-or-unknown-procedures-uv-ips", "absent-or-unknown-allergies-uv-ips", "absent-or-unknown-devices-uv-ips", "absent-or-unknown-immunization-uv-ips", "absent-or-unknown-medication-uv-ips", "allergy-intolerance-substance-condition-uv-ips", "allergy-reaction-uv-ips",  "core-problem-list-disorders-uv-ips", "current-smoking-status-uv-ips", "edd-method-uv-ips", "healthcare-professional-roles-uv-ips", "imaging-observations-uv-ips", "laboratory-and-vital-signs-observations", "laboratory-tests-and-panels-uv-ips", "lab-result-coded-value-uv-ips", "medical-devices-uv-ips", "medicine-active-substances-uv-ips", "medicine-doseform", "medicine-route-of-administration", "observation-codes-uv-ips", "pathology-and-vital-signs-observations", "pathology-result-coded-value-uv-ips", "personal-relationship-uv-ips", "pregnancies-summary-uv-ips", "problem-type-uv-ips", "procedures-uv-ips", "quantityUnits", "strengthDenominator", "strengthNumerator", "sub-observation-category-uv-ips", "target-site-uv-ips", "vaccines-uv-ips", "whoatc-uv-ips",  "imaging-txtobs-code-uv-ips", "imaging-volume-measure-code-uv-ips", "imaging-area-measure-code-uv-ips", "imaging-linear-measure-code-uv-ips", "specimen-type-uv-ips", "specimen-collection-method-uv-ips", "med-uv-ips"
+		"condition-severity-uv-ips", "absent-or-unknown-problems-uv-ips", "absent-or-unknown-procedures-uv-ips", "absent-or-unknown-allergies-uv-ips", "absent-or-unknown-devices-uv-ips", "absent-or-unknown-immunization-uv-ips", "absent-or-unknown-medication-uv-ips", "allergy-intolerance-substance-condition-uv-ips", "allergy-reaction-uv-ips", "core-problem-list-disorders-uv-ips", "current-smoking-status-uv-ips", "edd-method-uv-ips", "healthcare-professional-roles-uv-ips", "imaging-observations-uv-ips", "laboratory-and-vital-signs-observations", "laboratory-tests-and-panels-uv-ips", "lab-result-coded-value-uv-ips", "medical-devices-uv-ips", "medicine-active-substances-uv-ips", "medicine-doseform", "medicine-route-of-administration", "observation-codes-uv-ips", "pathology-and-vital-signs-observations", "pathology-result-coded-value-uv-ips", "personal-relationship-uv-ips", "pregnancies-summary-uv-ips", "problem-type-uv-ips", "procedures-uv-ips", "quantityUnits", "strengthDenominator", "strengthNumerator", "sub-observation-category-uv-ips", "target-site-uv-ips", "vaccines-uv-ips", "whoatc-uv-ips", "imaging-txtobs-code-uv-ips", "imaging-volume-measure-code-uv-ips", "imaging-area-measure-code-uv-ips", "imaging-linear-measure-code-uv-ips", "specimen-type-uv-ips", "specimen-collection-method-uv-ips", "med-uv-ips"
 	],
 	"paths": {
 		"pages": [
@@ -515,83 +515,192 @@
 			"source": "valueset-absent-or-unknown-allergies-uv-ips.xml",
 			"base": "ValueSet-absent-or-unknown-allergies-uv-ips.html"
 		},
-
-"ValueSet/med-uv-ips": {
+		"ValueSet/med-uv-ips": {
 			"source": "valueset-med-uv-ips.xml",
 			"base": "ValueSet-med-uv-ips.html"
 		},
-
-    "StructureDefinition/attachment-imagingstudy-uv-trillium2": {
-      "defns": "StructureDefinition-attachment-imagingstudy-uv-trillium2-definitions.html",
-      "source": "attachment-imagingstudy-uv-trillium2.structuredefinition.xml",
-      "base": "StructureDefinition-attachment-imagingstudy-uv-trillium2.html"
-    },    "StructureDefinition/imagingstudy-RefToEvidences-uv-trillium2": {
-      "defns": "StructureDefinition-imagingstudy-RefToEvidences-uv-trillium2-definitions.html",
-      "source": "ImagingStudy-RefToEvidences-uv-trillium2.structuredefinition.xml",
-      "base": "StructureDefinition-imagingstudy-RefToEvidences-uv-trillium2.html"
-    },    "StructureDefinition/referencedDicomItems-uv-trillium2": {
-      "defns": "StructureDefinition-referencedDicomItems-uv-trillium2-definitions.html",
-      "source": "referencedDicomItems-uv-trillium2.structuredefinition.xml",
-      "base": "StructureDefinition-referencedDicomItems-uv-trillium2.html"
-    },
-
-
-    "StructureDefinition/Composition-hcer-uv-trillium2": {
-      "defns": "StructureDefinition-Composition-hcer-uv-trillium2-definitions.html",
-      "source": "Composition-hcer-uv-trillium2.structuredefinition.xml",
-      "base": "StructureDefinition-Composition-hcer-uv-trillium2.html"
-    },    "StructureDefinition/MedicationAdministration-uv-trillium2": {
-      "defns": "StructureDefinition-MedicationAdministration-uv-trillium2-definitions.html",
-      "source": "MedicationAdministration-uv-trillium2.structuredefinition.xml",
-      "base": "StructureDefinition-MedicationAdministration-uv-trillium2.html"
-    },
-
-
-
-           "StructureDefinition/documentedBy-uv-trillium2": {
-      "defns": "StructureDefinition-documentedBy-uv-trillium2-definitions.html",
-      "source": "documentedBy-uv-trillium2.structuredefinition.xml",
-      "base": "StructureDefinition-documentedBy-uv-trillium2.html"
-    },    "StructureDefinition/Encounter-uv-trillium2": {
-      "defns": "StructureDefinition-Encounter-uv-trillium2-definitions.html",
-      "source": "Encounter-uv-trillium2.StructureDefinition.xml",
-      "base": "StructureDefinition-Encounter-uv-trillium2.html"
-    },
-     "StructureDefinition/accessProtocol-uv-trillium2": {
-      "defns": "StructureDefinition-accessProtocol-uv-trillium2-definitions.html",
-      "source": "accessProtocol-uv-trillium2.structuredefinition.xml",
-      "base": "StructureDefinition-accessProtocol-uv-trillium2.html"
-    },    "StructureDefinition/iheXDSidentifiers-uv-trillium2": {
-      "defns": "StructureDefinition-iheXDSidentifiers-uv-trillium2-definitions.html",
-      "source": "iheXDSidentifiers-uv-trillium2.structuredefinition.xml",
-      "base": "StructureDefinition-iheXDSidentifiers-uv-trillium2.html"
-    },     "StructureDefinition/derivedFrom-observation-uv-trillium2": {
-      "defns": "StructureDefinition-derivedFrom-observation-uv-trillium2-definitions.html",
-      "source": "derivedFrom-observation-uv-trillium2.structuredefinition.xml",
-      "base": "StructureDefinition-derivedFrom-observation-uv-trillium2.html"
-    },    "StructureDefinition/DocumentReference-uv-trillium2": {
-      "defns": "StructureDefinition-DocumentReference-uv-trillium2-definitions.html",
-      "source": "DocumentReference-uv-trillium2.structuredefinition.xml",
-      "base": "StructureDefinition-DocumentReference-uv-trillium2.html"
-    },
-    
-    		"Composition/eumfh-39-07": {
+		"StructureDefinition/attachment-imagingstudy-uv-trillium2": {
+			"defns": "StructureDefinition-attachment-imagingstudy-uv-trillium2-definitions.html",
+			"source": "attachment-imagingstudy-uv-trillium2.structuredefinition.xml",
+			"base": "StructureDefinition-attachment-imagingstudy-uv-trillium2.html"
+		},
+		"StructureDefinition/imagingstudy-RefToEvidences-uv-trillium2": {
+			"defns": "StructureDefinition-imagingstudy-RefToEvidences-uv-trillium2-definitions.html",
+			"source": "ImagingStudy-RefToEvidences-uv-trillium2.structuredefinition.xml",
+			"base": "StructureDefinition-imagingstudy-RefToEvidences-uv-trillium2.html"
+		},
+		"StructureDefinition/referencedDicomItems-uv-trillium2": {
+			"defns": "StructureDefinition-referencedDicomItems-uv-trillium2-definitions.html",
+			"source": "referencedDicomItems-uv-trillium2.structuredefinition.xml",
+			"base": "StructureDefinition-referencedDicomItems-uv-trillium2.html"
+		},
+		"StructureDefinition/Composition-hcer-uv-trillium2": {
+			"defns": "StructureDefinition-Composition-hcer-uv-trillium2-definitions.html",
+			"source": "Composition-hcer-uv-trillium2.structuredefinition.xml",
+			"base": "StructureDefinition-Composition-hcer-uv-trillium2.html"
+		},
+		"StructureDefinition/MedicationAdministration-uv-trillium2": {
+			"defns": "StructureDefinition-MedicationAdministration-uv-trillium2-definitions.html",
+			"source": "MedicationAdministration-uv-trillium2.structuredefinition.xml",
+			"base": "StructureDefinition-MedicationAdministration-uv-trillium2.html"
+		},
+		"StructureDefinition/documentedBy-uv-trillium2": {
+			"defns": "StructureDefinition-documentedBy-uv-trillium2-definitions.html",
+			"source": "documentedBy-uv-trillium2.structuredefinition.xml",
+			"base": "StructureDefinition-documentedBy-uv-trillium2.html"
+		},
+		"StructureDefinition/Encounter-uv-trillium2": {
+			"defns": "StructureDefinition-Encounter-uv-trillium2-definitions.html",
+			"source": "Encounter-uv-trillium2.StructureDefinition.xml",
+			"base": "StructureDefinition-Encounter-uv-trillium2.html"
+		},
+		"StructureDefinition/accessProtocol-uv-trillium2": {
+			"defns": "StructureDefinition-accessProtocol-uv-trillium2-definitions.html",
+			"source": "accessProtocol-uv-trillium2.structuredefinition.xml",
+			"base": "StructureDefinition-accessProtocol-uv-trillium2.html"
+		},
+		"StructureDefinition/iheXDSidentifiers-uv-trillium2": {
+			"defns": "StructureDefinition-iheXDSidentifiers-uv-trillium2-definitions.html",
+			"source": "iheXDSidentifiers-uv-trillium2.structuredefinition.xml",
+			"base": "StructureDefinition-iheXDSidentifiers-uv-trillium2.html"
+		},
+		"StructureDefinition/derivedFrom-observation-uv-trillium2": {
+			"defns": "StructureDefinition-derivedFrom-observation-uv-trillium2-definitions.html",
+			"source": "derivedFrom-observation-uv-trillium2.structuredefinition.xml",
+			"base": "StructureDefinition-derivedFrom-observation-uv-trillium2.html"
+		},
+		"StructureDefinition/DocumentReference-uv-trillium2": {
+			"defns": "StructureDefinition-DocumentReference-uv-trillium2-definitions.html",
+			"source": "DocumentReference-uv-trillium2.structuredefinition.xml",
+			"base": "StructureDefinition-DocumentReference-uv-trillium2.html"
+		},
+		"Bundle/eumfh-39-07": {
+			"source": "bundle-39-07-ips.xml",
+			"base": "Bundle-eumfh-39-07.html"
+		},
+		"Composition/eumfh-39-07": {
 			"source": "composition-39-07.xml",
 			"base": "Composition-eumfh-39-07.html"
-		},   
-    		"Practitioner/eumfh-39-07": {
+		},
+		"Practitioner/eumfh-39-07": {
 			"source": "practictioner-39-07-1.xml",
 			"base": "Practitioner-eumfh-39-07.html"
-		},    
-    		"Patient/eumfh-39-07": {
+		},
+		"Patient/eumfh-39-07": {
 			"source": "patient-39-07-1.xml",
 			"base": "Patient-eumfh-39-07.html"
-		},    
-    		"Procedure/eumfh-39-07-1": {
+		},
+		"Procedure/eumfh-39-07-1": {
 			"source": "procedure-39-07-1.xml",
 			"base": "Procedure-eumfh-39-07-1.html"
-		}		
-				
-		
+		},
+		"AllergyIntolerance/eumfh-39-07-1": {
+			"source": "allergyIntolerance-39-07-1.xml",
+			"base": "AllergyIntolerance-eumfh-39-07-1.html"
+		},
+		"Condition/eumfh-39-07-1": {
+			"source": "condition-39-07-1.xml",
+			"base": "Condition-eumfh-39-07-1.html"
+		},
+		"Condition/eumfh-39-07-2": {
+			"source": "condition-39-07-2.xml",
+			"base": "Condition-eumfh-39-07-2.html"
+		},
+		"Condition/eumfh-39-07-3": {
+			"source": "condition-39-07-3.xml",
+			"base": "Condition-eumfh-39-07-3.html"
+		},
+		"Condition/eumfh-39-07-4": {
+			"source": "condition-39-07-4.xml",
+			"base": "Condition-eumfh-39-07-4.html"
+		},
+		"MedicationStatement/eumfh-39-07-1": {
+			"source": "medicationStatement-39-07-1.xml",
+			"base": "MedicationStatement-eumfh-39-07-1.html"
+		},
+		"MedicationStatement/eumfh-39-07-2": {
+			"source": "medicationStatement-39-07-2.xml",
+			"base": "MedicationStatement-eumfh-39-07-2.html"
+		},
+		"MedicationStatement/eumfh-39-07-3": {
+			"source": "medicationStatement-39-07-3.xml",
+			"base": "MedicationStatement-eumfh-39-07-3.html"
+		},
+		"MedicationStatement/eumfh-39-07-4": {
+			"source": "medicationStatement-39-07-4.xml",
+			"base": "MedicationStatement-eumfh-39-07-4.html"
+		},
+		"Medication/eumfh-39-07-1": {
+			"source": "medication-39-07-1.xml",
+			"base": "Medication-eumfh-39-07-1.html"
+		},
+		"Medication/eumfh-39-07-2": {
+			"source": "medication-39-07-2.xml",
+			"base": "Medication-eumfh-39-07-2.html"
+		},
+		"Medication/eumfh-39-07-3": {
+			"source": "medication-39-07-3.xml",
+			"base": "Medication-eumfh-39-07-3.html"
+		},
+		"Medication/eumfh-39-07-4": {
+			"source": "medication-39-07-4.xml",
+			"base": "Medication-eumfh-39-07-4.html"
+		},
+		"Patient/enc-1": {
+			"source": "Patient-enc-1.xml",
+			"base": "Patient-enc-1.html"
+		},
+		"Encounter/enc-1": {
+			"source": "Encounter-enc-1.xml",
+			"base": "Encounter-enc-1.html"
+		},
+		"Organization/enc-1": {
+			"source": "Organization-enc-1.xml",
+			"base": "Organization-enc-1.html"
+		},
+		"Patient/66033": {
+			"source": "Patient-66033.xml",
+			"base": "Patient-66033.html"
+		},
+		"Immunization/75680": {
+			"source": "Immunization-75680.xml",
+			"base": "Immunization-75680.html"
+		},
+		"Immunization/75681": {
+			"source": "Immunization-75681.xml",
+			"base": "Immunization-75681.html"
+		},
+		"Immunization/75682": {
+			"source": "Immunization-75682.xml",
+			"base": "Immunization-75682.html"
+		},
+		"Immunization/75683": {
+			"source": "Immunization-75683.xml",
+			"base": "Immunization-75683.html"
+		},
+		"Immunization/75684": {
+			"source": "Immunization-75684.xml",
+			"base": "Immunization-75684.html"
+		},
+		"Immunization/75685": {
+			"source": "Immunization-75685.xml",
+			"base": "Immunization-75685.html"
+		},
+		"Immunization/75686": {
+			"source": "Immunization-75686.xml",
+			"base": "Immunization-75686.html"
+		},
+		"Immunization/75687": {
+			"source": "Immunization-75687.xml",
+			"base": "Immunization-75687.html"
+		},
+		"Immunization/75688": {
+			"source": "Immunization-75688.xml",
+			"base": "Immunization-75688.html"
+		},
+		"Immunization/75689": {
+			"source": "Immunization-75689.xml",
+			"base": "Immunization-75689.html"
+		}
 	}
 }

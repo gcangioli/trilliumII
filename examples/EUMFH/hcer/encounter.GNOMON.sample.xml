@@ -135,7 +135,7 @@
 						<code value="274051007"/>
 						<display value="Surgical reduction of fracture"/>
 					</coding>
-					<text value="Surgical reduction of femure's fracture, no complications" />
+					<text value="Surgical reduction of femure's fracture, no complications"/>
 				</code>
 				<subject>
 					<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-43-125"/>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Immunization xmlns="http://hl7.org/fhir">
+	<id value="75688"/>
+	<meta>
+		<versionId value="1"/>
+		<lastUpdated value="2019-03-17T12:56:05.000+02:00"/>
+		<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Immunization-uv-ips"/>
+	</meta>
+	<language value="fr-LU"/>
+	<status value="completed"/>
+	<notGiven value="false"/>
+	<vaccineCode>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="116077000"/>
+			<display value="Vaccins anti rotavirus">
+				<extension url="http://hl7.org/fhir/StructureDefinition/translation">
+					<extension url="lang">
+						<valueString value="en-GB"/>
+					</extension>
+					<extension url="content">
+						<valueString value="Rotavirus vaccine"/>
+					</extension>
+				</extension>
+			</display>
+		</coding>
+		<coding>
+			<system value="http://www.whocc.no/atc"/>
+			<code value="J07BH01"/>
+			<display value="ROTAVIRUS, VIRUS VIVANT ATTENUE">
+				<extension url="http://hl7.org/fhir/StructureDefinition/translation">
+					<extension url="lang">
+						<valueString value="en-GB"/>
+					</extension>
+					<extension url="content">
+						<valueString value="ROTA VIRUS, LIVE ATTENUATED"/>
+					</extension>
+				</extension>
+			</display>
+		</coding>
+		<coding>
+			<system value="urn:oid:1.3.182.4.11.22"/>
+			<code value="2663532"/>
+			<display value="ROTARIX"/>
+		</coding>
+		<text value="Vaccins anti rotavirus"/>
+	</vaccineCode>
+	<patient>
+		<reference value="Patient/66033"/>
+	</patient>
+	<date value="1998-07-14T00:00:00+02:00"/>
+	<primarySource value="true"/>
+	<lotNumber value="OU23S2B59"/>
+	<expirationDate value="2000-09-01"/>
+	<route>
+		<coding>
+			<system value="http://hl7.org/fhir/uv/ips/CodeSystem/edqm-uv-ips"/>
+			<code value="20053000"/>
+			<display value="Voie orale">
+				<extension url="http://hl7.org/fhir/StructureDefinition/translation">
+					<extension url="lang">
+						<valueString value="en-GB"/>
+					</extension>
+					<extension url="content">
+						<valueString value="Swallow, oral"/>
+					</extension>
+				</extension>
+			</display>
+		</coding>
+	</route>
+</Immunization>

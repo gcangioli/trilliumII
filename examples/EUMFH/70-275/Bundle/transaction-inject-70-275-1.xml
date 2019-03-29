@@ -11,12 +11,12 @@
 		<coding>
 			<system value="http://loinc.org"/>
 			<code value="60591-5"/>
-			<display value="Patient Summary"/>
+			<display value="Patient summary Document"/>
 		</coding>
 	</type>
 	<subject>
 		<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-70-275"/>
-		<display value="Annelise Black (inject 70-275)" />
+		<display value="Annelise Black (inject 70-275)"/>
 	</subject>
 	<date value="2018-07-10T15:22:00+02:00"/>
 	<author>
@@ -31,7 +31,7 @@
 			<coding>
 				<system value="http://loinc.org"/>
 				<code value="48765-2"/>
-				<display value="Allergies and/or adverse reactions"/>
+				<display value="Allergies and adverse reactions Document"/>
 			</coding>
 		</code>
 		<text>
@@ -48,7 +48,7 @@
 			<coding>
 				<system value="http://loinc.org"/>
 				<code value="11450-4"/>
-				<display value="Problem list"/>
+				<display value="Problem list Reported"/>
 			</coding>
 		</code>
 		<text>
@@ -80,7 +80,7 @@
 			<coding>
 				<system value="http://loinc.org"/>
 				<code value="10160-0"/>
-				<display value="Medication use"/>
+				<display value="Hx of Medication use"/>
 			</coding>
 		</code>
 		<text>
@@ -229,14 +229,14 @@
 	<verificationStatus value="confirmed"/>
 	<code>
 		<coding>
-			<system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown"/>
+			<system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
 			<code value="no-known-allergies"/>
 			<display value="No known allergies"/>
 		</coding>
 	</code>
 	<patient>
 				<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-70-275"/>
-		<display value="Annelise Black (inject 70-275)" />
+		<display value="Annelise Black (inject 70-275)"/>
 	</patient>
 </AllergyIntolerance>
 </resource>
@@ -257,7 +257,7 @@
 			<code value="161474000"/>
 			<display value="History of attempted suicide"/>
 		</coding>
-		<text value="Suicide attempt (twice)" />
+		<text value="Suicide attempt (twice)"/>
 	</code>
 	<subject>
 		<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-70-275"/>
@@ -288,7 +288,7 @@
 		<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-70-275"/>
 		<display value="Annelise Black (inject 70-275)"/>
 	</subject>
- <onsetDateTime value="2000" />
+ <onsetDateTime value="2000"/>
 </Condition>
 </resource>
 <request>
@@ -461,7 +461,7 @@
 	<status value="active"/>
 	<medicationReference>
 		<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-70-275-2"/>
-		<display value="Chlorpromazine" />
+		<display value="Chlorpromazine"/>
 	</medicationReference>
 	<effectivePeriod>
 		<start value="2008"/>
@@ -495,7 +495,7 @@
 	<status value="active"/>
 	<medicationReference>
 		<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-70-275-3"/>
-		<display value="Diazepam" />
+		<display value="Diazepam"/>
 	</medicationReference>
 	<effectivePeriod>
 		<start value="2014"/>

@@ -4,7 +4,7 @@
 	<status value="active"/>
 	<medicationReference>
 		<reference value="Medication/eumfh-39-07-3"/>
-		<display value="Captopril" />
+		<display value="Captopril"/>
 	</medicationReference>
 	<effectivePeriod>
 		<start value="2014"/>

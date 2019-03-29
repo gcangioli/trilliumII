@@ -13,12 +13,12 @@
 		<coding>
 			<system value="http://loinc.org"/>
 			<code value="60591-5"/>
-			<display value="Patient Summary"/>
+			<display value="Patient summary Document"/>
 		</coding>
 	</type>
 	<subject>
 		<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-07"/>
-		<display value="Alexander Heig (inject 39-07)" />
+		<display value="Alexander Heig (inject 39-07)"/>
 	</subject>
 	<date value="2018-09-26T15:22:00+02:00"/>
 	<author>
@@ -33,7 +33,7 @@
 			<coding>
 				<system value="http://loinc.org"/>
 				<code value="48765-2"/>
-				<display value="Allergies and/or adverse reactions"/>
+				<display value="Allergies and adverse reactions Document"/>
 			</coding>
 		</code>
 		<text>
@@ -50,7 +50,7 @@
 			<coding>
 				<system value="http://loinc.org"/>
 				<code value="11450-4"/>
-				<display value="Problem list"/>
+				<display value="Problem list Reported"/>
 			</coding>
 		</code>
 		<text>
@@ -87,7 +87,7 @@
 			<coding>
 				<system value="http://loinc.org"/>
 				<code value="10160-0"/>
-				<display value="Medication use"/>
+				<display value="Hx of Medication use"/>
 			</coding>
 		</code>
 		<text>
@@ -170,14 +170,14 @@
 	<verificationStatus value="confirmed"/>
 	<code>
 		<coding>
-			<system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown"/>
+			<system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
 			<code value="no-known-allergies"/>
 			<display value="No known allergies"/>
 		</coding>
 	</code>
 	<patient>
 				<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-39-07"/>
-		<display value="Alexander Heig (inject 39-07)" />
+		<display value="Alexander Heig (inject 39-07)"/>
 	</patient>
 </AllergyIntolerance>
 </resource>
@@ -310,7 +310,7 @@
 			<display value="Disintegrating Oral Product"/>
 		</coding>
 		<coding>
-			<system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+			<system value="http://standardterms.edqm.eu"/>
 			<code value="10219000"/>
 			<display value="Tablet"/>
 		</coding>
@@ -351,7 +351,7 @@
 			<display value="Pill"/>
 		</coding>
 		<coding>
-			<system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+			<system value="http://standardterms.edqm.eu"/>
 			<code value="10219000"/>
 			<display value="Tablet"/>
 		</coding>
@@ -392,7 +392,7 @@
 			<display value="Oral Product"/>
 		</coding>
 		<coding>
-			<system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+			<system value="http://standardterms.edqm.eu"/>
 			<code value="10219000"/>
 			<display value="Tablet"/>
 		</coding>
@@ -438,7 +438,7 @@
 			<display value="Oral Product"/>
 		</coding>
 		<coding>
-			<system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+			<system value="http://standardterms.edqm.eu"/>
 			<code value="10219000"/>
 			<display value="Tablet"/>
 		</coding>
@@ -463,7 +463,7 @@
 	<status value="active"/>
 	<medicationReference>
 		<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-07-1"/>
-		<display value="simvastatin" />
+		<display value="simvastatin"/>
 	</medicationReference>
 	<effectivePeriod>
 		<start value="2014"/>
@@ -500,7 +500,7 @@
 	<status value="active"/>
 	<medicationReference>
 		<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-07-2"/>
-		<display value="acetylsalicylic acid" />
+		<display value="acetylsalicylic acid"/>
 	</medicationReference>
 	<effectivePeriod>
 		<start value="2014"/>
@@ -537,7 +537,7 @@
 	<status value="active"/>
 	<medicationReference>
 		<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-07-3"/>
-		<display value="Captopril" />
+		<display value="Captopril"/>
 	</medicationReference>
 	<effectivePeriod>
 		<start value="2014"/>
@@ -565,7 +565,7 @@
 	<status value="active"/>
 	<medicationReference>
 		<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-39-07-4"/>
-		<display value="Nebivolol" />
+		<display value="Nebivolol"/>
 	</medicationReference>
 	<effectivePeriod>
 		<start value="2012"/>

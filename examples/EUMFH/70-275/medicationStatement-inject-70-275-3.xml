@@ -4,7 +4,7 @@
 	<status value="active"/>
 	<medicationReference>
 		<reference value="Medication/eumfh-70-275-3"/>
-		<display value="Diazepam" />
+		<display value="Diazepam"/>
 	</medicationReference>
 	<effectivePeriod>
 		<start value="2014"/>

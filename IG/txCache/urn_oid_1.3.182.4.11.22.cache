@@ -1,0 +1,51 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:oid:1.3.182.4.11.22",
+  "code" : "2374429"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"urn:oid:1.3.182.4.11.22\" is not known; The code provided (urn:oid:1.3.182.4.11.22#2374429) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:oid:1.3.182.4.11.22",
+  "code" : "1"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"urn:oid:1.3.182.4.11.22\" is not known; The code provided (urn:oid:1.3.182.4.11.22#1) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:oid:1.3.182.4.11.22",
+  "code" : "5"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"urn:oid:1.3.182.4.11.22\" is not known; The code provided (urn:oid:1.3.182.4.11.22#5) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:oid:1.3.182.4.11.22",
+  "code" : "2663532"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"urn:oid:1.3.182.4.11.22\" is not known; The code provided (urn:oid:1.3.182.4.11.22#2663532) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:oid:1.3.182.4.11.22",
+  "code" : "11"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"urn:oid:1.3.182.4.11.22\" is not known; The code provided (urn:oid:1.3.182.4.11.22#11) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

@@ -11,12 +11,12 @@
                     <coding>
                         <system value="http://loinc.org"/>
                         <code value="60591-5"/>
-                        <display value="Patient Summary"/>
+                        <display value="Patient summary Document"/>
                     </coding>
                 </type>
                 <subject>
                     <reference value="Patient/eumfh-39-02-1"/>
-                    <display value="Mark John (Inject 39-02)" />
+                    <display value="Mark John (Inject 39-02)"/>
                 </subject>
                 <date value="2018-07-10T15:22:00+02:00"/>
                 <author>
@@ -31,7 +31,7 @@
                         <coding>
                             <system value="http://loinc.org"/>
                             <code value="48765-2"/>
-                            <display value="Allergies and/or adverse reactions"/>
+                            <display value="Allergies and adverse reactions Document"/>
                         </coding>
                     </code>
                     <text>
@@ -53,7 +53,7 @@
                         <coding>
                             <system value="http://loinc.org"/>
                             <code value="11450-4"/>
-                            <display value="Problem list"/>
+                            <display value="Problem list Reported"/>
                         </coding>
                     </code>
                     <text>
@@ -105,7 +105,7 @@
                         <coding>
                             <system value="http://loinc.org"/>
                             <code value="10160-0"/>
-                            <display value="Medication use"/>
+                            <display value="Hx of Medication use"/>
                         </coding>
                     </code>
                     <text>
@@ -293,7 +293,7 @@
                 </code>
                 <patient>
                     <reference value="Patient/eumfh-39-02-1"/>
-                    <display value="Mark John (Inject 39-02)" />
+                    <display value="Mark John (Inject 39-02)"/>
                 </patient>
             </AllergyIntolerance>
         </resource>
@@ -520,7 +520,7 @@
                 <status value="active"/>
                 <medicationReference>
                     <reference value="Medication/eumfh-39-02-1-1"/>
-                    <display value="Gliclazide" />
+                    <display value="Gliclazide"/>
                 </medicationReference>
                 <effectivePeriod>
                     <start value="2015-05-01"/>
@@ -561,7 +561,7 @@
                 <status value="active"/>
                 <medicationReference>
                     <reference value="Medication/eumfh-39-02-1-2"/>
-                    <display value="Acetylsalicylic acid" />
+                    <display value="Acetylsalicylic acid"/>
                 </medicationReference>
                 <effectivePeriod>
                     <start value="2012-11-10"/>
@@ -602,7 +602,7 @@
                 <status value="active"/>
                 <medicationReference>
                     <reference value="Medication/eumfh-39-02-1-3"/>
-                    <display value="Metformin" />
+                    <display value="Metformin"/>
                 </medicationReference>
                 <effectivePeriod>
                     <start value="2010-10-01"/>
@@ -643,7 +643,7 @@
                 <status value="active"/>
                 <medicationReference>
                     <reference value="Medication/eumfh-39-02-1-4"/>
-                    <display value="Finasteride" />
+                    <display value="Finasteride"/>
                 </medicationReference>
                 <effectivePeriod>
                     <start value="2010-08-04"/>
@@ -684,7 +684,7 @@
                 <status value="active"/>
                 <medicationReference>
                     <reference value="Medication/eumfh-39-02-1-5"/>
-                    <display value="tamsulosin" />
+                    <display value="tamsulosin"/>
                 </medicationReference>
                 <effectivePeriod>
                     <start value="2008-02-03"/>
@@ -725,7 +725,7 @@
                 <status value="active"/>
                 <medicationReference>
                     <reference value="Medication/eumfh-39-02-1-6"/>
-                    <display value="latanoprost" />
+                    <display value="latanoprost"/>
                 </medicationReference>
                 <effectivePeriod>
                     <start value="2004-02-16"/>
@@ -766,7 +766,7 @@
                 <status value="active"/>
                 <medicationReference>
                     <reference value="Medication/eumfh-39-02-1-7"/>
-                    <display value="Timolol" />
+                    <display value="Timolol"/>
                 </medicationReference>
                 <effectivePeriod>
                     <start value="1998-08-15"/>
@@ -807,7 +807,7 @@
                 <status value="active"/>
                 <medicationReference>
                     <reference value="Medication/eumfh-39-02-1-8"/>
-                    <display value="Atorvastatin" />
+                    <display value="Atorvastatin"/>
                 </medicationReference>
                 <effectivePeriod>
                     <start value="1998-04-02"/>
@@ -848,7 +848,7 @@
                 <status value="active"/>
                 <medicationReference>
                     <reference value="Medication/eumfh-39-02-1-9"/>
-                    <display value="Atenolol" />
+                    <display value="Atenolol"/>
                 </medicationReference>
                 <effectivePeriod>
                     <start value="1994-08-03"/>
@@ -889,7 +889,7 @@
                 <status value="active"/>
                 <medicationReference>
                     <reference value="Medication/eumfh-39-02-1-10"/>
-                    <display value="Bendroflumethiazide" />
+                    <display value="Bendroflumethiazide"/>
                 </medicationReference>
                 <effectivePeriod>
                     <start value="1993-09-01"/>
@@ -930,7 +930,7 @@
                 <status value="active"/>
                 <medicationReference>
                     <reference value="Medication/eumfh-39-02-1-11"/>
-                    <display value="Lisinopril" />
+                    <display value="Lisinopril"/>
                 </medicationReference>
                 <effectivePeriod>
                     <start value="1993-05-02"/>
@@ -971,7 +971,7 @@
                 <status value="active"/>
                 <medicationReference>
                     <reference value="Medication/eumfh-39-02-1-12"/>
-                    <display value="levothyroxine sodium" />
+                    <display value="levothyroxine sodium"/>
                 </medicationReference>
                 <effectivePeriod>
                     <start value="1987-04-01"/>

@@ -6,7 +6,7 @@
 	<status value="active"/>
 	<medicationReference>
 		<reference value="Medication/eumfh-43-155-2"/>
-		<display value="furosemide 20 mg oral tablet" />
+		<display value="furosemide 20 mg oral tablet"/>
 	</medicationReference>
 	<effectivePeriod>
 		<start value="2018"/>

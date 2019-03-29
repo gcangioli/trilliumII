@@ -4,7 +4,7 @@
     <status value="active"/>
     <medicationReference>
         <reference value="Medication/eumfh-39-02-1-10"/>
-        <display value="Bendroflumethiazide" />
+        <display value="Bendroflumethiazide"/>
     </medicationReference>
     <effectivePeriod>
         <start value="1993-09-01"/>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <Immunization xmlns="http://hl7.org/fhir">
+            <id value="75686"/>
+            <meta>
+               <versionId value="1"/>
+               <lastUpdated value="2019-03-17T12:55:20.000+02:00"/>
+               <profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Immunization-uv-ips"/>
+            </meta>
+            <language value="fr-LU"/>
+            <status value="completed"/>
+            <notGiven value="false"/>
+            <vaccineCode>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="333680004"/>
+                  <display value="Vaccin anti hemophilus type b">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Haemophilus influenzae Type b vaccine"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="http://www.whocc.no/atc"/>
+                  <code value="J07AG01"/>
+                  <display value="HAEMOPHILUS INFLUENZAE B, ANTIGENE CONJUGUE PURIFIE">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="HEMOPHILUS INFLUENZAE B, PURIFIED ANTIGEN CONJUGATED"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="urn:oid:1.3.182.4.11.22"/>
+                  <code value="1"/>
+                  <display value="ACT-HIB"/>
+               </coding>
+               <text value="Vaccin anti hemophilus type b"/>
+            </vaccineCode>
+            <patient>
+               <reference value="Patient/66033"/>
+            </patient>
+            <date value="1998-07-07T00:00:00+02:00"/>
+            <primarySource value="true"/>
+            <lotNumber value="B4TOZRT5"/>
+            <expirationDate value="2000-08-01"/>
+            <site>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="11207009"/>
+                  <display value="Cuisse droite">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Right thigh"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </site>
+            <route>
+               <coding>
+                  <system value="http://standardterms.edqm.eu"/>
+                  <code value="20035000"/>
+                  <display value="Voie intramusculaire">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Injection, intramuscular"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </route>
+         </Immunization>

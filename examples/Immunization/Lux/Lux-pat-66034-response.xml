@@ -1,0 +1,946 @@
+<Bundle xmlns="http://hl7.org/fhir">
+   <id value="110cd3ac-e410-4a1e-b064-76b8c1f38811"/>
+   <meta>
+      <lastUpdated value="2019-03-28T20:11:09.205+02:00"/>
+   </meta>
+   <type value="searchset"/>
+   <total value="21"/>
+   <link>
+      <relation value="self"/>
+      <url value="http://ehealthpass-prod.gnomon.com.gr/ehealthpass-fhir/baseDstu3/Immunization?patient=66034"/>
+   </link>
+   <link>
+      <relation value="next"/>
+      <url value="http://ehealthpass-prod.gnomon.com.gr/ehealthpass-fhir/baseDstu3?_getpages=110cd3ac-e410-4a1e-b064-76b8c1f38811&amp;_getpagesoffset=10&amp;_count=10&amp;_pretty=true&amp;_bundletype=searchset"/>
+   </link>
+   <entry>
+      <fullUrl value="http://ehealthpass-prod.gnomon.com.gr/ehealthpass-fhir/baseDstu3/Immunization/75679"/>
+      <resource>
+         <Immunization xmlns="http://hl7.org/fhir">
+            <id value="75679"/>
+            <meta>
+               <versionId value="1"/>
+               <lastUpdated value="2019-03-17T11:09:57.000+02:00"/>
+            </meta>
+            <language value="fr-LU"/>
+            <status value="completed"/>
+            <notGiven value="false"/>
+            <vaccineCode>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="414005006"/>
+                  <display value="Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Diphtheria + Pertussis + Poliomyelitis + Tetanus vaccine"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="http://www.whocc.no/atc"/>
+                  <code value="J07CA02"/>
+                  <display value="DIPHTERIE - COQUELUCHE - POLIOMYELITE - TETANOS">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="DIPHTHERIA-PERTUSSIS-POLIOMYELITIS-TETANUS"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="urn:oid:1.3.182.4.11.22"/>
+                  <code value="2374429"/>
+                  <display value="BOOSTRIX-POLIO"/>
+               </coding>
+               <text value="Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite"/>
+            </vaccineCode>
+            <patient>
+               <reference value="Patient/66034"/>
+            </patient>
+            <date value="2015-07-27T00:00:00+02:00"/>
+            <primarySource value="true"/>
+            <lotNumber value="AXK23RWERS"/>
+            <expirationDate value="2020-06-01"/>
+            <site>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="61396006"/>
+                  <display value="Cuisse gauche">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Left thigh"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </site>
+            <route>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/ips/CodeSystem/edqm-uv-ips"/>
+                  <code value="20035000"/>
+                  <display value="Voie intramusculaire">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Injection, intramuscular"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </route>
+         </Immunization>
+      </resource>
+      <search>
+         <mode value="match"/>
+      </search>
+   </entry>
+   <entry>
+      <fullUrl value="http://ehealthpass-prod.gnomon.com.gr/ehealthpass-fhir/baseDstu3/Immunization/75678"/>
+      <resource>
+         <Immunization xmlns="http://hl7.org/fhir">
+            <id value="75678"/>
+            <meta>
+               <versionId value="1"/>
+               <lastUpdated value="2019-03-17T11:09:31.000+02:00"/>
+            </meta>
+            <language value="fr-LU"/>
+            <status value="completed"/>
+            <notGiven value="false"/>
+            <vaccineCode>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="333680004"/>
+                  <display value="Vaccin anti hemophilus type b">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Haemophilus influenzae Type b vaccine"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="http://www.whocc.no/atc"/>
+                  <code value="J07AG01"/>
+                  <display value="HAEMOPHILUS INFLUENZAE B, ANTIGENE CONJUGUE PURIFIE">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="HEMOPHILUS INFLUENZAE B, PURIFIED ANTIGEN CONJUGATED"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="urn:oid:1.3.182.4.11.22"/>
+                  <code value="1"/>
+                  <display value="ACT-HIB"/>
+               </coding>
+               <text value="Vaccin anti hemophilus type b"/>
+            </vaccineCode>
+            <patient>
+               <reference value="Patient/66034"/>
+            </patient>
+            <date value="2015-06-07T00:00:00+02:00"/>
+            <primarySource value="true"/>
+            <lotNumber value="B4TOZRT5"/>
+            <expirationDate value="2020-08-01"/>
+            <site>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="11207009"/>
+                  <display value="Cuisse droite">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Right thigh"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </site>
+            <route>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/ips/CodeSystem/edqm-uv-ips"/>
+                  <code value="20035000"/>
+                  <display value="Voie intramusculaire">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Injection, intramuscular"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </route>
+         </Immunization>
+      </resource>
+      <search>
+         <mode value="match"/>
+      </search>
+   </entry>
+   <entry>
+      <fullUrl value="http://ehealthpass-prod.gnomon.com.gr/ehealthpass-fhir/baseDstu3/Immunization/75677"/>
+      <resource>
+         <Immunization xmlns="http://hl7.org/fhir">
+            <id value="75677"/>
+            <meta>
+               <versionId value="1"/>
+               <lastUpdated value="2019-03-17T11:09:03.000+02:00"/>
+            </meta>
+            <language value="fr-LU"/>
+            <status value="completed"/>
+            <notGiven value="false"/>
+            <vaccineCode>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="34689006"/>
+                  <display value="Vaccin contre le virus de l'hépatite B">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Hepatitis B virus vaccine"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="http://www.whocc.no/atc"/>
+                  <code value="J07BC01"/>
+                  <display value="HEPATITE B, ANTIGENE PURIFIE">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="HEPATITIS B, PURIFIED ANTIGEN"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="urn:oid:1.3.182.4.11.22"/>
+                  <code value="5"/>
+                  <display value="ENGERIX-B JUNIOR"/>
+               </coding>
+               <text value="Vaccin contre le virus de l'hépatite B"/>
+            </vaccineCode>
+            <patient>
+               <reference value="Patient/66034"/>
+            </patient>
+            <date value="2015-06-07T00:00:00+02:00"/>
+            <primarySource value="true"/>
+            <lotNumber value="ZJSL298286B"/>
+            <expirationDate value="2020-02-01"/>
+            <site>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="61396006"/>
+                  <display value="Cuisse gauche">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Left thigh"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </site>
+            <route>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/ips/CodeSystem/edqm-uv-ips"/>
+                  <code value="20035000"/>
+                  <display value="Voie intramusculaire">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Injection, intramuscular"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </route>
+         </Immunization>
+      </resource>
+      <search>
+         <mode value="match"/>
+      </search>
+   </entry>
+   <entry>
+      <fullUrl value="http://ehealthpass-prod.gnomon.com.gr/ehealthpass-fhir/baseDstu3/Immunization/75676"/>
+      <resource>
+         <Immunization xmlns="http://hl7.org/fhir">
+            <id value="75676"/>
+            <meta>
+               <versionId value="1"/>
+               <lastUpdated value="2019-03-17T11:08:40.000+02:00"/>
+            </meta>
+            <language value="fr-LU"/>
+            <status value="completed"/>
+            <notGiven value="false"/>
+            <vaccineCode>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="333598008"/>
+                  <display value="Vaccin anti pneumococcique">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Pneumococcal vaccine"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="http://www.whocc.no/atc"/>
+                  <code value="J07AL02"/>
+                  <display value="PNEUMOCOCCUS, ANTIGENE POLYSACCHARIDIQUE PURIFIE CONJUGUE">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="PNEUMOCOCCUS, PURIFIED POLYSACCHARIDES ANTIGEN CONJUGATED"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="urn:oid:1.3.182.4.11.22"/>
+                  <code value="11"/>
+                  <display value="PREVENAR 13"/>
+               </coding>
+               <text value="Vaccin anti pneumococcique"/>
+            </vaccineCode>
+            <patient>
+               <reference value="Patient/66034"/>
+            </patient>
+            <date value="2015-05-14T00:00:00+02:00"/>
+            <primarySource value="true"/>
+            <lotNumber value="XK238BW230"/>
+            <expirationDate value="2020-02-01"/>
+            <site>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="11207009"/>
+                  <display value="Cuisse droite">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Right thigh"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </site>
+            <route>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/ips/CodeSystem/edqm-uv-ips"/>
+                  <code value="20035000"/>
+                  <display value="Voie intramusculaire">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Injection, intramuscular"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </route>
+         </Immunization>
+      </resource>
+      <search>
+         <mode value="match"/>
+      </search>
+   </entry>
+   <entry>
+      <fullUrl value="http://ehealthpass-prod.gnomon.com.gr/ehealthpass-fhir/baseDstu3/Immunization/75675"/>
+      <resource>
+         <Immunization xmlns="http://hl7.org/fhir">
+            <id value="75675"/>
+            <meta>
+               <versionId value="1"/>
+               <lastUpdated value="2019-03-17T11:08:12.000+02:00"/>
+            </meta>
+            <language value="fr-LU"/>
+            <status value="completed"/>
+            <notGiven value="false"/>
+            <vaccineCode>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="414005006"/>
+                  <display value="Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Diphtheria + Pertussis + Poliomyelitis + Tetanus vaccine"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="http://www.whocc.no/atc"/>
+                  <code value="J07CA02"/>
+                  <display value="DIPHTERIE - COQUELUCHE - POLIOMYELITE - TETANOS">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="DIPHTHERIA-PERTUSSIS-POLIOMYELITIS-TETANUS"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="urn:oid:1.3.182.4.11.22"/>
+                  <code value="2374429"/>
+                  <display value="BOOSTRIX-POLIO"/>
+               </coding>
+               <text value="Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite"/>
+            </vaccineCode>
+            <patient>
+               <reference value="Patient/66034"/>
+            </patient>
+            <date value="2015-06-07T00:00:00+02:00"/>
+            <primarySource value="true"/>
+            <lotNumber value="AXK23RWERS"/>
+            <expirationDate value="2020-06-01"/>
+            <site>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="61396006"/>
+                  <display value="Cuisse gauche">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Left thigh"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </site>
+            <route>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/ips/CodeSystem/edqm-uv-ips"/>
+                  <code value="20035000"/>
+                  <display value="Voie intramusculaire">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Injection, intramuscular"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </route>
+         </Immunization>
+      </resource>
+      <search>
+         <mode value="match"/>
+      </search>
+   </entry>
+   <entry>
+      <fullUrl value="http://ehealthpass-prod.gnomon.com.gr/ehealthpass-fhir/baseDstu3/Immunization/75674"/>
+      <resource>
+         <Immunization xmlns="http://hl7.org/fhir">
+            <id value="75674"/>
+            <meta>
+               <versionId value="1"/>
+               <lastUpdated value="2019-03-17T11:07:50.000+02:00"/>
+            </meta>
+            <language value="fr-LU"/>
+            <status value="completed"/>
+            <notGiven value="false"/>
+            <vaccineCode>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="34689006"/>
+                  <display value="Vaccin contre le virus de l'hépatite B">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Hepatitis B virus vaccine"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="http://www.whocc.no/atc"/>
+                  <code value="J07BC01"/>
+                  <display value="HEPATITE B, ANTIGENE PURIFIE">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="HEPATITIS B, PURIFIED ANTIGEN"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="urn:oid:1.3.182.4.11.22"/>
+                  <code value="5"/>
+                  <display value="ENGERIX-B JUNIOR"/>
+               </coding>
+               <text value="Vaccin contre le virus de l'hépatite B"/>
+            </vaccineCode>
+            <patient>
+               <reference value="Patient/66034"/>
+            </patient>
+            <date value="2015-05-11T00:00:00+02:00"/>
+            <primarySource value="true"/>
+            <lotNumber value="ZJSL298286B"/>
+            <expirationDate value="2020-02-01"/>
+            <site>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="11207009"/>
+                  <display value="Cuisse droite">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Right thigh"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </site>
+            <route>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/ips/CodeSystem/edqm-uv-ips"/>
+                  <code value="20035000"/>
+                  <display value="Voie intramusculaire">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Injection, intramuscular"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </route>
+         </Immunization>
+      </resource>
+      <search>
+         <mode value="match"/>
+      </search>
+   </entry>
+   <entry>
+      <fullUrl value="http://ehealthpass-prod.gnomon.com.gr/ehealthpass-fhir/baseDstu3/Immunization/75673"/>
+      <resource>
+         <Immunization xmlns="http://hl7.org/fhir">
+            <id value="75673"/>
+            <meta>
+               <versionId value="1"/>
+               <lastUpdated value="2019-03-17T11:07:28.000+02:00"/>
+            </meta>
+            <language value="fr-LU"/>
+            <status value="completed"/>
+            <notGiven value="false"/>
+            <vaccineCode>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="414005006"/>
+                  <display value="Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Diphtheria + Pertussis + Poliomyelitis + Tetanus vaccine"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="http://www.whocc.no/atc"/>
+                  <code value="J07CA02"/>
+                  <display value="DIPHTERIE - COQUELUCHE - POLIOMYELITE - TETANOS">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="DIPHTHERIA-PERTUSSIS-POLIOMYELITIS-TETANUS"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="urn:oid:1.3.182.4.11.22"/>
+                  <code value="2374429"/>
+                  <display value="BOOSTRIX-POLIO"/>
+               </coding>
+               <text value="Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite"/>
+            </vaccineCode>
+            <patient>
+               <reference value="Patient/66034"/>
+            </patient>
+            <date value="2015-05-04T00:00:00+02:00"/>
+            <primarySource value="true"/>
+            <lotNumber value="AXK23RWERS"/>
+            <expirationDate value="2020-06-01"/>
+            <site>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="11207009"/>
+                  <display value="Cuisse droite">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Right thigh"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </site>
+            <route>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/ips/CodeSystem/edqm-uv-ips"/>
+                  <code value="20035000"/>
+                  <display value="Voie intramusculaire">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Injection, intramuscular"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </route>
+         </Immunization>
+      </resource>
+      <search>
+         <mode value="match"/>
+      </search>
+   </entry>
+   <entry>
+      <fullUrl value="http://ehealthpass-prod.gnomon.com.gr/ehealthpass-fhir/baseDstu3/Immunization/75672"/>
+      <resource>
+         <Immunization xmlns="http://hl7.org/fhir">
+            <id value="75672"/>
+            <meta>
+               <versionId value="1"/>
+               <lastUpdated value="2019-03-17T11:07:10.000+02:00"/>
+            </meta>
+            <language value="fr-LU"/>
+            <status value="completed"/>
+            <notGiven value="false"/>
+            <vaccineCode>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="333680004"/>
+                  <display value="Vaccin anti hemophilus type b">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Haemophilus influenzae Type b vaccine"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="http://www.whocc.no/atc"/>
+                  <code value="J07AG01"/>
+                  <display value="HAEMOPHILUS INFLUENZAE B, ANTIGENE CONJUGUE PURIFIE">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="HEMOPHILUS INFLUENZAE B, PURIFIED ANTIGEN CONJUGATED"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="urn:oid:1.3.182.4.11.22"/>
+                  <code value="1"/>
+                  <display value="ACT-HIB"/>
+               </coding>
+               <text value="Vaccin anti hemophilus type b"/>
+            </vaccineCode>
+            <patient>
+               <reference value="Patient/66034"/>
+            </patient>
+            <date value="2015-05-11T00:00:00+02:00"/>
+            <primarySource value="true"/>
+            <lotNumber value="B4TOZRT5"/>
+            <expirationDate value="2020-08-01"/>
+            <site>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="61396006"/>
+                  <display value="Cuisse gauche">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Left thigh"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </site>
+            <route>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/ips/CodeSystem/edqm-uv-ips"/>
+                  <code value="20035000"/>
+                  <display value="Voie intramusculaire">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Injection, intramuscular"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </route>
+         </Immunization>
+      </resource>
+      <search>
+         <mode value="match"/>
+      </search>
+   </entry>
+   <entry>
+      <fullUrl value="http://ehealthpass-prod.gnomon.com.gr/ehealthpass-fhir/baseDstu3/Immunization/75671"/>
+      <resource>
+         <Immunization xmlns="http://hl7.org/fhir">
+            <id value="75671"/>
+            <meta>
+               <versionId value="1"/>
+               <lastUpdated value="2019-03-17T11:06:45.000+02:00"/>
+            </meta>
+            <language value="fr-LU"/>
+            <status value="completed"/>
+            <notGiven value="false"/>
+            <vaccineCode>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="419550004"/>
+                  <display value="Measles + mumps + rubella + varicella vaccine ">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Measles + mumps + rubella + varicella vaccine"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="http://www.whocc.no/atc"/>
+                  <code value="J07BD54"/>
+                  <display value="ROUGEOLE EN ASSOCIATION AVEC OREILLONS, RUBEOLE ET VARICELLE, VIRUS VIVANTS ATTENUES">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="MEASLES, COMBINATIONS WITH MUMPS, RUBELLA AND VARICELLA, LIVE ATTENUATED"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="urn:oid:1.3.182.4.11.22"/>
+                  <code value="2469567"/>
+                  <display value="PRIORIX-TETRA"/>
+               </coding>
+               <text value="Measles + mumps + rubella + varicella vaccine"/>
+            </vaccineCode>
+            <patient>
+               <reference value="Patient/66034"/>
+            </patient>
+            <date value="2017-02-17T00:00:00+01:00"/>
+            <primarySource value="true"/>
+            <lotNumber value="UIL2782VB278"/>
+            <expirationDate value="2020-11-01"/>
+            <site>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="11207009"/>
+                  <display value="Cuisse droite">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Right thigh"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </site>
+            <route>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/ips/CodeSystem/edqm-uv-ips"/>
+                  <code value="20066000"/>
+                  <display value="Voie intramusculaire">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Injection, intramuscular"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </route>
+         </Immunization>
+      </resource>
+      <search>
+         <mode value="match"/>
+      </search>
+   </entry>
+   <entry>
+      <fullUrl value="http://ehealthpass-prod.gnomon.com.gr/ehealthpass-fhir/baseDstu3/Immunization/75670"/>
+      <resource>
+         <Immunization xmlns="http://hl7.org/fhir">
+            <id value="75670"/>
+            <meta>
+               <versionId value="1"/>
+               <lastUpdated value="2019-03-17T11:06:20.000+02:00"/>
+            </meta>
+            <language value="fr-LU"/>
+            <status value="completed"/>
+            <notGiven value="false"/>
+            <vaccineCode>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="34689006"/>
+                  <display value="Vaccin contre le virus de l'hépatite B">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Hepatitis B virus vaccine"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="http://www.whocc.no/atc"/>
+                  <code value="J07BC01"/>
+                  <display value="HEPATITE B, ANTIGENE PURIFIE">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="HEPATITIS B, PURIFIED ANTIGEN"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="urn:oid:1.3.182.4.11.22"/>
+                  <code value="5"/>
+                  <display value="ENGERIX-B JUNIOR"/>
+               </coding>
+               <text value="Vaccin contre le virus de l'hépatite B"/>
+            </vaccineCode>
+            <patient>
+               <reference value="Patient/66034"/>
+            </patient>
+            <date value="2016-04-29T00:00:00+02:00"/>
+            <primarySource value="true"/>
+            <lotNumber value="ZJSL298286B"/>
+            <expirationDate value="2020-02-01"/>
+            <site>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="11207009"/>
+                  <display value="Cuisse droite">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Right thigh"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </site>
+            <route>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/ips/CodeSystem/edqm-uv-ips"/>
+                  <code value="20035000"/>
+                  <display value="Voie intramusculaire">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Injection, intramuscular"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </route>
+         </Immunization>
+      </resource>
+      <search>
+         <mode value="match"/>
+      </search>
+   </entry>
+</Bundle>

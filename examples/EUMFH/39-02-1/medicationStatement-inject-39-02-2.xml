@@ -4,7 +4,7 @@
     <status value="active"/>
     <medicationReference>
         <reference value="Medication/eumfh-39-02-1-2"/>
-        <display value="Acetylsalicylic acid" />
+        <display value="Acetylsalicylic acid"/>
     </medicationReference>
     <effectivePeriod>
         <start value="2012-11-10"/>

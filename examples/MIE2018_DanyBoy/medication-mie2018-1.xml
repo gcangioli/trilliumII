@@ -16,7 +16,7 @@
 	</code>
 	<form>
 		<coding>
-			<system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+			<system value="http://standardterms.edqm.eu"/>
 			<code value="10808000"/>
 			<display value="Nasal spray, solution"/>
 		</coding>
@@ -26,7 +26,7 @@
 			<coding>
 				<system value="http://snomed.info/sct"/>
 				<code value="396064000"/>
-				<display value="Fluticasone propionate (substance) "/>
+				<display value="Fluticasone propionate (substance)"/>
 			</coding>
 		</itemCodeableConcept>
 	</ingredient>

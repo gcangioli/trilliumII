@@ -20,7 +20,7 @@
     <name value="IPSProblemType"/>
     <title value="Problem Type"/>
     <status value="draft"/>
-    <experimental value="false" />
+    <experimental value="false"/>
     <publisher value="Trillium II Project"/>
     <contact>
         <name value="HL7 International"/>

@@ -29,8 +29,8 @@
 						<valueCodeableConcept>
 							<coding>
 								<system value="http://trilliumbridge.eu/fhir/CodeSystem/trilm2-codesystem-1"/>
-								<code value="WADO-RS" />
-								<display value="Web Access to DICOM Objects by RESTful Services (DICOM, part 18, section 6.5)" />
+								<code value="WADO-RS"/>
+								<display value="Web Access to DICOM Objects by RESTful Services (DICOM, part 18, section 6.5)"/>
 							</coding>
 						</valueCodeableConcept>
 					</extension>

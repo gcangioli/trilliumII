@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../__FHIRr4Tools/STU3_fhir-xsd/structuredefinition.xsd">
+	<id value="enc-1"/>
+	<meta>
+		<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Patient-uv-ips"/>
+	</meta>
+	<active value="true"/>
+	<name>
+		<family value="Walker"/>
+		<given value="Mary Ann"/>
+	</name>
+	<gender value="female"/>
+	<birthDate value="1979-10-15"/>
+</Patient>

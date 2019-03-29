@@ -12,6 +12,6 @@
     </code>
     <patient>
         <reference value="Patient/eumfh-39-02-1"/>
-        <display value="Mark John (Inject 39-02)" />
+        <display value="Mark John (Inject 39-02)"/>
     </patient>
 </AllergyIntolerance>

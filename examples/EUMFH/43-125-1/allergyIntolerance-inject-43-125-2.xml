@@ -12,6 +12,6 @@
     </code>
     <patient>
         <reference value="Patient/eumfh-43-125-1"/>
-        <display value="Amalia Torres (inject 43-125-1)" />
+        <display value="Amalia Torres (inject 43-125-1)"/>
     </patient>
 </AllergyIntolerance>

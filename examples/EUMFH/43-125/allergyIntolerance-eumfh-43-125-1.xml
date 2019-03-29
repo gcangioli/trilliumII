@@ -5,13 +5,13 @@
 	<verificationStatus value="confirmed"/>
 	<code>
 		<coding>
-			<system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown"/>
+			<system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
 			<code value="no-allergy-info"/>
 			<display value="No information about allergies"/>
 		</coding>
 	</code>
 	<patient>
 				<reference value="Patient/eumfh-43-125"/>
-		<display value="Janette Eiren (inject 43-125)" />
+		<display value="Janette Eiren (inject 43-125)"/>
 	</patient>
 </AllergyIntolerance>

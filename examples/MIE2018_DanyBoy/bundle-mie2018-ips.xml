@@ -19,7 +19,7 @@
 					<coding>
 						<system value="http://loinc.org"/>
 						<code value="60591-5"/>
-						<display value="Patient Summary"/>
+						<display value="Patient summary Document"/>
 					</coding>
 				</type>
 				<subject>
@@ -29,7 +29,7 @@
 				<author>
 					<reference value="Practitioner/demo-practitioner-1"/>
 				</author>
-				<title value="Patient Summary - Boy with Asthma "/>
+				<title value="Patient Summary - Boy with Asthma"/>
 				<confidentiality value="N"/>
 				<attester>
 					<mode value="legal"/>
@@ -55,7 +55,7 @@
 						<coding>
 							<system value="http://loinc.org"/>
 							<code value="11450-4"/>
-							<display value="Problem list"/>
+							<display value="Problem list Reported"/>
 						</coding>
 					</code>
 					<text>
@@ -75,7 +75,7 @@
 						<coding>
 							<system value="http://loinc.org"/>
 							<code value="10160-0"/>
-							<display value="Medication use"/>
+							<display value="Hx of Medication use"/>
 						</coding>
 					</code>
 					<text>
@@ -133,7 +133,7 @@
 						<coding>
 							<system value="http://loinc.org"/>
 							<code value="48765-2"/>
-							<display value="Allergies and/or adverse reactions"/>
+							<display value="Allergies and adverse reactions Document"/>
 						</coding>
 					</code>
 					<text>
@@ -506,7 +506,7 @@
 				</code>
 				<form>
 					<coding>
-						<system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+						<system value="http://standardterms.edqm.eu"/>
 						<code value="10808000"/>
 						<display value="Nasal spray, solution"/>
 					</coding>
@@ -516,7 +516,7 @@
 						<coding>
 							<system value="http://snomed.info/sct"/>
 							<code value="396064000"/>
-							<display value="Fluticasone propionate (substance) "/>
+							<display value="Fluticasone propionate (substance)"/>
 						</coding>
 					</itemCodeableConcept>
 				</ingredient>
@@ -543,7 +543,7 @@
 				</code>
 				<form>
 					<coding>
-						<system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+						<system value="http://standardterms.edqm.eu"/>
 						<code value="10808000"/>
 						<display value="Nasal spray, solution"/>
 					</coding>
@@ -580,7 +580,7 @@
 				</code>
 				<form>
 					<coding>
-						<system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+						<system value="http://standardterms.edqm.eu"/>
 						<code value="10219000"/>
 						<display value="Tablet"/>
 					</coding>

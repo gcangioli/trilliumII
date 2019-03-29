@@ -1,7 +1,7 @@
 <AllergyIntolerance xmlns="http://hl7.org/fhir">
-    <id value="allergy-cat-example-2" />
+    <id value="allergy-cat-example-2"/>
     <meta>
-        <profile value="http://trilliumbridge.eu/fhir/StructureDefinition/allergyintolerance-uv-trillium2" />
+        <profile value="http://trilliumbridge.eu/fhir/StructureDefinition/allergyintolerance-uv-trillium2"/>
     </meta>
     <clinicalStatus value="active"/>
     <verificationStatus value="confirmed"/>

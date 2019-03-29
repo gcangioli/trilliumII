@@ -4,11 +4,53 @@ layout: default
 active: examples
 ---
 
-**Examples**
-
-Examples for this IG:
+## Bundle
 
 {% include list-simple-bundles.xhtml %}
+
+## Composition
+
+{% include list-simple-compositions.xhtml %}
+
+## Condition
+
+{% include list-simple-conditions.xhtml %}
+
+## Patient
+
+{% include list-simple-patients.xhtml %}
+
+## Immunization
+
+{% include list-simple-immunizations.xhtml %}
+
+## Medication
+
+{% include list-simple-medications.xhtml %}
+
+## MedicationStatement
+
+{% include list-simple-medicationstatements.xhtml %}
+
+## AllergyIntolerance
+
+{% include list-simple-allergyintolerances.xhtml %}
+
+## Procedure
+
+{% include list-simple-procedures.xhtml %}
+
+## Practitioner
+
+{% include list-simple-practitioners.xhtml %}
+
+## Encounter
+
+{% include list-simple-encounters.xhtml %}
+
+## Organization
+
+{% include list-simple-organizations.xhtml %}
 
 <!-- `todo: generate an example list from preprocessor` -->
 

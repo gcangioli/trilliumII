@@ -54,8 +54,8 @@
 			</type>
 		</element>
 		 <element id="Extension.url">
-      <path value="Extension.url" />
-      <fixedUri value="http://hl7.eu/fhir/trillium2/StructureDefinition/documentedBy-uv-trillium2" />
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.eu/fhir/trillium2/StructureDefinition/documentedBy-uv-trillium2"/>
     </element>
 	</differential>
 </StructureDefinition>

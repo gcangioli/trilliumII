@@ -4,7 +4,7 @@
     <status value="active"/>
     <medicationReference>
         <reference value="Medication/eumfh-43-125-1-6"/>
-        <display value="bisoprolol" />
+        <display value="bisoprolol"/>
     </medicationReference>
     <effectivePeriod>
         <start value="2015-02-10"/>

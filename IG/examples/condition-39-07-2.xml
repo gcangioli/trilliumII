@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Condition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/condition.xsd">
 	<id value="eumfh-39-07-2"/>
+    	<meta>
+		<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Condition-uv-ips"/>
+	</meta>
 	<clinicalStatus value="active"/>
 	<code>
 		<coding>

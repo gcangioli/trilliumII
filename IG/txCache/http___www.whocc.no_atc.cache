@@ -1,4 +1,116 @@
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "C10AA01"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://www.whocc.no/atc\" is not known; The code provided (http://www.whocc.no/atc#C10AA01) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "B01AC06"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://www.whocc.no/atc\" is not known; The code provided (http://www.whocc.no/atc#B01AC06) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "C09AA01"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://www.whocc.no/atc\" is not known; The code provided (http://www.whocc.no/atc#C09AA01) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "C07AB12"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://www.whocc.no/atc\" is not known; The code provided (http://www.whocc.no/atc#C07AB12) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "C10AA01",
+  "display" : "simvastatin"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.whocc.no/atc"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://www.whocc.no/atc\" is not known; The code provided (http://www.whocc.no/atc#C10AA01) is not  valid in the value set WHOATC"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "B01AC06",
+  "display" : "acetylsalicylic acid"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.whocc.no/atc"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://www.whocc.no/atc\" is not known; The code provided (http://www.whocc.no/atc#B01AC06) is not  valid in the value set WHOATC"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "C09AA01",
+  "display" : "captopril"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.whocc.no/atc"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://www.whocc.no/atc\" is not known; The code provided (http://www.whocc.no/atc#C09AA01) is not  valid in the value set WHOATC"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "C07AB12",
+  "display" : "Nebivolol"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.whocc.no/atc"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://www.whocc.no/atc\" is not known; The code provided (http://www.whocc.no/atc#C07AB12) is not  valid in the value set WHOATC"
+}
+-------------------------------------------------------------------------------------
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -9,5 +121,145 @@
 }}####
 e: {
   "error" : "Error from server: Unable to provide support for code system http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "J07CA02"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://www.whocc.no/atc\" is not known; The code provided (http://www.whocc.no/atc#J07CA02) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "J07AG01"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://www.whocc.no/atc\" is not known; The code provided (http://www.whocc.no/atc#J07AG01) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "J07BC01"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://www.whocc.no/atc\" is not known; The code provided (http://www.whocc.no/atc#J07BC01) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "J07BH01"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://www.whocc.no/atc\" is not known; The code provided (http://www.whocc.no/atc#J07BH01) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "J07AL02"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://www.whocc.no/atc\" is not known; The code provided (http://www.whocc.no/atc#J07AL02) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "J07CA02",
+  "display" : "DIPHTERIE - COQUELUCHE - POLIOMYELITE - TETANOS"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.whocc.no/atc"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://www.whocc.no/atc\" is not known; The code provided (http://www.whocc.no/atc#J07CA02) is not  valid in the value set WHOATC"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "J07AG01",
+  "display" : "HAEMOPHILUS INFLUENZAE B, ANTIGENE CONJUGUE PURIFIE"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.whocc.no/atc"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://www.whocc.no/atc\" is not known; The code provided (http://www.whocc.no/atc#J07AG01) is not  valid in the value set WHOATC"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "J07BC01",
+  "display" : "HEPATITE B, ANTIGENE PURIFIE"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.whocc.no/atc"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://www.whocc.no/atc\" is not known; The code provided (http://www.whocc.no/atc#J07BC01) is not  valid in the value set WHOATC"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "J07BH01",
+  "display" : "ROTAVIRUS, VIRUS VIVANT ATTENUE"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.whocc.no/atc"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://www.whocc.no/atc\" is not known; The code provided (http://www.whocc.no/atc#J07BH01) is not  valid in the value set WHOATC"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "J07AL02",
+  "display" : "PNEUMOCOCCUS, ANTIGENE POLYSACCHARIDIQUE PURIFIE CONJUGUE"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.whocc.no/atc"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://www.whocc.no/atc\" is not known; The code provided (http://www.whocc.no/atc#J07AL02) is not  valid in the value set WHOATC"
 }
 -------------------------------------------------------------------------------------

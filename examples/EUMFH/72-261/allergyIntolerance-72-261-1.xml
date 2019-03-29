@@ -9,6 +9,6 @@
     </code>
     <patient>
         <reference value="Patient/eumfh-72-261"/>
-        <display value="Jive Lopez (inject 72-261)" />
+        <display value="Jive Lopez (inject 72-261)"/>
     </patient>
 </AllergyIntolerance>

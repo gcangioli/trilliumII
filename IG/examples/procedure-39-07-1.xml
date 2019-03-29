@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Procedure xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/procedure.xsd">
+<Procedure xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../__FHIRr4Tools/STU3_fhir-xsd/allergyintolerance.xsd">
 	<id value="eumfh-39-07-1"/>
+	<meta>
+		<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Procedure-uv-ips"/>
+	</meta>
 	<status value="completed"/>
 	<category>
 		<coding>
@@ -26,4 +29,9 @@
 		<reference value="Patient/eumfh-39-07"/>
 		<display value="Alexander Heig (inject 39-07)"/>
 	</subject>
+	<performedPeriod>
+		<extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+			<valueCode value="unknown"/>
+		</extension>
+	</performedPeriod>
 </Procedure>

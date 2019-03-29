@@ -2,32 +2,32 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
 <id value="accessProtocol-uv-trillium2"/>
   <meta>
-    <lastUpdated value="2018-03-07T16:22:07.011+01:00" />
+    <lastUpdated value="2018-03-07T16:22:07.011+01:00"/>
   </meta>
-  <url value="http://hl7.eu/fhir/trillium2/StructureDefinition/accessProtocol-uv-trillium2" />
-  <name value="accessProtocol-uv-trillium2" />
-  <title value="Access Protocol (extension)" />
-  <status value="draft" />
-  <date value="2018-02-25T18:28:59.933+01:00" />
-  <description value="Extension designed to enable the indication of the type of access protocol tha can be used for the retrieval of the referenced documents / evideces" />
-  <fhirVersion value="3.0.1" />
-  <kind value="complex-type" />
-  <abstract value="false" />
-  <contextType value="datatype" />
-  <context value="Attachment" />
-  <type value="Extension" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
-  <derivation value="constraint" />
+  <url value="http://hl7.eu/fhir/trillium2/StructureDefinition/accessProtocol-uv-trillium2"/>
+  <name value="accessProtocol-uv-trillium2"/>
+  <title value="Access Protocol (extension)"/>
+  <status value="draft"/>
+  <date value="2018-02-25T18:28:59.933+01:00"/>
+  <description value="Extension designed to enable the indication of the type of access protocol tha can be used for the retrieval of the referenced documents / evideces"/>
+  <fhirVersion value="3.0.1"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <contextType value="datatype"/>
+  <context value="Attachment"/>
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="Extension.url">
-      <path value="Extension.url" />
-      <fixedUri value="http://hl7.eu/fhir/trillium2/StructureDefinition/accessProtocol-uv-trillium2" />
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.eu/fhir/trillium2/StructureDefinition/accessProtocol-uv-trillium2"/>
     </element>
     <element id="Extension.valueCode:valueCode">
-      <path value="Extension.valueCode" />
-      <sliceName value="valueCode" />
+      <path value="Extension.valueCode"/>
+      <sliceName value="valueCode"/>
       <type>
-        <code value="code" />
+        <code value="code"/>
       </type>
     </element>
   </differential>

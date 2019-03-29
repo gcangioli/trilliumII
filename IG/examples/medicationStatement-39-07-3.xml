@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/medicationstatement.xsd">
 	<id value="eumfh-39-07-3"/>
+    	<meta>
+		<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/MedicationStatement-uv-ips"/>
+	</meta>
 	<status value="active"/>
 	<medicationReference>
 		<reference value="Medication/eumfh-39-07-3"/>
-		<display value="Captopril" />
+		<display value="Captopril"/>
 	</medicationReference>
 	<effectivePeriod>
 		<start value="2014"/>

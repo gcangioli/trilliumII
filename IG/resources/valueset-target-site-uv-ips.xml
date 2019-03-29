@@ -53,7 +53,7 @@
 	<name value="IPSTargetSiteCode"/>
 	<title value="IPS Target Site"/>
 	<status value="draft"/>
-	 <experimental value="false" />
+	 <experimental value="false"/>
 	<publisher value="Trillium II Project"/>
 	<contact>
 		<name value="HL7 International"/>

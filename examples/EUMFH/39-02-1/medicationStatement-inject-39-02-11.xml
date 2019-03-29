@@ -4,7 +4,7 @@
     <status value="active"/>
     <medicationReference>
         <reference value="Medication/eumfh-39-02-1-11"/>
-        <display value="Lisinopril" />
+        <display value="Lisinopril"/>
     </medicationReference>
     <effectivePeriod>
         <start value="1993-05-02"/>

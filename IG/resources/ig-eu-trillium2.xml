@@ -8,6 +8,69 @@
 	<package>
 		<name value="base"/>
 		<!--- EXAMPLES -->
+		<!-- Luxembourg Patient 66033 -->
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Patient/66033"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Immunization/75680"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Immunization/75681"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Immunization/75682"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Immunization/75683"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Immunization/75684"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Immunization/75685"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Immunization/75686"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Immunization/75687"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Immunization/75688"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Immunization/75689"/>
+		</resource>
+		<!-- Encounter example -->
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Encounter/enc-1"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Patient/enc-1"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Organization/enc-1"/>
+		</resource>
+		<!-- example 39-07-->
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Bundle/eumfh-39-07"/>
+		</resource>
 		<resource>
 			<example value="true"/>
 			<sourceUri value="Composition/eumfh-39-07"/>
@@ -23,6 +86,58 @@
 		<resource>
 			<example value="true"/>
 			<sourceUri value="Procedure/eumfh-39-07-1"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="AllergyIntolerance/eumfh-39-07-1"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Condition/eumfh-39-07-1"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Condition/eumfh-39-07-2"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Condition/eumfh-39-07-3"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Condition/eumfh-39-07-4"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="MedicationStatement/eumfh-39-07-1"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="MedicationStatement/eumfh-39-07-2"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="MedicationStatement/eumfh-39-07-3"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="MedicationStatement/eumfh-39-07-4"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Medication/eumfh-39-07-1"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Medication/eumfh-39-07-2"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Medication/eumfh-39-07-3"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Medication/eumfh-39-07-4"/>
 		</resource>
 		<!-- EXAMPLES END -->
 		<!-- PROCEDURE -->
@@ -106,6 +221,14 @@
 		<resource>
 			<example value="false"/>
 			<sourceUri value="ValueSet/med-uv-ips"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/medicine-doseform"/>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceUri value="ValueSet/medicine-active-substances-uv-ips"/>
 		</resource>
 		<!-- END COMMENT -->
 		<!--MEDICATIONS END -->

@@ -4,7 +4,7 @@
     <status value="active"/>
     <medicationReference>
         <reference value="Medication/eumfh-43-125-1-5"/>
-        <display value="furosemide" />
+        <display value="furosemide"/>
     </medicationReference>
     <effectivePeriod>
         <start value="2015-02-10"/>

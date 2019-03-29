@@ -4,7 +4,7 @@
     <status value="active"/>
     <medicationReference>
         <reference value="Medication/eumfh-43-125-1-7"/>
-        <display value="eplerenone" />
+        <display value="eplerenone"/>
     </medicationReference>
     <effectivePeriod>
         <start value="2015-02-10"/>

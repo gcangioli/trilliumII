@@ -8,7 +8,7 @@
 			<code value="161474000"/>
 			<display value="History of attempted suicide"/>
 		</coding>
-		<text value="Suicide attempt (twice)" />
+		<text value="Suicide attempt (twice)"/>
 	</code>
 	<subject>
 		<reference value="Patient/eumfh-70-275"/>

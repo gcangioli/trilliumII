@@ -4,7 +4,7 @@
     <status value="active"/>
     <medicationReference>
         <reference value="Medication/eumfh-39-02-1-1"/>
-        <display value="Gliclazide" />
+        <display value="Gliclazide"/>
     </medicationReference>
     <effectivePeriod>
         <start value="2015-05-01"/>

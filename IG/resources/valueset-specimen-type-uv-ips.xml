@@ -12,7 +12,7 @@
 	<name value="Specimen_type_uv_ips"/>
 	<title value="IPS Specimen Type"/>
 	<status value="draft"/>
-	 <experimental value="false" />
+	 <experimental value="false"/>
 	<publisher value="Trillium II Project"/>
 	<contact>
 		<name value="HL7 International"/>

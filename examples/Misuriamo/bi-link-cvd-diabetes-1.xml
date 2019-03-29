@@ -7,6 +7,6 @@
 	<condition>
 	<!-- to be checked if SNOMED CT CAN be used -->
 	<!-- check if this is the right concept or the system refer to something more specific ?-->
-		<code><coding><system value="http://snomed.info/sct "/><code value="49601007"/><display value="Disorder of cardiovascular system"/></coding></code>
+		<code><coding><system value="http://snomed.info/sct"/><code value="49601007"/><display value="Disorder of cardiovascular system"/></coding></code>
 	</condition>
 </FamilyMemberHistory>

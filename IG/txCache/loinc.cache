@@ -199,114 +199,6 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "LA6752-5",
-        "display" : "Mild"
-      },
-      {
-        "code" : "LA6751-7",
-        "display" : "Moderate"
-      },
-      {
-        "code" : "LA6750-9",
-        "display" : "Severe"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:fa3873e6-3361-42d7-a473-0eb65fa96c6e",
-    "timestamp" : "2019-03-24T13:43:27+01:00",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.65"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "LA6752-5",
-      "display" : "Mild"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA6751-7",
-      "display" : "Moderate"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA6750-9",
-      "display" : "Severe"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "LA15173-0",
-        "display" : "Pregnant"
-      },
-      {
-        "code" : "LA26683-5",
-        "display" : "Not pregnant"
-      },
-      {
-        "code" : "LA4489-6",
-        "display" : "Unknown"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:3dbb6a8f-f1cf-4f16-adfc-c56e259b892f",
-    "timestamp" : "2019-03-24T13:47:39+01:00",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.65"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "LA15173-0",
-      "display" : "Pregnant"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA26683-5",
-      "display" : "Not pregnant"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA4489-6",
-      "display" : "Unknown"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://loinc.org",
   "code" : "60591-5"
@@ -395,5 +287,193 @@ v: {
   "display" : "History of Procedures Document",
   "severity" : "warning",
   "error" : "The display \"History of Procedures\" is not a valid display for the code {http://loinc.org}47519-4 - should be one of [\"History of Procedures Document\",\"Procedures Hx Doc\"]"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA6752-5",
+        "display" : "Mild"
+      },
+      {
+        "code" : "LA6751-7",
+        "display" : "Moderate"
+      },
+      {
+        "code" : "LA6750-9",
+        "display" : "Severe"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:5523e088-f976-49ae-ad7e-bb2b467860a0",
+    "timestamp" : "2019-03-28T10:14:27+01:00",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.65"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "LA6752-5",
+      "display" : "Mild"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA6751-7",
+      "display" : "Moderate"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA6750-9",
+      "display" : "Severe"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA15173-0",
+        "display" : "Pregnant"
+      },
+      {
+        "code" : "LA26683-5",
+        "display" : "Not pregnant"
+      },
+      {
+        "code" : "LA4489-6",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:38189a73-7d6a-4ff7-b99a-1a479c948ce4",
+    "timestamp" : "2019-03-28T10:19:03+01:00",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.65"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "LA15173-0",
+      "display" : "Pregnant"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA26683-5",
+      "display" : "Not pregnant"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA4489-6",
+      "display" : "Unknown"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "60591-5",
+    "display" : "Patient summary Document"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "SCALE_TYP",
+        "op" : "=",
+        "value" : "Doc"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "Patient summary Document",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "60591-5",
+  "display" : "Patient summary Document"
+}, "valueSet" :null}####
+v: {
+  "display" : "Patient summary Document",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "48765-2",
+  "display" : "Allergies and adverse reactions Document"
+}, "valueSet" :null}####
+v: {
+  "display" : "Allergies and adverse reactions Document",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "11450-4",
+  "display" : "Problem list Reported"
+}, "valueSet" :null}####
+v: {
+  "display" : "Problem list - Reported",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "10160-0",
+  "display" : "Hx of Medication use"
+}, "valueSet" :null}####
+v: {
+  "display" : "History of Medication use Narrative",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "47519-4",
+  "display" : "History of Procedures Document"
+}, "valueSet" :null}####
+v: {
+  "display" : "History of Procedures Document",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------

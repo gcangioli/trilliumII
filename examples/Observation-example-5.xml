@@ -1,57 +1,57 @@
 <Observation xmlns="http://hl7.org/fhir">
-  <id value="TrilliumII-examples-Observation-01-0" />
+  <id value="TrilliumII-examples-Observation-01-0"/>
   <meta>
-    <versionId value="1f670697-1522-45c8-adef-b94f15118456" />
-    <lastUpdated value="2018-02-16T10:19:31.497+00:00" />
+    <versionId value="1f670697-1522-45c8-adef-b94f15118456"/>
+    <lastUpdated value="2018-02-16T10:19:31.497+00:00"/>
   </meta>
   <extension url="https://simplifier.net/TrilliumII/observation-specialty-uv-trillium2">
     <valueCodeableConcept>
       <coding>
-        <system value="urn:oid:2.16.840.1.113883.12.74" />
-        <code value="BLB" />
+        <system value="urn:oid:2.16.840.1.113883.12.74"/>
+        <code value="BLB"/>
       </coding>
-      <text value="Blood Bank" />
+      <text value="Blood Bank"/>
     </valueCodeableConcept>
   </extension>
-  <status value="final" />
+  <status value="final"/>
   <category>
     <coding>
-      <system value="http://hl7.org/fhir/observation-category" />
-      <code value="laboratory" />
+      <system value="http://hl7.org/fhir/observation-category"/>
+      <code value="laboratory"/>
     </coding>
   </category>
   <code>
-    <text value="Blood typing" />
+    <text value="Blood typing"/>
   </code>
   <subject>
-    <reference value="Patient/TrilliumII-examples-Patient-02" />
+    <reference value="Patient/TrilliumII-examples-Patient-02"/>
   </subject>
-  <effectiveDateTime value="2015-10-10" />
+  <effectiveDateTime value="2015-10-10"/>
   <performer>
-    <reference value="Organization/TrilliumII-examples-Organization-02" />
+    <reference value="Organization/TrilliumII-examples-Organization-02"/>
   </performer>
   <related>
-    <type value="has-member" />
+    <type value="has-member"/>
     <target>
-      <reference value="Observation/TrilliumII-examples-Observation-01-Sub0" />
+      <reference value="Observation/TrilliumII-examples-Observation-01-Sub0"/>
     </target>
   </related>
   <related>
-    <type value="has-member" />
+    <type value="has-member"/>
     <target>
-      <reference value="Observation/TrilliumII-examples-Observation-01-Sub1" />
+      <reference value="Observation/TrilliumII-examples-Observation-01-Sub1"/>
     </target>
   </related>
   <related>
-    <type value="has-member" />
+    <type value="has-member"/>
     <target>
-      <reference value="Observation/TrilliumII-examples-Observation-01-Sub2" />
+      <reference value="Observation/TrilliumII-examples-Observation-01-Sub2"/>
     </target>
   </related>
   <related>
-    <type value="has-member" />
+    <type value="has-member"/>
     <target>
-      <reference value="Observation/TrilliumII-examples-Observation-01-Sub3" />
+      <reference value="Observation/TrilliumII-examples-Observation-01-Sub3"/>
     </target>
   </related>
 </Observation>

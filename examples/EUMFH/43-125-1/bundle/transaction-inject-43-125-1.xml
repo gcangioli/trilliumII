@@ -11,12 +11,12 @@
                     <coding>
                         <system value="http://loinc.org"/>
                         <code value="60591-5"/>
-                        <display value="Patient Summary"/>
+                        <display value="Patient summary Document"/>
                     </coding>
                 </type>
                 <subject>
                     <reference value="Patient/eumfh-43-125-1"/>
-                    <display value="Amalia Torres (inject 43-125-1)" />
+                    <display value="Amalia Torres (inject 43-125-1)"/>
                 </subject>
                 <date value="2018-07-10T15:22:00+02:00"/>
                 <author>
@@ -31,7 +31,7 @@
                         <coding>
                             <system value="http://loinc.org"/>
                             <code value="48765-2"/>
-                            <display value="Allergies and/or adverse reactions"/>
+                            <display value="Allergies and adverse reactions Document"/>
                         </coding>
                     </code>
                     <text>
@@ -58,7 +58,7 @@
                         <coding>
                             <system value="http://loinc.org"/>
                             <code value="11450-4"/>
-                            <display value="Problem list"/>
+                            <display value="Problem list Reported"/>
                         </coding>
                     </code>
                     <text>
@@ -125,7 +125,7 @@
                         <coding>
                             <system value="http://loinc.org"/>
                             <code value="10160-0"/>
-                            <display value="Medication use"/>
+                            <display value="Hx of Medication use"/>
                         </coding>
                     </code>
                     <text>
@@ -309,7 +309,7 @@
                 </code>
                 <patient>
                     <reference value="Patient/eumfh-43-125-1"/>
-                    <display value="Amalia Torres (inject 43-125-1)" />
+                    <display value="Amalia Torres (inject 43-125-1)"/>
                 </patient>
             </AllergyIntolerance>
         </resource>
@@ -334,7 +334,7 @@
                 </code>
                 <patient>
                     <reference value="Patient/eumfh-43-125-1"/>
-                    <display value="Amalia Torres (inject 43-125-1)" />
+                    <display value="Amalia Torres (inject 43-125-1)"/>
                 </patient>
             </AllergyIntolerance>
         </resource>
@@ -651,7 +651,7 @@
                 <status value="active"/>
                 <medicationReference>
                     <reference value="Medication/eumfh-43-125-1-1"/>
-                    <display value="insulin glargine" />
+                    <display value="insulin glargine"/>
                 </medicationReference>
                 <effectivePeriod>
                     <start value="2015-02-10"/>
@@ -692,7 +692,7 @@
                 <status value="active"/>
                 <medicationReference>
                     <reference value="Medication/eumfh-43-125-1-2"/>
-                    <display value="Atorvastatin" />
+                    <display value="Atorvastatin"/>
                 </medicationReference>
                 <effectivePeriod>
                     <start value="2015-02-10"/>
@@ -733,7 +733,7 @@
                 <status value="active"/>
                 <medicationReference>
                     <reference value="Medication/eumfh-43-125-1-3"/>
-                    <display value="rivaroxaban" />
+                    <display value="rivaroxaban"/>
                 </medicationReference>
                 <effectivePeriod>
                     <start value="2015-02-10"/>
@@ -774,7 +774,7 @@
                 <status value="active"/>
                 <medicationReference>
                     <reference value="Medication/eumfh-43-125-1-4"/>
-                    <display value="amitriptyline" />
+                    <display value="amitriptyline"/>
                 </medicationReference>
                 <effectivePeriod>
                     <start value="2015-02-10"/>
@@ -815,7 +815,7 @@
                 <status value="active"/>
                 <medicationReference>
                     <reference value="Medication/eumfh-43-125-1-5"/>
-                    <display value="furosemide" />
+                    <display value="furosemide"/>
                 </medicationReference>
                 <effectivePeriod>
                     <start value="2015-02-10"/>
@@ -856,7 +856,7 @@
                 <status value="active"/>
                 <medicationReference>
                     <reference value="Medication/eumfh-43-125-1-6"/>
-                    <display value="bisoprolol" />
+                    <display value="bisoprolol"/>
                 </medicationReference>
                 <effectivePeriod>
                     <start value="2015-02-10"/>
@@ -897,7 +897,7 @@
                 <status value="active"/>
                 <medicationReference>
                     <reference value="Medication/eumfh-43-125-1-7"/>
-                    <display value="eplerenone" />
+                    <display value="eplerenone"/>
                 </medicationReference>
                 <effectivePeriod>
                     <start value="2015-02-10"/>
@@ -938,7 +938,7 @@
                 <status value="active"/>
                 <medicationReference>
                     <reference value="Medication/eumfh-43-125-1-8"/>
-                    <display value="thiamazole" />
+                    <display value="thiamazole"/>
                 </medicationReference>
                 <effectivePeriod>
                     <start value="2015-02-10"/>
@@ -979,7 +979,7 @@
                 <status value="active"/>
                 <medicationReference>
                     <reference value="Medication/eumfh-43-125-1-9"/>
-                    <display value="pantoprazole" />
+                    <display value="pantoprazole"/>
                 </medicationReference>
                 <effectivePeriod>
                     <start value="2015-02-10"/>

@@ -4,7 +4,7 @@
     <status value="active"/>
     <medicationReference>
         <reference value="Medication/eumfh-39-02-1-4"/>
-        <display value="Finasteride" />
+        <display value="Finasteride"/>
     </medicationReference>
     <effectivePeriod>
         <start value="2010-08-04"/>

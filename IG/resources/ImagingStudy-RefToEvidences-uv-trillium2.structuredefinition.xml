@@ -2,81 +2,81 @@
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../__FHIRr4Tools/STU3_fhir-xsd/structuredefinition.xsd">
 	<id value="imagingstudy-RefToEvidences-uv-trillium2"/>
   <meta>
-    <lastUpdated value="2018-03-03T17:13:56.111+01:00" />
+    <lastUpdated value="2018-03-03T17:13:56.111+01:00"/>
   </meta>
 	<text>
 		<status value="generated"/>
 		<div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints applied to the ImagingStudy resource by the IPS project, which specifies the information on a DICOM imaging study this imaging result is part of.&#xD;&#xA;</div>
 	</text>
-  <url value="http://hl7.eu/fhir/trillium2/StructureDefinition/imagingstudy-RefToEvidences-uv-trillium2" />
-  <name value="imagingstudy-RefToEvidences-uv-trillium2" />
+  <url value="http://hl7.eu/fhir/trillium2/StructureDefinition/imagingstudy-RefToEvidences-uv-trillium2"/>
+  <name value="imagingstudy-RefToEvidences-uv-trillium2"/>
 	<title value="Imaging Study (IPS)"/>
-  <status value="draft" />
-  <date value="2018-02-20T13:33:04.511+01:00" />
-  <description value="This is a specialization of the ImagingStudy-uv-ips used for indicating a set of evidences belonging to this study and how to access them.&#xD;&#xA;&#xD;&#xA;" />
-  <fhirVersion value="3.0.1" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="ImagingStudy" />
+  <status value="draft"/>
+  <date value="2018-02-20T13:33:04.511+01:00"/>
+  <description value="This is a specialization of the ImagingStudy-uv-ips used for indicating a set of evidences belonging to this study and how to access them.&#xD;&#xA;&#xD;&#xA;"/>
+  <fhirVersion value="3.0.1"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="ImagingStudy"/>
   <baseDefinition value="http://hl7.eu/fhir/trillium2/StructureDefinition/ImagingStudy-uv-ips"/>
-  <derivation value="constraint" />
+  <derivation value="constraint"/>
   <differential>
 		<element id="ImagingStudy">
 			<path value="ImagingStudy"/>
 			<mustSupport value="true"/>
 		</element>
     <element id="ImagingStudy.extension">
-      <path value="ImagingStudy.extension" />
+      <path value="ImagingStudy.extension"/>
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="url" />
+          <type value="value"/>
+          <path value="url"/>
         </discriminator>
-        <rules value="open" />
+        <rules value="open"/>
       </slicing>
     </element>
     <element id="ImagingStudy.extension:attachment">
-      <path value="ImagingStudy.extension" />
-      <sliceName value="attachment" />
+      <path value="ImagingStudy.extension"/>
+      <sliceName value="attachment"/>
       <type>
-        <code value="Extension" />
-        <profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/attachment-imagingstudy-uv-trillium2" />
+        <code value="Extension"/>
+        <profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/attachment-imagingstudy-uv-trillium2"/>
       </type>
     </element>
     <element id="ImagingStudy.extension:attachment.valueAttachment:valueAttachment.url">
-      <path value="ImagingStudy.extension.valueAttachment.url" />
-      <comment value="Use the endpoint to describe the study URI" />
-      <max value="0" />
+      <path value="ImagingStudy.extension.valueAttachment.url"/>
+      <comment value="Use the endpoint to describe the study URI"/>
+      <max value="0"/>
     </element>
  
     <element id="ImagingStudy.series.extension">
-      <path value="ImagingStudy.series.extension" />
+      <path value="ImagingStudy.series.extension"/>
     </element>
     <element id="ImagingStudy.series.extension:attachment">
-      <path value="ImagingStudy.series.extension" />
-      <sliceName value="attachment" />
+      <path value="ImagingStudy.series.extension"/>
+      <sliceName value="attachment"/>
       <type>
-        <code value="Extension" />
-        <profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/attachment-imagingstudy-uv-trillium2" />
+        <code value="Extension"/>
+        <profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/attachment-imagingstudy-uv-trillium2"/>
       </type>
     </element>
       <element id="ImagingStudy.series.instance.extension">
-      <path value="ImagingStudy.series.instance.extension" />
+      <path value="ImagingStudy.series.instance.extension"/>
     </element>
     <element id="ImagingStudy.series.instance.extension:referencedDICOMitem">
-      <path value="ImagingStudy.series.instance.extension" />
-      <sliceName value="referencedDICOMitem" />
+      <path value="ImagingStudy.series.instance.extension"/>
+      <sliceName value="referencedDICOMitem"/>
       <type>
-        <code value="Extension" />
-        <profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/referencedDicomItems-uv-trillium2" />
+        <code value="Extension"/>
+        <profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/referencedDicomItems-uv-trillium2"/>
       </type>
     </element>
     <element id="ImagingStudy.series.instance.extension:attachment">
-      <path value="ImagingStudy.series.instance.extension" />
-      <sliceName value="attachment" />
+      <path value="ImagingStudy.series.instance.extension"/>
+      <sliceName value="attachment"/>
       <type>
-        <code value="Extension" />
-        <profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/attachment-imagingstudy-uv-trillium2" />
+        <code value="Extension"/>
+        <profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/attachment-imagingstudy-uv-trillium2"/>
       </type>
     </element>
   </differential>

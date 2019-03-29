@@ -1344,7 +1344,7 @@
 				</discriminator>
 				<rules value="openAtEnd"/>
 			</slicing>
-			<mustSupport value="true" />
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionFunctionalStatus.entry:disability">
 			<path value="Composition.section.entry"/>
@@ -1538,7 +1538,7 @@
 				</discriminator>
 				<rules value="openAtEnd"/>
 			</slicing>
-			<mustSupport value="true" />
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionSocialHistory.entry:smokingTobaccoUse">
 			<path value="Composition.section.entry"/>

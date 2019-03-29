@@ -4,7 +4,7 @@
     <status value="active"/>
     <medicationReference>
         <reference value="Medication/eumfh-39-02-1-9"/>
-        <display value="Atenolol" />
+        <display value="Atenolol"/>
     </medicationReference>
     <effectivePeriod>
         <start value="1994-08-03"/>

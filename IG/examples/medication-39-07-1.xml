@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Medication xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/medication.xsd">
-	<id value="eumfh-39-07-3"/>
+	<id value="eumfh-39-07-1"/>
+    	<meta>
+		<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Medication-uv-ips"/>
+	</meta>
 	<code>
 		<coding>
 			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-			<code value="1155753"/>
-			<display value="Captopril Oral Product"/>
+			<code value="757704"/>
+			<display value="Simvastatin 40 MG Disintegrating Oral Tablet"/>
 		</coding>
 		<coding>
 			<system value="http://www.whocc.no/atc"/>
-			<code value="C09AA01"/>
-			<display value="captopril"/>
+			<code value="C10AA01"/>
+			<display value="simvastatin"/>
 		</coding>
+		<text value="Fluspiral 50 mcg"/>
 	</code>
 	<form>
 		<coding>
 			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-			<code value="1151131"/>
-			<display value="Oral Product"/>
+			<code value="1294713"/>
+			<display value="Disintegrating Oral Product"/>
 		</coding>
 		<coding>
-			<system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+			<system value="http://standardterms.edqm.eu"/>
 			<code value="10219000"/>
 			<display value="Tablet"/>
 		</coding>
@@ -29,8 +33,8 @@
 		<itemCodeableConcept>
 			<coding>
 				<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
-				<code value="1998"/>
-				<display value="Captopril"/>
+				<code value="36567"/>
+				<display value="Simvastatin"/>
 			</coding>
 		</itemCodeableConcept>
 	</ingredient>

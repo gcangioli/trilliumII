@@ -21,7 +21,7 @@
 	<effectiveDateTime value="2018-05-31"/>
 	<valueQuantity>
 		<value value="1.996"/>
-		<unit value="square meters" />
+		<unit value="square meters"/>
 		<system value="http://unitsofmeasure.org"/>
 		<code value="m2"/>
 	</valueQuantity>

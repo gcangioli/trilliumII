@@ -4,7 +4,7 @@
     <status value="active"/>
     <medicationReference>
         <reference value="Medication/eumfh-39-02-1-7"/>
-        <display value="Timolol" />
+        <display value="Timolol"/>
     </medicationReference>
     <effectivePeriod>
         <start value="1998-08-15"/>

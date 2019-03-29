@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/uv/ips/CodeSystem/edqm-uv-ips",
+  "code" : "20035000"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/uv/ips/CodeSystem/edqm-uv-ips\" is not known; The code provided (http://hl7.org/fhir/uv/ips/CodeSystem/edqm-uv-ips#20035000) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/uv/ips/CodeSystem/edqm-uv-ips",
+  "code" : "20053000"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/uv/ips/CodeSystem/edqm-uv-ips\" is not known; The code provided (http://hl7.org/fhir/uv/ips/CodeSystem/edqm-uv-ips#20053000) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

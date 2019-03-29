@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <Immunization xmlns="http://hl7.org/fhir">
+            <id value="75685"/>
+            <meta>
+               <versionId value="1"/>
+               <lastUpdated value="2019-03-17T12:54:54.000+02:00"/>
+               <profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Immunization-uv-ips"/>
+            </meta>
+            <language value="fr-LU"/>
+            <status value="completed"/>
+            <notGiven value="false"/>
+            <vaccineCode>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="414005006"/>
+                  <display value="Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Diphtheria + Pertussis + Poliomyelitis + Tetanus vaccine"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="http://www.whocc.no/atc"/>
+                  <code value="J07CA02"/>
+                  <display value="DIPHTERIE - COQUELUCHE - POLIOMYELITE - TETANOS">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="DIPHTHERIA-PERTUSSIS-POLIOMYELITIS-TETANUS"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+               <coding>
+                  <system value="urn:oid:1.3.182.4.11.22"/>
+                  <code value="2374429"/>
+                  <display value="BOOSTRIX-POLIO"/>
+               </coding>
+               <text value="Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite"/>
+            </vaccineCode>
+            <patient>
+               <reference value="Patient/66033"/>
+            </patient>
+            <date value="1998-07-07T00:00:00+02:00"/>
+            <primarySource value="true"/>
+            <lotNumber value="AXK23RWERS"/>
+            <expirationDate value="2000-06-01"/>
+            <site>
+               <coding>
+                  <system value="http://snomed.info/sct"/>
+                  <code value="61396006"/>
+                  <display value="Cuisse gauche">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Left thigh"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </site>
+            <route>
+               <coding>
+                  <system value="http://hl7.org/fhir/uv/ips/CodeSystem/edqm-uv-ips"/>
+                  <code value="20035000"/>
+                  <display value="Voie intramusculaire">
+                     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                        <extension url="lang">
+                           <valueString value="en-GB"/>
+                        </extension>
+                        <extension url="content">
+                           <valueString value="Injection, intramuscular"/>
+                        </extension>
+                     </extension>
+                  </display>
+               </coding>
+            </route>
+         </Immunization>
+ 

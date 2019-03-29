@@ -6,6 +6,6 @@
 	<relationship><coding><system value="http://hl7.org/fhir/ValueSet/v3-FamilyMember"/><code  value="FAMMEMB"/></coding></relationship>
 	<condition>
 	<!-- to be checked if SNOMED CT CAN be used -->
-		<code><coding><system value="http://snomed.info/sct "/><code value="160274005"/><display value="No family history diabetes"/></coding></code>
+		<code><coding><system value="http://snomed.info/sct"/><code value="160274005"/><display value="No family history diabetes"/></coding></code>
 	</condition>
 </FamilyMemberHistory>

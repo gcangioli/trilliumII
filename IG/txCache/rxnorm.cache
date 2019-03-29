@@ -1,0 +1,232 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "757704"
+}, "valueSet" :null}####
+v: {
+  "display" : "simvastatin 40 MG Disintegrating Oral Tablet",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "1294713"
+}, "valueSet" :null}####
+v: {
+  "display" : "Disintegrating Oral Product",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "36567"
+}, "valueSet" :null}####
+v: {
+  "display" : "Simvastatin",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "246461"
+}, "valueSet" :null}####
+v: {
+  "display" : "aspirin 100 MG Oral Tablet",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "1151133"
+}, "valueSet" :null}####
+v: {
+  "display" : "Pill",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "1191"
+}, "valueSet" :null}####
+v: {
+  "display" : "Aspirin",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "1155753"
+}, "valueSet" :null}####
+v: {
+  "display" : "Captopril Oral Product",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "1151131"
+}, "valueSet" :null}####
+v: {
+  "display" : "Oral Product",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "1998"
+}, "valueSet" :null}####
+v: {
+  "display" : "Captopril",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "387013"
+}, "valueSet" :null}####
+v: {
+  "display" : "nebivolol 5 MG Oral Tablet",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "31555"
+}, "valueSet" :null}####
+v: {
+  "display" : "nebivolol",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "757704",
+  "display" : "Simvastatin 40 MG Disintegrating Oral Tablet"
+}, "valueSet" :null}####
+v: {
+  "display" : "simvastatin 40 MG Disintegrating Oral Tablet",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "1294713",
+  "display" : "Disintegrating Oral Product"
+}, "valueSet" :null}####
+v: {
+  "display" : "Disintegrating Oral Product",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "36567",
+  "display" : "Simvastatin"
+}, "valueSet" :null}####
+v: {
+  "display" : "Simvastatin",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "246461",
+  "display" : "Aspirin 100 MG Oral Tablet"
+}, "valueSet" :null}####
+v: {
+  "display" : "aspirin 100 MG Oral Tablet",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "1151133",
+  "display" : "Pill"
+}, "valueSet" :null}####
+v: {
+  "display" : "Pill",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "1191",
+  "display" : "Aspirin"
+}, "valueSet" :null}####
+v: {
+  "display" : "Aspirin",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "1155753",
+  "display" : "Captopril Oral Product"
+}, "valueSet" :null}####
+v: {
+  "display" : "Captopril Oral Product",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "1151131",
+  "display" : "Oral Product"
+}, "valueSet" :null}####
+v: {
+  "display" : "Oral Product",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "1998",
+  "display" : "Captopril"
+}, "valueSet" :null}####
+v: {
+  "display" : "Captopril",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "387013",
+  "display" : "nebivolol 5 MG Oral Tablet"
+}, "valueSet" :null}####
+v: {
+  "display" : "nebivolol 5 MG Oral Tablet",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "31555",
+  "display" : "nebivolol"
+}, "valueSet" :null}####
+v: {
+  "display" : "nebivolol",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

@@ -5,37 +5,37 @@
 <fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Composition/eumfh-70-295"/>'/>
 <resource>
 <Composition>
-  <id value="eumfh-70-295" />
-  <status value="final" />
+  <id value="eumfh-70-295"/>
+  <status value="final"/>
   <type>
     <coding>
-      <system value="http://loinc.org" />
-      <code value="60591-5" />
-      <display value="Patient Summary" />
+      <system value="http://loinc.org"/>
+      <code value="60591-5"/>
+      <display value="Patient summary Document"/>
     </coding>
   </type>
   <subject>
-    <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-295" />
-    <display value="Allen Perot (inject 70-295)" />
+    <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-295"/>
+    <display value="Allen Perot (inject 70-295)"/>
   </subject>
-  <date value="2018-10-10T16:41:04+02:00" />
+  <date value="2018-10-10T16:41:04+02:00"/>
   <author>
-    <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-295-1" />
-    <display value="Mustafa Sabbagh (inject 70-295)" />
+    <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-70-295-1"/>
+    <display value="Mustafa Sabbagh (inject 70-295)"/>
   </author>
-  <title value="Patient Summary of Allen Perot (inject 70-295)" />
-  <confidentiality value="N" />
+  <title value="Patient Summary of Allen Perot (inject 70-295)"/>
+  <confidentiality value="N"/>
   <section>
-    <title value="Allergies and Intolerances" />
+    <title value="Allergies and Intolerances"/>
     <code>
       <coding>
-        <system value="http://loinc.org" />
-        <code value="48765-2" />
-        <display value="Allergies and/or adverse reactions" />
+        <system value="http://loinc.org"/>
+        <code value="48765-2"/>
+        <display value="Allergies and adverse reactions Document"/>
       </coding>
     </code>
     <text>
-      <status value="generated" />
+      <status value="generated"/>
       <xhtml:div>
         <xhtml:ul>
           <xhtml:li>Allergic Rhinitis</xhtml:li>
@@ -43,21 +43,21 @@
       </xhtml:div>
     </text>
     <entry>
-      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/AllergyIntolerance/eumfh-70-295" />
-      <display value="Allergic Rhinitis" />
+      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/AllergyIntolerance/eumfh-70-295"/>
+      <display value="Allergic Rhinitis"/>
     </entry>
   </section>
   <section>
-    <title value="Active Problems" />
+    <title value="Active Problems"/>
     <code>
       <coding>
-        <system value="http://loinc.org" />
-        <code value="11450-4" />
-        <display value="Problem list" />
+        <system value="http://loinc.org"/>
+        <code value="11450-4"/>
+        <display value="Problem list Reported"/>
       </coding>
     </code>
     <text>
-      <status value="generated" />
+      <status value="generated"/>
       <xhtml:div>
         <xhtml:ul>
           <xhtml:li>[2011-09-27] - Depression</xhtml:li>
@@ -69,37 +69,37 @@
       </xhtml:div>
     </text>
     <entry>
-      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-295-1" />
-      <display value="[2011-09-27] - Depression" />
+      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-295-1"/>
+      <display value="[2011-09-27] - Depression"/>
     </entry>
     <entry>
-      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-295-2" />
-      <display value="[2014-09-21] - Cardiovascular disease" />
+      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-295-2"/>
+      <display value="[2014-09-21] - Cardiovascular disease"/>
     </entry>
     <entry>
-      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-295-3" />
-      <display value="[2000-08-21] - Eye damage (retinopathy)" />
+      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-295-3"/>
+      <display value="[2000-08-21] - Eye damage (retinopathy)"/>
     </entry>
     <entry>
-      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-295-4" />
-      <display value="[2011-01-02] - Hearing impairment" />
+      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-295-4"/>
+      <display value="[2011-01-02] - Hearing impairment"/>
     </entry>
     <entry>
-      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-295-5" />
-      <display value="[2010-08-28] - Diabetes Type 2" />
+      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-295-5"/>
+      <display value="[2010-08-28] - Diabetes Type 2"/>
     </entry>
   </section>
   <section>
-    <title value="Medication" />
+    <title value="Medication"/>
     <code>
       <coding>
-        <system value="http://loinc.org" />
-        <code value="10160-0" />
-        <display value="Medication use" />
+        <system value="http://loinc.org"/>
+        <code value="10160-0"/>
+        <display value="Hx of Medication use"/>
       </coding>
     </code>
     <text>
-      <status value="generated" />
+      <status value="generated"/>
       <xhtml:div>
         <xhtml:ul>
           <xhtml:li>[2018] - Metformin hydrochloride 500 mg oral tablet - 2 tablets per
@@ -111,29 +111,29 @@
       </xhtml:div>
     </text>
     <entry>
-      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-295-1" />
-      <display value="[2018] - Metformin hydrochloride 500 mg oral tablet - 2 tablets per day" />
+      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-295-1"/>
+      <display value="[2018] - Metformin hydrochloride 500 mg oral tablet - 2 tablets per day"/>
     </entry>
     <entry>
-      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-295-2" />
-      <display value="[2018] - Canagliflozin 100 mg oral tablet - 1 per day" />
+      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-295-2"/>
+      <display value="[2018] - Canagliflozin 100 mg oral tablet - 1 per day"/>
     </entry>
     <entry>
-      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-295-3" />
-      <display value="[2018] - Insulin degludec in parenteral dosage form - 1 injection per day" />
+      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-295-3"/>
+      <display value="[2018] - Insulin degludec in parenteral dosage form - 1 injection per day"/>
     </entry>
   </section>
   <section>
-    <title value="Immunizations" />
+    <title value="Immunizations"/>
     <code>
       <coding>
-        <system value="http://loinc.org" />
-        <code value="11369-6" />
-        <display value="History of Immunization Narrative" />
+        <system value="http://loinc.org"/>
+        <code value="11369-6"/>
+        <display value="History of Immunization Narrative"/>
       </coding>
     </code>
     <text>
-      <status value="generated" />
+      <status value="generated"/>
       <xhtml:div>
         <xhtml:ul>
           <xhtml:li>[1997-07-07] - Diphtheria + tetanus</xhtml:li>
@@ -142,12 +142,12 @@
       </xhtml:div>
     </text>
     <entry>
-      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Immunization/eumfh-70-295-1" />
-      <display value="Diphtheria + tetanus" />
+      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Immunization/eumfh-70-295-1"/>
+      <display value="Diphtheria + tetanus"/>
     </entry>
     <entry>
-      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Immunization/eumfh-70-295-2" />
-      <display value="Hepatitis B virus vaccine" />
+      <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Immunization/eumfh-70-295-2"/>
+      <display value="Hepatitis B virus vaccine"/>
     </entry>
   </section>
 </Composition>
@@ -170,7 +170,7 @@
     </code>
     <patient>
         <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-295"/>
-        <display value="Allen Perot (inject 70-295)" />
+        <display value="Allen Perot (inject 70-295)"/>
     </patient>
 </AllergyIntolerance>
 </resource>

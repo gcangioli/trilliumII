@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
+  "code" : "no-known-allergies"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips\" is not known; The code provided (http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips#no-known-allergies) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

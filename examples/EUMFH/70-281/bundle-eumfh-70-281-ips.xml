@@ -13,7 +13,7 @@
 		<coding>
 			<system value="http://loinc.org"/>
 			<code value="60591-5"/>
-			<display value="Patient Summary"/>
+			<display value="Patient summary Document"/>
 		</coding>
 	</type>
 	<subject>
@@ -33,7 +33,7 @@
 			<coding>
 				<system value="http://loinc.org"/>
 				<code value="48765-2"/>
-				<display value="Allergies and/or adverse reactions"/>
+				<display value="Allergies and adverse reactions Document"/>
 			</coding>
 		</code>
 		<text>
@@ -55,7 +55,7 @@
 			<coding>
 				<system value="http://loinc.org"/>
 				<code value="11450-4"/>
-				<display value="Problem list"/>
+				<display value="Problem list Reported"/>
 			</coding>
 		</code>
 		<text>
@@ -82,7 +82,7 @@
 			<coding>
 				<system value="http://loinc.org"/>
 				<code value="10160-0"/>
-				<display value="Medication use"/>
+				<display value="Hx of Medication use"/>
 			</coding>
 		</code>
 		<text>
@@ -141,7 +141,7 @@
     </code>
     <patient>
         <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-281"/>
-        <display value="Marie-Louise Joulent (inject 70-281)" />
+        <display value="Marie-Louise Joulent (inject 70-281)"/>
     </patient>
 </AllergyIntolerance>
 </resource>
@@ -158,7 +158,7 @@
       <code value="313102001"/>
       <display value="Family history of neoplasm of breast"/>
     </coding>
-	<text value="Family history of neoplasm of breast" />
+	<text value="Family history of neoplasm of breast"/>
   </code> 
   <subject> 
     <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-281"/>

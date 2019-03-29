@@ -11,12 +11,12 @@
         <coding>
             <system value="http://loinc.org"/>
             <code value="60591-5"/>
-            <display value="Patient Summary"/>
+            <display value="Patient summary Document"/>
         </coding>
     </type>
     <subject>
         <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-300-2"/>
-        <display value="Anna Markou (inject 70-300-2)" />
+        <display value="Anna Markou (inject 70-300-2)"/>
     </subject>
     <date value="2018-10-10T16:41:04+02:00"/>
     <author>
@@ -31,7 +31,7 @@
             <coding>
                 <system value="http://loinc.org"/>
                 <code value="48765-2"/>
-                <display value="Allergies and/or adverse reactions"/>
+                <display value="Allergies and adverse reactions Document"/>
             </coding>
         </code>
         <text>
@@ -53,7 +53,7 @@
 			<coding>
 				<system value="http://loinc.org"/>
 				<code value="11450-4"/>
-				<display value="Problem list"/>
+				<display value="Problem list Reported"/>
 			</coding>
 		</code>
 		<text>
@@ -64,7 +64,10 @@
 				</xhtml:ul>
 			</xhtml:div>
 		</text>
-<entry><reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-300-2-1"/><display value="[2018-10-08] - No known problems"/></entry>
+<entry>
+<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-70-300-2-1"/>
+<display value="[2018-10-08] - No known problems"/>
+</entry>
 	</section>
 
 	<section>
@@ -73,7 +76,7 @@
 			<coding>
 				<system value="http://loinc.org"/>
 				<code value="10160-0"/>
-				<display value="Medication use"/>
+				<display value="Hx of Medication use"/>
 			</coding>
 		</code>
 		<text>
@@ -84,7 +87,10 @@
 				</xhtml:ul>
 			</xhtml:div>
 		</text>
-<entry><reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-300-2"/><display value="[2018] - No information about medications"/></entry>
+<entry>
+<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-70-300-2"/>
+<display value="[2018] - No information about medications"/>
+</entry>
 	</section>
 </Composition>
 </resource>
@@ -103,7 +109,7 @@
 		<coding>
 			<system value="http://loinc.org"/>
 			<code value="60591-5"/>
-			<display value="Patient Summary"/>
+			<display value="Patient summary Document"/>
 		</coding>
 	</type>
 	<subject>
@@ -123,7 +129,7 @@
 			<coding>
 				<system value="http://loinc.org"/>
 				<code value="48765-2"/>
-				<display value="Allergies and/or adverse reactions"/>
+				<display value="Allergies and adverse reactions Document"/>
 			</coding>
 		</code>
 		<text>
@@ -145,7 +151,7 @@
 			<coding>
 				<system value="http://loinc.org"/>
 				<code value="11450-4"/>
-				<display value="Problem list"/>
+				<display value="Problem list Reported"/>
 			</coding>
 		</code>
 		<text>
@@ -167,7 +173,7 @@
 			<coding>
 				<system value="http://loinc.org"/>
 				<code value="10160-0"/>
-				<display value="Medication use"/>
+				<display value="Hx of Medication use"/>
 			</coding>
 		</code>
 		<text>
@@ -225,7 +231,7 @@
     </code>
     <patient>
         <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-70-300-2"/>
-        <display value="Anna Markou (inject 70-300-2)" />
+        <display value="Anna Markou (inject 70-300-2)"/>
     </patient>
 </AllergyIntolerance>
 </resource>

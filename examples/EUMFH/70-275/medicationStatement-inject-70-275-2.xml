@@ -4,7 +4,7 @@
 	<status value="active"/>
 	<medicationReference>
 		<reference value="Medication/eumfh-70-275-2"/>
-		<display value="Chlorpromazine" />
+		<display value="Chlorpromazine"/>
 	</medicationReference>
 	<effectivePeriod>
 		<start value="2008"/>

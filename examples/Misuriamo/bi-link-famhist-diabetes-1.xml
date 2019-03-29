@@ -7,6 +7,6 @@
 	<condition>
 	<!-- to be checked if SNOMED CT CAN be used -->
 	<!-- check if this is the right concept or the system refer to something more specific ?-->
-		<code><coding><system value="http://snomed.info/sct "/><code value="73211009"/><display value="Diabetes mellitus"/></coding></code>
+		<code><coding><system value="http://snomed.info/sct"/><code value="73211009"/><display value="Diabetes mellitus"/></coding></code>
 	</condition>
 </FamilyMemberHistory>
