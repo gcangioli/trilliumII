@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AllergyIntolerance xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/allergyintolerance.xsd">
+    <id value="eumfh-43-125-1-1"/>
+    <clinicalStatus value="active"/>
+    <verificationStatus value="confirmed"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="350792003"/>
+            <display value="Plasters (physical object)"/>
+        </coding>
+    </code>
+    <patient>
+        <reference value="Patient/eumfh-43-125-1"/>
+        <display value="Amalia Torres (inject 43-125-1)"/>
+    </patient>
+</AllergyIntolerance>

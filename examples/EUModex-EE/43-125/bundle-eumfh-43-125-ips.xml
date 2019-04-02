@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Bundle xmlns='http://hl7.org/fhir' xmlns:xhtml='http://www.w3.org/1999/xhtml' >
+<id value='eumfh-43-125'/>
+<identifier><system value='http://trilliumbridge.eu/fhir/demos/eumfh/ips_id'/><value value='EUR01P0007'></value></identifier>
+<type value='document'/>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Composition/eumfh-43-125'/>
+<resource>
+<Composition>
+    <id value="eumfh-43-125"/>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="60591-5"/>
+            <display value="Patient summary Document"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-43-125"/>
+        <display value="Janette Eiren (inject 43-125)"/>
+    </subject>
+    <date value="2018-10-10T16:41:04+02:00"/>
+    <author>
+        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-43-125-1"/>
+        <display value="Jane Wang (inject 43-125)"/>
+    </author>
+    <title value="Patient Summary of Janette Eiren (inject 43-125)"/>
+    <confidentiality value="N"/>
+    <section>
+        <title value="Allergies and Intolerances"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="48765-2"/>
+                <display value="Allergies and adverse reactions Document"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <xhtml:div>
+                <xhtml:ul>
+                    <xhtml:li>No information about allergies</xhtml:li>
+                </xhtml:ul>
+            </xhtml:div>
+        </text>
+        <entry>
+            <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/AllergyIntolerance/eumfh-43-125-1"/>
+            <display value="No information about allergies"/>
+        </entry>
+    </section>
+	<section>
+		<title value="Active Problems"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="11450-4"/>
+				<display value="Problem list Reported"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+<xhtml:li>[2014-10-02] - Hypercholesterolemia</xhtml:li>
+<xhtml:li>[2008-10-21] - Diabetes Type 2</xhtml:li>
+<xhtml:li>[2010-11-21] - Previous Septal Myocardial Infarction</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+<entry>
+<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-43-125-3"/>
+<display value="[2014-10-02] - Hypercholesterolemia"/>
+</entry>
+<entry>
+<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-43-125-2"/>
+<display value="[2008-10-21] - Diabetes Type 2"/>
+</entry>
+<entry>
+<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-43-125-1"/>
+<display value="[2010-11-21] - Previous Septal Myocardial Infarction"/>
+</entry>
+	</section>
+
+	<section>
+		<title value="Medication"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="10160-0"/>
+				<display value="Hx of Medication use"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+<xhtml:li>[2018-10-08] - No information about medications</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+<entry>
+<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/MedicationStatement/eumfh-43-125-1"/>
+<display value="[2018-10-08] - No information about medications"/>
+</entry>
+	</section>
+</Composition>
+</resource>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/AllergyIntolerance/eumfh-43-125-1'/>
+<resource>
+<AllergyIntolerance>
+	<id value="eumfh-43-125-1"/>
+	<clinicalStatus value="active"/>
+	<verificationStatus value="confirmed"/>
+	<code>
+		<coding>
+			<system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
+			<code value="no-allergy-info"/>
+			<display value="No information about allergies"/>
+		</coding>
+	</code>
+	<patient>
+				<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-43-125"/>
+		<display value="Janette Eiren (inject 43-125)"/>
+	</patient>
+</AllergyIntolerance>
+</resource>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-43-125-1'/>
+<resource>
+<Condition>
+    <id value="eumfh-43-125-1"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="I25.2"/>
+            <display value="Old myocardial infarction"/>
+        </coding>
+        <text value="Previous Septal Myocardial Infarction"/>
+    </code>
+    <subject>
+        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-43-125"/>
+        <display value="Janette Eiren (inject 43-125)"/>
+    </subject>
+	<onsetDateTime value="2010-11-21"/>
+	<asserter>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-43-125"/>
+		<display value="Dr. Eric Ashton"/>
+	</asserter>
+</Condition>
+</resource>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-43-125-2'/>
+<resource>
+<Condition>
+    <id value="eumfh-43-125-2"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="E11.9"/>
+            <display value="Type 2 diabetes mellitus without complications"/>
+        </coding>
+        <text value="Diabetes Type 2"/>
+    </code>
+    <subject>
+        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-43-125"/>
+        <display value="Janette Eiren (inject 43-125)"/>
+    </subject>
+	<onsetDateTime value="2008-10-21"/>
+	<asserter>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-43-125"/>
+		<display value="Dr. Eric Ashton"/>
+	</asserter>
+</Condition>
+</resource>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Condition/eumfh-43-125-3'/>
+<resource>
+<Condition>
+    <id value="eumfh-43-125-3"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="E78.00"/>
+            <display value="Pure hypercholesterolemia, unspecified"/>
+        </coding>
+        <text value="Hypercholesterolemia"/>
+    </code>
+    <subject>
+        <reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-43-125"/>
+        <display value="Janette Eiren (inject 43-125)"/>
+    </subject>
+	<onsetDateTime value="2014-10-02"/>
+	<asserter>
+		<reference value="http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-43-125"/>
+		<display value="Dr. Eric Ashton"/>
+	</asserter>
+</Condition>
+</resource>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Patient/eumfh-43-125'/>
+<resource>
+<Patient>
+<!--Sample XML file generated by XMLSpy v2013 sp1 (http://www.altova.com)-->
+	<id value="eumfh-43-125"/>
+  <meta><lastUpdated value="2018-10-10T13:51:24+02:00"/></meta>
+	<extension url="http://hl7.org/fhir/StructureDefinition/patient-citizenship">
+		<extension url="code">
+		<valueCodeableConcept>
+			<coding>
+				<system value="urn:iso:std:iso:3166"/>
+				<code value="US"/>
+				<display value="United States of America"/>
+			</coding></valueCodeableConcept>
+		</extension>
+	</extension>
+      	<identifier>
+  		<system value="http://trilliumbridge.eu/fhir/demos/eumfh/inject"/>
+		<value value="43-125"/>
+	</identifier>
+	<identifier>
+		<system value="http://trilliumbridge.eu/fhir/demos/eumfh/patient_id"/>
+		<value value="EUR01P0007"/>
+	</identifier>
+	<active value="true"/>
+	<name>
+		<family value="Eiren"/>
+		<given value="Janette"/>
+	</name>
+	<gender value="female"/>
+	<birthDate value="1941-05-23"/>
+</Patient>
+</resource>
+</entry>
+<entry>
+<fullUrl value='http://ehealthpass.gnomon.com.gr/hapi-fhir-jpaserver4/baseDstu3/Practitioner/eumfh-43-125-1'/>
+<resource>
+<Practitioner>
+    <id value="eumfh-43-125-1"/>
+    <meta><lastUpdated value="2018-10-10T13:52:19+02:00"/></meta>
+    <name>
+        <family value="Wang"/>
+        <given value="Jane"/>
+        <prefix value="Dr."/>
+    </name>
+</Practitioner>
+</resource>
+</entry>
+</Bundle>

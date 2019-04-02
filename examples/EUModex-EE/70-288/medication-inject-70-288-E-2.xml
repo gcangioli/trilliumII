@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Medication xmlns="http://hl7.org/fhir" >
+	<id value="eumfh-70-288-E-2"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="48546005"/>
+			<display value="Diazepam product"/>
+		</coding>
+	</code>
+</Medication>

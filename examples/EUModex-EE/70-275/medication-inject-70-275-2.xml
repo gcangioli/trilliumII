@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Medication xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/medication.xsd">
+	<id value="eumfh-70-275-2"/>
+	<code>
+		<coding>
+			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+			<code value="1155465"/>
+			<display value="chlorproMAZINE Pill"/>
+		</coding>
+		<coding>
+			<system value="http://www.whocc.no/atc"/>
+			<code value="N05AA01"/>
+			<display value="chlorpromazine"/>
+		</coding>
+	</code>
+	<ingredient>
+		<itemCodeableConcept>
+			<coding>
+				<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+				<code value="2403"/>
+				<display value="chlorproMAZINE"/>
+			</coding>
+		</itemCodeableConcept>
+	</ingredient>
+</Medication>

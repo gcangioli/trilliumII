@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+	<id value="fs-9023"/>
+	<meta>
+		<versionId value="19"/>
+		<lastUpdated value="2019-03-22T13:53:14Z"/>
+		<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Patient-uv-ips"/>
+	</meta>
+	<identifier>
+		<system value="https://ecrf.frailsafe-project.cloud/"/>
+		<value value="9023"/>
+	</identifier>
+	<active value="true"/>
+	<gender value="female"/>
+	<birthDate value="1920"/>
+</Patient>

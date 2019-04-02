@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Medication xmlns="http://hl7.org/fhir" >
+	<id value="eumfh-70-281-1"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="768274000"/>
+			<display value="Cyproterone and ethinylestradiol in oral dosage form"/>
+		</coding>
+	</code>
+</Medication>

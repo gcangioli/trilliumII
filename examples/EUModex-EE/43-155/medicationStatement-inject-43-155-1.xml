@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir"> 
+	<id value="eumfh-43-155-1"/>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="Medication/eumfh-43-155-1"/>
+		<display value="rivaroxaban 20 mg oral tablet"/>
+	</medicationReference>
+	<effectivePeriod>
+		<start value="2018"/>
+	</effectivePeriod>
+	<dateAsserted value="2018-10-01"/>
+	<informationSource>
+		<reference value="Patient/eumfh-43-155"/>
+		<display value="Charles Merlot (inject 43-155)"/>
+	</informationSource>	
+	<subject>
+		<reference value="Patient/eumfh-43-155"/>
+		<display value="Charles Merlot (inject 43-155)"/>
+	</subject>
+	<taken value="y"/>
+</MedicationStatement>

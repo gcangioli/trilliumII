@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Medication xmlns="http://hl7.org/fhir" >
+    <id value="eumfh-70-254-4"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="317306008"/>
+            <display value="Omeprazole 20 mg oral tablet"/>
+        </coding>
+    </code>
+</Medication>

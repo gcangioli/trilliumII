@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/condition.xsd">
+    <id value="eumfh-70-295-3"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="29555009"/>
+            <display value="Retinal disorder"/>
+        </coding>
+        <text value="Eye damage (retinopathy)"/>
+    </code>
+    <subject>
+        <reference value="Patient/eumfh-70-295"/>
+        <display value="Allen Perot (inject 70-295)"/>
+    </subject>
+	<onsetDateTime value="2000-08-21"/>
+	<asserter>
+		<reference value="Practitioner/eumfh-70-295"/>
+		<display value="Dr. Abigail Williams"/>
+	</asserter>  
+</Condition>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition xmlns="http://hl7.org/fhir">
+	<id value="fs-9023-Chronic.Atrial.Fibrillation-Paroxysmal.af.or.other.arryt"/>
+	<meta>
+		<versionId value="8"/>
+		<lastUpdated value="2019-03-22T11:10:00Z"/>
+		<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Condition-uv-ips"/>
+	</meta>
+	<clinicalStatus value="active"/>
+	<code>
+		<text value="Chronic Atrial Fibrillation-Paroxysmal af or other arrythmia"/>
+	</code>
+	<subject>
+		<reference value="Patient/fs-9023"/>
+		<display value="9023"/>
+	</subject>
+	<onsetDateTime value="2019-03-22T10:00:20.000Z"/>
+</Condition>

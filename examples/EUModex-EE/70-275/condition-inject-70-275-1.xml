@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/condition.xsd">
+	<id value="eumfh-70-275-1"/>
+	<clinicalStatus value="active"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="161474000"/>
+			<display value="History of attempted suicide"/>
+		</coding>
+		<text value="Suicide attempt (twice)"/>
+	</code>
+	<subject>
+		<reference value="Patient/eumfh-70-275"/>
+		<display value="Annelise Black (inject 70-275)"/>
+	</subject>
+</Condition>

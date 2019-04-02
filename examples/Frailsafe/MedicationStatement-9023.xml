@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+	<id value="fs-9023-Tachipirina"/>
+	<meta>
+		<versionId value="11"/>
+		<lastUpdated value="2019-03-22T11:10:00Z"/>
+		<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/MedicationStatement-uv-ips"/>
+	</meta>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="Medication/ddffcd0e-b47e-41f9-869e-87cfb3926170"/>
+		<display value="Tachipirina"/>
+	</medicationReference>
+	<effectivePeriod>
+		<extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+			<valueCode value="unknown"/>
+		</extension>
+	</effectivePeriod>
+	<subject>
+		<reference value="Patient/fs-9023"/>
+		<display value="9023"/>
+	</subject>
+	<taken value="y"/>
+</MedicationStatement>

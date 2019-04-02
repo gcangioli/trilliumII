@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/condition.xsd">
+    <id value="eumfh-39-02-1-5"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="23986001"/>
+            <display value="Glaucoma"/>
+        </coding>
+        <text value="Glaucoma"/>
+    </code>
+    <subject>
+        <reference value="Patient/eumfh-39-02-1"/>
+        <display value="Mark John (Inject 39-02)"/>
+    </subject>
+    <onsetDateTime value="1998-05-04"/>
+    <asserter>
+        <reference value="Practitioner/eumfh-39-02-1"/>
+        <display value="Dr. Anna Karlsson"/>
+    </asserter>
+</Condition>

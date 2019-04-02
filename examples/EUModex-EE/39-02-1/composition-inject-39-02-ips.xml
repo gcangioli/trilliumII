@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/composition.xsd">
+    <id value="eumfh-39-02-1"/>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="60591-5"/>
+            <display value="Patient summary Document"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/eumfh-39-02-1"/>
+        <display value="John Mark (inject 39-02-1)"/>
+    </subject>
+    <date value="2018-07-10T15:22:00+02:00"/>
+    <author>
+        <reference value="Practitioner/eumfh-39-02-1"/>
+        <display value="Dr. Anna Karlsson"/>
+    </author>
+    <title value="Patient Summary - Inject 39-02-1"/>
+    <confidentiality value="N"/>
+    <section>
+        <title value="Allergies and Intolerances"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="48765-2"/>
+                <display value="Allergies and adverse reactions Document"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <xhtml:div>
+                <xhtml:ul>
+                    <xhtml:li>Penicillins with extended spectrum</xhtml:li>
+                </xhtml:ul>
+            </xhtml:div>
+        </text>
+        <entry>
+            <reference value="AllergyIntolerance/eumfh-39-02-1-1"/>
+            <display value="Penicillins with extended spectrum"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Active Problems"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="11450-4"/>
+                <display value="Problem list Reported"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <xhtml:div>
+                <xhtml:ul>
+                    <xhtml:li>Mild cognitive impairment</xhtml:li>
+                    <xhtml:li>Chronic kidney disease, stage 3</xhtml:li>
+                    <xhtml:li>Prostate Cancer</xhtml:li>
+                    <xhtml:li>Type 2 diabetes mellitus</xhtml:li>
+                    <xhtml:li>Glaucoma</xhtml:li>
+                    <xhtml:li>Essential (primary) hypertension</xhtml:li>
+                    <xhtml:li>Hypothyroidism, unspecified</xhtml:li>
+                </xhtml:ul>
+            </xhtml:div>
+        </text>
+        <entry>
+            <reference value="Condition/eumfh-39-02-1-1"/>
+            <display value="Mild cognitive impairment"/>
+        </entry>
+        <entry>
+            <reference value="Condition/eumfh-39-02-1-2"/>
+            <display value="Chronic kidney disease, stage 3"/>
+        </entry>
+        <entry>
+            <reference value="Condition/eumfh-39-02-1-3"/>
+            <display value="Prostate Cancer"/>
+        </entry>
+        <entry>
+            <reference value="Condition/eumfh-39-02-1-4"/>
+            <display value="Type 2 diabetes mellitus"/>
+        </entry>
+        <entry>
+            <reference value="Condition/eumfh-39-02-1-5"/>
+            <display value="Glaucoma"/>
+        </entry>
+        <entry>
+            <reference value="Condition/eumfh-39-02-1-6"/>
+            <display value="Essential (primary) hypertension"/>
+        </entry>
+        <entry>
+            <reference value="Condition/eumfh-39-02-1-7"/>
+            <display value="Hypothyroidism, unspecified"/>
+        </entry>
+    </section>
+    <section>
+        <title value="Medication"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="10160-0"/>
+                <display value="Hx of Medication use"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <xhtml:div>
+                <xhtml:table>
+                    <xhtml:thead>
+                        <xhtml:tr>
+                            <xhtml:th>Medication</xhtml:th>
+                            <xhtml:th>Dosage</xhtml:th>
+                        </xhtml:tr>
+                    </xhtml:thead>
+                    <xhtml:tbody>
+                        <xhtml:tr>
+                            <xhtml:td>Gliclazide</xhtml:td>
+                            <xhtml:td>80 mg/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>Acetylsalicylic acid</xhtml:td>
+                            <xhtml:td>75 mg/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>Metformin</xhtml:td>
+                            <xhtml:td>500 mg twice a day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>Finasteride</xhtml:td>
+                            <xhtml:td>5 mg/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>tamsulosin</xhtml:td>
+                            <xhtml:td>0.4 mg/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>latanoprost</xhtml:td>
+                            <xhtml:td>55 ug/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>Timolol</xhtml:td>
+                            <xhtml:td>0.25 %, 1 times per 2 day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>Atorvastatin</xhtml:td>
+                            <xhtml:td>40 mg/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>Atenolol</xhtml:td>
+                            <xhtml:td>50 mg/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>Bendroflumethiazide</xhtml:td>
+                            <xhtml:td>2.5 mg/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>Lisinopril</xhtml:td>
+                            <xhtml:td>10 mg/day</xhtml:td>
+                        </xhtml:tr>
+                        <xhtml:tr>
+                            <xhtml:td>levothyroxine sodium</xhtml:td>
+                            <xhtml:td>100 ug/day</xhtml:td>
+                        </xhtml:tr>
+                    </xhtml:tbody>
+                </xhtml:table>
+            </xhtml:div>
+        </text>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-1"/>
+            <display value="Gliclazide 80 mg/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-2"/>
+            <display value="Acetylsalicylic acid 75 mg/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-3"/>
+            <display value="Metformin 500 mg twice a day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-4"/>
+            <display value="Finasteride 5 mg/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-5"/>
+            <display value="tamsulosin 0.4 mg/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-6"/>
+            <display value="latanoprost 55 ug/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-7"/>
+            <display value="Timolol 0.25 %, 1 times per 2 day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-8"/>
+            <display value="Atorvastatin 40 mg/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-9"/>
+            <display value="Atenolol 50 mg/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-10"/>
+            <display value="Bendroflumethiazide 2.5 mg/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-11"/>
+            <display value="Lisinopril 10 mg/day"/>
+        </entry>
+        <entry>
+            <reference value="MedicationStatement/eumfh-39-02-1-12"/>
+            <display value="levothyroxine sodium 100 ug/day"/>
+        </entry>
+    </section>
+</Composition>

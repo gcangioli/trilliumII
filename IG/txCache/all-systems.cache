@@ -7432,3 +7432,50 @@ v: {
   "error" : "The display \"Vaccin anti pneumococcique\" is not a valid display for the code {http://snomed.info/sct}333598008 - should be one of [\"Pneumococcal vaccine (product)\",\"Pneumococcal vaccine\"]; The code system \"http://www.whocc.no/atc\" is not known; The code system \"urn:oid:1.3.182.4.11.22\" is not known"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "cm"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "cm"
+      },
+      {
+        "code" : "[in_i]"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "centimeter",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "kg"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "kg"
+      },
+      {
+        "code" : "[lb_av]"
+      },
+      {
+        "code" : "g"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "kilogram",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

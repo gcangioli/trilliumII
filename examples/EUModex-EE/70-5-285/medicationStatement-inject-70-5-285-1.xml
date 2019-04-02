@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+	<id value="eumfh-70-5-285-1"/>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="Medication/eumfh-70-5-285-1"/>
+		<display value="Insulin product"/>
+	</medicationReference>
+	<effectivePeriod>
+		<start value="2018"/>
+	</effectivePeriod>
+	<dateAsserted value="2018-10-01"/>
+	<informationSource>
+		<reference value="Patient/eumfh-70-5-285"/>
+		<display value="Renaud Renier (inject 70-5-285)"/>
+	</informationSource>	
+	<subject>
+		<reference value="Patient/eumfh-70-5-285"/>
+		<display value="Renaud Renier (inject 70-5-285)"/>
+	</subject>
+	<taken value="na"/>
+</MedicationStatement>

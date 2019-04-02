@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+	<id value="eumfh-72-262-2"/>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="Medication/eumfh-72-262-2"/>
+		<display value="Codeine product"/>
+	</medicationReference>
+	<effectivePeriod>
+		<start value="2018"/>
+	</effectivePeriod>
+	<dateAsserted value="2018-10-01"/>
+	<informationSource>
+		<reference value="Patient/eumfh-72-262"/>
+		<display value="Marina Tresoro (inject 72-262)"/>
+	</informationSource>	
+	<subject>
+		<reference value="Patient/eumfh-72-262"/>
+		<display value="Marina Tresoro (inject 72-262)"/>
+	</subject>
+	<taken value="y"/>
+	<dosage>
+		<text value="as required"/>
+		<asNeededBoolean value="true"/>
+	</dosage>
+</MedicationStatement>

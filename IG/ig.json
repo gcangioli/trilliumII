@@ -701,6 +701,22 @@
 		"Immunization/75689": {
 			"source": "Immunization-75689.xml",
 			"base": "Immunization-75689.html"
+		},
+		"Observation/fs-9023-VS-1": {
+			"source": "Observation-bh-9023.xml",
+			"base": "Observation-fs-9023-VS-1.html"
+		},
+		"Observation/fs-9023-VS-2": {
+			"source": "Observation-bw-9023.xml",
+				"base": "Observation-fs-9023-VS-2.html"
+		},
+		"Observation/fs-9023-VS-3": {
+			"source": "Observation-bmi-9023.xml",
+			"base": "Observation-fs-9023-VS-3.html"
+		},
+		"Patient/fs-9023": {
+			"source": "Patient-9023.xml",
+			"base": "Patient-fs-9023.html"
 		}
 	}
 }

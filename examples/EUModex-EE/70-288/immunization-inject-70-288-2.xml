@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Immunization xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../Users/Giorgio/Dropbox/_Consulenze/__Trillium/___Trillium_II/___FHIR/fhir-all-xsd/immunization.xsd">
+	<id value="eumfh-70-288-2"/>
+	<status value="completed"/>
+	<notGiven value="false"/>
+	<vaccineCode>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="34689006"/>
+			<display value="Hepatitis B virus vaccine"/>
+		</coding>
+		<text value="Hepatitis B virus vaccine"/>
+	</vaccineCode>
+	<patient>
+		<reference value="Patient/eumfh-70-288"/>
+		<display value="Marco Peroni (inject 70-288)"/>
+	</patient>
+	<date value="2013-07-08"/>
+	<primarySource value="true"/>
+</Immunization>

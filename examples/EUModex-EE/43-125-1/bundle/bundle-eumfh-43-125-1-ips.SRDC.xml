@@ -1,0 +1,1093 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../fhir-all-xsd/bundle.xsd">
+	<id value="eumfh-43-125-1"/>
+	<identifier>
+		<system value="http://trilliumbridge.eu/fhir/demos/eumfh/ips_id"/>
+		<value value="EUR01P0003"/>
+	</identifier>
+	<type value="document"/>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Composition/eumfh-43-125-1"/>
+		<resource>
+			<Composition xmlns="http://hl7.org/fhir">
+				<id value="eumfh-43-125-1"/>
+				<status value="final"/>
+				<type>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="60591-5"/>
+						<display value="Patient summary Document"/>
+					</coding>
+				</type>
+				<subject>
+					<reference value="Patient/eumfh-43-125-1"/>
+					<display value="Amalia Torres (inject 43-125-1)"/>
+				</subject>
+				<date value="2018-07-10T15:22:00+02:00"/>
+				<author>
+					<reference value="Practitioner/eumfh-43-125-1"/>
+					<display value="Dr. Anna Karlsson"/>
+				</author>
+				<title value="Patient Summary - inject 43-125-1"/>
+				<confidentiality value="N"/>
+				<section>
+					<title value="Allergies and Intolerances"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="48765-2"/>
+							<display value="Allergies and adverse reactions Document"/>
+						</coding>
+					</code>
+					<text>
+						<status value="generated"/>
+						<xhtml:div>
+							<xhtml:ul>
+								<xhtml:li>Elastoplast</xhtml:li>
+								<xhtml:li>Acetylsalicylic acid</xhtml:li>
+							</xhtml:ul>
+						</xhtml:div>
+					</text>
+					<entry>
+						<reference value="AllergyIntolerance/eumfh-43-125-1-1"/>
+						<display value="Elastoplast"/>
+					</entry>
+					<entry>
+						<reference value="AllergyIntolerance/eumfh-43-125-1-2"/>
+						<display value="Acetylsalicylic acid"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Active Problems"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="11450-4"/>
+							<display value="Problem list Reported"/>
+						</coding>
+					</code>
+					<text>
+						<status value="generated"/>
+						<xhtml:div>
+							<xhtml:ul>
+								<xhtml:li>Renal disorder due to type 2 diabetes mellitus</xhtml:li>
+								<xhtml:li>Ischaemic cardiomyopathy</xhtml:li>
+								<xhtml:li>Chronic kidney disease, stage 3</xhtml:li>
+								<xhtml:li>Cerebral infarction, unspecified</xhtml:li>
+								<xhtml:li>Atrial fibrillation and atrial flutter, unspecified</xhtml:li>
+								<xhtml:li>Diabetic polyneuropathy</xhtml:li>
+								<xhtml:li>Heart failure</xhtml:li>
+								<xhtml:li>Muscle pain</xhtml:li>
+								<xhtml:li>Personality disorder, unspecified</xhtml:li>
+								<xhtml:li>Chronic pain</xhtml:li>
+							</xhtml:ul>
+						</xhtml:div>
+					</text>
+					<entry>
+						<reference value="Condition/eumfh-43-125-1-1"/>
+						<display value="Renal disorder due to type 2 diabetes mellitus"/>
+					</entry>
+					<entry>
+						<reference value="Condition/eumfh-43-125-1-2"/>
+						<display value="Ischaemic cardiomyopathy"/>
+					</entry>
+					<entry>
+						<reference value="Condition/eumfh-43-125-1-3"/>
+						<display value="Chronic kidney disease, stage 3"/>
+					</entry>
+					<entry>
+						<reference value="Condition/eumfh-43-125-1-4"/>
+						<display value="Cerebral infarction, unspecified"/>
+					</entry>
+					<entry>
+						<reference value="Condition/eumfh-43-125-1-5"/>
+						<display value="Atrial fibrillation and atrial flutter, unspecified"/>
+					</entry>
+					<entry>
+						<reference value="Condition/eumfh-43-125-1-6"/>
+						<display value="Diabetic polyneuropathy"/>
+					</entry>
+					<entry>
+						<reference value="Condition/eumfh-43-125-1-7"/>
+						<display value="Heart failure"/>
+					</entry>
+					<entry>
+						<reference value="Condition/eumfh-43-125-1-8"/>
+						<display value="Muscle pain"/>
+					</entry>
+					<entry>
+						<reference value="Condition/eumfh-43-125-1-9"/>
+						<display value="Personality disorder, unspecified"/>
+					</entry>
+					<entry>
+						<reference value="Condition/eumfh-43-125-1-10"/>
+						<display value="Chronic pain"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Medication"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="10160-0"/>
+							<display value="Hx of Medication use"/>
+						</coding>
+					</code>
+					<text>
+						<status value="generated"/>
+						<xhtml:div>
+							<xhtml:p>Psychotherapy</xhtml:p>
+							<xhtml:table>
+								<xhtml:thead>
+									<xhtml:tr>
+										<xhtml:th>Medication</xhtml:th>
+										<xhtml:th>Dosage</xhtml:th>
+									</xhtml:tr>
+								</xhtml:thead>
+								<xhtml:tbody>
+									<xhtml:tr>
+										<xhtml:td>insulin glargine</xhtml:td>
+										<xhtml:td>22 international unit, 1 times per 1 day</xhtml:td>
+									</xhtml:tr>
+									<xhtml:tr>
+										<xhtml:td>Atorvastatin</xhtml:td>
+										<xhtml:td>20 mg/day</xhtml:td>
+									</xhtml:tr>
+									<xhtml:tr>
+										<xhtml:td>rivaroxaban</xhtml:td>
+										<xhtml:td>15 mg/day</xhtml:td>
+									</xhtml:tr>
+									<xhtml:tr>
+										<xhtml:td>amitriptyline</xhtml:td>
+										<xhtml:td>10 mg/day</xhtml:td>
+									</xhtml:tr>
+									<xhtml:tr>
+										<xhtml:td>furosemide</xhtml:td>
+										<xhtml:td>40 mg/day</xhtml:td>
+									</xhtml:tr>
+									<xhtml:tr>
+										<xhtml:td>bisoprolol</xhtml:td>
+										<xhtml:td>2.5 mg/day</xhtml:td>
+									</xhtml:tr>
+									<xhtml:tr>
+										<xhtml:td>eplerenone</xhtml:td>
+										<xhtml:td>25 mg/day</xhtml:td>
+									</xhtml:tr>
+									<xhtml:tr>
+										<xhtml:td>thiamazole</xhtml:td>
+										<xhtml:td>500 miligram, 2 times per 1 day</xhtml:td>
+									</xhtml:tr>
+									<xhtml:tr>
+										<xhtml:td>pantoprazole</xhtml:td>
+										<xhtml:td>40 mg/day</xhtml:td>
+									</xhtml:tr>
+								</xhtml:tbody>
+							</xhtml:table>
+						</xhtml:div>
+					</text>
+					<entry>
+						<reference value="MedicationStatement/eumfh-43-125-1-1"/>
+						<display value="insulin glargine 22 international unit, 1 times per 1 day"/>
+					</entry>
+					<entry>
+						<reference value="MedicationStatement/eumfh-43-125-1-2"/>
+						<display value="Atorvastatin 20 mg/day"/>
+					</entry>
+					<entry>
+						<reference value="MedicationStatement/eumfh-43-125-1-3"/>
+						<display value="rivaroxaban 15 mg/day"/>
+					</entry>
+					<entry>
+						<reference value="MedicationStatement/eumfh-43-125-1-4"/>
+						<display value="amitriptyline 10 mg/day"/>
+					</entry>
+					<entry>
+						<reference value="MedicationStatement/eumfh-43-125-1-5"/>
+						<display value="furosemide 40 mg/day"/>
+					</entry>
+					<entry>
+						<reference value="MedicationStatement/eumfh-43-125-1-6"/>
+						<display value="bisoprolol 2.5 mg/day"/>
+					</entry>
+					<entry>
+						<reference value="MedicationStatement/eumfh-43-125-1-7"/>
+						<display value="eplerenone 25 mg/day"/>
+					</entry>
+					<entry>
+						<reference value="MedicationStatement/eumfh-43-125-1-8"/>
+						<display value="thiamazole 500 miligram, 2 times per 1 day"/>
+					</entry>
+					<entry>
+						<reference value="MedicationStatement/eumfh-43-125-1-9"/>
+						<display value="pantoprazole 40 mg/day"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Pregnancies"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="10162-6"/>
+							<display value="History of pregnancies Narrative"/>
+						</coding>
+					</code>
+					<text>
+						<status value="generated"/>
+						<xhtml:div>
+                Pregnancy Status: Not Pregnant
+            </xhtml:div>
+					</text>
+					<entry>
+						<reference value="Observation/eumfh-43-125-1-1"/>
+						<display value="Pregnancy Status: Not Pregnant"/>
+					</entry>
+				</section>
+			</Composition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-43-125-1"/>
+		<resource>
+			<Patient xmlns="http://hl7.org/fhir">
+				<id value="eumfh-43-125-1"/>
+				<extension url="http://hl7.org/fhir/StructureDefinition/patient-citizenship">
+					<extension url="code">
+						<valueCodeableConcept>
+							<coding>
+								<system value="urn:iso:std:iso:3166"/>
+								<code value="ES"/>
+								<display value="Spain"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+				</extension>
+				<identifier>
+					<system value="http://trilliumbridge.eu/fhir/demos/eumfh/inject"/>
+					<value value="43-125-1"/>
+				</identifier>
+				<identifier>
+					<system value="http://trilliumbridge.eu/fhir/demos/eumfh/patient_id"/>
+					<value value="EUR01P0003"/>
+				</identifier>
+				<active value="true"/>
+				<name>
+					<family value="Torres"/>
+					<given value="Amalia"/>
+				</name>
+				<gender value="female"/>
+				<birthDate value="1936-03-11"/>
+			</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Practitioner/eumfh-43-125-1"/>
+		<resource>
+			<Practitioner>
+				<id value="eumfh-43-125-1"/>
+				<name>
+					<family value="Karlsson"/>
+					<given value="Anne"/>
+					<prefix value="Dr."/>
+				</name>
+			</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/AllergyIntolerance/eumfh-43-125-1-1"/>
+		<resource>
+			<AllergyIntolerance>
+				<id value="eumfh-43-125-1-1"/>
+				<clinicalStatus value="active"/>
+				<verificationStatus value="confirmed"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="350792003"/>
+						<display value="Plasters (physical object)"/>
+					</coding>
+				</code>
+				<patient>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-43-125-1"/>
+					<display value="Amalia Torres (inject 43-125-1)"/>
+				</patient>
+			</AllergyIntolerance>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/AllergyIntolerance/eumfh-43-125-1-2"/>
+		<resource>
+			<AllergyIntolerance>
+				<id value="eumfh-43-125-1-2"/>
+				<clinicalStatus value="active"/>
+				<verificationStatus value="confirmed"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="N02BA01"/>
+						<display value="Acetylsalicylic acid"/>
+					</coding>
+				</code>
+				<patient>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-43-125-1"/>
+					<display value="Amalia Torres (inject 43-125-1)"/>
+				</patient>
+			</AllergyIntolerance>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Condition/eumfh-43-125-1-1"/>
+		<resource>
+			<Condition>
+				<id value="eumfh-43-125-1-1"/>
+				<clinicalStatus value="active"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="420279001"/>
+						<display value="Renal disorder due to type 2 diabetes mellitus"/>
+					</coding>
+					<text value="Renal disorder due to type 2 diabetes mellitus"/>
+				</code>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-43-125-1"/>
+					<display value="Amalia Torres (inject 43-125-1)"/>
+				</subject>
+				<onsetDateTime value="2001-01-01"/>
+				<asserter>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Practitioner/eumfh-43-125-1"/>
+					<display value="Dr. Anna Karlsson"/>
+				</asserter>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Condition/eumfh-43-125-1-2"/>
+		<resource>
+			<Condition>
+				<id value="eumfh-43-125-1-2"/>
+				<clinicalStatus value="active"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="414545008"/>
+						<display value="Ischaemic cardiomyopathy"/>
+					</coding>
+					<text value="Ischaemic cardiomyopathy"/>
+				</code>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-43-125-1"/>
+					<display value="Amalia Torres (inject 43-125-1)"/>
+				</subject>
+				<onsetDateTime value="2015-09-10"/>
+				<asserter>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Practitioner/eumfh-43-125-1"/>
+					<display value="Dr. Anna Karlsson"/>
+				</asserter>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Condition/eumfh-43-125-1-3"/>
+		<resource>
+			<Condition>
+				<id value="eumfh-43-125-1-3"/>
+				<clinicalStatus value="active"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="433144002"/>
+						<display value="Chronic kidney disease, stage 3"/>
+					</coding>
+					<text value="Chronic kidney disease, stage 3"/>
+				</code>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-43-125-1"/>
+					<display value="Amalia Torres (inject 43-125-1)"/>
+				</subject>
+				<onsetDateTime value="2015-09-10"/>
+				<asserter>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Practitioner/eumfh-43-125-1"/>
+					<display value="Dr. Anna Karlsson"/>
+				</asserter>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Condition/eumfh-43-125-1-4"/>
+		<resource>
+			<Condition>
+				<id value="eumfh-43-125-1-4"/>
+				<clinicalStatus value="active"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="432504007"/>
+						<display value="Cerebral infarction, unspecified"/>
+					</coding>
+					<text value="Cerebral infarction, unspecified"/>
+				</code>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-43-125-1"/>
+					<display value="Amalia Torres (inject 43-125-1)"/>
+				</subject>
+				<onsetDateTime value="2017-09-23"/>
+				<asserter>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Practitioner/eumfh-43-125-1"/>
+					<display value="Dr. Anna Karlsson"/>
+				</asserter>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Condition/eumfh-43-125-1-5"/>
+		<resource>
+			<Condition>
+				<id value="eumfh-43-125-1-5"/>
+				<clinicalStatus value="active"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="49436004"/>
+						<display value="Atrial fibrillation and atrial flutter, unspecified"/>
+					</coding>
+					<text value="Atrial fibrillation and atrial flutter, unspecified"/>
+				</code>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-43-125-1"/>
+					<display value="Amalia Torres (inject 43-125-1)"/>
+				</subject>
+				<onsetDateTime value="2016-02-27"/>
+				<asserter>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Practitioner/eumfh-43-125-1"/>
+					<display value="Dr. Anna Karlsson"/>
+				</asserter>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Condition/eumfh-43-125-1-6"/>
+		<resource>
+			<Condition>
+				<id value="eumfh-43-125-1-6"/>
+				<clinicalStatus value="active"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="49455004"/>
+						<display value="Diabetic polyneuropathy"/>
+					</coding>
+					<text value="Diabetic polyneuropathy"/>
+				</code>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-43-125-1"/>
+					<display value="Amalia Torres (inject 43-125-1)"/>
+				</subject>
+				<onsetDateTime value="2015"/>
+				<asserter>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Practitioner/eumfh-43-125-1"/>
+					<display value="Dr. Anna Karlsson"/>
+				</asserter>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Condition/eumfh-43-125-1-7"/>
+		<resource>
+			<Condition>
+				<id value="eumfh-43-125-1-7"/>
+				<clinicalStatus value="active"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="84114007"/>
+						<display value="Heart failure"/>
+					</coding>
+					<text value="Heart failure"/>
+				</code>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-43-125-1"/>
+					<display value="Amalia Torres (inject 43-125-1)"/>
+				</subject>
+				<onsetDateTime value="2015"/>
+				<asserter>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Practitioner/eumfh-43-125-1"/>
+					<display value="Dr. Anna Karlsson"/>
+				</asserter>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Condition/eumfh-43-125-1-8"/>
+		<resource>
+			<Condition>
+				<id value="eumfh-43-125-1-8"/>
+				<clinicalStatus value="active"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="68962001"/>
+						<display value="Muscle pain"/>
+					</coding>
+					<text value="Muscle pain"/>
+				</code>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-43-125-1"/>
+					<display value="Amalia Torres (inject 43-125-1)"/>
+				</subject>
+				<onsetDateTime value="2015"/>
+				<asserter>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Practitioner/eumfh-43-125-1"/>
+					<display value="Dr. Anna Karlsson"/>
+				</asserter>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Condition/eumfh-43-125-1-9"/>
+		<resource>
+			<Condition>
+				<id value="eumfh-43-125-1-9"/>
+				<clinicalStatus value="active"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="33449004"/>
+						<display value="Personality disorder, unspecified"/>
+					</coding>
+					<text value="Personality disorder, unspecified"/>
+				</code>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-43-125-1"/>
+					<display value="Amalia Torres (inject 43-125-1)"/>
+				</subject>
+				<onsetDateTime value="2001-01-01"/>
+				<asserter>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Practitioner/eumfh-43-125-1"/>
+					<display value="Dr. Anna Karlsson"/>
+				</asserter>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Condition/eumfh-43-125-1-10"/>
+		<resource>
+			<Condition>
+				<id value="eumfh-43-125-1-10"/>
+				<clinicalStatus value="active"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="82423001"/>
+						<display value="Chronic pain"/>
+					</coding>
+					<text value="Chronic pain"/>
+				</code>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-43-125-1"/>
+					<display value="Amalia Torres (inject 43-125-1)"/>
+				</subject>
+				<onsetDateTime value="2001-01-01"/>
+				<asserter>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Practitioner/eumfh-43-125-1"/>
+					<display value="Dr. Anna Karlsson"/>
+				</asserter>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-43-125-1-1"/>
+		<resource>
+			<MedicationStatement>
+				<id value="eumfh-43-125-1-1"/>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-43-125-1-1"/>
+					<display value="insulin glargine"/>
+				</medicationReference>
+				<effectivePeriod>
+					<start value="2015-02-10"/>
+				</effectivePeriod>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-43-125-1"/>
+					<display value="Amalia Torres (inject 43-125-1)"/>
+				</subject>
+				<taken value="y"/>
+				<dosage>
+					<text value="22 international unit, 1 times per 1 day"/>
+					<timing>
+						<repeat>
+							<frequency value="1"/>
+							<period value="1"/>
+							<periodUnit value="d"/>
+						</repeat>
+					</timing>
+					<doseQuantity>
+						<value value="22"/>
+						<unit value="international unit"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="IU"/>
+					</doseQuantity>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-43-125-1-2"/>
+		<resource>
+			<MedicationStatement>
+				<id value="eumfh-43-125-1-2"/>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-43-125-1-2"/>
+					<display value="Atorvastatin"/>
+				</medicationReference>
+				<effectivePeriod>
+					<start value="2015-02-10"/>
+				</effectivePeriod>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-43-125-1"/>
+					<display value="Amalia Torres (inject 43-125-1)"/>
+				</subject>
+				<taken value="y"/>
+				<dosage>
+					<text value="20 mg/day"/>
+					<timing>
+						<repeat>
+							<frequency value="1"/>
+							<period value="1"/>
+							<periodUnit value="d"/>
+						</repeat>
+					</timing>
+					<doseQuantity>
+						<value value="20"/>
+						<unit value="mg"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="mg"/>
+					</doseQuantity>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-43-125-1-3"/>
+		<resource>
+			<MedicationStatement>
+				<id value="eumfh-43-125-1-3"/>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-43-125-1-3"/>
+					<display value="rivaroxaban"/>
+				</medicationReference>
+				<effectivePeriod>
+					<start value="2015-02-10"/>
+				</effectivePeriod>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-43-125-1"/>
+					<display value="Amalia Torres (inject 43-125-1)"/>
+				</subject>
+				<taken value="y"/>
+				<dosage>
+					<text value="15 mg/day"/>
+					<timing>
+						<repeat>
+							<frequency value="1"/>
+							<period value="1"/>
+							<periodUnit value="d"/>
+						</repeat>
+					</timing>
+					<doseQuantity>
+						<value value="15"/>
+						<unit value="mg"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="mg"/>
+					</doseQuantity>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-43-125-1-4"/>
+		<resource>
+			<MedicationStatement>
+				<id value="eumfh-43-125-1-4"/>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-43-125-1-4"/>
+					<display value="amitriptyline"/>
+				</medicationReference>
+				<effectivePeriod>
+					<start value="2015-02-10"/>
+				</effectivePeriod>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-43-125-1"/>
+					<display value="Amalia Torres (inject 43-125-1)"/>
+				</subject>
+				<taken value="y"/>
+				<dosage>
+					<text value="10 mg/day"/>
+					<timing>
+						<repeat>
+							<frequency value="2"/>
+							<period value="1"/>
+							<periodUnit value="d"/>
+						</repeat>
+					</timing>
+					<doseQuantity>
+						<value value="10"/>
+						<unit value="mg"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="mg"/>
+					</doseQuantity>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-43-125-1-5"/>
+		<resource>
+			<MedicationStatement>
+				<id value="eumfh-43-125-1-5"/>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-43-125-1-5"/>
+					<display value="furosemide"/>
+				</medicationReference>
+				<effectivePeriod>
+					<start value="2015-02-10"/>
+				</effectivePeriod>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-43-125-1"/>
+					<display value="Amalia Torres (inject 43-125-1)"/>
+				</subject>
+				<taken value="y"/>
+				<dosage>
+					<text value="40 mg/day"/>
+					<timing>
+						<repeat>
+							<frequency value="1"/>
+							<period value="1"/>
+							<periodUnit value="d"/>
+						</repeat>
+					</timing>
+					<doseQuantity>
+						<value value="40"/>
+						<unit value="mg"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="mg"/>
+					</doseQuantity>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-43-125-1-6"/>
+		<resource>
+			<MedicationStatement>
+				<id value="eumfh-43-125-1-6"/>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-43-125-1-6"/>
+					<display value="bisoprolol"/>
+				</medicationReference>
+				<effectivePeriod>
+					<start value="2015-02-10"/>
+				</effectivePeriod>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-43-125-1"/>
+					<display value="Amalia Torres (inject 43-125-1)"/>
+				</subject>
+				<taken value="y"/>
+				<dosage>
+					<text value="2.5 mg/day"/>
+					<timing>
+						<repeat>
+							<frequency value="1"/>
+							<period value="1"/>
+							<periodUnit value="d"/>
+						</repeat>
+					</timing>
+					<doseQuantity>
+						<value value="2.5"/>
+						<unit value="mg"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="mg"/>
+					</doseQuantity>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-43-125-1-7"/>
+		<resource>
+			<MedicationStatement>
+				<id value="eumfh-43-125-1-7"/>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-43-125-1-7"/>
+					<display value="eplerenone"/>
+				</medicationReference>
+				<effectivePeriod>
+					<start value="2015-02-10"/>
+				</effectivePeriod>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-43-125-1"/>
+					<display value="Amalia Torres (inject 43-125-1)"/>
+				</subject>
+				<taken value="y"/>
+				<dosage>
+					<text value="25 mg/day"/>
+					<timing>
+						<repeat>
+							<frequency value="1"/>
+							<period value="1"/>
+							<periodUnit value="d"/>
+						</repeat>
+					</timing>
+					<doseQuantity>
+						<value value="25"/>
+						<unit value="mg"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="mg"/>
+					</doseQuantity>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-43-125-1-8"/>
+		<resource>
+			<MedicationStatement>
+				<id value="eumfh-43-125-1-8"/>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-43-125-1-8"/>
+					<display value="thiamazole"/>
+				</medicationReference>
+				<effectivePeriod>
+					<start value="2015-02-10"/>
+				</effectivePeriod>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-43-125-1"/>
+					<display value="Amalia Torres (inject 43-125-1)"/>
+				</subject>
+				<taken value="y"/>
+				<dosage>
+					<text value="500 miligram, 2 times per 1 day"/>
+					<timing>
+						<repeat>
+							<frequency value="2"/>
+							<period value="1"/>
+							<periodUnit value="d"/>
+						</repeat>
+					</timing>
+					<doseQuantity>
+						<value value="500"/>
+						<unit value="mg"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="mg"/>
+					</doseQuantity>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/MedicationStatement/eumfh-43-125-1-9"/>
+		<resource>
+			<MedicationStatement>
+				<id value="eumfh-43-125-1-9"/>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-43-125-1-9"/>
+					<display value="pantoprazole"/>
+				</medicationReference>
+				<effectivePeriod>
+					<start value="2015-02-10"/>
+				</effectivePeriod>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-43-125-1"/>
+					<display value="Amalia Torres (inject 43-125-1)"/>
+				</subject>
+				<taken value="y"/>
+				<dosage>
+					<text value="40 mg/day"/>
+					<timing>
+						<repeat>
+							<frequency value="1"/>
+							<period value="1"/>
+							<periodUnit value="d"/>
+						</repeat>
+					</timing>
+					<doseQuantity>
+						<value value="40"/>
+						<unit value="mg"/>
+						<system value="http://unitsofmeasure.org"/>
+						<code value="mg"/>
+					</doseQuantity>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-43-125-1-1"/>
+		<resource>
+			<Medication>
+				<id value="eumfh-43-125-1-1"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="A10AE04"/>
+						<display value="insulin glargine"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-43-125-1-2"/>
+		<resource>
+			<Medication>
+				<id value="eumfh-43-125-1-2"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="C10AA05"/>
+						<display value="Atorvastatin"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-43-125-1-3"/>
+		<resource>
+			<Medication>
+				<id value="eumfh-43-125-1-3"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="B01AF01"/>
+						<display value="rivaroxaban"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-43-125-1-4"/>
+		<resource>
+			<Medication>
+				<id value="eumfh-43-125-1-4"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="N06AA09"/>
+						<display value="amitriptyline"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-43-125-1-5"/>
+		<resource>
+			<Medication>
+				<id value="eumfh-43-125-1-5"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="C03CA01"/>
+						<display value="furosemide"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-43-125-1-6"/>
+		<resource>
+			<Medication>
+				<id value="eumfh-43-125-1-6"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="C07AB07"/>
+						<display value="bisoprolol"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-43-125-1-7"/>
+		<resource>
+			<Medication>
+				<id value="eumfh-43-125-1-7"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="C03DA04"/>
+						<display value="eplerenone"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-43-125-1-8"/>
+		<resource>
+			<Medication>
+				<id value="eumfh-43-125-1-8"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="H03BB02"/>
+						<display value="thiamazole"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Medication/eumfh-43-125-1-9"/>
+		<resource>
+			<Medication>
+				<id value="eumfh-43-125-1-9"/>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="A02BC02"/>
+						<display value="pantoprazole"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Observation/eumfh-43-125-1-1"/>
+		<resource>
+			<Observation>
+				<id value="eumfh-43-125-1-1"/>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://hl7.org/fhir/observation-category"/>
+						<code value="social-history"/>
+						<display value="Social History"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="82810-3"/>
+						<display value="Pregnancy status"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="http://app.srdc.com.tr/fhir/stu3/Patient/eumfh-43-125-1"/>
+					<display value="Amalia Torres (inject 43-125-1)"/>
+				</subject>
+				<valueBoolean value="false"/>
+			</Observation>
+		</resource>
+	</entry>
+</Bundle>

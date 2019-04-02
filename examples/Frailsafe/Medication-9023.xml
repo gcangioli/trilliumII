@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Medication xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../__FHIRr4Tools/STU3_fhir-xsd/structuredefinition.xsd">
+	<id value="ddffcd0e-b47e-41f9-869e-87cfb3926170"/>
+	<meta>
+		<versionId value="1"/>
+		<lastUpdated value="2019-03-22T10:01:01Z"/>
+		<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Medication-uv-ips"/>
+	</meta>
+	<code>
+		<coding>
+			<system value="http://www.whocc.no/atc"/>
+			<code value="N02BE01"/>
+			<display value="paracetamol"/>
+		</coding>
+		<text value="Tachipirina"/>
+	</code>
+</Medication>

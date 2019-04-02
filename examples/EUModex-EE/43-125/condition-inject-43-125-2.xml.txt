@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/condition.xsd">
+    <id value="eumfh-43-125-2"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="E11.9"/>
+            <display value="Type 2 diabetes mellitus without complications"/>
+        </coding>
+        <text value="Diabetes Type 2"/>
+    </code>
+    <subject>
+        <reference value="Patient/eumfh-43-125"/>
+        <display value="Janette Eiren (inject 43-125)"/>
+    </subject>
+	<onsetDateTime value="2008-10-21"/>
+	<asserter>
+		<reference value="Practitioner/eumfh-43-125"/>
+		<display value="Dr. Eric Ashton"/>
+	</asserter>
+</Condition>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../../fhir-all-xsd/condition.xsd">
+    <id value="eumfh-70-254-3"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="64586002"/>
+            <display value="Carotid artery stenosis"/>
+        </coding>
+        <text value="Carotid Stenosis 60%"/>
+    </code>
+    <subject>
+        <reference value="Patient/eumfh-70-254"/>
+        <display value="Laurent Ballen (inject 70-254)"/>
+    </subject>
+<onsetDateTime value="2011-02-04"/>
+	<asserter>
+		<reference value="Practitioner/eumfh-70-254"/>
+		<display value="Dr. Frank Byrne"/>
+	</asserter>
+</Condition>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Medication xmlns="http://hl7.org/fhir" >
+    <id value="eumfh-70-254-3"/>
+    <code>
+        <text value="allopurinol 150 mg"/>
+    </code>
+</Medication>

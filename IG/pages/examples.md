@@ -4,6 +4,10 @@ layout: default
 active: examples
 ---
 
+## AllergyIntolerance
+
+{% include list-simple-allergyintolerances.xhtml %}
+
 ## Bundle
 
 {% include list-simple-bundles.xhtml %}
@@ -16,9 +20,9 @@ active: examples
 
 {% include list-simple-conditions.xhtml %}
 
-## Patient
+## Encounter
 
-{% include list-simple-patients.xhtml %}
+{% include list-simple-encounters.xhtml %}
 
 ## Immunization
 
@@ -32,25 +36,25 @@ active: examples
 
 {% include list-simple-medicationstatements.xhtml %}
 
-## AllergyIntolerance
+## Observation
 
-{% include list-simple-allergyintolerances.xhtml %}
+{% include list-simple-observations.xhtml %}
 
-## Procedure
+## Organization
 
-{% include list-simple-procedures.xhtml %}
+{% include list-simple-organizations.xhtml %}
+
+## Patient
+
+{% include list-simple-patients.xhtml %}
 
 ## Practitioner
 
 {% include list-simple-practitioners.xhtml %}
 
-## Encounter
+## Procedure
 
-{% include list-simple-encounters.xhtml %}
-
-## Organization
-
-{% include list-simple-organizations.xhtml %}
+{% include list-simple-procedures.xhtml %}
 
 <!-- `todo: generate an example list from preprocessor` -->
 
