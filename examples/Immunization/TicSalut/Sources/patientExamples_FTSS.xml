@@ -1,0 +1,32 @@
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="patientFTSS-example1"/>	
+    <active value="true" />
+    <name>
+        <family value="Rodriguez"/>
+        <given value="Maria" />
+    </name>
+    <gender value="female"/>
+    <birthDate value="1989-02-25" />
+</Patient>
+
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="patientFTSS-example2" />
+    <active value="true" />
+    <name>
+        <family value="Durant"/>
+        <given value="Alexandra" />
+    </name>
+    <gender value="female" />
+    <birthDate value="1978-01-19" />
+</Patient>
+
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="patientFTSS-example3" />
+    <active value="true" />
+    <name>
+        <family value="Roca"/>
+        <given value="Daniel" />
+    </name>
+    <gender value="male" />
+    <birthDate value="1952-10-05" />
+</Patient>

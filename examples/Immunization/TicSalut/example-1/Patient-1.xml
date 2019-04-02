@@ -1,0 +1,13 @@
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="patientFTSS-example1"/>
+    	<meta>
+		<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Patient-uv-ips"/>
+	</meta>
+    <active value="true" />
+    <name>
+        <family value="Rodriguez"/>
+        <given value="Maria" />
+    </name>
+    <gender value="female"/>
+    <birthDate value="1989-02-25" />
+</Patient>

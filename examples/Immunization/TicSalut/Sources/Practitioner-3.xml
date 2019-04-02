@@ -1,0 +1,8 @@
+<Practitioner  xmlns="http://hl7.org/fhir">
+    <id value="FTSS-Practitioner3" />
+    <name>
+        <family value="Jordi" />
+        <given value="Puig" />
+        <prefix value="Dr." />
+    </name>
+</Practitioner>

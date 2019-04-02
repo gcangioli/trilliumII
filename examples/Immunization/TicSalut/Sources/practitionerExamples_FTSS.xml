@@ -1,0 +1,36 @@
+﻿<Practitioner  xmlns="http://hl7.org/fhir">
+    <id value="FTSS-Practitioner1" />
+    <name>
+        <family value="Marc" />
+        <given value="Fàbregas" />
+        <prefix value="Dr." />
+    </name>
+</Practitioner>
+
+<Practitioner  xmlns="http://hl7.org/fhir">
+    <id value="FTSS-Practitioner2" />
+    <name>
+        <family value="Silvia" />
+        <given value="Alot" />
+        <prefix value="Dr." />
+    </name>
+</Practitioner>
+
+<Practitioner  xmlns="http://hl7.org/fhir">
+    <id value="FTSS-Practitioner3" />
+    <name>
+        <family value="Jordi" />
+        <given value="Puig" />
+        <prefix value="Dr." />
+    </name>
+</Practitioner>
+
+<Practitioner  xmlns="http://hl7.org/fhir">
+    <id value="FTSS-Practitioner4" />
+    <name>
+        <family value="Susana" />
+        <given value="Fernàndez" />
+        <prefix value="Dr." />
+    </name>
+</Practitioner>
+

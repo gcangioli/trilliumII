@@ -1,0 +1,404 @@
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss30"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="414005006"/>
+        </coding>
+        <text value="Diphtheria + tetanus + pertussis + poliomyelitis vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1984-04-06"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss31"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="421245007"/>
+        </coding>
+        <text value="Diphtheria + pertussis + tetanus vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1978-03-23"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss32"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="421245007"/>
+        </coding>
+        <text value="Diphtheria + pertussis + tetanus vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1978-07-11"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss33"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="421245007"/>
+        </coding>
+        <text value="Diphtheria + pertussis + tetanus vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1979-01-03"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss34"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="423531006"/>
+        </coding>
+        <text value="Meningococcus vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1978-07-22"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss35"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="423531006"/>
+        </coding>
+        <text value="Meningococcus vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1979-02-20"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss36"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="423531006"/>
+        </coding>
+        <text value="Meningococcus vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1990-07-14"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss37"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="61153008"/>
+        </coding>
+        <text value="Measles + Mumps + Rubella vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1979-03-03"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss38"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="61153008"/>
+        </coding>
+        <text value="Measles + Mumps + Rubella vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1981-04-02"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss39"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="333598008"/>
+        </coding>
+        <text value="Pneumococcal vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1978-03-17"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss40"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="333598008"/>
+        </coding>
+        <text value="Pneumococcal vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1978-07-12"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss41"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="333598008"/>
+        </coding>
+        <text value="Pneumococcal vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1979-01-21"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss42"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="14745005"/>
+        </coding>
+        <text value="Hepatitis A virus vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1979-05-28"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss43"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="14745005"/>
+        </coding>
+        <text value="Hepatitis A virus vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1984-04-24"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss44"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="108729007"/>
+        </coding>
+        <text value="Varicella vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1979-05-30"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss45"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="108729007"/>
+        </coding>
+        <text value="Varicella vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1981-03-06"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss46"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="350327004"/>
+        </coding>
+        <text value="Diphtheria + tetanus vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1992-06-18"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss47"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="350327004"/>
+        </coding>
+        <text value="Diphtheria + tetanus vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner3"/></actor></performer>
+  <occurrenceDateTime value="2018-09-11"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss48"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="424519000"/>
+        </coding>
+        <text value="Human papillomavirus vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="2001-07-14"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss49"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="111164008"/>
+        </coding>
+        <text value="Poliovirus vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1978-03-11"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss50"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="111164008"/>
+        </coding>
+        <text value="Poliovirus vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1978-07-01"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss51"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="111164008"/>
+        </coding>
+        <text value="Poliovirus vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1979-01-15"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss52"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="333680004"/>
+        </coding>
+        <text value="Haemophilus influenzae Type b vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1978-03-29"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss53"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="333680004"/>
+        </coding>
+        <text value="Haemophilus influenzae Type b vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1978-07-11"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss54"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="34689006"/>
+        </coding>
+        <text value="Hepatitis B virus vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1978-03-09"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss55"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="34689006"/>
+        </coding>
+        <text value="Hepatitis B virus vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1978-07-20"/>
+</Immunization>
+
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss56"/>
+    <status value="completed"/>
+    <vaccineCode>
+        <coding>
+            <system value="urn:oid:1.3.6.1.4.1.12559.11.10.1.3.1.42.28"/>
+            <code value="34689006"/>
+        </coding>
+        <text value="Hepatitis B virus vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example2"/></patient>
+	<performer><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></performer>
+  <occurrenceDateTime value="1979-01-30"/>
+</Immunization>

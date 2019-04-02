@@ -1,0 +1,11 @@
+﻿<Practitioner  xmlns="http://hl7.org/fhir">
+    <id value="FTSS-Practitioner1" />
+        	<meta>
+		<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Practitioner-uv-ips"/>
+	</meta>
+    <name>
+        <family value="Marc" />
+        <given value="Fàbregas" />
+        <prefix value="Dr." />
+    </name>
+</Practitioner>

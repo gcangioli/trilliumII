@@ -1,0 +1,13 @@
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss9"/>
+    <meta><profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Immunization-uv-ips"/></meta><status value="completed"/><notGiven value="false"/>
+    <vaccineCode>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="61153008"/>
+        </coding>
+        <text value="Measles + Mumps + Rubella vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example1"/></patient>  <date value="1989-05-03"/>
+	<primarySource value="true"/><practitioner><actor><reference value="Practitioner/FTSS-Practitioner2"/></actor></practitioner>
+  </Immunization>

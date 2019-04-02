@@ -1,0 +1,13 @@
+<Immunization xmlns="http://hl7.org/fhir">
+    <id value="ftss59"/>
+    <meta><profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Immunization-uv-ips"/></meta><status value="completed"/><notGiven value="false"/>
+    <vaccineCode>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="46233009"/>
+        </coding>
+        <text value="Influenza virus vaccine"/>
+    </vaccineCode>
+    <patient><reference value="Patient/patientFTSS-example3"/></patient>  <date value="2012-01-06"/>
+	<primarySource value="true"/><practitioner><actor><reference value="Practitioner/FTSS-Practitioner4"/></actor></practitioner>
+  </Immunization>
