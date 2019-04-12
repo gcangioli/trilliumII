@@ -10,7 +10,7 @@
 	"version": "3.0.1",
 	"fixed-business-version": "0.1.0",
 	"valuesets": [
-		"condition-severity-uv-ips", "absent-or-unknown-problems-uv-ips", "absent-or-unknown-procedures-uv-ips", "absent-or-unknown-allergies-uv-ips", "absent-or-unknown-devices-uv-ips", "absent-or-unknown-immunization-uv-ips", "absent-or-unknown-medication-uv-ips", "allergy-intolerance-substance-condition-uv-ips", "allergy-reaction-uv-ips", "core-problem-list-disorders-uv-ips", "current-smoking-status-uv-ips", "edd-method-uv-ips", "healthcare-professional-roles-uv-ips", "imaging-observations-uv-ips", "laboratory-and-vital-signs-observations", "laboratory-tests-and-panels-uv-ips", "lab-result-coded-value-uv-ips", "medical-devices-uv-ips", "medicine-active-substances-uv-ips", "medicine-doseform", "medicine-route-of-administration", "observation-codes-uv-ips", "pathology-and-vital-signs-observations", "pathology-result-coded-value-uv-ips", "personal-relationship-uv-ips", "pregnancies-summary-uv-ips", "problem-type-uv-ips", "procedures-uv-ips", "quantityUnits", "strengthDenominator", "strengthNumerator", "sub-observation-category-uv-ips", "target-site-uv-ips", "vaccines-uv-ips", "whoatc-uv-ips", "imaging-txtobs-code-uv-ips", "imaging-volume-measure-code-uv-ips", "imaging-area-measure-code-uv-ips", "imaging-linear-measure-code-uv-ips", "specimen-type-uv-ips", "specimen-collection-method-uv-ips", "med-uv-ips"
+		"condition-severity-uv-ips", "absent-or-unknown-problems-uv-ips", "absent-or-unknown-procedures-uv-ips", "absent-or-unknown-allergies-uv-ips", "absent-or-unknown-devices-uv-ips", "absent-or-unknown-immunizations-uv-ips", "absent-or-unknown-medications-uv-ips", "allergy-intolerance-substance-condition-uv-ips", "allergy-reaction-uv-ips", "core-problem-list-disorders-uv-ips", "current-smoking-status-uv-ips", "edd-method-uv-ips", "healthcare-professional-roles-uv-ips", "imaging-observations-uv-ips", "laboratory-and-vital-signs-observations", "laboratory-tests-and-panels-uv-ips", "lab-result-coded-value-uv-ips", "medical-devices-uv-ips", "medicine-active-substances-uv-ips", "medicine-doseform", "medicine-route-of-administration", "observation-codes-uv-ips", "pathology-and-vital-signs-observations", "pathology-result-coded-value-uv-ips", "personal-relationship-uv-ips", "pregnancies-summary-uv-ips", "problem-type-uv-ips", "procedures-uv-ips", "quantityUnits", "strengthDenominator", "strengthNumerator", "sub-observation-category-uv-ips", "target-site-uv-ips", "vaccines-uv-ips", "whoatc-uv-ips", "imaging-txtobs-code-uv-ips", "imaging-volume-measure-code-uv-ips", "imaging-area-measure-code-uv-ips", "imaging-linear-measure-code-uv-ips", "specimen-type-uv-ips", "specimen-collection-method-uv-ips", "med-uv-ips"
 	],
 	"paths": {
 		"pages": [
@@ -243,11 +243,6 @@
 			"source": "Specimen-uv-ips.structuredefinition.xml",
 			"base": "StructureDefinition-Specimen-uv-ips.html"
 		},
-		"StructureDefinition/statement-uv-ips": {
-			"defns": "StructureDefinition-statement-uv-ips-definitions.html",
-			"source": "statement-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-statement-uv-ips.html"
-		},
 		"ValueSet/absent-or-unknown-allergies-uv-ips": {
 			"source": "valueset-absent-or-unknown-allergies-uv-ips.xml",
 			"base": "ValueSet-absent-or-unknown-allergies-uv-ips.html"
@@ -256,13 +251,13 @@
 			"source": "valueset-absent-or-unknown-devices-uv-ips.xml",
 			"base": "ValueSet-absent-or-unknown-devices-uv-ips.html"
 		},
-		"ValueSet/absent-or-unknown-immunization-uv-ips": {
-			"source": "valueset-absent-or-unknown-immunization-uv-ips.xml",
-			"base": "ValueSet-absent-or-unknown-immunization-uv-ips.html"
+		"ValueSet/absent-or-unknown-immunizations-uv-ips": {
+			"source": "valueset-absent-or-unknown-immunizations-uv-ips.xml",
+			"base": "ValueSet-absent-or-unknown-immunizations-uv-ips.html"
 		},
-		"ValueSet/absent-or-unknown-medication-uv-ips": {
-			"source": "valueset-absent-or-unknown-medication-uv-ips.xml",
-			"base": "ValueSet-absent-or-unknown-medication-uv-ips.html"
+		"ValueSet/absent-or-unknown-medications-uv-ips": {
+			"source": "valueset-absent-or-unknown-medications-uv-ips.xml",
+			"base": "ValueSet-absent-or-unknown-medications-uv-ips.html"
 		},
 		"ValueSet/absent-or-unknown-procedures-uv-ips": {
 			"source": "valueset-absent-or-unknown-procedures-uv-ips.xml",
@@ -408,10 +403,6 @@
 			"source": "valueset-phpid-lvl4-uv-ips.xml",
 			"base": "ValueSet-phpid-lvl4-uv-ips.html"
 		},
-		"ValueSet/vaccines-uv-ips": {
-			"source": "valueset-vaccines-uv-ips.xml",
-			"base": "ValueSet-vaccines-uv-ips.html"
-		},
 		"StructureDefinition/AllergyIntolerance-uv-ips": {
 			"defns": "StructureDefinition-AllergyIntolerance-uv-ips-definitions.html",
 			"source": "AllergyIntolerance-uv-ips.structuredefinition.xml",
@@ -454,10 +445,6 @@
 			"source": "valueset-absent-or-unknown-problems-uv-ips.xml",
 			"base": "ValueSet-absent-or-unknown-problems-uv-ips.html"
 		},
-		"ValueSet/absent-or-unknown-procedures-uv-ips": {
-			"source": "valueset-absent-or-unknown-procedures-uv-ips.xml",
-			"base": "ValueSet-absent-or-unknown-procedures-uv-ips.html"
-		},
 		"ValueSet/imaging-txtobs-code-uv-ips": {
 			"source": "valueset-imaging-txtobs-code-uv-ips.xml",
 			"base": "ValueSet-imaging-txtobs-code-uv-ips.html"
@@ -490,31 +477,7 @@
 			"defns": "StructureDefinition-vaccinationValidity-immunization-uv-trillium2-definitions.html",
 			"source": "vaccinationValidity-immunization-trillium2.xml",
 			"base": "StructureDefinition-vaccinationValidity-immunization-uv-trillium2.html"
-		},
-		"StructureDefinition/MedicationStatement-uv-ips": {
-			"defns": "StructureDefinition-MedicationStatement-uv-ips-definitions.html",
-			"source": "MedicationStatement-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-MedicationStatement-uv-ips.html"
-		},
-		"StructureDefinition/Medication-uv-ips": {
-			"defns": "StructureDefinition-Medication-uv-ips-definitions.html",
-			"source": "Medication-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-Medication-uv-ips.html"
-		},
-		"StructureDefinition/Range-uv-ips": {
-			"defns": "StructureDefinition-Range-uv-ips-definitions.html",
-			"source": "Range-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-Range-uv-ips.html"
-		},
-		"StructureDefinition/Ratio-uv-ips": {
-			"defns": "StructureDefinition-Ratio-uv-ips-definitions.html",
-			"source": "Ratio-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-Ratio-uv-ips.html"
-		},
-		"ValueSet/absent-or-unknown-allergies-uv-ips": {
-			"source": "valueset-absent-or-unknown-allergies-uv-ips.xml",
-			"base": "ValueSet-absent-or-unknown-allergies-uv-ips.html"
-		},
+		},		
 		"ValueSet/med-uv-ips": {
 			"source": "valueset-med-uv-ips.xml",
 			"base": "ValueSet-med-uv-ips.html"

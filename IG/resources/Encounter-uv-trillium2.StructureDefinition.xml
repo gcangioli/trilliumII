@@ -53,6 +53,7 @@
 			<path value="Encounter.extension.extension.value[x].reference"/>
 			<mustSupport value="true"/>
 		</element>
+    <!--
 		<element id="Encounter.extension:statement">
 			<path value="Encounter.extension"/>
 			<sliceName value="statement"/>
@@ -62,6 +63,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+    -->
 		<element id="Encounter.type">
 			<path value="Encounter.type"/>
 			<mustSupport value="true"/>

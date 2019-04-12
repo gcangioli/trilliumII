@@ -8,6 +8,24 @@
 	<package>
 		<name value="base"/>
 		<!--- EXAMPLES -->
+		<!-- frailSafe -->
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Patient/fs-9023"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Observation/fs-9023-VS-1"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Observation/fs-9023-VS-2"/>
+		</resource>
+		<resource>
+			<example value="true"/>
+			<sourceUri value="Observation/fs-9023-VS-3"/>
+		</resource>
+		<!-- -->
 		<!-- Luxembourg Patient 66033 -->
 		<resource>
 			<example value="true"/>
@@ -188,7 +206,7 @@
 		</resource>
 		<resource>
 			<example value="false"/>
-			<sourceUri value="ValueSet/absent-or-unknown-immunization-uv-ips"/>
+			<sourceUri value="ValueSet/absent-or-unknown-immunizations-uv-ips"/>
 		</resource>
 		<resource>
 			<example value="false"/>
@@ -414,10 +432,12 @@
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/CodeableConcept-uv-ips"/>
 		</resource>
+    <!--
 		<resource>
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/statement-uv-ips"/>
 		</resource>
+    -->
 		<resource>
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/Coding-uv-ips"/>

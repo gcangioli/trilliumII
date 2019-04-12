@@ -35,6 +35,7 @@
 			<path value="Immunization.meta.profile"/>
 			<mustSupport value="true"/>
 		</element>
+    <!--
 		<element id="Immunization.extension:statementDetails">
 			<path value="Immunization.extension"/>
 			<sliceName value="statementDetails"/>
@@ -47,6 +48,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+    -->
 		<element id="Immunization.status">
 			<path value="Immunization.status"/>
 			<mustSupport value="true"/>
@@ -144,7 +146,7 @@
 					<valueString value="Absent Unknown Immunization"/>
 				</extension>
 				<strength value="required"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/absent-or-unknown-immunization-uv-ips"/>
+				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/absent-or-unknown-immunizations-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Immunization.vaccineCode:absentOrUnknownMedication.coding">
