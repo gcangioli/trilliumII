@@ -1,0 +1,610 @@
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="7c9468a6-55e3-4a41-94a0-a5e02c89e280"/>
+	<meta>
+		<versionId value="1"/>
+		<lastUpdated value="2019-03-29T08:38:23Z"/>
+	</meta>
+	<identifier>
+		<system value="urn:ietf:rfc:3986"/>
+		<value value="7c9468a6-55e3-4a41-94a0-a5e02c89e280"/>
+	</identifier>
+	<type value="document"/>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Composition/fs-9023-IPS"/>
+		<resource>
+			<Composition xmlns="http://hl7.org/fhir">
+				<id value="fs-9023-IPS"/>
+				<meta>
+					<versionId value="12"/>
+					<lastUpdated value="2019-03-22T13:53:15Z"/>
+					<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Composition-uv-ips"/>
+				</meta>
+				<text>
+					<status value="generated"/>
+					<div xmlns="http://www.w3.org/1999/xhtml">
+						<div style="background-color: #4f69a1; color: white;  font-family: Trebuchet MS">
+							<h1 style="text-align : center">International Patient Summary</h1>
+						</div>
+						<div style="margin-left:10px; margin-right:10px; background-color: white;">
+							<table style="margin-left:20px; font-family: Segoe UI; margin-left:20px;">
+								<tr>
+									<td style="color: #cfcfcf">INDENTIFIER: </td>
+									<td>
+										<b>fs-9023</b>
+									</td>
+								</tr>
+								<tr>
+									<td style="color: #cfcfcf">GENDER: </td>
+									<td>female</td>
+								</tr>
+								<tr>
+									<td style="color: #cfcfcf">BIRTH DATE: </td>
+									<td>1920</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</text>
+				<status value="final"/>
+				<type>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="60591-5"/>
+						<display value="Patient Summary"/>
+					</coding>
+				</type>
+				<subject>
+					<reference value="Patient/fs-9023"/>
+					<display value="9023"/>
+				</subject>
+				<date value="2019-03-22T13:52:55.600Z"/>
+				<author>
+					<reference value="Practitioner/fs-prt-1"/>
+					<display value="fs-prt-1"/>
+				</author>
+				<title value="International Patient Summary, FrailSafe Patient #9023"/>
+				<section>
+					<title value="Problem List"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="11450-4"/>
+							<display value="Problem List"/>
+						</coding>
+					</code>
+					<text>
+						<status value="generated"/>
+						<div xmlns="http://www.w3.org/1999/xhtml">
+							<div style="background-color: #e5eaf5;">
+								<h3 style="text-align : center; font-family: Trebuchet MS">Conditions</h3>
+							</div>
+							<table style="margin-left:20px; font-family: Segoe UI">
+								<tr style="text-align : left">
+									<td>Anxiety and-or Sleep Problem</td>
+								</tr>
+								<tr>
+									<td>
+										<div style="color: #cfcfcf">DATE: </div>
+										<div>2019-03-22</div>
+									</td>
+								</tr>
+							</table>
+							<div style="border-bottom: 1px double #dcdcdc"/>
+							<table style="margin-left:20px; font-family: Segoe UI">
+								<tr style="text-align : left">
+									<td>Chronic Atrial Fibrillation-Paroxysmal af or other arrythmia</td>
+								</tr>
+								<tr>
+									<td>
+										<div style="color: #cfcfcf">DATE: </div>
+										<div>2019-03-22</div>
+									</td>
+								</tr>
+							</table>
+							<div style="border-bottom: 1px double #dcdcdc"/>
+							<table style="margin-left:20px; font-family: Segoe UI">
+								<tr style="text-align : left">
+									<td>Arthralgies - Musculosceletal Complaints-Diseases</td>
+								</tr>
+								<tr>
+									<td>
+										<div style="color: #cfcfcf">DATE: </div>
+										<div>2019-03-22</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</text>
+					<entry>
+						<reference value="Condition/fs-9023-Anxiety.and-or.Sleep.Problem"/>
+					</entry>
+					<entry>
+						<reference value="Condition/fs-9023-Chronic.Atrial.Fibrillation-Paroxysmal.af.or.other.arryt"/>
+					</entry>
+					<entry>
+						<reference value="Condition/fs-9023-Arthralgies.-.Musculosceletal.Complaints-Diseases"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Medication Summary"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="10160-0"/>
+							<display value="Medication Summary"/>
+						</coding>
+					</code>
+					<text>
+						<status value="generated"/>
+						<div xmlns="http://www.w3.org/1999/xhtml">
+							<div style="background-color: #e5eaf5;">
+								<h3 style="text-align : center; font-family: Trebuchet MS">Medications</h3>
+							</div>
+							<table style="margin-left:20px; font-family: Segoe UI">
+								<tr style="text-align : left">
+									<td>Tachipirina</td>
+								</tr>
+							</table>
+						</div>
+					</text>
+					<entry>
+						<reference value="MedicationStatement/fs-9023-Tachipirina"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Allergy or Intolerance"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="48765-2"/>
+							<display value="Allergies and/or adverse reactions"/>
+						</coding>
+					</code>
+					<text>
+						<status value="generated"/>
+						<div xmlns="http://www.w3.org/1999/xhtml">
+							<div style="background-color: #e5eaf5;">
+								<h3 style="text-align : center; font-family: Trebuchet MS">Allergies and Intolerances</h3>
+							</div>
+							<table style="margin-left:20px; font-family: Segoe UI">
+								<tr style="text-align : left">
+									<td colspan="2">
+										<b>No Information about Allergies</b>
+									</td>
+								</tr>
+								<tr>
+									<td/>
+									<td/>
+								</tr>
+							</table>
+						</div>
+					</text>
+					<entry>
+						<reference value="AllergyIntolerance/fs-9023-no-allergy-info"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Risk Assessment"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="71482-4"/>
+							<display value="Risk assessment"/>
+						</coding>
+					</code>
+					<text>
+						<status value="generated"/>
+						<div xmlns="http://www.w3.org/1999/xhtml">
+							<div style="background-color: #e5eaf5;">
+								<h3 style="text-align : center; font-family: Trebuchet MS">Risk Assessment</h3>
+							</div>
+							<table style="margin-left:20px; font-family: Segoe UI">
+								<tr style="text-align : left">
+									<td colspan="2">
+										<b>Frailty Index: No Frail</b>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</text>
+					<entry>
+						<reference value="RiskAssessment/fs-9023-FI"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Vital Signs"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="8716-3"/>
+							<display value="Vital Signs"/>
+						</coding>
+					</code>
+					<text>
+						<status value="generated"/>
+						<div xmlns="http://www.w3.org/1999/xhtml">
+							<div style="background-color: #e5eaf5;">
+								<h3 style="text-align : center; font-family: Trebuchet MS">Vital Signs</h3>
+							</div>
+							<table style="margin-left:20px; font-family: Segoe UI">
+								<tr style="text-align : left">
+									<td colspan="2">Weight</td>
+								</tr>
+								<tr>
+									<td style="color: #cfcfcf">DATE: </td>
+									<td>2019-03-22</td>
+								</tr>
+								<tr>
+									<td style="color: #cfcfcf">VALUE: </td>
+									<td>70</td>
+								</tr>
+							</table>
+							<br/>
+							<div style="border-bottom: 1px double #dcdcdc"/>
+							<br/>
+							<table style="margin-left:20px; font-family: Segoe UI">
+								<tr style="text-align : left">
+									<td colspan="2">BMI</td>
+								</tr>
+								<tr>
+									<td style="color: #cfcfcf">DATE: </td>
+									<td>2019-03-22</td>
+								</tr>
+								<tr>
+									<td style="color: #cfcfcf">VALUE: </td>
+									<td>24.221453287197</td>
+								</tr>
+							</table>
+							<br/>
+							<div style="border-bottom: 1px double #dcdcdc"/>
+							<br/>
+							<table style="margin-left:20px; font-family: Segoe UI">
+								<tr style="text-align : left">
+									<td colspan="2">Height measurement</td>
+								</tr>
+								<tr>
+									<td style="color: #cfcfcf">DATE: </td>
+									<td>2019-03-22</td>
+								</tr>
+								<tr>
+									<td style="color: #cfcfcf">VALUE: </td>
+									<td>1.7</td>
+								</tr>
+							</table>
+						</div>
+					</text>
+					<entry>
+						<reference value="Observation/fs-9023-VS-2"/>
+					</entry>
+					<entry>
+						<reference value="Observation/fs-9023-VS-3"/>
+					</entry>
+					<entry>
+						<reference value="Observation/fs-9023-VS-1"/>
+					</entry>
+				</section>
+			</Composition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Practitioner/fs-prt-1"/>
+		<resource>
+			<Practitioner xmlns="http://hl7.org/fhir">
+				<id value="fs-prt-1"/>
+				<meta>
+					<versionId value="3"/>
+					<lastUpdated value="2019-03-20T16:15:25Z"/>
+					<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Practitioner-uv-ips"/>
+				</meta>
+				<name>
+					<family value="Frailsafe"/>
+					<given value="Project"/>
+					<prefix value="Sys."/>
+				</name>
+			</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Patient/fs-9023"/>
+		<resource>
+			<Patient xmlns="http://hl7.org/fhir">
+				<id value="fs-9023"/>
+				<meta>
+					<versionId value="19"/>
+					<lastUpdated value="2019-03-22T13:53:14Z"/>
+					<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Patient-uv-ips"/>
+				</meta>
+				<identifier>
+					<system value="https://ecrf.frailsafe-project.cloud/"/>
+					<value value="9023"/>
+				</identifier>
+				<active value="true"/>
+				<gender value="female"/>
+				<birthDate value="1920"/>
+			</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Condition/fs-9023-Anxiety.and-or.Sleep.Problem"/>
+		<resource>
+			<Condition xmlns="http://hl7.org/fhir">
+				<id value="fs-9023-Anxiety.and-or.Sleep.Problem"/>
+				<meta>
+					<versionId value="11"/>
+					<lastUpdated value="2019-03-22T11:10:00Z"/>
+					<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Condition-uv-ips"/>
+				</meta>
+				<clinicalStatus value="active"/>
+				<code>
+					<text value="Anxiety and-or Sleep Problem"/>
+				</code>
+				<subject>
+					<reference value="Patient/fs-9023"/>
+					<display value="9023"/>
+				</subject>
+				<onsetDateTime value="2019-03-22T10:00:20.000Z"/>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Condition/fs-9023-Arthralgies.-.Musculosceletal.Complaints-Diseases"/>
+		<resource>
+			<Condition xmlns="http://hl7.org/fhir">
+				<id value="fs-9023-Arthralgies.-.Musculosceletal.Complaints-Diseases"/>
+				<meta>
+					<versionId value="11"/>
+					<lastUpdated value="2019-03-22T11:10:00Z"/>
+					<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Condition-uv-ips"/>
+				</meta>
+				<clinicalStatus value="active"/>
+				<code>
+					<text value="Arthralgies - Musculosceletal Complaints-Diseases"/>
+				</code>
+				<subject>
+					<reference value="Patient/fs-9023"/>
+					<display value="9023"/>
+				</subject>
+				<onsetDateTime value="2019-03-22T10:00:20.000Z"/>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Condition/fs-9023-Chronic.Atrial.Fibrillation-Paroxysmal.af.or.other.arryt"/>
+		<resource>
+			<Condition xmlns="http://hl7.org/fhir">
+				<id value="fs-9023-Chronic.Atrial.Fibrillation-Paroxysmal.af.or.other.arryt"/>
+				<meta>
+					<versionId value="8"/>
+					<lastUpdated value="2019-03-22T11:10:00Z"/>
+					<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Condition-uv-ips"/>
+				</meta>
+				<clinicalStatus value="active"/>
+				<code>
+					<text value="Chronic Atrial Fibrillation-Paroxysmal af or other arrythmia"/>
+				</code>
+				<subject>
+					<reference value="Patient/fs-9023"/>
+					<display value="9023"/>
+				</subject>
+				<onsetDateTime value="2019-03-22T10:00:20.000Z"/>
+			</Condition>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/MedicationStatement/fs-9023-Tachipirina"/>
+		<resource>
+			<MedicationStatement xmlns="http://hl7.org/fhir">
+				<id value="fs-9023-Tachipirina"/>
+				<meta>
+					<versionId value="11"/>
+					<lastUpdated value="2019-03-22T11:10:00Z"/>
+					<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/MedicationStatement-uv-ips"/>
+				</meta>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="Medication/ddffcd0e-b47e-41f9-869e-87cfb3926170"/>
+					<display value="Tachipirina"/>
+				</medicationReference>
+				<effectivePeriod>
+					<extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+						<valueCode value="unknown"/>
+					</extension>
+				</effectivePeriod>
+				<subject>
+					<reference value="Patient/fs-9023"/>
+					<display value="9023"/>
+				</subject>
+				<taken value="y"/>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/RiskAssessment/fs-9023-FI"/>
+		<resource>
+			<RiskAssessment xmlns="http://hl7.org/fhir">
+				<id value="fs-9023-FI"/>
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2019-03-22T13:53:14Z"/>
+				</meta>
+				<status value="final"/>
+				<subject>
+					<reference value="Patient/fs-9023"/>
+					<display value="9023"/>
+				</subject>
+				<prediction>
+					<outcome>
+						<text value="Frailty Index: No Frail"/>
+					</outcome>
+				</prediction>
+			</RiskAssessment>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Observation/fs-9023-VS-1"/>
+		<resource>
+			<Observation xmlns="http://hl7.org/fhir">
+				<id value="fs-9023-VS-1"/>
+				<meta>
+					<versionId value="2"/>
+					<lastUpdated value="2019-03-22T13:49:57Z"/>
+					<profile value="http://hl7.org/fhir/StructureDefinition/bodyheight"/>
+				</meta>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+						<code value="vital-signs"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="8302-2"/>
+						<display value="Body height"/>
+					</coding>
+					<text value="Height measurement"/>
+				</code>
+				<subject>
+					<reference value="Patient/fs-9023"/>
+					<display value="9023"/>
+				</subject>
+				<effectiveDateTime value="2019-03-22T11:37:37.000Z"/>
+				<valueQuantity>
+					<value value="170"/>
+					<unit value="centimeter"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="cm"/>
+				</valueQuantity>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Observation/fs-9023-VS-2"/>
+		<resource>
+			<Observation xmlns="http://hl7.org/fhir">
+				<id value="fs-9023-VS-2"/>
+				<meta>
+					<versionId value="2"/>
+					<lastUpdated value="2019-03-22T13:49:58Z"/>
+					<profile value="http://hl7.org/fhir/StructureDefinition/bodyweight"/>
+				</meta>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+						<code value="vital-signs"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="29463-7"/>
+						<display value="Body weight"/>
+					</coding>
+					<text value="Weight"/>
+				</code>
+				<subject>
+					<reference value="Patient/fs-9023"/>
+					<display value="9023"/>
+				</subject>
+				<effectiveDateTime value="2019-03-22T11:37:37.000Z"/>
+				<valueQuantity>
+					<value value="70"/>
+					<unit value="Kilogram"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="kg"/>
+				</valueQuantity>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Observation/fs-9023-VS-3"/>
+		<resource>
+			<Observation xmlns="http://hl7.org/fhir">
+				<id value="fs-9023-VS-3"/>
+				<meta>
+					<versionId value="2"/>
+					<lastUpdated value="2019-03-22T13:49:58Z"/>
+					<profile value="http://hl7.org/fhir/StructureDefinition/bmi"/>
+				</meta>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+						<code value="vital-signs"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="39156-5"/>
+						<display value="BMI"/>
+					</coding>
+					<text value="BMI"/>
+				</code>
+				<subject>
+					<reference value="Patient/fs-9023"/>
+					<display value="9023"/>
+				</subject>
+				<effectiveDateTime value="2019-03-22T11:37:37.000Z"/>
+				<valueQuantity>
+					<value value="24.221453287197"/>
+					<unit value="Kilogram per square meter"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="kg/m2"/>
+				</valueQuantity>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/AllergyIntolerance/fs-9023-no-allergy-info"/>
+		<resource>
+			<AllergyIntolerance>
+				<id value="fs-9023-no-allergy-info"/>
+				<meta>
+					<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/AllergyIntolerance-uv-ips"/>
+				</meta>
+				<clinicalStatus value="active"/>
+				<verificationStatus value="confirmed"/>
+				<code>
+					<coding>
+						<system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
+						<code value="no-allergy-info"/>
+						<display value="No information about allergies"/>
+					</coding>
+				</code>
+				<patient>
+					<reference value="Patient/fs-9023"/>
+					<display value="9023"/>
+				</patient>
+				<onsetDateTime>
+					<extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+						<valueCode value="unknown"/>
+					</extension>
+				</onsetDateTime>
+			</AllergyIntolerance>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="http://app.srdc.com.tr/fhir/stu3/Medication/ddffcd0e-b47e-41f9-869e-87cfb3926170"/>
+		<resource>
+			<Medication>
+				<id value="ddffcd0e-b47e-41f9-869e-87cfb3926170"/>
+				<meta>
+					<versionId value="1"/>
+					<lastUpdated value="2019-03-22T10:01:01Z"/>
+					<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Medication-uv-ips"/>
+				</meta>
+				<code>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="N02BE01"/>
+						<display value="paracetamol"/>
+					</coding>
+					<text value="Tachipirina"/>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+</Bundle>

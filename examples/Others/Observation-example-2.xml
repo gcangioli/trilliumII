@@ -1,0 +1,32 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="TrilliumII-examples-Observation-01-Sub2"/>
+  <meta>
+    <versionId value="1782d262-da34-49ab-8785-6b43ed598650"/>
+    <lastUpdated value="2018-02-16T10:19:28.737+00:00"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="1018-1"/>
+      <display value="E Ab [Presence] in Serum or Plasma"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/TrilliumII-examples-Patient-02"/>
+  </subject>
+  <effectiveDateTime value="2015-10-10T09:35:00+01:00"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="10828004"/>
+      <display value="Positive"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

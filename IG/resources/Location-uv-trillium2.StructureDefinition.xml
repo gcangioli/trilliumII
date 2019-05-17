@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://hl7.eu/fhir/trillium2/StructureDefinition/Location-uv-trillium2" />
+  <name value="Location-uv-trillium2" />
+  <status value="draft" />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Location" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Location" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Location.type">
+      <path value="Location.type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Location.address">
+      <path value="Location.address" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

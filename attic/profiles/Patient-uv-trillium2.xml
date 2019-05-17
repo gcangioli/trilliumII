@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2018-03-06T10:19:08.889+01:00" />
+  </meta>
+  <url value="http://trilliumbridge.eu/fhir/StructureDefinition/patient-uv-trillium2" />
+  <name value="Patient-uv-trillium2" />
+  <status value="draft" />
+  <date value="2018-01-22T08:34:59.985+01:00" />
+  <description value="This profile represents the contraints applied to the Patient resource by the Trillium II project, which specifies an international patient summary based on the FHIR standard STU3. An instance of Patient represents the subject this Patient Summary is referring to." />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Patient" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Patient" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Patient.animal">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+        <valueString value="Animal" />
+      </extension>
+      <path value="Patient.animal" />
+      <max value="0" />
+    </element>
+    <element id="Patient.link">
+      <path value="Patient.link" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

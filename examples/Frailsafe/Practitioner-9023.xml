@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Practitioner xmlns="http://hl7.org/fhir">
+	<id value="fs-prt-1"/>
+	<meta>
+		<versionId value="3"/>
+		<lastUpdated value="2019-03-20T16:15:25Z"/>
+		<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Practitioner-uv-ips"/>
+	</meta>
+	<name>
+		<family value="Frailsafe"/>
+		<given value="Project"/>
+		<prefix value="Sys."/>
+	</name>
+</Practitioner>

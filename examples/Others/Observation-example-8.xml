@@ -1,0 +1,45 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="TrilliumII-examples-Observation-01-3"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2018-02-16T10:18:47.532+00:00"/>
+  </meta>
+  <extension url="https://simplifier.net/TrilliumII/observation-specialty-uv-trillium2">
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.12.74"/>
+        <code value="MB"/>
+      </coding>
+      <text value="Microbiology"/>
+    </valueCodeableConcept>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="42803-7"/>
+      <display value="Bacteria identified in Isolate"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/TrilliumII-examples-Patient-02"/>
+  </subject>
+  <effectiveDateTime value="2017-12-10T08:20:00+01:00"/>
+  <performer>
+    <reference value="Organization/TrilliumII-examples-Organization-02"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="115329001"/>
+      <display value="Methicillin resistant Staphylococcus aureus"/>
+    </coding>
+  </valueCodeableConcept>
+  <comment value="Healthy carrier of MRSA"/>
+</Observation>
