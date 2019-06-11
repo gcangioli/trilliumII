@@ -72,13 +72,13 @@
 			<max value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<strength value="preferred"/>
 				<description value="The type of vaccine for particular disease or diseases against which the patient has been immunised."/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/vaccines-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Immunization.vaccineCode.coding">
@@ -96,7 +96,7 @@
 			<!--
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			-->
 			<mustSupport value="true"/>
@@ -110,7 +110,7 @@
 			<!--
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			-->
 			<mustSupport value="true"/>
@@ -119,7 +119,7 @@
 					<valueString value="WHO ATC"/>
 				</extension>
 				<strength value="required"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/whoatc-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Immunization.vaccineCode.coding:atcClass.system">
@@ -138,7 +138,7 @@
 			<max value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -146,7 +146,7 @@
 					<valueString value="Absent Unknown Immunization"/>
 				</extension>
 				<strength value="required"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/absent-or-unknown-immunizations-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-immunizations-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Immunization.vaccineCode:absentOrUnknownMedication.coding">
@@ -159,7 +159,7 @@
 			<path value="Immunization.vaccineCode.coding.system"/>
 			<min value="1"/>
 			<max value="1"/>
-			<fixedUri value="http://hl7.eu/fhir/trillium2/CodeSystem/absent-unknown-uv-ips"/>
+			<fixedUri value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Immunization.vaccineCode.text">
@@ -178,7 +178,7 @@
 			<definition value="The type of vaccine for particular disease or diseases against which the patient has been immunised. "/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -186,7 +186,7 @@
 					<valueString value="VaccineType"/>
 				</extension>
 				<strength value="preferred"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/vaccines-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Immunization.vaccineCode.coding:pharmaceuticalProduct-L1">
@@ -196,14 +196,14 @@
 			<definition value="IDMP PhPID Level 1 (Implies substances) or any equivalent Pharmaceutical Product identifier.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as s and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product."/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="PhPIDLvl1"/>
 				</extension>
 				<strength value="example"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/phpid-lvl1-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl1-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Immunization.vaccineCode.coding:pharmaceuticalProduct-L2">
@@ -213,14 +213,14 @@
 			<definition value="IDMP PhPID Level 2 (Implies substances and strength) or any equivalent Pharmaceutical Product identifier.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as substances and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product."/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="PhPIDLvl2"/>
 				</extension>
 				<strength value="example"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/phpid-lvl2-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl2-uv-ips"/>
 			</binding>
 		</element>
 
@@ -232,14 +232,14 @@
 			<definition value="IDMP PhPID Level 3 (Implies substances and dose form) or any equivalent Pharmaceutical Product identifier.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as substances and administrable dose form, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product."/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="PhPIDLvl3"/>
 				</extension>
 				<strength value="example"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/phpid-lvl3-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl3-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Immunization.vaccineCode.coding:pharmaceuticalProduct-L4">
@@ -249,14 +249,14 @@
 			<definition value="IDMP PhPID Level 4 (Implies substances, strength, and dose form) or any equivalent Pharmaceutical Product identifier.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as substances and administrable dose form, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product."/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="PhPIDLvl4"/>
 				</extension>
 				<strength value="example"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/phpid-lvl4-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl4-uv-ips"/>
 			</binding>
 		</element>
 
@@ -269,7 +269,7 @@
 			<definition value="IDMP Medicinal Product Identifier (MPID) or any equivalent Medicinal Product Identifier.&#xD;&#xA;&#xD;&#xA;IDMP MPID uniquely identifies a Medicinal Product, reflecting (but not replacing) any other authorisation numbers allocated by a regulator.&#xD;&#xA;&#xD;&#xA;MPID implies one (set of) PhPID.&#xD;&#xA;The MPID shall use a common segment pattern related to a Medicinal Product, which&#xD;&#xA;when each segment is valued shall define a specific MPID concept. The pattern is:&#xD;&#xA; a) Country code segment (ISO 3166-1 alpha-2 code elements);&#xD;&#xA; b) Marketing Authorization Holder (Organization Identifier) code segment;&#xD;&#xA; c) Medicinal Product code segment (Unique Medicinal Product Identifier).&#xD;&#xA; Any change of the values related to these three code segments shall result in the&#xD;&#xA;assignment of a new MPID.&#xD;"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -277,7 +277,7 @@
 					<valueString value="MPID"/>
 				</extension>
 				<strength value="example"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/mpid-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/mpid-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Immunization.vaccineCode.coding:packagedProduct">
@@ -287,7 +287,7 @@
 			<definition value="IDMP Packaged Medicinal Product Identifier  or any equivalent Packaged Medicinal Product Identifier.&#xD;&#xA;&#xD;&#xA;Uniquely identifies a Medicinal Product based on its packaging. This implies one MPID can be associated with more than one PCID, if the same Medicinal Product has more than one type of package;&#xD;&#xA;&#xD;&#xA;The PCID shall use a common segment pattern related to a package of a Medicinal&#xD;&#xA;Product, which when each segment is valued, shall define a specific PCID concept. The&#xD;&#xA;pattern is:&#xD;&#xA; a) MPID for the Medicinal Product&#xD;&#xA; b) package description code segment, which refers to a unique identifier for each&#xD;&#xA;package."/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -295,7 +295,7 @@
 					<valueString value="PCID"/>
 				</extension>
 				<strength value="example"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/pcid-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/pcid-uv-ips"/>
 			</binding>
 		</element>
 
@@ -363,19 +363,19 @@
 			<path value="Immunization.site"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<strength value="preferred"/>
-				<valueSet value="http://hl7.eu/fhir/trillium2/ValueSet/target-site-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Immunization.route">
 			<path value="Immunization.route"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -383,7 +383,7 @@
 					<valueString value="ImmunizationRoute"/>
 				</extension>
 				<strength value="required"/>
-				<valueSet value="http://hl7.eu/fhir/trillium2/ValueSet/medicine-route-of-administration"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration"/>
 			</binding>
 		</element>
 		<element id="Immunization.performer">
@@ -404,11 +404,11 @@
 			<path value="Immunization.site.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<binding>
 				<strength value="preferred"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/target-site-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Immunization.route">
@@ -418,14 +418,14 @@
 			<path value="Immunization.route.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="ImmunizationRoute"/>
 				</extension>
 				<strength value="required"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/medicine-route-of-administration"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration"/>
 			</binding>
 		</element>
 		<element id="Immunization.practitioner">
@@ -459,14 +459,14 @@
 			<path value="Immunization.vaccinationProtocol.targetDisease.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 		</element>
 		<element id="Immunization.vaccinationProtocol.doseStatus.coding">
 			<path value="Immunization.vaccinationProtocol.doseStatus.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 		</element>
 	</differential>

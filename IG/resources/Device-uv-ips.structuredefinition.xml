@@ -56,13 +56,13 @@
 			<max value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<strength value="preferred"/>
 				<description value="The type of device"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/medical-devices-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Device.type:absentOrUnknownDevice">
@@ -72,7 +72,7 @@
 			<max value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -81,7 +81,7 @@
 				</extension>
 				<strength value="required"/>
 				<description value="Absent problem or unknown device"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/absent-or-unknown-devices-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-devices-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Device.type:absentOrUnknownDevice.coding">
@@ -94,7 +94,7 @@
 			<path value="Device.type.coding.system"/>
 			<min value="1"/>
 			<max value="1"/>
-			<fixedUri value="http://hl7.eu/fhir/trillium2/CodeSystem/absent-unknown-uv-ips"/>
+			<fixedUri value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Device.patient">

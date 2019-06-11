@@ -40,7 +40,7 @@ These are the site variables defined [here](http://wiki.hl7.org/index.php?title=
 -->
 <blockquote class="stu-note">
 <p>
-This is the latest build <!-- Current officially released version --> of the {{site.data.fhir.igName}}, based on <a href="{{ site.data.fhir.path }}">FHIR Version {{ site.data.fhir.version }}</a>. See the <a href="history.html">Directory of published versions<img src="external.png"/></a>.  This specification is the version currently used by the Trillium II community of practice. It is subject to change, which may be significant, as part of the Trillium II maintenance process. A stable version will b epublished at the end of the project.</p>
+This is the latest build <!-- Current officially released version --> of the {{site.data.fhir.igName}}, based on <a href="{{ site.data.fhir.path }}">FHIR Version {{ site.data.fhir.version }}</a>. See the <a href="history.html">Directory of published versions<img src="external.png"/></a>.  This specification is the version currently used by the Trillium II community of practice. It is subject to change, which may be significant, as part of the Trillium II maintenance process. A stable version will be epublished at the end of the project.</p>
 <p>
 Feedback is welcome and may be submitted through the <a href="https://github.com/gcangioli/trilliumII/issues">Trillium II GitHub issue tracker</a>.
 </p>
@@ -54,10 +54,23 @@ Feedback is welcome and may be submitted through the <a href="https://github.com
 
 <!-- end TOC -->
 # Scope
-Formalize, through a FHIR Implementation Guide based on the HL7 FHIR IPS IG, the results of the Work Package 2 and 3 of the Trillium II project.
+Specify a Trillium II project International Patient Summary (IPS) HL7 FHIR Implementation Guide, inspired by the CEN/HL7 IPS standards, formalizing the results of the Work Package 2 and 3 of the Trillium II project.
 
- 
+
 # Introduction
+
+## The International Patient Summary
+An **International Patient Summary (IPS) document** is an electronic health record extract containing essential healthcare information about a subject of care.
+It is specifically aimed at supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it.
+It is intended to be international, i.e., to provide generic solutions for global application beyond a particular region or country.
+
+The IPS dataset is **minimal and non-exhaustive; specialty-agnostic and condition-independent; but still clinically relevant**.
+
+The IPS is composed by a set of robust, well-defined and reusable core set of data items, i.e., HL7 FHIR IPS profiles, in the case of this guide. 
+Its tight focus on unplanned care is not a limitation, but, on the contrary, enables the IPS profiles to be used as common minimal 'core' set beyond its initial scope.
+
+{% include img-small.html img="IPS_doc_library.png" caption="Figure 1: The IPS products" %}
+
 ## The Trillium II project
 <a href="https://trillium2.eu/">Trillium Bridge II - Reinforcing the Bridges and Scaling up EU/US Cooperation on Patient Summary</a> is a project funded from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 727745, aiming to:
 <ul>
@@ -70,19 +83,10 @@ In this context Trillium II has investigated the adoption of the International P
 
 For more details about the project please refer to the <a href="https://trillium2.eu/">Trillium Bridge II project Web Site</a>
 
-## The International Patient Summary
-An International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information intended for use in the unscheduled, cross-border care scenario, comprising at least the required elements of the IPS dataset. The IPS dataset is **_a minimal and non-exhaustive patient summary dataset, specialty-agnostic, condition-independent, but readily usable by clinicians for the (cross-border) unscheduled care of a patient_**.
-
-A formal definition of the International Patient Summary is provided by the CEN/TC 251 standard EN 17269.
-
 
 ## Trillium II Content overview
 
-<div class="image">
-<img src="assets/images/IPS_composition.png" width="400" />
-<div>The IPS Composition</div>
-<p></p>
-</div>
+{% include img-small.html img="IPS_composition.png" caption="Figure 2: The IPS composition" %}
 
 
 ## Authors and Contributors
@@ -109,7 +113,7 @@ For space reason the table has been limited to the task leaders, the list of con
 | **Primary Editor** | Giorgio Cangioli, PhD | Consultant, HL7 Italy | giorgio.cangioli@gmail.com |
 | **Primary Editor** | Rob Hausam | Hausam Consulting LLC | rob@hausamconsulting.com |
 | **Primary Editor** | François Macary | Phast | francois.macary@phast.fr |
-| **Primary Editor** |  Dr Kai U. Heitmann | Heitmann Consulting and Services, Gefyra GmbH, HL7 Germany | info@kheitmann.de  
+| **Contributor** |  Dr Kai U. Heitmann | Heitmann Consulting and Services, Gefyra GmbH, HL7 Germany | info@kheitmann.de  
 | **Contributor** | Dr Christof Geßner | Gematik | christof.gessner@gematik.de |
 | **Contributor** | Gary Dickinson | CentriHealth | gary.dickinson@ehr-standards.com |
 | **Contributor** | Catherine Chronaki | HL7 International Foundation | chronaki@gmail.com |

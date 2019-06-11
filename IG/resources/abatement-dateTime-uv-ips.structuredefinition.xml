@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../__FHIRr4Tools/STU3_fhir-xsd/structuredefinition.xsd">
 	<id value="abatement-dateTime-uv-ips"/>
-	<url value="http://hl7.eu/fhir/trillium2/StructureDefinition/abatement-dateTime-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/abatement-dateTime-uv-ips"/>
 	<name value="abatement-dateTime-uv-ips"/>
 	<title value="Abatement Date"/>
 	<status value="draft"/>
@@ -18,7 +18,7 @@
 	<differential>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
-			<fixedUri value="http://hl7.eu/fhir/trillium2/StructureDefinition/abatement-dateTime-uv-ips"/>
+			<fixedUri value="http://hl7.org/fhir/uv/ips/StructureDefinition/abatement-dateTime-uv-ips"/>
 		</element>
 		<element id="Extension.value[x]:valueDateTime">
 			<path value="Extension.valueDateTime"/>

@@ -40,7 +40,7 @@
 			<max value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -98,12 +98,12 @@
 			<sliceName value="pregnancyStatus"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<strength value="required"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/pregnancy-status-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Observation.bodySite">

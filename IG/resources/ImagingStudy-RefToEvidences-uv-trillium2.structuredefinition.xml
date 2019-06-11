@@ -10,7 +10,7 @@
 	</text>
   <url value="http://hl7.eu/fhir/trillium2/StructureDefinition/imagingstudy-RefToEvidences-uv-trillium2"/>
   <name value="imagingstudy-RefToEvidences-uv-trillium2"/>
-	<title value="Imaging Study (IPS)"/>
+	<title value="Imaging Study Ref. to Evidences (Trillium II)"/>
   <status value="draft"/>
   <date value="2018-02-20T13:33:04.511+01:00"/>
   <description value="This is a specialization of the ImagingStudy-uv-ips used for indicating a set of evidences belonging to this study and how to access them.&#xD;&#xA;&#xD;&#xA;"/>

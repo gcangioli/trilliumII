@@ -64,7 +64,7 @@
 			<max value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -72,14 +72,14 @@
 					<valueString value="ConditionCategory"/>
 				</extension>
 				<strength value="required"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/problem-type-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Condition.severity">
 			<path value="Condition.severity"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -87,7 +87,7 @@
 					<valueString value="ConditionSeverity"/>
 				</extension>
 				<strength value="preferred"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/condition-severity-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/condition-severity-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Condition.code">
@@ -105,7 +105,7 @@
 			<max value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -114,7 +114,7 @@
 				</extension>
 				<strength value="preferred"/>
 				<description value="Identification of the problem"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/core-problem-list-disorders-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/core-problem-list-disorders-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Condition.code:absentOrUnknownProblem">
@@ -125,7 +125,7 @@
 			<max value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -134,7 +134,7 @@
 				</extension>
 				<strength value="required"/>
 				<description value="Absent problem or unknown problem"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/absent-or-unknown-problems-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Condition.code:absentOrUnknownProblem.coding">
@@ -147,7 +147,7 @@
 			<path value="Condition.code.coding.system"/>
 			<min value="1"/>
 			<max value="1"/>
-			<fixedUri value="http://hl7.eu/fhir/trillium2/CodeSystem/absent-unknown-uv-ips"/>
+			<fixedUri value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Condition.subject">
@@ -166,12 +166,13 @@
 		<element id="Condition.onsetDateTime:onsetDateTime">
 			<path value="Condition.onsetDateTime"/>
 			<sliceName value="onsetDateTime"/>
-			<min value="1"/>
+			<!-- <min value="1"/> -->
 			<type>
 				<code value="dateTime"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Condition.onsetDateTime.extension:data-absent-reason">
 			<path value="Condition.onsetDateTime.extension"/>
 			<sliceName value="data-absent-reason"/>
@@ -184,6 +185,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+-->
 		<element id="Condition.abatement[x]">
 			<path value="Condition.abatement[x]"/>
 			<mustSupport value="true"/>

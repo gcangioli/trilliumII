@@ -159,15 +159,18 @@
 		</resource>
 		<!-- EXAMPLES END -->
 		<!-- PROCEDURE -->
-		<!-- BEGIN COMMENT  -->
+			<!--
 		<resource>
 			<example value="false"/>
 			<sourceUri value="ValueSet/absent-or-unknown-procedures-uv-ips"/>
 		</resource>
+
+
 		<resource>
 			<example value="false"/>
 			<sourceUri value="ValueSet/procedures-uv-ips"/>
 		</resource>
+-->
 		<resource>
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/Procedure-uv-ips"/>
@@ -179,20 +182,23 @@
 		<!-- END COMMENT -->
 		<!-- PROCEDURE END-->
 		<!-- PROBLEM -->
-		<!-- BEGIN COMMENT -->
+
 		<resource>
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/Condition-uv-ips"/>
 		</resource>
+		<!--
 		<resource>
 			<example value="false"/>
 			<sourceUri value="ValueSet/absent-or-unknown-problems-uv-ips"/>
 		</resource>
+
 		<resource>
 			<example value="false"/>
 			<sourceUri value="ValueSet/core-problem-list-disorders-uv-ips"/>
 		</resource>
-		<!-- END COMMENT -->
+-->
+
 		<!-- PROBLEM END -->
 		<!-- IMMUNIZATION BEGIN -->
 		<!-- BEGIN COMMENT -->
@@ -204,10 +210,12 @@
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/vaccinationValidity-immunization-uv-trillium2"/>
 		</resource>
+		<!--
 		<resource>
 			<example value="false"/>
 			<sourceUri value="ValueSet/absent-or-unknown-immunizations-uv-ips"/>
 		</resource>
+
 		<resource>
 			<example value="false"/>
 			<sourceUri value="ValueSet/vaccines-uv-ips"/>
@@ -224,6 +232,7 @@
 			<example value="false"/>
 			<sourceUri value="ValueSet/medicine-route-of-administration"/>
 		</resource>
+-->
 		<!-- END COMMENT -->
 		<!-- IMMUNIZATION END -->
 		<!-- MEDICATIONS -->
@@ -236,6 +245,7 @@
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/Medication-uv-ips"/>
 		</resource>
+		<!--
 		<resource>
 			<example value="false"/>
 			<sourceUri value="ValueSet/med-uv-ips"/>
@@ -248,10 +258,12 @@
 			<example value="false"/>
 			<sourceUri value="ValueSet/medicine-active-substances-uv-ips"/>
 		</resource>
+-->
 		<!-- END COMMENT -->
 		<!--MEDICATIONS END -->
 		<!-- ALLERGY -->
 		<!-- BEGIN COMMENT -->
+		<!--
 		<resource>
 			<example value="false"/>
 			<sourceUri value="ValueSet/allergy-reaction-uv-ips"/>
@@ -260,35 +272,44 @@
 			<example value="false"/>
 			<sourceUri value="ValueSet/condition-severity-uv-ips"/>
 		</resource>
-		<resource>
-			<example value="false"/>
-			<sourceUri value="StructureDefinition/AllergyIntolerance-uv-ips"/>
-		</resource>
+	
 		<resource>
 			<example value="false"/>
 			<sourceUri value="ValueSet/absent-or-unknown-allergies-uv-ips"/>
 		</resource>
+-->
+		<resource>
+			<example value="false"/>
+			<sourceUri value="StructureDefinition/AllergyIntolerance-uv-ips"/>
+		</resource>	
+		<!--
 		<resource>
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/abatement-dateTime-uv-ips"/>
 		</resource>
+		
 		<resource>
 			<example value="false"/>
 			<sourceUri value="ValueSet/allergy-intolerance-substance-condition-uv-ips"/>
 		</resource>
+-->
 		<!-- END COMMENT -->
 		<!-- ALLERGY END-->
 		<!--- DEVICES -->
 		<!-- OK -->
 		<!-- BEGIN COMMENT -->
+		<!--
 		<resource>
 			<example value="false"/>
 			<sourceUri value="ValueSet/absent-or-unknown-devices-uv-ips"/>
 		</resource>
+
 		<resource>
 			<example value="false"/>
 			<sourceUri value="ValueSet/medical-devices-uv-ips"/>
 		</resource>
+-->
+
 		<resource>
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/DeviceUseStatement-uv-ips"/>
@@ -300,10 +321,12 @@
 		<!-- END COMMENT -->
 		<!-- DEVICES END -->
 		<!-- Pregnancy BEGIN -->
+		<!--
 		<resource>
 			<example value="false"/>
 			<sourceUri value="ValueSet/pregnancy-status-uv-ips"/>
 		</resource>
+-->
 		<resource>
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/Observation-pregnancy-edd-uv-ips"/>
@@ -426,26 +449,29 @@
 		</resource>
 		<resource>
 			<example value="false"/>
+			<sourceUri value="StructureDefinition/Patient-uv-ips"/>
+		</resource>
+		<!--
+		<resource>
+			<example value="false"/>
 			<sourceUri value="CodeSystem/absent-unknown-uv-ips"/>
 		</resource>
+
 		<resource>
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/CodeableConcept-uv-ips"/>
 		</resource>
-    <!--
+
 		<resource>
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/statement-uv-ips"/>
 		</resource>
-    -->
+
 		<resource>
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/Coding-uv-ips"/>
 		</resource>
-		<resource>
-			<example value="false"/>
-			<sourceUri value="StructureDefinition/Patient-uv-ips"/>
-		</resource>
+   	
 		<resource>
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/Range-uv-ips"/>
@@ -458,6 +484,7 @@
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/Quantity-uv-ips"/>
 		</resource>
+ -->
 		<resource>
 			<example value="false"/>
 			<sourceUri value="StructureDefinition/MedicationAdministration-uv-trillium2"/>

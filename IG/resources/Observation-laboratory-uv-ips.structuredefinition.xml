@@ -67,7 +67,7 @@
 			<max value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -77,7 +77,7 @@
 			<comment value="In the context of this Observation-laboratory-uv-ips profile, when the observation plays the role of a grouper of member sub-observations, the code represent the group (for instance a panel code). In case no code is available, at least a text shall be provided."/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -85,7 +85,7 @@
 					<valueString value="ObservationCode"/>
 				</extension>
 				<strength value="extensible"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/laboratory-tests-and-panels-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-tests-and-panels-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Observation.subject">
@@ -159,11 +159,11 @@
 			</type>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<type>
 				<code value="Quantity"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Quantity-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips"/>
 			</type>
 			<condition value="value"/>
 			<constraint>
@@ -175,7 +175,7 @@
 			<mustSupport value="true"/>
 			<binding>
 				<strength value="extensible"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/lab-result-coded-value-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/lab-result-coded-value-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Observation.dataAbsentReason">
@@ -192,7 +192,7 @@
 			<path value="Observation.method.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -215,7 +215,7 @@
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>

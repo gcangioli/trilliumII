@@ -49,7 +49,7 @@
 			<definition value="Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that gives a reason for absent or unknown Medication.."/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<type>
 				<code value="Reference"/>
@@ -62,7 +62,7 @@
 				</extension>
 				<strength value="required"/>
 				<description value="Representation of unknown or absent medications"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/absent-or-unknown-medications-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips"/>
 			</binding>
 		</element>
 		<element id="MedicationStatement.effective[x]">
@@ -145,7 +145,7 @@
 			<path value="MedicationStatement.reasonCode"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -169,25 +169,25 @@
 			<path value="MedicationStatement.dosage.site"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<strength value="preferred"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/target-site-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
 			</binding>
 		</element>
 		<element id="MedicationStatement.dosage.route">
 			<path value="MedicationStatement.dosage.route"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<strength value="required"/>
 				<description value="EDQM Standards Terms"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/medicine-route-of-administration"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration"/>
 			</binding>
 		</element>
 	</differential>

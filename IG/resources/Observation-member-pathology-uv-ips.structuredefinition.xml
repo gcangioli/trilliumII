@@ -54,7 +54,7 @@
 			<max value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -63,14 +63,14 @@
 				</extension>
 				<strength value="required"/>
 				<description value="Codes for sub-observation categories"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/sub-observation-category-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/sub-observation-category-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Observation.code">
 			<path value="Observation.code"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -78,7 +78,7 @@
 					<valueString value="ObservationCode"/>
 				</extension>
 				<strength value="extensible"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/pathology-and-vital-signs-observations"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/pathology-and-vital-signs-observations"/>
 			</binding>
 		</element>
 		<element id="Observation.subject">
@@ -146,16 +146,16 @@
 			</type>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<type>
 				<code value="Quantity"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Quantity-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<strength value="extensible"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/pathology-result-coded-value-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/pathology-result-coded-value-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Observation.dataAbsentReason">

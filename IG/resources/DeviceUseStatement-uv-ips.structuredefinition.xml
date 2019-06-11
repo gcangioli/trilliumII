@@ -89,7 +89,7 @@
 			<requirements value="Knowing where the device is targeted is important for tracking if multiple sites are possible. If more information than just a code is required, use the extension bodySite"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="false"/>
 			<binding>
@@ -99,10 +99,6 @@
 		</element>
 		<element id="DeviceUseStatement.indication">
 			<path value="DeviceUseStatement.indication"/>
-			<binding>
-				<strength value="example"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/reason-for-use"/>
-			</binding>
 		</element>
 	</differential>
 </StructureDefinition>

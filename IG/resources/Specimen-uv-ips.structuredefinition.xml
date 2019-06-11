@@ -45,14 +45,14 @@
 					<valueString value="SpecimenType"/>
 				</extension>
 				<strength value="extensible"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/specimen-type-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/specimen-type-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Specimen.type.coding">
 			<path value="Specimen.type.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -102,12 +102,12 @@
 			<path value="Specimen.collection.method"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<strength value="extensible"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/specimen-collection-method-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/specimen-collection-method-uv-ips"/>
 			</binding>
 		</element>
 		<!--
@@ -115,12 +115,12 @@
 			<path value="Specimen.collection.method.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<strength value="extensible"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/specimen-collection-method-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/specimen-collection-method-uv-ips"/>
 			</binding>
 		</element>
 -->
@@ -128,7 +128,7 @@
 			<path value="Specimen.collection.bodySite"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -141,7 +141,7 @@
 			<path value="Specimen.collection.bodySite.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>

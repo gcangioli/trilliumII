@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="fs-9023-VS-3"/>
+	<meta>
+		<versionId value="2"/>
+		<lastUpdated value="2019-03-22T13:49:58Z"/>
+		<profile value="http://hl7.org/fhir/StructureDefinition/bmi"/>
+	</meta>
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+			<code value="vital-signs"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="39156-5"/>
+			<display value="BMI"/>
+		</coding>
+		<text value="BMI"/>
+	</code>
+	<subject>
+		<reference value="Patient/fs-9023"/>
+		<display value="9023"/>
+	</subject>
+	<effectiveDateTime value="2019-03-22T11:37:37.000Z"/>
+	<valueQuantity>
+		<value value="24.221453287197"/>
+		<unit value="Kilogram per square meter"/>
+		<system value="http://unitsofmeasure.org"/>
+		<code value="kg/m2"/>
+	</valueQuantity>
+</Observation>

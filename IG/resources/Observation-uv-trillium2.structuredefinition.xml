@@ -44,7 +44,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/laboratory-specialty"/>
+        <valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-specialty"/>
       </binding>
     </element>
     <element id="Observation.basedOn">
@@ -76,14 +76,14 @@
           <valueString value="ObservationCode"/>
         </extension>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/laboratory-tests-and-panels"/>
+        <valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-tests-and-panels"/>
       </binding>
     </element>
     <element id="Observation.code.coding">
       <path value="Observation.code.coding"/>
       <binding>
         <strength value="extensible"/>
-        <valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/laboratory-tests-and-panels"/>
+        <valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-tests-and-panels"/>
       </binding>
     </element>
     <element id="Observation.subject">

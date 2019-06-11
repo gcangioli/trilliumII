@@ -10,7 +10,7 @@
 	</text>
 	<url value="http://hl7.eu/fhir/trillium2/StructureDefinition/ImagingStudy-uv-ips"/>
 	<name value="ImagingStudy_uv_ips"/>
-	<title value="Imaging Study (IPS)"/>
+	<title value="Imaging Study (Trillium II)"/>
 	<status value="draft"/>
 	<date value="2018-02-20T13:22:59.883+01:00"/>
 	<description value="This profile represents the constraints applied to the ImagingStudy resource by the IPS project, which specifies the information on a DICOM imaging study this imaging result is part of.&#xD;&#xA;"/>
@@ -65,7 +65,7 @@
 			<path value="ImagingStudy.procedureCode"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -73,7 +73,7 @@
 			<path value="ImagingStudy.reason"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>

@@ -100,7 +100,7 @@
 			<max value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<fixedCodeableConcept>
 				<coding>
@@ -117,7 +117,7 @@
 			<definition value="Describes what was observed. Sometimes this is called the observation &quot;name&quot;.&#xD;&#xA;In this profile the code of the containing observation (the organizer result in the CDA implementation) may correspond to the procedure code (e.g. Chest X-Ray)."/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -125,7 +125,7 @@
 					<valueString value="ObservationCode"/>
 				</extension>
 				<strength value="extensible"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/imaging-observations-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Observation.subject">
@@ -191,7 +191,7 @@
 			<label value="body site"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -199,7 +199,7 @@
 					<valueString value="BodySite"/>
 				</extension>
 				<strength value="example"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/target-site-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Observation.device">
@@ -276,7 +276,7 @@
 					<valueString value="ObservationCode"/>
 				</extension>
 				<strength value="extensible"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/imaging-txtobs-code-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-txtobs-code-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Observation.component:observationText.valueString:valueString">
@@ -299,7 +299,7 @@
 			<mustSupport value="true"/>
 			<binding>
 				<strength value="extensible"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/imaging-observations-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Observation.component:observationCode.valueCodeableConcept:valueCodeableConcept">
@@ -326,7 +326,7 @@
 				</extension>
 				<strength value="extensible"/>
 				<description value="Codes identifying numeric measurements"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/imaging-numobs-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-numobs-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Observation.component:numericMeasurement.value[x]">

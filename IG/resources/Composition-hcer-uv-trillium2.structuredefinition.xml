@@ -6,7 +6,7 @@
 	</meta>
 	<url value="http://hl7.eu/fhir/trillium2/StructureDefinition/Composition-hcer-uv-trillium2"/>
 	<name value="Composition_HCER_uv_trillium2"/>
-	<title value="Trillium II Encounter Report"/>
+	<title value=" Trillium II Encounter Report"/>
 	<status value="draft"/>
 	<date value="2019-03-11"/>
 	<publisher value="Trillium2 Project"/>
@@ -67,7 +67,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -227,7 +227,7 @@
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<fixedCodeableConcept>
 				<coding>
@@ -243,7 +243,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -335,7 +335,7 @@
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<fixedCodeableConcept>
 				<coding>
@@ -351,7 +351,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -442,7 +442,7 @@
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<fixedCodeableConcept>
 				<coding>
@@ -458,7 +458,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -549,7 +549,7 @@
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<fixedCodeableConcept>
 				<coding>
@@ -565,7 +565,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -658,7 +658,7 @@
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<fixedCodeableConcept>
 				<coding>
@@ -674,7 +674,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -764,7 +764,7 @@
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<fixedCodeableConcept>
 				<coding>
@@ -780,7 +780,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -871,7 +871,7 @@
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<fixedCodeableConcept>
 				<coding>
@@ -887,7 +887,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -1027,7 +1027,7 @@
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<fixedCodeableConcept>
 				<coding>
@@ -1043,7 +1043,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -1132,7 +1132,7 @@
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<fixedCodeableConcept>
 				<coding>
@@ -1148,7 +1148,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -1240,7 +1240,7 @@
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<fixedCodeableConcept>
 				<coding>
@@ -1256,7 +1256,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -1367,7 +1367,7 @@
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<fixedCodeableConcept>
 				<coding>
@@ -1383,7 +1383,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -1437,7 +1437,7 @@
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<fixedCodeableConcept>
 				<coding>
@@ -1453,7 +1453,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -1559,7 +1559,7 @@
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<fixedCodeableConcept>
 				<coding>
@@ -1575,7 +1575,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -1679,7 +1679,7 @@
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<fixedCodeableConcept>
 				<coding>
@@ -1695,7 +1695,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/Coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -1833,7 +1833,7 @@
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<fixedCodeableConcept>
 				<coding>
@@ -1912,7 +1912,7 @@
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<fixedCodeableConcept>
 				<coding>
@@ -1955,7 +1955,7 @@
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<fixedCodeableConcept>
 				<coding>
@@ -2039,7 +2039,7 @@
 			<min value="1"/>
 					<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<fixedCodeableConcept>
 				<coding>
@@ -2123,7 +2123,7 @@
 			<min value="1"/>
 				<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<fixedCodeableConcept>
 				<coding>

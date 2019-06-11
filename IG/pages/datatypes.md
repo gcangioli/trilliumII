@@ -1,14 +1,16 @@
 ---
-title: Extensions defined for this Guide
+title: Datatypes defined for this Guide
 layout: default
-active: extensions
+active: datatypes
 ---
 
-Two classes of datatype profiles have been defined for the IPS:
-* A first class designed to support multi-languages:
-{% include StructureDefinition-CodeableConcept-uv-ips-summary.xhtml %}
-{% include StructureDefinition-Coding-uv-ips-summary.xhtml %}
 
-* A second one defined to restrict the usage of quantity-related data types to UCUM as system for units.
-{% include StructureDefinition-Range-uv-ips-summary.xhtml %}
 
+<table>
+{% for sd_hash in site.data.structuredefinitions -%}
+  {%- assign sd = sd_hash[1] -%}
+  {%- if sd.kind  == "complex-type" and sd.type != "Extension" -%}
+   <tr><td> <a href="{{sd.path}}">{{sd.name}}</a>{{sd.title}}</td><td>{{sd.description}} </td></tr>
+  {%- endif -%}
+{%- endfor -%}
+</table>

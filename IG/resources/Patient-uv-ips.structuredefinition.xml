@@ -94,7 +94,7 @@
 			<path value="Patient.contact.relationship"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -102,7 +102,7 @@
 					<valueString value="ContactRelationship"/>
 				</extension>
 				<strength value="required"/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/personal-relationship-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/personal-relationship-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Patient.contact.name">

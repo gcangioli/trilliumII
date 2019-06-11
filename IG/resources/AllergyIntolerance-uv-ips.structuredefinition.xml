@@ -46,7 +46,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/abatement-dateTime-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/abatement-dateTime-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -81,7 +81,7 @@
 			<max value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -90,7 +90,7 @@
 				</extension>
 				<strength value="preferred"/>
 				<description value="Type of the substance/product, allergy or intolerance condition."/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2/ValueSet/allergy-intolerance-substance-condition-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips"/>
 			</binding>
 		</element>
 		<element id="AllergyIntolerance.code:absentOrUnknownAllergy">
@@ -100,7 +100,7 @@
 			<definition value="Code for an allergy or intolerance statement (either a positive or a negated/excluded statement).  This describes a categorical negated statement (e.g.,  &quot;No known allergy&quot;)."/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -109,7 +109,7 @@
 				</extension>
 				<strength value="required"/>
 				<description value="negation/exclusion codes for reporting no known allergies or not available data."/>
-				<valueSetUri value="http://hl7.eu/fhir/trillium2ValueSet/absent-or-unknown-allergies-uv-ips"/>
+				<valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips"/>
 			</binding>
 		</element>
 		<element id="AllergyIntolerance.code:absentOrUnknownAllergy.coding">
@@ -122,7 +122,7 @@
 			<path value="AllergyIntolerance.code.coding.system"/>
 			<min value="1"/>
 			<max value="1"/>
-			<fixedUri value="http://hl7.eu/fhir/trillium2/CodeSystem/absent-unknown-uv-ips"/>
+			<fixedUri value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="AllergyIntolerance.patient">
@@ -141,12 +141,12 @@
 		<element id="AllergyIntolerance.onsetDateTime:onsetDateTime">
 			<path value="AllergyIntolerance.onsetDateTime"/>
 			<sliceName value="onsetDateTime"/>
-			<min value="1"/>
 			<type>
 				<code value="dateTime"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
+<!--
 		<element id="AllergyIntolerance.onsetDateTime.extension:data-absent-reason">
 			<path value="AllergyIntolerance.onsetDateTime.extension"/>
 			<sliceName value="data-absent-reason"/>
@@ -159,6 +159,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+-->
 		<element id="AllergyIntolerance.asserter">
 			<path value="AllergyIntolerance.asserter"/>
 			<mustSupport value="true"/>
@@ -171,7 +172,7 @@
 			<path value="AllergyIntolerance.reaction.manifestation"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.eu/fhir/trillium2/StructureDefinition/CodeableConcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
