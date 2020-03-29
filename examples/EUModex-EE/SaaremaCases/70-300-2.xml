@@ -1,0 +1,351 @@
+<Bundle xmlns='http://hl7.org/fhir' xmlns:xhtml='http://www.w3.org/1999/xhtml' >
+<type value='transaction'/>
+<entry>
+<fullUrl value='Composition/eumfh-70-300-21'/>
+<resource>
+<Composition>
+    <id value="eumfh-70-300-21"/>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="60591-5"/>
+            <display value="Patient summary Document"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/eumfh-70-300-2"/>
+        <display value="Anna Markou (inject 70-300-2)"/>
+    </subject>
+    <date value="2018-10-10T16:41:04+02:00"/>
+    <author>
+        <reference value="Practitioner/eumfh-70-300-2-1"/>
+        <display value="Elena Anthis (inject 70-300-2)"/>
+    </author>
+    <title value="Patient Summary of Anna Markou (inject 70-300-2)"/>
+    <confidentiality value="N"/>
+    <section>
+        <title value="Allergies and Intolerances"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="48765-2"/>
+                <display value="Allergies and adverse reactions Document"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <xhtml:div>
+                <xhtml:ul>
+                    <xhtml:li>allergy to Penicillin</xhtml:li>
+                </xhtml:ul>
+            </xhtml:div>
+        </text>
+        <entry>
+            <reference value="AllergyIntolerance/eumfh-70-300-2"/>
+            <display value="allergy to Penicillin"/>
+        </entry>
+    </section>
+	<section>
+		<title value="Active Problems"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="11450-4"/>
+				<display value="Problem list Reported"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+<xhtml:li>[2018-10-08] - No known problems</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+	</section>
+
+	<section>
+		<title value="Medication"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="10160-0"/>
+				<display value="Hx of Medication use"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+<xhtml:li>[2018] - No information about medications</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+<entry>
+<reference value="MedicationStatement/eumfh-70-300-2"/>
+<display value="[2018] - No information about medications"/>
+</entry>
+	</section>
+</Composition>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Composition/eumfh-70-300-2'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='Composition/eumfh-70-300-2'/>
+<resource>
+<Composition>
+	<id value="eumfh-70-300-2"/>
+	<status value="final"/>
+	<type>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="60591-5"/>
+			<display value="Patient summary Document"/>
+		</coding>
+	</type>
+	<subject>
+		<reference value="Patient/eumfh-70-300-2"/>
+		<display value="Anna Markou (inject 70-300-2)"/>
+	</subject>
+	<date value="2018-10-10T16:41:04+02:00"/>
+	<author>
+		<reference value="Practitioner/eumfh-70-300-2-1"/>
+		<display value="Elena Anthis (inject 70-300-2)"/>
+	</author>
+	<title value="Patient Summary of Anna Markou (inject 70-300-2)"/>
+	<confidentiality value="N"/>
+	<section>
+		<title value="Allergies and Intolerances"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="48765-2"/>
+				<display value="Allergies and adverse reactions Document"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+					<xhtml:li>allergy to Penicillin</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="AllergyIntolerance/eumfh-70-300-2"/>
+			<display value="allergy to Penicillin"/>
+		</entry>
+	</section>
+	<section>
+		<title value="Active Problems"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="11450-4"/>
+				<display value="Problem list Reported"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+					<xhtml:li>[2018-10-08] - No known problems</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+	</section>
+	<section>
+		<title value="Medication"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="10160-0"/>
+				<display value="Hx of Medication use"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+					<xhtml:li>[2018] - No information about medications</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="MedicationStatement/eumfh-70-300-2"/>
+			<display value="[2018] - No information about medications"/>
+		</entry>
+	</section>
+	<section>
+		<title value="Immunizations"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="11369-6"/>
+				<display value="History of Immunization Narrative"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+					<xhtml:li>[2010-04-19] - Tetanus</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+		<entry>
+			<reference value="Immunization/eumfh-70-300-2-1"/>
+			<display value="Tetanus vaccine"/>
+		</entry>
+	</section>
+</Composition>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Composition/eumfh-70-300-2'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='AllergyIntolerance/eumfh-70-300-2'/>
+<resource>
+<AllergyIntolerance>
+    <id value="70-300-2-1"/>
+    <clinicalStatus value="active"/>
+    <verificationStatus value="confirmed"/>
+    <type value="allergy"/>
+    <code>
+       <coding><system value="http://snomed.info/sct"/>  <code value="764146007"/>  <display value="Penicillin"/></coding> 
+    </code>
+    <patient>
+        <reference value="Patient/eumfh-70-300-2"/>
+        <display value="Anna Markou (inject 70-300-2)"/>
+    </patient>
+</AllergyIntolerance>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='AllergyIntolerance/eumfh-70-300-2'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='Immunization/eumfh-70-300-2-1'/>
+<resource>
+<Immunization>
+	<id value="eumfh-70-300-2-1"/>
+	<status value="completed"/>
+	<notGiven value="false"/>
+	<vaccineCode>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="333621002"/>
+			<display value="Tetanus vaccine"/>
+		</coding>
+		<text value="Tetanus vaccine"/>
+	</vaccineCode>
+	<patient>
+		<reference value="Patient/eumfh-70-300-2"/>
+		<display value="Anna Markou (inject 70-300-2)"/>
+	</patient>
+	<date value="2010-04-19"/>
+	<primarySource value="false"/>
+</Immunization>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Immunization/eumfh-70-300-2-1'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='MedicationStatement/eumfh-70-300-2'/>
+<resource>
+<MedicationStatement>
+
+
+	<id value="eumfh-70-300-2"/>
+	<status value="active"/>
+	<medicationCodeableConcept>
+		<coding>
+			<system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
+			<code value="no-medication-info"/>
+			<display value="No information about medications"/>
+		</coding>
+	</medicationCodeableConcept>
+	<dateAsserted value="2018-10-01"/>
+	<informationSource>
+		<reference value="Patient/eumfh-70-300-2"/>
+		<display value="Anna Markou (inject 70-300-2)"/>
+	</informationSource>
+	<subject>
+		<reference value="Patient/eumfh-70-300-2"/>
+		<display value="Anna Markou (inject 70-300-2)"/>
+	</subject>
+	<taken value="na"/>
+</MedicationStatement>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='MedicationStatement/eumfh-70-300-2'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='Patient/eumfh-70-300-2'/>
+<resource>
+<Patient>
+<!--Sample XML file generated by XMLSpy v2013 sp1 (http://www.altova.com)-->
+	<id value="eumfh-70-300-2"/>
+  <meta><lastUpdated value="2018-10-10T13:51:24+02:00"/></meta>
+	<extension url="http://hl7.org/fhir/StructureDefinition/patient-citizenship">
+		<extension url="code">
+		<valueCodeableConcept>
+			<coding>
+				<system value="urn:iso:std:iso:3166"/>
+				<code value="GR"/>
+				<display value="Greece"/>
+			</coding></valueCodeableConcept>
+		</extension>
+	</extension>
+      	<identifier>
+  		<system value="http://trilliumbridge.eu/fhir/demos/eumfh/inject"/>
+		<value value="70-300-2"/>
+	</identifier>
+	<identifier>
+		<system value="http://trilliumbridge.eu/fhir/demos/eumfh/patient_id"/>
+		<value value="EUR01P0021"/>
+	</identifier>
+	<active value="true"/>
+	<name>
+		<family value="Markou"/>
+		<given value="Anna"/>
+	</name>
+	<gender value="female"/>
+	<birthDate value="1973-07-14"/>
+</Patient>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Patient/eumfh-70-300-2'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='Practitioner/eumfh-70-300-2-1'/>
+<resource>
+<Practitioner>
+    <id value="eumfh-70-300-2-1"/>
+    <meta><lastUpdated value="2018-10-10T13:52:19+02:00"/></meta>
+    <name>
+        <family value="Anthis"/>
+        <given value="Elena"/>
+        <prefix value="Dr."/>
+    </name>
+</Practitioner>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Practitioner/eumfh-70-300-2-1'/>
+</request>
+</entry>
+</Bundle>

@@ -1,64 +1,39 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Observation xsi:schemaLocation="http://hl7.org/fhir observation.xsd" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<!--        TRILLIUM II Project
-		Example of imaging observation including only the essential information
-		textual result
-    -->
-    
-	<id value="trilliumII-example-imaging-1"/>
-	<!-- UPDATE THE Narrative -->
-	<!-- to be decided how to deal wioth narratives here ? at the seciton level ? both ? -->
-	<!--
-	<text>
-		<status value="generated"/>
-		<div xmlns="http://www.w3.org/1999/xhtml">
-			<p>
-				<b>Generated Narrative with Details</b>
-			</p>
-			<p>
-				<b>id</b>: bmd</p>
-			<p>
-				<b>status</b>: final</p>
-			<p>
-				<b>code</b>: BMD - Left Femur <span>(Details : {LOINC code &#39;24701-5&#39; = &#39;Femur DXA Bone density&#39;, given as &#39;Femur DXA Bone density&#39;})</span>
-			</p>
-			<p>
-				<b>subject</b>: <a>Patient/pat2</a>
-			</p>
-			<p>
-				<b>performer</b>: <a>Acme Imaging Diagnostics</a>
-			</p>
-			<p>
-				<b>value</b>: 0.887 g/cm&#xB2;<span> (Details: UCUM code g/cm-2 = &#39;g/cm-2&#39;)</span>
-			</p>
-			<p>
-				<b>bodySite</b>: Left Femur <span>(Details : {SNOMED CT code &#39;71341001:272741003=7771000&#39; = &#39;Femur where Laterality = Left)</span>
-			</p>
-		</div>
-	</text>
--->
-	<status value="final"/>
-	<category>
-		<coding>
-			<system value="http://hl7.org/fhir/observation-category"/>
-			<code value="imaging"/>
-		</coding>
-	</category>
-	<code>
-		<coding>
-			<system value="http://loinc.org/"/>
-			<code value="79103-8"/>
-			<display value="CT Abdomen W contrast IV"/>
-		</coding>
-		<text value="Upper abdomen with the administration of oral and intravenous contrast (example-4)"/>
-	</code>
-	<!-- in the profile effectiveTime is 0...1 -->
-	<subject>
-		<!-- revise the URL if needed -->
-		<reference value="Patient/GE0514"/>
-	</subject>
-	
-		<!-- in the profile effectiveTime is 0...1 -->
-		<effectiveDateTime value="1995-06-08"/>
-	<valueString value="3 cm nodule present in the inferior medial aspect of right liver lobe. Contrast enhancement pattern consistent with the diagnosis of hemangioma."/>
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="trilliumII-example-imaging-1"/>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+<p>
+                <b>date</b>: 1995-06-08
+            </p>
+            <p>              <b>subject</b>: <a>Patient/GE0514</a>      </p>
+                        
+            <p>
+                <b>CT Abdomen W contrast IV</b>
+            </p>
+            <p>
+                3 cm nodule present in the inferior medial aspect of right liver lobe. Contrast enhancement pattern consistent with the diagnosis of hemangioma.
+            </p>
+        </div>
+    </text>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="imaging"/>
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://loinc.org/"/>
+            <code value="79103-8"/>
+            <display value="CT Abdomen W contrast IV"/>
+        </coding>
+        <text value="Upper abdomen with the administration of oral and intravenous contrast (example-4)"/>
+    </code>
+    <subject>
+        <reference value="Patient/GE0514"/>
+    </subject>
+    <effectiveDateTime value="1995-06-08"/>
+    <valueString value="3 cm nodule present in the inferior medial aspect of right liver lobe. Contrast enhancement pattern consistent with the diagnosis of hemangioma."/>
 </Observation>

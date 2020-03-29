@@ -1,0 +1,502 @@
+<Bundle xmlns='http://hl7.org/fhir' xmlns:xhtml='http://www.w3.org/1999/xhtml' >
+<type value='transaction'/>
+<entry>
+<fullUrl value='Composition/eumfh-70-254'/>
+<resource>
+<Composition>
+    <id value="eumfh-70-254"/>
+    <status value="final"/>
+    <type>
+        <coding>
+            <system value="http://loinc.org"/>
+            <code value="60591-5"/>
+            <display value="Patient summary Document"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/eumfh-70-254"/>
+        <display value="Laurent Ballen (inject 70-254)"/>
+    </subject>
+    <date value="2018-10-10T16:41:04+02:00"/>
+    <author>
+        <reference value="Practitioner/eumfh-70-254-1"/>
+        <display value="George Hugo (inject 70-254)"/>
+    </author>
+    <title value="Patient Summary of Laurent Ballen (inject 70-254)"/>
+    <confidentiality value="N"/>
+    <section>
+        <title value="Allergies and Intolerances"/>
+        <code>
+            <coding>
+                <system value="http://loinc.org"/>
+                <code value="48765-2"/>
+                <display value="Allergies and adverse reactions Document"/>
+            </coding>
+        </code>
+        <text>
+            <status value="generated"/>
+            <xhtml:div>
+                <xhtml:ul>
+                    <xhtml:li>No known allergies</xhtml:li>
+                </xhtml:ul>
+            </xhtml:div>
+        </text>
+        <entry>
+            <reference value="AllergyIntolerance/eumfh-70-254-1"/>
+            <display value="No known allergies"/>
+        </entry>
+    </section>
+	<section>
+		<title value="Active Problems"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="11450-4"/>
+				<display value="Problem list Reported"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+<xhtml:li>[2008-03-01] - Hypertension</xhtml:li>
+<xhtml:li>[2017-12-04] - Chronic kidney disease stage 2</xhtml:li>
+<xhtml:li>[2011-02-04] - Carotid Stenosis 60%</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+<entry>
+<reference value="Condition/eumfh-70-254-1"/>
+<display value="[2008-03-01] - Hypertension"/>
+</entry>
+<entry>
+<reference value="Condition/eumfh-70-254-2"/>
+<display value="[2017-12-04] - Chronic kidney disease stage 2"/>
+</entry>
+<entry>
+<reference value="Condition/eumfh-70-254-3"/>
+<display value="[2011-02-04] - Carotid Stenosis 60%"/>
+</entry>
+	</section>
+
+	<section>
+		<title value="Medication"/>
+		<code>
+			<coding>
+				<system value="http://loinc.org"/>
+				<code value="10160-0"/>
+				<display value="Hx of Medication use"/>
+			</coding>
+		</code>
+		<text>
+			<status value="generated"/>
+			<xhtml:div>
+				<xhtml:ul>
+<xhtml:li>[2018] - amlodipine 20 mg</xhtml:li>
+<xhtml:li>[2018] - Acetylsalicylic acid - 100 mg/day</xhtml:li>
+<xhtml:li>[2018] - allopurinol 150 mg</xhtml:li>
+<xhtml:li>[2018] - Omeprazole 20 mg oral tablet</xhtml:li>
+				</xhtml:ul>
+			</xhtml:div>
+		</text>
+<entry>
+<reference value="MedicationStatement/eumfh-70-254-1"/>
+<display value="[2018] - amlodipine 20 mg"/>
+</entry>
+<entry>
+<reference value="MedicationStatement/eumfh-70-254-2"/>
+<display value="[2018] - Acetylsalicylic acid - 100 mg/day"/>
+</entry>
+<entry>
+<reference value="MedicationStatement/eumfh-70-254-3"/>
+<display value="[2018] - allopurinol 150 mg"/>
+</entry>
+<entry>
+<reference value="MedicationStatement/eumfh-70-254-4"/>
+<display value="[2018] - Omeprazole 20 mg oral tablet"/>
+</entry>
+	</section>
+</Composition>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Composition/eumfh-70-254'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='AllergyIntolerance/eumfh-70-254-1'/>
+<resource>
+<AllergyIntolerance>
+	<id value="eumfh-70-254-1"/>
+	<clinicalStatus value="active"/>
+	<verificationStatus value="confirmed"/>
+	<code>
+		<coding>
+			<system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
+			<code value="no-known-allergies"/>
+			<display value="No known allergies"/>
+		</coding>
+	</code>
+	<patient>
+				<reference value="Patient/eumfh-70-254"/>
+		<display value="Laurent Ballen (inject 70-254)"/>
+	</patient>
+</AllergyIntolerance>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='AllergyIntolerance/eumfh-70-254-1'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='Condition/eumfh-70-254-1'/>
+<resource>
+<Condition>
+    <id value="eumfh-70-254-1"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="I10"/>
+            <display value="Essential (primary) hypertension"/>
+        </coding>
+        <text value="Hypertension"/>
+    </code>
+    <subject>
+        <reference value="Patient/eumfh-70-254"/>
+        <display value="Laurent Ballen (inject 70-254)"/>
+    </subject>
+	<onsetDateTime value="2008-03-01"/>
+	<asserter>
+		<reference value="Practitioner/eumfh-70-254-1"/>
+		<display value="Dr. Frank Byrne"/>
+	</asserter>
+</Condition>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Condition/eumfh-70-254-1'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='Condition/eumfh-70-254-2'/>
+<resource>
+<Condition>
+    <id value="eumfh-70-254-2"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="431856006"/>
+            <display value="Chronic kidney disease stage 2"/>
+        </coding>
+        <text value="Chronic kidney disease stage 2"/>
+    </code>
+    <subject>
+        <reference value="Patient/eumfh-70-254"/>
+        <display value="Laurent Ballen (inject 70-254)"/>
+    </subject>
+	<onsetDateTime value="2017-12-04"/>
+	<asserter>
+		<reference value="Practitioner/eumfh-70-254-1"/>
+		<display value="Dr. Frank Byrne"/>
+	</asserter>
+</Condition>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Condition/eumfh-70-254-2'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='Condition/eumfh-70-254-3'/>
+<resource>
+<Condition>
+    <id value="eumfh-70-254-3"/>
+    <clinicalStatus value="active"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="64586002"/>
+            <display value="Carotid artery stenosis"/>
+        </coding>
+        <text value="Carotid Stenosis 60%"/>
+    </code>
+    <subject>
+        <reference value="Patient/eumfh-70-254"/>
+        <display value="Laurent Ballen (inject 70-254)"/>
+    </subject>
+<onsetDateTime value="2011-02-04"/>
+	<asserter>
+		<reference value="Practitioner/eumfh-70-254-1"/>
+		<display value="Dr. Frank Byrne"/>
+	</asserter>
+</Condition>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Condition/eumfh-70-254-3'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='Medication/eumfh-70-254-1'/>
+<resource>
+<Medication>
+    <id value="eumfh-70-254-1"/>
+    <code>
+        <text value="amlodipine 20 mg"/>
+    </code>
+</Medication>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Medication/eumfh-70-254-1'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='Medication/eumfh-70-254-2'/>
+<resource>
+<Medication>
+    <id value="eumfh-70-254-2"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="7947003"/>
+            <display value="aspirin product"/>
+        </coding>
+    </code>
+</Medication>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Medication/eumfh-70-254-2'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='Medication/eumfh-70-254-3'/>
+<resource>
+<Medication>
+    <id value="eumfh-70-254-3"/>
+    <code>
+        <text value="allopurinol 150 mg"/>
+    </code>
+</Medication>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Medication/eumfh-70-254-3'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='Medication/eumfh-70-254-4'/>
+<resource>
+<Medication>
+    <id value="eumfh-70-254-4"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="317306008"/>
+            <display value="Omeprazole 20 mg oral tablet"/>
+        </coding>
+    </code>
+</Medication>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Medication/eumfh-70-254-4'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='MedicationStatement/eumfh-70-254-1'/>
+<resource>
+<MedicationStatement>
+	<id value="eumfh-70-254-1"/>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="Medication/eumfh-70-254-1"/>
+		<display value="amlodipine 20 mg"/>
+	</medicationReference>
+	<effectivePeriod>
+		<start value="2018"/>
+	</effectivePeriod>
+	<dateAsserted value="2018-10-01"/>
+	<informationSource>
+		<reference value="Patient/eumfh-70-254"/>
+		<display value="Laurent Ballen (inject 70-254)"/>
+	</informationSource>	
+	<subject>
+		<reference value="Patient/eumfh-70-254"/>
+		<display value="Laurent Ballen (inject 70-254)"/>
+	</subject>
+	<taken value="y"/>
+</MedicationStatement>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='MedicationStatement/eumfh-70-254-1'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='MedicationStatement/eumfh-70-254-2'/>
+<resource>
+<MedicationStatement>
+	<id value="eumfh-70-254-2"/>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="Medication/eumfh-70-254-2"/>
+		<display value="Acetylsalicylic acid"/>
+	</medicationReference>
+	<effectivePeriod>
+		<start value="2018"/>
+	</effectivePeriod>
+	<dateAsserted value="2018-10-01"/>
+	<informationSource>
+		<reference value="Patient/eumfh-70-254"/>
+		<display value="Laurent Ballen (inject 70-254)"/>
+	</informationSource>	
+	<subject>
+		<reference value="Patient/eumfh-70-254"/>
+		<display value="Laurent Ballen (inject 70-254)"/>
+	</subject>
+	<taken value="y"/>
+	<dosage>
+		<text value="100 mg/day"/>
+		<timing>
+			<repeat>
+				<frequency value="1"/>
+				<period value="1"/>
+				<periodUnit value="d"/>
+			</repeat>
+		</timing>
+		<doseQuantity>
+			<value value="100"/>
+			<unit value="mg"/>
+			<system value="http://unitsofmeasure.org"/>
+			<code value="mg"/>
+		</doseQuantity>
+	</dosage>
+</MedicationStatement>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='MedicationStatement/eumfh-70-254-2'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='MedicationStatement/eumfh-70-254-3'/>
+<resource>
+<MedicationStatement>
+	<id value="eumfh-70-254-3"/>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="Medication/eumfh-70-254-3"/>
+		<display value="allopurinol 150 mg"/>
+	</medicationReference>
+	<effectivePeriod>
+		<start value="2018"/>
+	</effectivePeriod>
+	<dateAsserted value="2018-10-01"/>
+	<informationSource>
+		<reference value="Patient/eumfh-70-254"/>
+		<display value="Laurent Ballen (inject 70-254)"/>
+	</informationSource>	
+	<subject>
+		<reference value="Patient/eumfh-70-254"/>
+		<display value="Laurent Ballen (inject 70-254)"/>
+	</subject>
+	<taken value="y"/>
+</MedicationStatement>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='MedicationStatement/eumfh-70-254-3'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='MedicationStatement/eumfh-70-254-4'/>
+<resource>
+<MedicationStatement>
+	<id value="eumfh-70-254-4"/>
+	<status value="active"/>
+	<medicationReference>
+		<reference value="Medication/eumfh-70-254-4"/>
+		<display value="Omeprazole 20 mg oral tablet"/>
+	</medicationReference>
+	<effectivePeriod>
+		<start value="2018"/>
+	</effectivePeriod>
+	<dateAsserted value="2018-10-01"/>
+	<informationSource>
+		<reference value="Patient/eumfh-70-254"/>
+		<display value="Laurent Ballen (inject 70-254)"/>
+	</informationSource>	
+	<subject>
+		<reference value="Patient/eumfh-70-254"/>
+		<display value="Laurent Ballen (inject 70-254)"/>
+	</subject>
+	<taken value="y"/>
+</MedicationStatement>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='MedicationStatement/eumfh-70-254-4'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='Patient/eumfh-70-254'/>
+<resource>
+<Patient>
+<!--Sample XML file generated by XMLSpy v2013 sp1 (http://www.altova.com)-->
+	<id value="eumfh-70-254"/>
+  <meta><lastUpdated value="2018-10-10T13:51:24+02:00"/></meta>
+	<extension url="http://hl7.org/fhir/StructureDefinition/patient-citizenship">
+		<extension url="code">
+		<valueCodeableConcept>
+			<coding>
+				<system value="urn:iso:std:iso:3166"/>
+				<code value="FR"/>
+				<display value="France"/>
+			</coding></valueCodeableConcept>
+		</extension>
+	</extension>
+      	<identifier>
+  		<system value="http://trilliumbridge.eu/fhir/demos/eumfh/inject"/>
+		<value value="70-254"/>
+	</identifier>
+	<identifier>
+		<system value="http://trilliumbridge.eu/fhir/demos/eumfh/patient_id"/>
+		<value value="EUR01P0009"/>
+	</identifier>
+	<active value="true"/>
+	<name>
+		<family value="Ballen"/>
+		<given value="Laurent"/>
+	</name>
+	<gender value="male"/>
+	<birthDate value="1946-01-26"/>
+</Patient>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Patient/eumfh-70-254'/>
+</request>
+</entry>
+<entry>
+<fullUrl value='Practitioner/eumfh-70-254-1'/>
+<resource>
+<Practitioner>
+    <id value="eumfh-70-254-1"/>
+    <meta><lastUpdated value="2018-10-10T13:52:19+02:00"/></meta>
+    <name>
+        <family value="Hugo"/>
+        <given value="George"/>
+        <prefix value="Dr."/>
+    </name>
+</Practitioner>
+</resource>
+<request>
+<method value='PUT'/>
+<url value='Practitioner/eumfh-70-254-1'/>
+</request>
+</entry>
+</Bundle>
